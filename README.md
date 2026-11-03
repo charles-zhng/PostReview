@@ -82,9 +82,10 @@ The UI follows OpenReview's layout and palette. All CSS is written for this proj
 
 The site is a static export (`npm run build` writes `out/`). The forum page reads `?id=` in the browser and loads `public/data/<id>.json`. Those files are generated from `data/` by `npm run data`, which runs automatically before `dev` and `build` and after `assemble`.
 
-**GitHub Pages** (live at https://charles-zhng.github.io/PostReview):
+**GitHub Pages:**
 - `.github/workflows/deploy.yml` builds and deploys on every push to `main`.
 - It sets `BASE_PATH` to `/PostReview` automatically.
 - Pages is enabled with Source set to "GitHub Actions".
+- Pages carry a `noindex` robots tag (`src/app/layout.tsx`) while the site is unannounced. Remove it to let search engines list the site.
 
 **Elsewhere** (Cloudflare Pages, Netlify): build command `npm run build`, output directory `out`. Set `BASE_PATH` (e.g. `/PostReview`) only if the site isn't served from the domain root.

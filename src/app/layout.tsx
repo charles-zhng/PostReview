@@ -13,6 +13,8 @@ const notoSans = Noto_Sans({
 export const metadata: Metadata = {
   title: "PostReview",
   description: "Open peer review of viral AI posts, by synthetic reviewers.",
+  // Unannounced for now: keep search engines from listing it.
+  robots: { index: false, follow: false },
 };
 
 export default function RootLayout({
