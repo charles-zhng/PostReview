@@ -36,4 +36,4 @@ Follow [REVIEWING.md](REVIEWING.md). It covers clustering, the three reviews, th
 1. `npm run assemble -- --id <id>` must print `ok`.
 2. Run the dev server and open `/forum?id=<id>`. Check that the cluster labels, citation links and decision render.
 3. Tell the user the decision and the three cluster labels with their sizes.
-4. Ask before committing or pushing. Pushing to the default branch redeploys the site.
+4. Ask before committing or pushing. Pushing to `main` redeploys the site on Cloudflare Pages.

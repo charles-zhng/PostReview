@@ -82,9 +82,11 @@ The UI follows OpenReview's layout and palette. All CSS is written for this proj
 
 The site is a static export (`npm run build` writes `out/`). The forum page reads `?id=` in the browser and loads `public/data/<id>.json`. Those files are generated from `data/` by `npm run data`, which runs automatically before `dev` and `build` and after `assemble`.
 
-**GitHub Pages:**
-1. Push to `main`.
-2. In the repo's Settings → Pages, set Source to "GitHub Actions".
-3. `.github/workflows/deploy.yml` builds and deploys on every push, and sets `BASE_PATH` to `/<repo>` for project sites automatically.
+**Cloudflare Pages** (works with a private repo):
+1. In the Cloudflare dashboard, go to Workers & Pages → Create → Pages → Connect to Git, and pick this repo.
+2. Set the framework preset to None, the build command to `npm run build`, and the build output directory to `out`. Under Environment variables, add `NODE_VERSION` = `22`.
+3. Every push to `main` deploys to `postreview.pages.dev`, and other branches get preview URLs.
 
-**Elsewhere** (Cloudflare Pages, Netlify): build command `npm run build`, output directory `out`. Set `BASE_PATH` only if the site isn't served from the domain root.
+To deploy from your machine without the Git integration, run `npx wrangler login` once, then `npm run deploy`.
+
+**Elsewhere** (Netlify, GitHub Pages): build command `npm run build`, output directory `out`. Set `BASE_PATH` (e.g. `/PostReview`) only if the site isn't served from the domain root.
