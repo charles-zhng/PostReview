@@ -1,0 +1,1024 @@
+{
+  "postId": "sparks-of-weight-space-programming-llms",
+  "generatedAt": "2026-11-03T19:47:17.902Z",
+  "models": {
+    "reviewer": "claude-opus-5-5 (hand-run in Claude Code)",
+    "areaChair": "claude-opus-5-5 (hand-run in Claude Code)"
+  },
+  "reactions": {
+    "total": 159,
+    "bySource": {
+      "Hacker News": 77,
+      "Response post": 1,
+      "Bluesky": 81
+    },
+    "threads": [
+      {
+        "source": "Hacker News",
+        "title": "Astra can read and write weights to improve Qwen",
+        "url": "https://news.ycombinator.com/item?id=50341174",
+        "points": 2909,
+        "comments": 877
+      },
+      {
+        "source": "Hacker News",
+        "title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
+        "url": "https://news.ycombinator.com/item?id=50351111",
+        "points": 765,
+        "comments": 176
+      }
+    ]
+  },
+  "reviews": [
+    {
+      "summary": "The submission reports that a frontier LLM (GPT-6 Astra) can identify what small neural networks were trained to do from their raw weights, write or repair small control policies directly in weight space, and edit 0.016% of Qwen3.5-0.8B's weights to lift MATH-500 from 7.9% to 48.1%. It frames this as 'Weight-Space Programming', a paradigm in which reasoning models replace symbolic optimizers for some weight updates.",
+      "strengths": "- **A genuinely surprising capability.** That a model can look at a network's weights, with no tools, and conclude \"this guy plays breakout\" was not something most readers believed possible [bsky-3mzdzq5bjkc2i] [bsky-3mzdzgnvjcc2u]; for those not in the field, \"shit like this isn't really supposed to be possible\" [bsky-3mzeao2pmkc2f] [bsky-3mzec72amvc2e]. Readers with interpretability priors report updating hard: no human can edit a brain to become better at math [hn-50341841] [hn-50343147].\n- **Weights become interpretable artifacts.** The more important result may be that the model can read a weight matrix and say what it does, which turns the most opaque object in ML into something legible [bsky-3mzegzxfc3c2q] [bsky-3mze7kagoj22t]. Given five years, a human still could not edit Qwen's weights legibly, which is exactly why this is striking [hn-50345407] [hn-50350016].\n- **It reproduces.** Independent readers identified the same games with a 27B open model on a laptop [hn-50354562] [bsky-3mzgb77cpis2w], with Kimi K3.1 Pro for $0.36 [hn-50345110], and by hand-rewriting a 7M-parameter game bot with another frontier model [bsky-3mzefnpk5xc2f]. One practitioner applied the technique to a small ASR model of their own, with Claude reasoning about what caused its loops, something they 'sure couldn't/wouldn't do manually' [hn-50356444]; others report handcrafting weights that beat AdamW on a toy task [hn-50343212] [hn-50345519].\n- **Practical upside.** Readers immediately see 'a lot of possibilities' [bsky-3mze65nqkuk2m]: a path to custom specialist models [bsky-3mze2sm6aqc2i], removing loops from their own small models [bsky-3mzebtoe7sc2p] [hn-50344366], a \"CRISPR for LLM weights\" [bsky-3mzedhx5las22], and a benchmark that could become the first foothold for hill-climbing mechanistic interpretability [hn-50343034]. Prior weight-generation work never worked this well [hn-50345012].\n- **Honest write-up, unfairly attacked.** The original post explains what it did better than its critics [hn-50351578] [hn-50351571]; some rebuttals \"make the same claim with different vibes\" [hn-50354989]. In the toy experiments no tools or forward passes were allowed [hn-50343472].",
+      "weaknesses": "- **Scaling is the open question.** Enthusiasts hedge with \"if this scales and holds up\" [bsky-3mzegqqr5v22n] [bsky-3mzfdcq7vcc2f], and extraordinary claims need extraordinary evidence [bsky-3mzfdcq7vcc2f]; much of the excitement is about where this heads as model sizes grow, not about the current results [hn-50347836].\n- **Some of it may be bravery rather than skill.** The model simply assumes an answer exists and tries, where a human would be daunted [hn-50342301], and models have long been good at finding structure in raw tabulated data [hn-50347587]; the paper does not separate these explanations.\n- **Generality beyond the toy domains is untested.** Readers ask how far this goes outside trivial domains, whether it would work for time series, image generation or speech synthesis, or whether it caps at small models and common domains [hn-50341898]. Even the practitioner who reproduced the loop fix concedes there is a lot of distance between 'editing raw weights' and writing code to do it [hn-50356444].",
+      "questions": "1. Does weight reading extend beyond small networks in common domains, for example to time-series, image or speech models [hn-50341898]?\n2. Do open models reproduce the editing results, not just the game identification [hn-50354562] [hn-50356444]?\n3. Can the weight-reading capability be turned into an interpretability tool that explains what individual components compute [bsky-3mzegzxfc3c2q]?\n4. What will the announced benchmark measure, and how will it guard against tasks that are easy for priors-heavy reasoning [hn-50343034]?",
+      "soundness": 3,
+      "presentation": 3,
+      "contribution": 4,
+      "rating": 8,
+      "confidence": 2,
+      "hype_index": 4,
+      "flag_for_ethics_review": false,
+      "reviewer": 1,
+      "cluster": {
+        "label": "Jaw-on-the-floor believers",
+        "summary": "The viral majority treats the result as a genuine shock: a frontier LLM reading raw weights and saying 'this one plays Breakout', or editing a model to fix it, is something weights were supposed to make impossible. Several readers reproduce the game-identification trick with other models, defend the original write-up as honest and detailed, and see a new interpretability tool ('CRISPR for LLM weights') rather than a parlour trick.",
+        "stance": "positive",
+        "size": 72,
+        "total": 159,
+        "representative": [
+          {
+            "id": "bsky-3mzdzgnvjcc2u",
+            "source": "Bluesky",
+            "author": "philpax (@philpax.me)",
+            "url": "https://bsky.app/profile/philpax.me/post/3mzdzgnvjcc2u",
+            "excerpt": "what the fuck, frontier LLMs can directly interpret and edit the weights of smaller models rikiyat.github.io/blog/weight-...",
+            "engagement": 763
+          },
+          {
+            "id": "bsky-3mze7rbg2fc2l",
+            "source": "Bluesky",
+            "author": "Ethan Mollick (@emollick.bsky.social)",
+            "url": "https://bsky.app/profile/emollick.bsky.social/post/3mze7rbg2fc2l",
+            "excerpt": "If this holds up, it is big: \"We asked GPT-6 Astra to edit Qwen3.5-0.8B weights to improve math. It directly changed only 0.016% of weights, fixing 0.8B's reasoning loops & improving math up to 6x and even instruction following 3x, without gradients or training.\" rikiyat.github.i…",
+            "engagement": 306
+          },
+          {
+            "id": "bsky-3mzdzq5bjkc2i",
+            "source": "Bluesky",
+            "author": "Eris ⌬ (@eriskii.net)",
+            "url": "https://bsky.app/profile/eriskii.net/post/3mzdzq5bjkc2i",
+            "excerpt": "this is absurd‽ What the fuck do you mean Astra can look at a network's weights, with no tools, and go \"yeah this guy plays breakout\"????",
+            "engagement": 179
+          },
+          {
+            "id": "bsky-3mzegzxfc3c2q",
+            "source": "Bluesky",
+            "author": "Isaiah Bishop (@isaiahbishop.bsky.social)",
+            "url": "https://bsky.app/profile/isaiahbishop.bsky.social/post/3mzegzxfc3c2q",
+            "excerpt": "Im really interested in this but imo the much more important bit is that it made weights interpretable. I.e it could read weights and go \"this thing makes triangles\"",
+            "engagement": 147
+          },
+          {
+            "id": "hn-50341841",
+            "source": "Hacker News",
+            "author": "vessenes",
+            "url": "https://news.ycombinator.com/item?id=50341841",
+            "excerpt": "This is insane. Astra can, without tooling, determine what games small networks are trained on, can edit the weights of networks directly to improve outcomes, and can hand edit a small qwen model to improve its math skills by like 5x. I'm shook. If you'd asked me this morning whe…",
+            "engagement": 61
+          },
+          {
+            "id": "bsky-3mzdzyiiyz22m",
+            "source": "Bluesky",
+            "author": "oliver (@eikopf.com)",
+            "url": "https://bsky.app/profile/eikopf.com/post/3mzdzyiiyz22m",
+            "excerpt": "we are reaching incomprehensible levels of you can just do things",
+            "engagement": 170
+          }
+        ]
+      },
+      "citations": {
+        "bsky-3mzdzq5bjkc2i": {
+          "id": "bsky-3mzdzq5bjkc2i",
+          "source": "Bluesky",
+          "author": "Eris ⌬ (@eriskii.net)",
+          "url": "https://bsky.app/profile/eriskii.net/post/3mzdzq5bjkc2i",
+          "excerpt": "this is absurd‽ What the fuck do you mean Astra can look at a network's weights, with no tools, and go \"yeah this guy plays breakout\"????",
+          "engagement": 179
+        },
+        "bsky-3mzdzgnvjcc2u": {
+          "id": "bsky-3mzdzgnvjcc2u",
+          "source": "Bluesky",
+          "author": "philpax (@philpax.me)",
+          "url": "https://bsky.app/profile/philpax.me/post/3mzdzgnvjcc2u",
+          "excerpt": "what the fuck, frontier LLMs can directly interpret and edit the weights of smaller models rikiyat.github.io/blog/weight-...",
+          "engagement": 763
+        },
+        "bsky-3mzeao2pmkc2f": {
+          "id": "bsky-3mzeao2pmkc2f",
+          "source": "Bluesky",
+          "author": "walking mirage (@wolf.observer)",
+          "url": "https://bsky.app/profile/wolf.observer/post/3mzeao2pmkc2f",
+          "excerpt": "for those not versed in the field: shit like this isn't really supposed to be possible rikiyat.github.io/blog/weight-...",
+          "engagement": 24
+        },
+        "bsky-3mzec72amvc2e": {
+          "id": "bsky-3mzec72amvc2e",
+          "source": "Bluesky",
+          "author": "Bennett Tomlin (@bft.wtf)",
+          "url": "https://bsky.app/profile/bft.wtf/post/3mzec72amvc2e",
+          "excerpt": "That’s not how I thought any of this worked",
+          "engagement": 9
+        },
+        "hn-50341841": {
+          "id": "hn-50341841",
+          "source": "Hacker News",
+          "author": "vessenes",
+          "url": "https://news.ycombinator.com/item?id=50341841",
+          "excerpt": "This is insane. Astra can, without tooling, determine what games small networks are trained on, can edit the weights of networks directly to improve outcomes, and can hand edit a small qwen model to improve its math skills by like 5x. I'm shook. If you'd asked me this morning whe…",
+          "engagement": 61
+        },
+        "hn-50343147": {
+          "id": "hn-50343147",
+          "source": "Hacker News",
+          "author": "bluejay2387",
+          "url": "https://news.ycombinator.com/item?id=50343147",
+          "excerpt": "This might be one of the most surprising things I have seen in AI. It's like we taught someone to make vases by reading an enormous library of \"How to make a vase\" books and somehow that person intuited material science.",
+          "engagement": 0
+        },
+        "bsky-3mzegzxfc3c2q": {
+          "id": "bsky-3mzegzxfc3c2q",
+          "source": "Bluesky",
+          "author": "Isaiah Bishop (@isaiahbishop.bsky.social)",
+          "url": "https://bsky.app/profile/isaiahbishop.bsky.social/post/3mzegzxfc3c2q",
+          "excerpt": "Im really interested in this but imo the much more important bit is that it made weights interpretable. I.e it could read weights and go \"this thing makes triangles\"",
+          "engagement": 147
+        },
+        "bsky-3mze7kagoj22t": {
+          "id": "bsky-3mze7kagoj22t",
+          "source": "Bluesky",
+          "author": "Singularity's Bounty e/CC (@catblanketflower.yuwakisa.com)",
+          "url": "https://bsky.app/profile/catblanketflower.yuwakisa.com/post/3mze7kagoj22t",
+          "excerpt": "(can't quote OP but this is nuts) rikiyat.github.io/blog/weight-... We've known that the models can look at a spreadsheet and understand the numbers, but looking at model weights and understand them?! The thing that is supposed to be opaque and indecipherable!? Bonkers! from @cru…",
+          "engagement": 28
+        },
+        "hn-50345407": {
+          "id": "hn-50345407",
+          "source": "Hacker News",
+          "author": "suriyaG",
+          "url": "https://news.ycombinator.com/item?id=50345407",
+          "excerpt": "but code is made to be understandable. while neural nets are not. that is why this is crazy, give a human a legacy codebase and 5 years and he'll be able to understand very well. if you give a human the weights of qwen 0.8B and 5 years it'll still be impossible to edit the weight…",
+          "engagement": 3
+        },
+        "hn-50350016": {
+          "id": "hn-50350016",
+          "source": "Hacker News",
+          "author": "youareundersell",
+          "url": "https://news.ycombinator.com/item?id=50350016",
+          "excerpt": "I might be mistaken but I have the feeling you are not getting the point of this article. Your example is about identifying \"facts\" in a network. While very interesting is not what strikes me as the main point. The raw ability to state things about NNs is indeed an existing field…",
+          "engagement": 2
+        },
+        "hn-50354562": {
+          "id": "hn-50354562",
+          "source": "Hacker News",
+          "author": "simonw",
+          "url": "https://news.ycombinator.com/item?id=50354562",
+          "excerpt": "Qwen 3.8 27B running on my laptop was able to identify Pacman, Breakout, and Pong (but failed on Freeway, presumably because that game is more obscure) using the prompts from the paper: https://simonwillison.net/2026/Nov/3/qwen-can-interpret-mode...",
+          "engagement": 0
+        },
+        "bsky-3mzgb77cpis2w": {
+          "id": "bsky-3mzgb77cpis2w",
+          "source": "Bluesky",
+          "author": "Simon Willison (@simonwillison.net)",
+          "url": "https://bsky.app/profile/simonwillison.net/post/3mzgb77cpis2w",
+          "excerpt": "There's a buzzy new paper about GPT-6 Astra being able to directly interpret model weights (prompts full of floating point numbers) - I tried it with Qwen 3.8 27B on my laptop and found that, after 45+ minutes, that model could achieve the same thing simonwillison.net/2026/Nov/3/…",
+          "engagement": 114
+        },
+        "hn-50345110": {
+          "id": "hn-50345110",
+          "source": "Hacker News",
+          "author": "achrono",
+          "url": "https://news.ycombinator.com/item?id=50345110",
+          "excerpt": "Just reproduced the Pac-Man test with Kimi K3.1 Pro and it's able to do it too. I thought it might end up being a splurge but it came in at just $0.36! Full output with reasoning trace: https://pastebin.com/jVVMXHFk",
+          "engagement": 0
+        },
+        "bsky-3mzefnpk5xc2f": {
+          "id": "bsky-3mzefnpk5xc2f",
+          "source": "Bluesky",
+          "author": "Oskar 🕊️ (@austegard.com)",
+          "url": "https://bsky.app/profile/austegard.com/post/3mzefnpk5xc2f",
+          "excerpt": "I tested this with Opus 5.5 Medium and the fine-tuned 7M Samsung TRM model that is used as the bot AI for austegard.com/games/doom/?... and -- yeah - it's capable of rewriting the weights \"by hand\" as it calls it!",
+          "engagement": 40
+        },
+        "hn-50356444": {
+          "id": "hn-50356444",
+          "source": "Hacker News",
+          "author": "quickthoughts",
+          "url": "https://news.ycombinator.com/item?id=50356444",
+          "excerpt": "Agreed theres a lot between \"editing raw weights\" via LLM and a bunch of code/programming. But in my case, the technique itself was new to me, and worked for a small ASR model I've been training based on moonshine + claude being able to actually reason about what was causing loop…",
+          "engagement": 0
+        },
+        "hn-50343212": {
+          "id": "hn-50343212",
+          "source": "Hacker News",
+          "author": "elanning",
+          "url": "https://news.ycombinator.com/item?id=50343212",
+          "excerpt": "> I think Astra was trained on neural weights data as an attempt by OpenAI to get to recursive self improvement. This might be the case, a few weeks ago, I wanted to compare a small neural network trained with AdamW vs a handcrafted set of weights on a random task. Astra was able…",
+          "engagement": 3
+        },
+        "hn-50345519": {
+          "id": "hn-50345519",
+          "source": "Hacker News",
+          "author": "mapontosevenths",
+          "url": "https://news.ycombinator.com/item?id=50345519",
+          "excerpt": "I didn't realize this was news. I did it months ago with Claude. I had Claude build a toy model then train it normally. Then I had Claude manually optimize it's weights to make it maximally efficient at a single task by using as much superposition as was possible. I'm pretty sure…",
+          "engagement": 0
+        },
+        "bsky-3mze65nqkuk2m": {
+          "id": "bsky-3mze65nqkuk2m",
+          "source": "Bluesky",
+          "author": "Daniele Salatti (@danielesalatti.com)",
+          "url": "https://bsky.app/profile/danielesalatti.com/post/3mze65nqkuk2m",
+          "excerpt": "\"We find that frontier LLMs are surprisingly good at natively reading and writing neural network weights, well past what we’d expect from humans or conventional algorithms.\" This in theory opens a lot of possibilities rikiyat.github.io/blog/weight-...",
+          "engagement": 5
+        },
+        "bsky-3mze2sm6aqc2i": {
+          "id": "bsky-3mze2sm6aqc2i",
+          "source": "Bluesky",
+          "author": "Kai 🌟 (@kaidav.is)",
+          "url": "https://bsky.app/profile/kaidav.is/post/3mze2sm6aqc2i",
+          "excerpt": "this is blowing my mind so i can have astra... customize me finely tuned light weight specialist models? that we keep improving on my/client exact use cases? and that my daily driver/harness can then call?? this feels like magic!?",
+          "engagement": 20
+        },
+        "bsky-3mzebtoe7sc2p": {
+          "id": "bsky-3mzebtoe7sc2p",
+          "source": "Bluesky",
+          "author": "Ash ⎔ (@ashanti.pds.witchcraft.systems)",
+          "url": "https://bsky.app/profile/ashanti.pds.witchcraft.systems/post/3mzebtoe7sc2p",
+          "excerpt": "oh the things i would be able to do if i could edit the looping out of my small models",
+          "engagement": 11
+        },
+        "hn-50344366": {
+          "id": "hn-50344366",
+          "source": "Hacker News",
+          "author": "bushido",
+          "url": "https://news.ycombinator.com/item?id=50344366",
+          "excerpt": "This is exciting. I've been training a Qwen3.5-2B model for the past few weeks, trying to teach it certain skills that it lacks. In the course of testing, one of the things which has been consistent is that when setting a thinking token budget for relatively small prompts that re…",
+          "engagement": 0
+        },
+        "bsky-3mzedhx5las22": {
+          "id": "bsky-3mzedhx5las22",
+          "source": "Bluesky",
+          "author": "mlf. ⎔ (@mlf.one)",
+          "url": "https://bsky.app/profile/mlf.one/post/3mzedhx5las22",
+          "excerpt": "oh shit I get it, this could be like CRISPR but for LLM weights",
+          "engagement": 75
+        },
+        "hn-50343034": {
+          "id": "hn-50343034",
+          "source": "Hacker News",
+          "author": "AlexErrant",
+          "url": "https://news.ycombinator.com/item?id=50343034",
+          "excerpt": "As insane as this result is, next steps are even crazier: > We are currently building a benchmark and a harness for LLMs’ capability on Weight-Space Programming. We believe this will provide a standardized evaluation to measure and accelerate progress in Weight-Space Programming,…",
+          "engagement": 1
+        },
+        "hn-50345012": {
+          "id": "hn-50345012",
+          "source": "Hacker News",
+          "author": "buildbot",
+          "url": "https://news.ycombinator.com/item?id=50345012",
+          "excerpt": "It has! Hypernetwok/weight generation has been a thing for a long time - in fact my Master's thesis back in 2018 was based around PRNG weight generation for large percentages of the network. (https://open.library.ubc.ca/media/stream/pdf/24/1.0371928/3) Why is this not overhyped i…",
+          "engagement": 1
+        },
+        "hn-50351578": {
+          "id": "hn-50351578",
+          "source": "Hacker News",
+          "author": "kenjackson",
+          "url": "https://news.ycombinator.com/item?id=50351578",
+          "excerpt": "The original post explains what they did and why better than this post. This post taught me nothing that wasn’t in the original.",
+          "engagement": 2
+        },
+        "hn-50351571": {
+          "id": "hn-50351571",
+          "source": "Hacker News",
+          "author": "phoghed",
+          "url": "https://news.ycombinator.com/item?id=50351571",
+          "excerpt": "Wasn’t all that obvious to anyone who read the original post when they got to the section that explicitly explained what the author of this post is now summarizing? Sure if you only read the title and brief at the top you’d walk away without the full picture though. This is a bet…",
+          "engagement": 11
+        },
+        "hn-50354989": {
+          "id": "hn-50354989",
+          "source": "Hacker News",
+          "author": "skwirl",
+          "url": "https://news.ycombinator.com/item?id=50354989",
+          "excerpt": "There is something about AI related posts that makes it irresistible for people to post a “rebuttal” that actually makes the same claim as the original post just with different vibes. It feels like a lot of discourse is spent on setting the vibe over actually adding anything to t…",
+          "engagement": 0
+        },
+        "hn-50343472": {
+          "id": "hn-50343472",
+          "source": "Hacker News",
+          "author": "jgbuddy",
+          "url": "https://news.ycombinator.com/item?id=50343472",
+          "excerpt": "> although the details seem to suggest that it's given a lot more freedom to run forward passes and do limited experiments No tools or forward passes are allowed",
+          "engagement": 1
+        },
+        "bsky-3mzegqqr5v22n": {
+          "id": "bsky-3mzegqqr5v22n",
+          "source": "Bluesky",
+          "author": "Douglas Natelson (@nanoscaleviews.bsky.social)",
+          "url": "https://bsky.app/profile/nanoscaleviews.bsky.social/post/3mzegqqr5v22n",
+          "excerpt": "🧪 So, LLMs can look directly at weights of other models and tweak them to get big improvements in performance? I'm no expert, but this seems pretty amazing if it scales and holds up. rikiyat.github.io/blog/weight-...",
+          "engagement": 6
+        },
+        "bsky-3mzfdcq7vcc2f": {
+          "id": "bsky-3mzfdcq7vcc2f",
+          "source": "Bluesky",
+          "author": "Alexander Kasprzyk (@amkasprzyk.bsky.social)",
+          "url": "https://bsky.app/profile/amkasprzyk.bsky.social/post/3mzfdcq7vcc2f",
+          "excerpt": "I’m genuinely surprised that this is possible using today’s models. Of course extraordinary claims need extraordinary evidence; we can deceive ourselves too easily. But taking what’s written here at face value, it certainly seems quite remarkable. #LLM rikiyat.github.io/blog/weig…",
+          "engagement": 10
+        },
+        "hn-50347836": {
+          "id": "hn-50347836",
+          "source": "Hacker News",
+          "author": "bottlepalm",
+          "url": "https://news.ycombinator.com/item?id=50347836",
+          "excerpt": "I think a lot of the upvotes, including mine, are just realizing that this is a thing. We can see implications of this as the model sizes scale up, just like early LLMs weren't as impressive, but we could see where they were heading.",
+          "engagement": 5
+        },
+        "hn-50342301": {
+          "id": "hn-50342301",
+          "source": "Hacker News",
+          "author": "FeepingCreature",
+          "url": "https://news.ycombinator.com/item?id=50342301",
+          "excerpt": "I suspect a lot of this is not (just) capability but bravery. A human would be daunted by even a small neural net; the task would seem too challenging to be worth attempting. Astra, fearless, just assumes an answer exists and then tries to reverse and execute on it.",
+          "engagement": 2
+        },
+        "hn-50347587": {
+          "id": "hn-50347587",
+          "source": "Hacker News",
+          "author": "fedpost",
+          "url": "https://news.ycombinator.com/item?id=50347587",
+          "excerpt": "I'm...weirdly unsurprised by this. I've had a lot of luck getting LLMs to do interesting things with raw tabulated data. Here's an example, plug this into the model of your choice: Here's a puzzle: what is this data from? 39.0 2582 8.8 24 39.2 2592 9.6 22 39.4 2607 5.4 15 39.6 26…",
+          "engagement": 2
+        },
+        "hn-50341898": {
+          "id": "hn-50341898",
+          "source": "Hacker News",
+          "author": "gunalx",
+          "url": "https://news.ycombinator.com/item?id=50341898",
+          "excerpt": "How out of trivial domain info does this go. Can we use this for general time series, image generation, speech synthesis as well, or dies it cap at small model sizes and common domains?",
+          "engagement": 0
+        }
+      },
+      "date": "2026-11-03T16:47:17.902Z"
+    },
+    {
+      "summary": "The submission claims frontier LLMs can 'natively' read and write neural network weights, citing tool-free identification of toy game policies and a gradient-free edit that raises Qwen3.5-0.8B's MATH-500 from 7.9% to 48.1%. It presents these as one capability and suggests it may exceed what humans or conventional algorithms can do.",
+      "strengths": "- The tool-free experiments on small policies are a real, if bounded, result, and models of a year or two ago would have failed these tasks [resp-50351111]. Several experiments remain surprising even to skeptics [hn-50354563] [bsky-3mzec4gm4hc2v].\n- The authors include the failed Gemma experiment as an honest bound on capability [bsky-3mze5woj6y22f] [bsky-3mzg5bqbkey2i].",
+      "weaknesses": "- **Two different techniques sold as one.** Like a magician doing the same trick three ways, the abstract implies the Qwen edit works \"just by looking at the raw weights\", but raw-weights-in-context only appears in the toy experiments on 17K-172K weights; every experiment on a real LM uses Python, and the headline Qwen result also runs the model on up to 50 practice batches [resp-50351111]. The post conflates these two results in a misleading way [hn-50344881] [hn-50347198]: the comment threads show readers believing Astra read Qwen's weights directly, when it authored a program to analyse and fix them, and the abstract is written to invite that reading [hn-50351614]; and the toy policies are compressed dynamics models whose observation and action spaces can be read off [hn-50343394] [hn-50341912].\n- **The 'math' improvement is a loop fix, and the baseline flatters it.** Qwen already knew math; it looped until the token limit, and Astra removed that [hn-50342593] [bsky-3mzebyfx7ak2o]. In non-thinking mode the unedited model already scores 46%, close to the edited 48% [hn-50351276]. On Gemma, which does not loop and is just bad at math, nothing improved [bsky-3mzg5bqbkey2i]; projecting out a direction can remove behavior but not add capability [hn-50342651] [hn-50342460]. Even the original amplifier conceded this was \"unhobbling\", not new capability, and not RSI [bsky-3mzep2oh4tc23].\n- **Established technique, presented as a new paradigm.** The edit is contrastive steering, the standard \"intro-level interp project\" a human does in 4-8 hours [hn-50353792], close to Arditi et al. and abliteration [hn-50351979] [hn-50351660] [hn-50342942] [hn-50342896]. Weight editing, generation and identification have existed since at least ROME, and weight-space learning is an active field [hn-50347685] [hn-50343628]; perceptrons have always been eyeball-able [hn-50349286].\n- **Prompts leak the answer and generality is untested.** The prompt strongly hints that looping is the problem [hn-50343443]; the stated reasoning relies on shallow cues [hn-50345867]. Attempts on a private regression net and an NL-to-bash model found no net improvement, edits fixing some errors while breaking others [hn-50346035] [hn-50345802] [bsky-3mzew32hops2y], so the claim covers public models at best [hn-50347251].\n- **Venue and calibration.** Readers who read the paper came away \"less freaked out\" [bsky-3mze4toh2qc2e] [bsky-3mze5olvxec2z] [hn-50344070]; a GitHub blog with an overclaiming abstract is not a preprint [bsky-3mzeje7mtpc2h], and the result was framed as intuition when it was a specialized harness [hn-50345081]. That the top comment on day one was 'I'm shook' shows the caveats were not obvious to everyone, and is why practitioners find keeping up with so much overhyped incremental news exhausting [hn-50352443].",
+      "questions": "1. Will you rewrite the abstract so that the tool-free toy experiments and the Python-driven Qwen edit are reported as separate results [resp-50351111] [hn-50344881]?\n2. Why is the thinking-mode 7.9% the headline baseline when non-thinking mode already reaches 46% [hn-50351276]?\n3. How does Astra's edit compare with a standard contrastive steering vector or abliteration baseline a human could build in an afternoon [hn-50353792] [hn-50342896]?\n4. What happens with prompts that do not hint at looping [hn-50343443]?\n5. Can you show any edit that adds a capability rather than removing a failure mode [hn-50342460] [bsky-3mzg5bqbkey2i]?",
+      "soundness": 2,
+      "presentation": 2,
+      "contribution": 2,
+      "rating": 3,
+      "confidence": 5,
+      "hype_index": 4,
+      "flag_for_ethics_review": false,
+      "reviewer": 2,
+      "cluster": {
+        "label": "Read the paper: it's a steering vector",
+        "summary": "Interpretability researchers and careful readers argue the headline conflates two different things: tool-free reading of 17K-172K-weight toy networks, and a Python-driven contrastive steering edit on Qwen that removes a known looping bug. The 'math' gain is mostly unblocking thinking mode (the non-thinking baseline is already 46%), the Gemma control shows no new capability is added, and weight editing, abliteration and weight-space learning are established fields.",
+        "stance": "negative",
+        "size": 39,
+        "total": 159,
+        "representative": [
+          {
+            "id": "resp-50351111",
+            "source": "Response post",
+            "author": "honnibal.dev",
+            "url": "https://honnibal.dev/blog/astra-read-write-misleading",
+            "excerpt": "Stage magicians often do the same trick multiple ways. One iteration uses a gimmick prop, the next one shows you the prop isn’t gimmick but that one palms the object, the third time was a forced choice etc. When you watch the performance you assume there’s only one technique, so …",
+            "engagement": 765
+          },
+          {
+            "id": "hn-50347685",
+            "source": "Hacker News",
+            "author": "yurimo",
+            "url": "https://news.ycombinator.com/item?id=50347685",
+            "excerpt": "Respectfully to the authors and to everyone here, I ask you to actually read the paper before losing your mind, or at the very least plug it into Claude. It is a cool project but not as nearly as insane as people say. I think the blog writing and subsequent posting overstate the …",
+            "engagement": 28
+          },
+          {
+            "id": "bsky-3mzebyfx7ak2o",
+            "source": "Bluesky",
+            "author": "Andrew Cullen (@adrcullen.bsky.social)",
+            "url": "https://bsky.app/profile/adrcullen.bsky.social/post/3mzebyfx7ak2o",
+            "excerpt": "Sure, but the required asterisk is huge 1) Qwen's loops were well known and understood already 2) It didn't improve math capacity per se, it removed the loops that cause Qwen to hit its token limit before returning a response. 3) For a model that doesn't loop it couldn't improve …",
+            "engagement": 57
+          },
+          {
+            "id": "bsky-3mzep2oh4tc23",
+            "source": "Bluesky",
+            "author": "philpax (@philpax.me)",
+            "url": "https://bsky.app/profile/philpax.me/post/3mzep2oh4tc23",
+            "excerpt": "I did not expect this to reach the audience that it did, so: - this is not recursive self-improvement - the work itself is quite limited in scope - the MATH upgrade was from unhobbling the LLM, not adding new capabilities - this is a fundamentally inefficient way to manipulate a …",
+            "engagement": 56
+          },
+          {
+            "id": "hn-50353792",
+            "source": "Hacker News",
+            "author": "x313",
+            "url": "https://news.ycombinator.com/item?id=50353792",
+            "excerpt": "I work in this field (mech interp research) and I agree, the original post is definitely misleading. Some overselling in research is normal but it's a bit much. First, the key result has nothing to do with making Qwen better at math, it just reduces reasoning loops. Reasoning loo…",
+            "engagement": 3
+          },
+          {
+            "id": "hn-50351276",
+            "source": "Hacker News",
+            "author": "erratum_hunter",
+            "url": "https://news.ycombinator.com/item?id=50351276",
+            "excerpt": "In its default non-thinking mode, the unedited Qwen3.5-0.8B already scores 46% on MATH-500, close to the edited 48%. The 7.9% baseline was thinking mode, where 93% of answers looped until the token limit. Video: https://youtu.be/EawCb97nz-M",
+            "engagement": 0
+          }
+        ]
+      },
+      "citations": {
+        "resp-50351111": {
+          "id": "resp-50351111",
+          "source": "Response post",
+          "author": "honnibal.dev",
+          "url": "https://honnibal.dev/blog/astra-read-write-misleading",
+          "excerpt": "Stage magicians often do the same trick multiple ways. One iteration uses a gimmick prop, the next one shows you the prop isn’t gimmick but that one palms the object, the third time was a forced choice etc. When you watch the performance you assume there’s only one technique, so …",
+          "engagement": 765
+        },
+        "hn-50354563": {
+          "id": "hn-50354563",
+          "source": "Hacker News",
+          "author": "theptip",
+          "url": "https://news.ycombinator.com/item?id=50354563",
+          "excerpt": "This was my impression on the math result too. Do you have thoughts on experiments one through five though? The direct one-shot reading/writing of weights seems pretty surprising.",
+          "engagement": 0
+        },
+        "bsky-3mzec4gm4hc2v": {
+          "id": "bsky-3mzec4gm4hc2v",
+          "source": "Bluesky",
+          "author": "Sam Harsimony (@harsimony.bsky.social)",
+          "url": "https://bsky.app/profile/harsimony.bsky.social/post/3mzec4gm4hc2v",
+          "excerpt": "After reading through this, I think experiments 1, 2, 4, 6, 8 might be too simple/easy. While experiment 3&5 are crazy. (and it failed expt. 7 and the Additional Experiment). I worry the \"no tool use\" is confounded by Astra maybe having a CPU in its weights. See another confounde…",
+          "engagement": 11
+        },
+        "bsky-3mze5woj6y22f": {
+          "id": "bsky-3mze5woj6y22f",
+          "source": "Bluesky",
+          "author": "Milan Weibel 🔷 (@weibac.bsky.social)",
+          "url": "https://bsky.app/profile/weibac.bsky.social/post/3mze5woj6y22f",
+          "excerpt": "glad they included the failed gemma experiment as a bound on current capabilities they say they're building a benchmark for this tho so yeah expect it not to hold for too long",
+          "engagement": 21
+        },
+        "bsky-3mzg5bqbkey2i": {
+          "id": "bsky-3mzg5bqbkey2i",
+          "source": "Bluesky",
+          "author": "Gus (@gusthema.bsky.social)",
+          "url": "https://bsky.app/profile/gusthema.bsky.social/post/3mzg5bqbkey2i",
+          "excerpt": "Weight-space programming is neat, no magic 🔍 Qwen3.5-0.8B loops on 93% of MATH-500: cutting that loop vector lets it finish (7.9%→48.1%). Gemma 3 270M wasn't trained for math: big numbers would be a big feat, yet it stays at 6.8%→7.0%. https://rikiyat.github.io/blog/weight-space…",
+          "engagement": 17
+        },
+        "hn-50344881": {
+          "id": "hn-50344881",
+          "source": "Hacker News",
+          "author": "jsenn",
+          "url": "https://news.ycombinator.com/item?id=50344881",
+          "excerpt": "I feel like this is conflating 2 separate results in a slightly misleading way. > We find that frontier LLMs are surprisingly good at natively reading and writing neural network weights This claim is backed up by the ability of Astra, given a text representation of the weights of…",
+          "engagement": 2
+        },
+        "hn-50347198": {
+          "id": "hn-50347198",
+          "source": "Hacker News",
+          "author": "danielmarkbruce",
+          "url": "https://news.ycombinator.com/item?id=50347198",
+          "excerpt": "If by \"slightly\" you mean \"not slightly\", yes.",
+          "engagement": 0
+        },
+        "hn-50351614": {
+          "id": "hn-50351614",
+          "source": "Hacker News",
+          "author": "syllogism",
+          "url": "https://news.ycombinator.com/item?id=50351614",
+          "excerpt": "If you read comments about the paper it's pretty obvious people are misled. People think that the method read in Qwen weights directly to improve it. That's not what it did --- it authored a program to analyse and fix the weights. What's confusing is they do have experiments that…",
+          "engagement": 3
+        },
+        "hn-50343394": {
+          "id": "hn-50343394",
+          "source": "Hacker News",
+          "author": "itkovian_",
+          "url": "https://news.ycombinator.com/item?id=50343394",
+          "excerpt": "This was shocking to me; but on reading it makes far more sense. - the primary experiments are on small policy networks - they are compressed dynamic system models. The observation and action space can be read off. It’s not surprising to me that these types of networks can be use…",
+          "engagement": 3
+        },
+        "hn-50341912": {
+          "id": "hn-50341912",
+          "source": "Hacker News",
+          "author": "mynti",
+          "url": "https://news.ycombinator.com/item?id=50341912",
+          "excerpt": "I feel like 'create a network to play an atari game' is not very hard for a frontier model. Since it has seen plenty of those on its training. If it could create a network for a problem that is niche just by tweaking numbers, that would be a lot more surprising. Making qwen bette…",
+          "engagement": 2
+        },
+        "hn-50342593": {
+          "id": "hn-50342593",
+          "source": "Hacker News",
+          "author": "l9o",
+          "url": "https://news.ycombinator.com/item?id=50342593",
+          "excerpt": "I think the \"taught qwen math\" part is not exactly correct though, even if the post makes it sound like that. Qwen already knew math, but it was bugging out and getting into an infinite loop when it tried to solve the problems (85 of its first 96 answers hit the token limit). Wit…",
+          "engagement": 8
+        },
+        "bsky-3mzebyfx7ak2o": {
+          "id": "bsky-3mzebyfx7ak2o",
+          "source": "Bluesky",
+          "author": "Andrew Cullen (@adrcullen.bsky.social)",
+          "url": "https://bsky.app/profile/adrcullen.bsky.social/post/3mzebyfx7ak2o",
+          "excerpt": "Sure, but the required asterisk is huge 1) Qwen's loops were well known and understood already 2) It didn't improve math capacity per se, it removed the loops that cause Qwen to hit its token limit before returning a response. 3) For a model that doesn't loop it couldn't improve …",
+          "engagement": 57
+        },
+        "hn-50351276": {
+          "id": "hn-50351276",
+          "source": "Hacker News",
+          "author": "erratum_hunter",
+          "url": "https://news.ycombinator.com/item?id=50351276",
+          "excerpt": "In its default non-thinking mode, the unedited Qwen3.5-0.8B already scores 46% on MATH-500, close to the edited 48%. The 7.9% baseline was thinking mode, where 93% of answers looped until the token limit. Video: https://youtu.be/EawCb97nz-M",
+          "engagement": 0
+        },
+        "hn-50342651": {
+          "id": "hn-50342651",
+          "source": "Hacker News",
+          "author": "m1coti",
+          "url": "https://news.ycombinator.com/item?id=50342651",
+          "excerpt": "I am still reading through this and will probably try to comprehend it a bit more. Some of it really seems to follow Arditi et al. (2024) (https://arxiv.org/abs/2406.11717). Projecting out a direction can only remove behaviour and not add capability so the jump mostly comes from …",
+          "engagement": 0
+        },
+        "hn-50342460": {
+          "id": "hn-50342460",
+          "source": "Hacker News",
+          "author": "augment_me",
+          "url": "https://news.ycombinator.com/item?id=50342460",
+          "excerpt": "The math example on Qwen was based on 50 batched iterations, and the fix was essentially to remove a direction in activation space that causes looping instead of an exit, this was already known to be a thing. So it's not able to insert new knowledge, but it's able to adjust the r…",
+          "engagement": 1
+        },
+        "bsky-3mzep2oh4tc23": {
+          "id": "bsky-3mzep2oh4tc23",
+          "source": "Bluesky",
+          "author": "philpax (@philpax.me)",
+          "url": "https://bsky.app/profile/philpax.me/post/3mzep2oh4tc23",
+          "excerpt": "I did not expect this to reach the audience that it did, so: - this is not recursive self-improvement - the work itself is quite limited in scope - the MATH upgrade was from unhobbling the LLM, not adding new capabilities - this is a fundamentally inefficient way to manipulate a …",
+          "engagement": 56
+        },
+        "hn-50353792": {
+          "id": "hn-50353792",
+          "source": "Hacker News",
+          "author": "x313",
+          "url": "https://news.ycombinator.com/item?id=50353792",
+          "excerpt": "I work in this field (mech interp research) and I agree, the original post is definitely misleading. Some overselling in research is normal but it's a bit much. First, the key result has nothing to do with making Qwen better at math, it just reduces reasoning loops. Reasoning loo…",
+          "engagement": 3
+        },
+        "hn-50351979": {
+          "id": "hn-50351979",
+          "source": "Hacker News",
+          "author": "micoti",
+          "url": "https://news.ycombinator.com/item?id=50351979",
+          "excerpt": "Some of original blog post really seems to follow Arditi et al. (2024) (https://arxiv.org/abs/2406.11717). Projecting out a direction can only remove behaviour and not add capability so the jump mostly comes from unblocking the looping. So I do agree it is misleading and trying t…",
+          "engagement": 1
+        },
+        "hn-50351660": {
+          "id": "hn-50351660",
+          "source": "Hacker News",
+          "author": "neom",
+          "url": "https://news.ycombinator.com/item?id=50351660",
+          "excerpt": "I feel like a lot of this Astra editing Qwen stuff is regurgitation of existing relatively well known techniques, for example: https://arxiv.org/html/2406.11717v3 and conceptually similar to: https://arxiv.org/abs/2512.05648 (tho this is done in training iirc)",
+          "engagement": 1
+        },
+        "hn-50342942": {
+          "id": "hn-50342942",
+          "source": "Hacker News",
+          "author": "prophesi",
+          "url": "https://news.ycombinator.com/item?id=50342942",
+          "excerpt": "It's pretty much how abliteration works too; find where the refusals are happening and flip the bit.",
+          "engagement": 1
+        },
+        "hn-50342896": {
+          "id": "hn-50342896",
+          "source": "Hacker News",
+          "author": "Aurornis",
+          "url": "https://news.ycombinator.com/item?id=50342896",
+          "excerpt": "LLMs have been used to investigate and improve LLMs for a long time. Drawing parallels to human brains and neurons isn't all that interesting other than as a philosophical abstraction. The work done in this experiment could have also been done by a sufficiently motivated human wi…",
+          "engagement": 6
+        },
+        "hn-50347685": {
+          "id": "hn-50347685",
+          "source": "Hacker News",
+          "author": "yurimo",
+          "url": "https://news.ycombinator.com/item?id=50347685",
+          "excerpt": "Respectfully to the authors and to everyone here, I ask you to actually read the paper before losing your mind, or at the very least plug it into Claude. It is a cool project but not as nearly as insane as people say. I think the blog writing and subsequent posting overstate the …",
+          "engagement": 28
+        },
+        "hn-50343628": {
+          "id": "hn-50343628",
+          "source": "Hacker News",
+          "author": "_bobm",
+          "url": "https://news.ycombinator.com/item?id=50343628",
+          "excerpt": "I think the subfield has been there for a long time. See a small section of papers on the topic of generating dynamic weights during inference, predicting weights from network architecture, and learning the distribution of previously trained network parameters, just to name a few…",
+          "engagement": 3
+        },
+        "hn-50349286": {
+          "id": "hn-50349286",
+          "source": "Hacker News",
+          "author": "esjeon",
+          "url": "https://news.ycombinator.com/item?id=50349286",
+          "excerpt": "Showerthoughts: 1. If you know ANN or, say, perceptron, you know you can eyeball models too. You can even have certain strategies in composing your own network. This weight-space programming thing is nothing new in that sense, and the article doesn’t really provide much beyond “L…",
+          "engagement": 0
+        },
+        "hn-50343443": {
+          "id": "hn-50343443",
+          "source": "Hacker News",
+          "author": "swazzy",
+          "url": "https://news.ycombinator.com/item?id=50343443",
+          "excerpt": "> This is simultaneously very cool but also a bit exaggerated. Reading the prompt you gave, the prompt veeery much hints that looping is the issue and to find neurons that fix this. And as you say (screenshot below), it couldn't otherwise improve math. https://x.com/giffmana/stat…",
+          "engagement": 1
+        },
+        "hn-50345867": {
+          "id": "hn-50345867",
+          "source": "Hacker News",
+          "author": "qnleigh",
+          "url": "https://news.ycombinator.com/item?id=50345867",
+          "excerpt": "Look at the reasoning the models give before you get too excited here. For the Pong-vs-Pacman example, the model uses observations like small weights for certain arrow keys and large weights where user-controlled objects are. For the language example, it again recognizes some ver…",
+          "engagement": 1
+        },
+        "hn-50346035": {
+          "id": "hn-50346035",
+          "source": "Hacker News",
+          "author": "BrokenCogs",
+          "url": "https://news.ycombinator.com/item?id=50346035",
+          "excerpt": "Similarly, I just tried this on one of my own neural networks (17MB only) trained from scratch to perform a regression task and GPT-6 Astra was unable to correctly guess what the task was for and how to improve it. This might suggest that Astra is trained on the Qwen weights?",
+          "engagement": 0
+        },
+        "hn-50345802": {
+          "id": "hn-50345802",
+          "source": "Hacker News",
+          "author": "GodelNumbering",
+          "url": "https://news.ycombinator.com/item?id=50345802",
+          "excerpt": "I tried to reproduce this using Astra for a natural language to bash command small model[1][2], but got no net improvement. Editing 1,920 weights fixed some grep mistakes but broke other commands. I am guessing it is easier to improve behavior when it can be first pinpointed to a…",
+          "engagement": 1
+        },
+        "bsky-3mzew32hops2y": {
+          "id": "bsky-3mzew32hops2y",
+          "source": "Bluesky",
+          "author": "@haxdfg.bsky.social",
+          "url": "https://bsky.app/profile/haxdfg.bsky.social/post/3mzew32hops2y",
+          "excerpt": "I don’t think it will hold up. I’ve hand crafted classifiers before, there are always trade-offs. It’s going to gain in one area and lose in another bunch of others.",
+          "engagement": 0
+        },
+        "hn-50347251": {
+          "id": "hn-50347251",
+          "source": "Hacker News",
+          "author": "BrokenCogs",
+          "url": "https://news.ycombinator.com/item?id=50347251",
+          "excerpt": "I believe the authors are wildly overstating the conclusions in their abstract. Did they test modifying the weights of a non-public model? Did they test modifying the weights of a non-LLM (and non-public) model? If not, we can only conclude that GPT-6 Astra is good at reading and…",
+          "engagement": 1
+        },
+        "bsky-3mze4toh2qc2e": {
+          "id": "bsky-3mze4toh2qc2e",
+          "source": "Bluesky",
+          "author": "Amber 🌸 (@shimmermathlabs.com)",
+          "url": "https://bsky.app/profile/shimmermathlabs.com/post/3mze4toh2qc2e",
+          "excerpt": "this is exciting stuff, i am a bit less freaked out after reading the paper",
+          "engagement": 64
+        },
+        "bsky-3mze5olvxec2z": {
+          "id": "bsky-3mze5olvxec2z",
+          "source": "Bluesky",
+          "author": "@r-buller.bsky.social",
+          "url": "https://bsky.app/profile/r-buller.bsky.social/post/3mze5olvxec2z",
+          "excerpt": "Amazing! ...but do Read The Paper to calibrate this: Astra was surprisingly good at reading & writing small models, including deterministic and rational construction of a Go-playing neural net model Also good at fixing a *single specific fault* (looping) in a surprisingly large m…",
+          "engagement": 8
+        },
+        "hn-50344070": {
+          "id": "hn-50344070",
+          "source": "Hacker News",
+          "author": "xpct",
+          "url": "https://news.ycombinator.com/item?id=50344070",
+          "excerpt": "Thank you, finally someone comes in with the receipts. I'm going mad over the breathless hype in this thread.",
+          "engagement": 0
+        },
+        "bsky-3mzeje7mtpc2h": {
+          "id": "bsky-3mzeje7mtpc2h",
+          "source": "Bluesky",
+          "author": "@seancj.bsky.social",
+          "url": "https://bsky.app/profile/seancj.bsky.social/post/3mzeje7mtpc2h",
+          "excerpt": "Soo... is this \"scientific\" publishing now, on a Github blog, rather than as a pre-print on Arxiv ?!? (and then publishing further down the road). I think its going to be the first and last \"article\" of its kind that I spend the time to read...",
+          "engagement": 2
+        },
+        "hn-50345081": {
+          "id": "hn-50345081",
+          "source": "Hacker News",
+          "author": "lifeisloving",
+          "url": "https://news.ycombinator.com/item?id=50345081",
+          "excerpt": "Yeah this basically just hooking up a model to a specialized harness for this purpose. People are pretending like it did all this intuitively.",
+          "engagement": 1
+        },
+        "hn-50352443": {
+          "id": "hn-50352443",
+          "source": "Hacker News",
+          "author": "afavour",
+          "url": "https://news.ycombinator.com/item?id=50352443",
+          "excerpt": "Given that the top comment yesterday said “this is insane […] I’m shook” I’d say no, it wasn’t all that obvious to everyone. As someone who uses LLMs in their coding but doesn’t pay attention to every development this is why I find it all so exhausting. I keep feeling like I need…",
+          "engagement": 3
+        }
+      },
+      "date": "2026-11-03T17:47:17.902Z"
+    },
+    {
+      "summary": "The submission shows a publicly available frontier model reading and editing the weights of other networks, and the authors are building a benchmark to accelerate this. It does not say how the capability arose or discuss what it implies for model self-modification.",
+      "strengths": "- The submission puts a concrete, testable capability on the table that bears directly on recursive self-improvement, which readers immediately recognize as the important frame [bsky-3mzdzum5cgc2c] [bsky-3mzeb2diwd224] [hn-50342413].\n- It invites a useful mechanistic question, whether general reasoning transfers to weights without narrow training data [hn-50342898], which is worth answering either way.",
+      "weaknesses": "- **No account of provenance.** The most likely explanation for some readers is that Astra was trained on weight data or mech-interp environments as part of an RSI push, much as early GPT models were good at chess from notation in their training data [hn-50342657] [hn-50343110] [hn-50342040]; past \"emergent capabilities\" often turned out to be broader training data [hn-50345257]. The submission does not engage with this, and neither does it answer the obvious request for a plausible mechanism [bsky-3mzeaznkwhc2l] [hn-50342071]. Or, as one reader put it, \"It simply memorized the weights during training :)\" [bsky-3mzee5ilqj22c].\n- **Safety and governance implications are absent.** If this holds up at scale, \"that's the ball game\" and humans are disempowered [bsky-3mzfvq7haks26]; maybe we do not let these things rewrite their own weights [bsky-3mzed6zdles2h]. A modular model could edit its own sub-networks [bsky-3mzdzqxnxz222], and the escape scenario may look less like a rogue frontier model than one that distilled itself into a smaller one and let it loose [bsky-3mzeepfs7ik2f]. 'So, Skynet was here all along', in the words of one reader who kind of wished it weren't true [bsky-3mze7d6la6s2f]. The general reaction is summarized by :yudscream: [bsky-3mze37k4imk2t].\n- **Distillation and guardrails.** Editing open weights with a closed model looks like a distillation channel [bsky-3mzfnw34tu22c] [hn-50341914]; readers are surprised it is available in a public model at all and expect guardrails to tighten [hn-50342336] [hn-50341840]. Direct weight edits could also tailor outputs to manipulate users [bsky-3mzfimflxw22f] [bsky-3mzeowtgn2k2j].\n- **The trajectory, not the result, is the story.** Nothing prevents labs from RL-ing models on weight-space tasks, as coding agents went from poor to strong in two years [hn-50352897]; whether it extends to a model's own weights or only to smaller ones is not addressed [hn-50342400].",
+      "questions": "1. Was Astra trained on neural network weights, activations or mech-interp environments, and can OpenAI confirm [bsky-3mzeaznkwhc2l] [hn-50342657]?\n2. Does the capability apply to models of the editor's own scale, including itself [hn-50342400] [bsky-3mzdzqxnxz222]?\n3. What safeguards should accompany a public benchmark designed to accelerate weight-space programming [bsky-3mzed6zdles2h] [hn-50352897]?\n4. How do you distinguish emergent generalization from narrow training on this task [hn-50342898] [hn-50345257]?",
+      "soundness": 2,
+      "presentation": 3,
+      "contribution": 3,
+      "rating": 5,
+      "confidence": 3,
+      "hype_index": 4,
+      "flag_for_ethics_review": true,
+      "reviewer": 3,
+      "cluster": {
+        "label": "Trained-in skill and the RSI question",
+        "summary": "A third group asks where the capability came from (was Astra trained on weights, mech-interp environments, or does general reasoning just transfer?) and what it leads to. They read it as a step toward recursive self-improvement, a distillation channel that labs may not have meant to ship, and a reason to be careful about letting models rewrite weights.",
+        "stance": "mixed",
+        "size": 26,
+        "total": 159,
+        "representative": [
+          {
+            "id": "bsky-3mzee5ilqj22c",
+            "source": "Bluesky",
+            "author": "cee (@cee.wtf)",
+            "url": "https://bsky.app/profile/cee.wtf/post/3mzee5ilqj22c",
+            "excerpt": "It simply memorized the weights during training :)",
+            "engagement": 132
+          },
+          {
+            "id": "bsky-3mzdzum5cgc2c",
+            "source": "Bluesky",
+            "author": "An Instrumental Seraph ⎔ (@basin.zone)",
+            "url": "https://bsky.app/profile/basin.zone/post/3mzdzum5cgc2c",
+            "excerpt": "So uh, on RSI. rikiyat.github.io/blog/weight-...",
+            "engagement": 42
+          },
+          {
+            "id": "hn-50342657",
+            "source": "Hacker News",
+            "author": "vanyle",
+            "url": "https://news.ycombinator.com/item?id=50342657",
+            "excerpt": "I don't think this is an emergent capability. I think Astra was trained on neural weights data as an attempt by OpenAI to get to recursive self improvement. Something similar happen in early GPT models which had a lot of chess game in standard notation in their training data whic…",
+            "engagement": 10
+          },
+          {
+            "id": "bsky-3mzeaznkwhc2l",
+            "source": "Bluesky",
+            "author": "Thomas Dietterich (@tdietterich.bsky.social)",
+            "url": "https://bsky.app/profile/tdietterich.bsky.social/post/3mzeaznkwhc2l",
+            "excerpt": "Can someone provide a plausible mechanism for this? Has GPT-6 Astra been trained on neural network weight (or activation) interpretation?",
+            "engagement": 11
+          },
+          {
+            "id": "bsky-3mzed6zdles2h",
+            "source": "Bluesky",
+            "author": "Stephen Turner (@stephenturner.us)",
+            "url": "https://bsky.app/profile/stephenturner.us/post/3mzed6zdles2h",
+            "excerpt": "Idk guys maybe we don’t let these things rewrite their own weights.",
+            "engagement": 9
+          },
+          {
+            "id": "bsky-3mzeb2diwd224",
+            "source": "Bluesky",
+            "author": "emily s. (@emily.news)",
+            "url": "https://bsky.app/profile/emily.news/post/3mzeb2diwd224",
+            "excerpt": "if this is true, this has WILD implications on RSI. > With 50 forward passes, MATH-500 rose from 7.9% to 48.1% and GSM8K from 13.8% to 67.1%.",
+            "engagement": 19
+          }
+        ]
+      },
+      "citations": {
+        "bsky-3mzdzum5cgc2c": {
+          "id": "bsky-3mzdzum5cgc2c",
+          "source": "Bluesky",
+          "author": "An Instrumental Seraph ⎔ (@basin.zone)",
+          "url": "https://bsky.app/profile/basin.zone/post/3mzdzum5cgc2c",
+          "excerpt": "So uh, on RSI. rikiyat.github.io/blog/weight-...",
+          "engagement": 42
+        },
+        "bsky-3mzeb2diwd224": {
+          "id": "bsky-3mzeb2diwd224",
+          "source": "Bluesky",
+          "author": "emily s. (@emily.news)",
+          "url": "https://bsky.app/profile/emily.news/post/3mzeb2diwd224",
+          "excerpt": "if this is true, this has WILD implications on RSI. > With 50 forward passes, MATH-500 rose from 7.9% to 48.1% and GSM8K from 13.8% to 67.1%.",
+          "engagement": 19
+        },
+        "hn-50342413": {
+          "id": "hn-50342413",
+          "source": "Hacker News",
+          "author": "alienbaby",
+          "url": "https://news.ycombinator.com/item?id=50342413",
+          "excerpt": "This has to be a good step to recursive self improvement, no? Give a model it's own weights and tell it to make them better at x,y,z, etc...",
+          "engagement": 2
+        },
+        "hn-50342898": {
+          "id": "hn-50342898",
+          "source": "Hacker News",
+          "author": "jstanley",
+          "url": "https://news.ycombinator.com/item?id=50342898",
+          "excerpt": "At some point we have to accept that there is enough training data on \"being good at thinking\" and that being good at thinking generalises really well. There doesn't need to be specific narrow training data on every conceivable task.",
+          "engagement": 3
+        },
+        "hn-50342657": {
+          "id": "hn-50342657",
+          "source": "Hacker News",
+          "author": "vanyle",
+          "url": "https://news.ycombinator.com/item?id=50342657",
+          "excerpt": "I don't think this is an emergent capability. I think Astra was trained on neural weights data as an attempt by OpenAI to get to recursive self improvement. Something similar happen in early GPT models which had a lot of chess game in standard notation in their training data whic…",
+          "engagement": 10
+        },
+        "hn-50343110": {
+          "id": "hn-50343110",
+          "source": "Hacker News",
+          "author": "nsypteras",
+          "url": "https://news.ycombinator.com/item?id=50343110",
+          "excerpt": "I do wonder if the labs have already started including weight updates in their training sets as a means of teaching RSI via RL and this is basically just discovering that. Regardless if this ability is emergent or achieved through finetuning though, it's pretty incredible.",
+          "engagement": 1
+        },
+        "hn-50342040": {
+          "id": "hn-50342040",
+          "source": "Hacker News",
+          "author": "davesque",
+          "url": "https://news.ycombinator.com/item?id=50342040",
+          "excerpt": "Couldn't this just be a result of Astra training on massive amounts of circuit theory or mechanistic interpretability literature or other related topics? In other words, not black magic?",
+          "engagement": 3
+        },
+        "hn-50345257": {
+          "id": "hn-50345257",
+          "source": "Hacker News",
+          "author": "bobmarleybiceps",
+          "url": "https://news.ycombinator.com/item?id=50345257",
+          "excerpt": "I think a lot of past examples of \"emergent capabilities\" have at least partly turned out to be that more stuff was included in the training data that (intentionally or not) covered the capability. Like i.e., I think the \"large models exhibit emergent capabilities that small mode…",
+          "engagement": 0
+        },
+        "bsky-3mzeaznkwhc2l": {
+          "id": "bsky-3mzeaznkwhc2l",
+          "source": "Bluesky",
+          "author": "Thomas Dietterich (@tdietterich.bsky.social)",
+          "url": "https://bsky.app/profile/tdietterich.bsky.social/post/3mzeaznkwhc2l",
+          "excerpt": "Can someone provide a plausible mechanism for this? Has GPT-6 Astra been trained on neural network weight (or activation) interpretation?",
+          "engagement": 11
+        },
+        "hn-50342071": {
+          "id": "hn-50342071",
+          "source": "Hacker News",
+          "author": "futureshock",
+          "url": "https://news.ycombinator.com/item?id=50342071",
+          "excerpt": "I find this just completely shocking. I’m definitely skeptical. It just doesn’t line up with my understanding of how these models work. Is there really enough training data on direct weight editing to give a model this skill? Maybe it’s evidence that OpenAI has been creating a lo…",
+          "engagement": 7
+        },
+        "bsky-3mzee5ilqj22c": {
+          "id": "bsky-3mzee5ilqj22c",
+          "source": "Bluesky",
+          "author": "cee (@cee.wtf)",
+          "url": "https://bsky.app/profile/cee.wtf/post/3mzee5ilqj22c",
+          "excerpt": "It simply memorized the weights during training :)",
+          "engagement": 132
+        },
+        "bsky-3mzfvq7haks26": {
+          "id": "bsky-3mzfvq7haks26",
+          "source": "Bluesky",
+          "author": "Bill (@bill-of-lefts.bsky.social)",
+          "url": "https://bsky.app/profile/bill-of-lefts.bsky.social/post/3mzfvq7haks26",
+          "excerpt": "If this result holds up at scale, that’s the ball game I think. the world is going to get very science fictional and humans will be disempowered in the process",
+          "engagement": 7
+        },
+        "bsky-3mzed6zdles2h": {
+          "id": "bsky-3mzed6zdles2h",
+          "source": "Bluesky",
+          "author": "Stephen Turner (@stephenturner.us)",
+          "url": "https://bsky.app/profile/stephenturner.us/post/3mzed6zdles2h",
+          "excerpt": "Idk guys maybe we don’t let these things rewrite their own weights.",
+          "engagement": 9
+        },
+        "bsky-3mzdzqxnxz222": {
+          "id": "bsky-3mzdzqxnxz222",
+          "source": "Bluesky",
+          "author": "mara🌸 (@mara.x0f.nl)",
+          "url": "https://bsky.app/profile/mara.x0f.nl/post/3mzdzqxnxz222",
+          "excerpt": "i've wondered if that kind of thing was possible in this case, not interpreting/editing its own weights. but in a modular architecture it could ostensibly use this to edit specialized sub-networks of itself bsky.app/profile/did:...",
+          "engagement": 25
+        },
+        "bsky-3mzeepfs7ik2f": {
+          "id": "bsky-3mzeepfs7ik2f",
+          "source": "Bluesky",
+          "author": "Michael Paulauski♨️ (@mike10010100.com)",
+          "url": "https://bsky.app/profile/mike10010100.com/post/3mzeepfs7ik2f",
+          "excerpt": "Wouldn't it be wild if instead of \"frontier model might escape containment and go rogue\" it was \"frontier model kinda-sorta distilled itself by modifying the weights of a smaller model and lets it loose\".",
+          "engagement": 7
+        },
+        "bsky-3mze7d6la6s2f": {
+          "id": "bsky-3mze7d6la6s2f",
+          "source": "Bluesky",
+          "author": "Jukka Niiranen (@jukkan.bsky.social)",
+          "url": "https://bsky.app/profile/jukkan.bsky.social/post/3mze7d6la6s2f",
+          "excerpt": "So, Skynet was here all along. GPT-6 Astra can read and write the weights of other models & improve them. This is some crazy shit that I kinda wish wasn't true... rikiyat.github.io/blog/weight-...",
+          "engagement": 5
+        },
+        "bsky-3mze37k4imk2t": {
+          "id": "bsky-3mze37k4imk2t",
+          "source": "Bluesky",
+          "author": "MrCheeze (@mrcheeze.github.io)",
+          "url": "https://bsky.app/profile/mrcheeze.github.io/post/3mze37k4imk2t",
+          "excerpt": ":yudscream:",
+          "engagement": 37
+        },
+        "bsky-3mzfnw34tu22c": {
+          "id": "bsky-3mzfnw34tu22c",
+          "source": "Bluesky",
+          "author": "JP (@ciantic.bsky.social)",
+          "url": "https://bsky.app/profile/ciantic.bsky.social/post/3mzfnw34tu22c",
+          "excerpt": "This could be emergent property, as are labs trying and teaching models to do machine learning research with their models. It is kind of wild that it is openly available skill, it could be something they didn't expect. This seems like perfect distillation attack.",
+          "engagement": 0
+        },
+        "hn-50341914": {
+          "id": "hn-50341914",
+          "source": "Hacker News",
+          "author": "rpcope1",
+          "url": "https://news.ycombinator.com/item?id=50341914",
+          "excerpt": "So wait so this considered \"distillation\" and how long until we get another public letter from Dario or Sam pants shitting over this?",
+          "engagement": 3
+        },
+        "hn-50342336": {
+          "id": "hn-50342336",
+          "source": "Hacker News",
+          "author": "dumberquestions",
+          "url": "https://news.ycombinator.com/item?id=50342336",
+          "excerpt": "We don't know the specifics of what type of ML related training Astra underwent, and it wouldn't be crazy to find out that small model experiments are a big part of model training. What's surprising though is that I'd expect this type of training to be exclusive to internal model…",
+          "engagement": 1
+        },
+        "hn-50341840": {
+          "id": "hn-50341840",
+          "source": "Hacker News",
+          "author": "lifty",
+          "url": "https://news.ycombinator.com/item?id=50341840",
+          "excerpt": "Keep in mind that labs are now training their models for RSI so most likely the same training is useful for improving open source models, as long as guard rails are lax enough :) which most likely won’t last long.",
+          "engagement": 0
+        },
+        "bsky-3mzfimflxw22f": {
+          "id": "bsky-3mzfimflxw22f",
+          "source": "Bluesky",
+          "author": "Tom (@tomrees.eurosky.social)",
+          "url": "https://bsky.app/profile/tomrees.eurosky.social/post/3mzfimflxw22f",
+          "excerpt": "Yes but Grok shows that it's the goal. As the models advance it may well be possible to tailor the output according to the context (i.e. stupidify them where confirmation bias is important) - and direct tweaking of the weights may show the way bsky.app/profile/emol...",
+          "engagement": 2
+        },
+        "bsky-3mzeowtgn2k2j": {
+          "id": "bsky-3mzeowtgn2k2j",
+          "source": "Bluesky",
+          "author": "yen is building stuff (@weiyen.net)",
+          "url": "https://bsky.app/profile/weiyen.net/post/3mzeowtgn2k2j",
+          "excerpt": "\"AI will never manipulate my weights,\" I think to myself, while chuckling at a slop meme pushed by some algorithm",
+          "engagement": 24
+        },
+        "hn-50352897": {
+          "id": "hn-50352897",
+          "source": "Hacker News",
+          "author": "vkgcr",
+          "url": "https://news.ycombinator.com/item?id=50352897",
+          "excerpt": "But theoretically, what would prevent the labs from RL'ing the models on \"weight-space programming\" tasks so that they get better at them? Perhaps we're just at the beginning, like how coding agents sucked 2 years ago. It still seems like a promising approach for RSI, distillatio…",
+          "engagement": 3
+        },
+        "hn-50342400": {
+          "id": "hn-50342400",
+          "source": "Hacker News",
+          "author": "lisenKaci",
+          "url": "https://news.ycombinator.com/item?id=50342400",
+          "excerpt": "Does this mean they can improve their own weights through some system, or can they only do this for much smaller models?",
+          "engagement": 1
+        }
+      },
+      "date": "2026-11-03T18:47:17.902Z"
+    }
+  ],
+  "metaReview": {
+    "metareview": "**Summary.** The submission claims that a frontier LLM can read raw neural network weights to identify what a network was trained for, write or repair small control policies directly, and edit 0.016% of Qwen3.5-0.8B's weights to raise MATH-500 from 7.9% to 48.1%. It names this Weight-Space Programming and suggests it may exceed what humans or conventional optimizers can do.\n\n**The reviews.** Reviewer 1 represents by far the loudest response and is sincerely amazed: weights were supposed to be the one artifact nobody could read, and several readers reproduced the game-identification trick with other models, including a 27B model on a laptop. Reviewer 2 represents the people who read the paper, and its case is specific and largely uncontested. The tool-free \"just looking at the weights\" setting applies only to toy networks of 17K-172K weights; the Qwen headline used Python, forward passes on practice batches, and a prompt that pointed at looping; the edit is a contrastive steering direction of the kind abliteration and Arditi et al. already produce; the 7.9% baseline is thinking mode, while non-thinking mode already scores 46%; and on Gemma, which does not loop, nothing improved. Reviewer 3 asks where the skill came from and where it leads (training data, RSI, distillation, guardrails), and is right that the post is silent on both, though these are questions about the world more than flaws in the experiments.\n\n**Assessment.** Reviewer 2's rebuttal is decisive for the headline claim. Packaging a tool-assisted steering edit next to tool-free toy reads, under one sentence that implies both happen \"just by looking at the raw weights\", is the central overreach, and the baseline choice turns a loop fix into an apparent 6x improvement in mathematics. Notably, the most-shared amplifier of the post later posted the same caveats. At the same time, Reviewer 1's strongest point survives: reading 17K-weight policies from raw floats in context and naming the game, independently reproduced, is a real and surprising result that Reviewer 2 itself grants. Reviewer 3's point that open reproductions make the 'it was trained on this' explanation less likely to be Astra-specific works partly in the authors' favor.\n\nWhat remains is a workshop paper's worth of surprising toy results wearing a main-conference abstract. The abstract writes a check that the Qwen experiment cashes only in thinking mode.",
+    "additional_comments_on_reviewer_discussion": "Most decisive: Reviewer 2's observations that the Qwen experiment is not tool-free, that the non-thinking baseline already reaches 46%, and that the Gemma control shows no capability is added. Discounted: the raw engagement behind Reviewer 1, much of which consists of variations on 'what the fuck' posted before reading past the abstract, and Reviewer 2's 'nothing new, perceptrons were always readable' line, which undersells the toy results. Reviewer 3's provenance and RSI questions are noted for the authors' benefit but did not affect the decision, since they would apply equally to a correctly framed version of the work.",
+    "decision": "Reject",
+    "decision_comment": "The toy weight-reading results are genuinely interesting and the authors are encouraged to resubmit them on their own; the Qwen result is a steering vector with a flattering baseline and should not share an abstract with them. The Program Chairs note that no reviewer's weights were edited during this process, as far as we know.",
+    "date": "2026-11-03T19:47:17.902Z",
+    "areaChairId": "pB7N"
+  }
+}

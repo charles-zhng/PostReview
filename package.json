@@ -6,20 +6,39 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "review": "tsx scripts/review.ts",
+    "discover": "tsx scripts/discover.ts",
+    "gather": "tsx scripts/gather.ts",
+    "assemble": "tsx scripts/assemble.ts",
+    "add": "tsx scripts/add.ts",
+    "data": "tsx scripts/export-data.ts",
+    "predev": "npm run data",
+    "prebuild": "npm run data"
   },
   "dependencies": {
+    "@ai-sdk/anthropic": "^4.0.96",
+    "@ai-sdk/openai": "^4.0.108",
+    "@mozilla/readability": "^0.6.0",
+    "ai": "^7.0.162",
+    "cheerio": "^1.2.0",
+    "linkedom": "^0.18.15",
+    "next": "15.5.28",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "next": "15.5.28"
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "dotenv": "^18.0.9",
     "eslint": "^9",
     "eslint-config-next": "15.5.28",
-    "@eslint/eslintrc": "^3"
+    "tsx": "^4.23.15",
+    "typescript": "^5"
   }
 }

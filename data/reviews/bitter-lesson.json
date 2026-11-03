@@ -1,0 +1,1142 @@
+{
+  "postId": "bitter-lesson",
+  "generatedAt": "2026-11-03T19:47:17.881Z",
+  "models": {
+    "reviewer": "claude-opus-5-5 (hand-run in Claude Code)",
+    "areaChair": "claude-opus-5-5 (hand-run in Claude Code)"
+  },
+  "reactions": {
+    "total": 242,
+    "bySource": {
+      "Hacker News": 234,
+      "Response post": 7,
+      "Bluesky": 1
+    },
+    "threads": [
+      {
+        "source": "Hacker News",
+        "title": "The Bitter Lesson",
+        "url": "https://news.ycombinator.com/item?id=19393432",
+        "points": 152,
+        "comments": 53
+      },
+      {
+        "source": "Hacker News",
+        "title": "The Bitter Lesson (2019)",
+        "url": "https://news.ycombinator.com/item?id=23781400",
+        "points": 98,
+        "comments": 85
+      },
+      {
+        "source": "Hacker News",
+        "title": "The Bitter Lesson (2019)",
+        "url": "https://news.ycombinator.com/item?id=34006388",
+        "points": 94,
+        "comments": 33
+      },
+      {
+        "source": "Hacker News",
+        "title": "The Bitter Lesson Is Misunderstood",
+        "url": "https://news.ycombinator.com/item?id=45057283",
+        "points": 369,
+        "comments": 251
+      },
+      {
+        "source": "Hacker News",
+        "title": "AI founders will learn the bitter lesson",
+        "url": "https://news.ycombinator.com/item?id=42672790",
+        "points": 337,
+        "comments": 263
+      },
+      {
+        "source": "Hacker News",
+        "title": "The bitter lesson is coming for tokenization",
+        "url": "https://news.ycombinator.com/item?id=44366494",
+        "points": 303,
+        "comments": 160
+      },
+      {
+        "source": "Hacker News",
+        "title": "Does the Bitter Lesson Have Limits?",
+        "url": "https://news.ycombinator.com/item?id=44762022",
+        "points": 180,
+        "comments": 86
+      },
+      {
+        "source": "Hacker News",
+        "title": "The Bitter Lesson of LLM Extensions",
+        "url": "https://news.ycombinator.com/item?id=46037343",
+        "points": 144,
+        "comments": 79
+      },
+      {
+        "source": "Hacker News",
+        "title": "Grok 3: Another win for the bitter lesson",
+        "url": "https://news.ycombinator.com/item?id=43111963",
+        "points": 132,
+        "comments": 211
+      },
+      {
+        "source": "Hacker News",
+        "title": "We're not Platonists, we've just learned the bitter lesson",
+        "url": "https://news.ycombinator.com/item?id=36863581",
+        "points": 102,
+        "comments": 136
+      },
+      {
+        "source": "Hacker News",
+        "title": "The Bitter Lesson (2019) [pdf]",
+        "url": "https://news.ycombinator.com/item?id=37129921",
+        "points": 80,
+        "comments": 60
+      },
+      {
+        "source": "Hacker News",
+        "title": "“The Bitter Lesson” is wrong. Well sort of",
+        "url": "https://news.ycombinator.com/item?id=44626789",
+        "points": 54,
+        "comments": 34
+      }
+    ]
+  },
+  "reviews": [
+    {
+      "summary": "The submission argues, from seventy years of AI history (chess, Go, speech, vision), that general methods which exploit ever-cheaper computation, namely search and learning, eventually beat systems built around human domain knowledge by a wide margin. Researchers keep relearning this because encoding how we think we think is satisfying and helps in the short run. The prescription is to build meta-methods that discover structure rather than to build in our discoveries.",
+      "strengths": "- **The prediction aged extraordinarily well.** Written in 2019, the claim \"applies even more so today\": every major advance of the following decade had massive compute as a base requirement, and reviewers who doubt it are urged to treat that as a red flag [hn-34009854] [hn-37149641]. Even before LLMs, the trajectory of OpenAI's fundraising around scale was cited as confirmation [hn-19395688] [hn-23782061].\n- **The thesis keeps generalizing to new domains.** Follow-up work maps it onto AI startups: almost every YC Demo Day product is a constrained 'vertical workflow', o1 already devalued founders' prompt engineering, and the wrapper is framed as feature engineering that end-to-end models will overtake [resp-42672790] [hn-42673240]. It is applied to tokenization, whose BPE vocabularies produce glitch tokens, mangled numbers and the strawberry-counting failure, and which byte-level models such as ByT5 and BLT aim to learn away [resp-44366494] [hn-44368824]; to LLM extensions, where heavyweight MCP servers give way to 'skills' that are just markdown plus a general-purpose computer [resp-46037343]; and to Grok 3, trained on a 100K-H100 cluster, with DeepSeek recast as the GPU-poor exception that proves the rule [resp-43111963] [hn-43112269]. A supplier-search founder reports exactly this: years of algorithmic tuning hit a wall that LLMs then cleared [hn-42673025].\n- **The chess example closed its own loop.** Stockfish eventually deleted its handwritten evaluation in favour of a purely learned NNUE network, which several reviewers regard as the cleanest textbook confirmation [hn-44630203] [hn-44629390]. Jelinek's 'fire a linguist' quip is offered as the same story for language, with OpenAI's linguistics-free 'giant blob of intelligence' as its limit case, after two decades in which the respectable position was hand-coding domain expertise [resp-36863581] [hn-36867819] [hn-23782708].\n- **It holds outside AI too.** Version control, rasterization, synthetic biology and robotics were each overrun by cheap compute or general learning, and one robotics practitioner describes abandoning human-like methods for agent-discovered behaviour [hn-19394572] [hn-19396210] [hn-23781783] [hn-19396003]. Evolution itself is cited as the original massive computation behind any 'knowledge' we hand-code [hn-34010502].\n- **Correctly read, it is subtle and hard to refute.** It says \"work on methods that scale\", not \"scale your method\" [hn-37151192] [hn-44763166], it operates on a career-length horizon that bakes in Moore's law [hn-44762552] [hn-23782081], and the real counterexample would be hand-crafted features beating learned ones, which has largely not happened [hn-34007920]. It is also about AI as a science of discovery rather than about any one production model [hn-44627720] [hn-44628133].",
+      "weaknesses": "- **The essay invites misreading, and its own fans disagree on what it says.** Several responses stretch it into \"scale always wins\" or a statement about data, which defenders must then correct (the word \"data\" never appears in the essay) [hn-45124004] [hn-43112258] [hn-43112214]. A clearer statement of scope would have saved much downstream confusion [hn-37151192].\n- **The causal story is underspecified.** Attributing success to Moore's law may have it backwards: compute wins because perception and pattern-matching are computational in substrate, not merely because compute got cheap [hn-34007565]. The difference matters for predicting when the lesson stops applying.\n- **Short-horizon guidance is thin.** Even sympathetic readers concede that priors help when data is limited and the lesson only bites once data is plentiful [hn-23782018], and that at any specific moment the choice is just explore versus exploit [hn-44762552]; the essay offers little for that regime.\n- **The essay is silent on *when*.** The same general approach can fail first and win later: ChatGPT Plugins handed models raw OpenAPI specs in 2023 and flopped because the models were not ready, then returned as skills once they were [resp-46037343]. Likewise byte-level models still cost ~33% more pre-training time and up to 10x inference in the naive case, and have not displaced tokenizers outside niche tasks [resp-44366494]. Even its keenest appliers admit the lesson cannot tell a founder whether to wait for the next model [resp-42672790].\n- **Efficiency results are under-discussed.** Small learned controllers and pricing networks win by being cheaper than classical methods, not by using more compute [hn-44763075] [hn-44763033], which supports learning but complicates the compute-centric framing.",
+      "questions": "1. Is the claim \"methods that scale beat methods that don't\" or \"more compute beats cleverness\"? Several of the most-cited follow-ups assume the latter, one concluding that \"scaling wins over raw cleverness every time\" [resp-43111963] [hn-37151192] [hn-43112214].\n2. Is Moore's law the ultimate cause, or is it that cognition itself is computational in nature [hn-34007565]?\n3. Does the lesson apply to building products on today's models, or only to research progress over decades [hn-44627720] [resp-42672790]?\n4. Should cases where a small learned model is *cheaper* than the hand-built alternative count as evidence for the lesson [hn-44763075]?",
+      "soundness": 3,
+      "presentation": 4,
+      "contribution": 4,
+      "rating": 8,
+      "confidence": 4,
+      "hype_index": 2,
+      "flag_for_ethics_review": false,
+      "reviewer": 1,
+      "cluster": {
+        "label": "Vindicated scaling believers",
+        "summary": "The essay was right in 2019 and is more right every year: every big AI advance since has rested on massive compute, and the lesson keeps generalizing to new targets (AI startups, tokenization, LLM extensions, chess engines, frontier models like Grok 3). Pushback mostly comes from misreading it; it says 'work on methods that scale' over a career horizon, not 'just make it bigger today'.",
+        "stance": "positive",
+        "size": 68,
+        "total": 242,
+        "representative": [
+          {
+            "id": "resp-42672790",
+            "source": "Response post",
+            "author": "Lukas Petersson",
+            "url": "https://lukaspetersson.com/blog/2025/bitter-vertical/",
+            "excerpt": "tl;dr: - Historically, general approaches always win in AI. - Founders in AI application space now repeat the mistakes AI researchers made in the past. - Better AI models will enable general purpose AI applications. At the same time, the added value of the software around the AI …",
+            "engagement": 337
+          },
+          {
+            "id": "resp-44366494",
+            "source": "Response post",
+            "author": "lucalp.dev",
+            "url": "https://lucalp.dev/bitter-lesson-tokenization-and-blt/",
+            "excerpt": "24 Jun, 2025 a world of LLMs without tokenization is desirable and increasingly possible Published on 24/06/2025 • ⏱️ 29 min read > In this post, we highlight the desire to replace tokenization with a general method that better leverages compute and data. We'll see tokenization's…",
+            "engagement": 303
+          },
+          {
+            "id": "resp-43111963",
+            "source": "Response post",
+            "author": "Alberto Romero",
+            "url": "https://www.thealgorithmicbridge.com/p/grok-3-another-win-for-the-bitter",
+            "excerpt": "For once, it seems Elon Musk wasn’t exaggerating when he called Grok 3 the “smartest AI on Earth.” Grok 3 is a massive leap forward compared to Grok 2. (You can watch the full presentation here.) Grok 3 performs at a level comparable to, and in some cases even exceeding, models f…",
+            "engagement": 132
+          },
+          {
+            "id": "hn-34009854",
+            "source": "Hacker News",
+            "author": "abetusk",
+            "url": "https://news.ycombinator.com/item?id=34009854",
+            "excerpt": "I'm shocked there's so much push back on this here. This was written in 2019 but it applies even more so today. All the recent advances in AI for the past decade have, as a base requirement, massive amounts of compute. Not a proof but it should be a big red flag that if you don't…",
+            "engagement": 0
+          },
+          {
+            "id": "hn-37151192",
+            "source": "Hacker News",
+            "author": "tysam_and",
+            "url": "https://news.ycombinator.com/item?id=37151192",
+            "excerpt": "Hi, I say this so much that it is almost a revolving PSA at this point, but here we go again: Big reminder that the Bitter Lesson is _not_ saying \"just scale your methods and they work\". What the Bitter Lesson _is_, however, is \"work on methods that scale\". There is a _huge_ dist…",
+            "engagement": 0
+          },
+          {
+            "id": "hn-44630203",
+            "source": "Hacker News",
+            "author": "rfv6723",
+            "url": "https://news.ycombinator.com/item?id=44630203",
+            "excerpt": "Stockfish has got rid of old handwritten evaluation now. https://github.com/official-stockfish/Stockfish/pull/4674 Its evaluation now purely relies on NNUE neural network. So it's an good exmaple of the better lesson. More compute evently won against handwritten evaluation. Stock…",
+            "engagement": 1
+          }
+        ]
+      },
+      "citations": {
+        "hn-34009854": {
+          "id": "hn-34009854",
+          "source": "Hacker News",
+          "author": "abetusk",
+          "url": "https://news.ycombinator.com/item?id=34009854",
+          "excerpt": "I'm shocked there's so much push back on this here. This was written in 2019 but it applies even more so today. All the recent advances in AI for the past decade have, as a base requirement, massive amounts of compute. Not a proof but it should be a big red flag that if you don't…",
+          "engagement": 0
+        },
+        "hn-37149641": {
+          "id": "hn-37149641",
+          "source": "Hacker News",
+          "author": "nextworddev",
+          "url": "https://news.ycombinator.com/item?id=37149641",
+          "excerpt": "The money quote (basically says why deep learning will keep on dominating): \"One thing that should be learned from the bitter lesson is the great power of general purpose methods, of methods that continue to scale with increased computation even as the available computation becom…",
+          "engagement": 0
+        },
+        "hn-19395688": {
+          "id": "hn-19395688",
+          "source": "Hacker News",
+          "author": "zalnyx",
+          "url": "https://news.ycombinator.com/item?id=19395688",
+          "excerpt": "Open AI said as much when discussing their move to a for-profit LP model. They anticipate that real advances will be made by massively scaling up the compute power they throw at any given problem. That’s driving their fundraising efforts. If the past 5 years are anything to go by…",
+          "engagement": 0
+        },
+        "hn-23782061": {
+          "id": "hn-23782061",
+          "source": "Hacker News",
+          "author": "sytse",
+          "url": "https://news.ycombinator.com/item?id=23782061",
+          "excerpt": "The article says we should focus on increasing the compute we use in AI instead of embedding domain specific knowledge. OpenAI seems to have taken this lesson to heart. They are training a generic model using more compute than anything else. Many researchers predict a plateau for…",
+          "engagement": 1
+        },
+        "resp-42672790": {
+          "id": "resp-42672790",
+          "source": "Response post",
+          "author": "Lukas Petersson",
+          "url": "https://lukaspetersson.com/blog/2025/bitter-vertical/",
+          "excerpt": "tl;dr: - Historically, general approaches always win in AI. - Founders in AI application space now repeat the mistakes AI researchers made in the past. - Better AI models will enable general purpose AI applications. At the same time, the added value of the software around the AI …",
+          "engagement": 337
+        },
+        "hn-42673240": {
+          "id": "hn-42673240",
+          "source": "Hacker News",
+          "author": "bko",
+          "url": "https://news.ycombinator.com/item?id=42673240",
+          "excerpt": "It's a little depressing how many high valued startups are basically just wrappers around LLMs that they don't own. I'd be curious to see what percentage of YC latest batch is just this. > 70% of Y Combinator’s Winter 2024 batch are AI startups. This is compared to -57% of YC Sum…",
+          "engagement": 1
+        },
+        "resp-44366494": {
+          "id": "resp-44366494",
+          "source": "Response post",
+          "author": "lucalp.dev",
+          "url": "https://lucalp.dev/bitter-lesson-tokenization-and-blt/",
+          "excerpt": "24 Jun, 2025 a world of LLMs without tokenization is desirable and increasingly possible Published on 24/06/2025 • ⏱️ 29 min read > In this post, we highlight the desire to replace tokenization with a general method that better leverages compute and data. We'll see tokenization's…",
+          "engagement": 303
+        },
+        "hn-44368824": {
+          "id": "hn-44368824",
+          "source": "Hacker News",
+          "author": "pona-a",
+          "url": "https://news.ycombinator.com/item?id=44368824",
+          "excerpt": "Didn't tokenization already have one bitter lesson: that it's better to let simple statistics guide the splitting, rather than expert morphology models? Would this technically be a more bitter lesson?",
+          "engagement": 2
+        },
+        "resp-46037343": {
+          "id": "resp-46037343",
+          "source": "Response post",
+          "author": "www.sawyerhood.com",
+          "url": "https://www.sawyerhood.com/blog/llm-extension",
+          "excerpt": "Three years ago, “using an LLM” meant pasting a wall of text into a chat box and hoping for something useful back. Today, we point agents at our codebases, our browsers, and let them go off and act on our behalf. A key question that has been brewing under the surface during this …",
+          "engagement": 144
+        },
+        "resp-43111963": {
+          "id": "resp-43111963",
+          "source": "Response post",
+          "author": "Alberto Romero",
+          "url": "https://www.thealgorithmicbridge.com/p/grok-3-another-win-for-the-bitter",
+          "excerpt": "For once, it seems Elon Musk wasn’t exaggerating when he called Grok 3 the “smartest AI on Earth.” Grok 3 is a massive leap forward compared to Grok 2. (You can watch the full presentation here.) Grok 3 performs at a level comparable to, and in some cases even exceeding, models f…",
+          "engagement": 132
+        },
+        "hn-43112269": {
+          "id": "hn-43112269",
+          "source": "Hacker News",
+          "author": "sigmoid10",
+          "url": "https://news.ycombinator.com/item?id=43112269",
+          "excerpt": ">It's extremely difficult to increase compute by 100 times, but with sufficient investment in talent, achieving a 10x increase in compute is more feasible. The article explains how in reality the opposite is true. Especially when you look at it long term. Compute power grows expo…",
+          "engagement": 4
+        },
+        "hn-42673025": {
+          "id": "hn-42673025",
+          "source": "Hacker News",
+          "author": "9dev",
+          "url": "https://news.ycombinator.com/item?id=42673025",
+          "excerpt": "Well. We were working on a search engine for industry suppliers since before the whole AI hype started (even applied to YC once), and hit a brick wall at some point were it got too hard to improve search result quality algorithmically. To understand what that means: We gathered l…",
+          "engagement": 1
+        },
+        "hn-44630203": {
+          "id": "hn-44630203",
+          "source": "Hacker News",
+          "author": "rfv6723",
+          "url": "https://news.ycombinator.com/item?id=44630203",
+          "excerpt": "Stockfish has got rid of old handwritten evaluation now. https://github.com/official-stockfish/Stockfish/pull/4674 Its evaluation now purely relies on NNUE neural network. So it's an good exmaple of the better lesson. More compute evently won against handwritten evaluation. Stock…",
+          "engagement": 1
+        },
+        "hn-44629390": {
+          "id": "hn-44629390",
+          "source": "Hacker News",
+          "author": "symbolicAGI",
+          "url": "https://news.ycombinator.com/item?id=44629390",
+          "excerpt": "The Stockfish chess engine example nails it. For AI researchers, the Bitter Lesson is not to rely on supervised learning, not to rely on manual data labeling, nor on manual ontologies nor manual business rules, Nor on *manually coded* AI systems, except as the bootstrap code. Uns…",
+          "engagement": 0
+        },
+        "resp-36863581": {
+          "id": "resp-36863581",
+          "source": "Response post",
+          "author": "Scott Alexander",
+          "url": "https://astralcodexten.substack.com/p/were-not-platonists-weve-just-learned",
+          "excerpt": "Seen on Twitter: Intelligence explosion arguments don’t require Platonism. They just require intelligence to exist in the normal fuzzy way that all concepts exist. First, I’ll describe what the normal way concepts exist is. I’ll have succeeded if I convince you that claims using …",
+          "engagement": 102
+        },
+        "hn-36867819": {
+          "id": "hn-36867819",
+          "source": "Hacker News",
+          "author": "toss1",
+          "url": "https://news.ycombinator.com/item?id=36867819",
+          "excerpt": ">>It’s related to Jelinek’s Law, named after language-processing AI pioneer Frederick Jelinek: “Every time I fire a linguist, the performance of the speech recognizer goes up.” The joke is that having linguists on your team means you’re still trying to hand-code in deep principle…",
+          "engagement": 0
+        },
+        "hn-23782708": {
+          "id": "hn-23782708",
+          "source": "Hacker News",
+          "author": "throwaway7281",
+          "url": "https://news.ycombinator.com/item?id=23782708",
+          "excerpt": "This reminds me of the Banko and Brill paper \"Scaling to very very large corpora for natural language disambiguation\" - https://dl.acm.org/doi/10.3115/1073012.1073017. It is exactly the point and it is something not a lot of researchers really grok. As a researcher you are so sma…",
+          "engagement": 0
+        },
+        "hn-19394572": {
+          "id": "hn-19394572",
+          "source": "Hacker News",
+          "author": "OliverJones",
+          "url": "https://news.ycombinator.com/item?id=19394572",
+          "excerpt": "It's not just AI. Our trade's history is chockfull of valiant efforts to solve problems that were overrun by the exponential decline of computing costs by the time they really worked properly. Remember DSEE / ClearCase? They had all sorts of complicated virtual file systems to de…",
+          "engagement": 2
+        },
+        "hn-19396210": {
+          "id": "hn-19396210",
+          "source": "Hacker News",
+          "author": "_bxg1",
+          "url": "https://news.ycombinator.com/item?id=19396210",
+          "excerpt": "And raytracing is about to do the same thing to all the rasterization innovations of the past few decades. Funny how these kinds of things feel partly depressing.",
+          "engagement": 0
+        },
+        "hn-23781783": {
+          "id": "hn-23781783",
+          "source": "Hacker News",
+          "author": "koeng",
+          "url": "https://news.ycombinator.com/item?id=23781783",
+          "excerpt": "This lesson can be applied to synthetic biology right now, though it is still in its infant stages. At least a few of the original synthetic biologists are a bit disappointed in the rise of high-throughput testing for everything, instead of \"robust engineering\". Perhaps what allo…",
+          "engagement": 0
+        },
+        "hn-19396003": {
+          "id": "hn-19396003",
+          "source": "Hacker News",
+          "author": "cbames89",
+          "url": "https://news.ycombinator.com/item?id=19396003",
+          "excerpt": "I learned a similar lesson from working on robots. At first I attempted to devise methods for Robonaut 2 to do things the way I do because it was designed to be like me. It was missing little things that made my approaches unfeasible, and it was infuriating. At that point I decid…",
+          "engagement": 0
+        },
+        "hn-34010502": {
+          "id": "hn-34010502",
+          "source": "Hacker News",
+          "author": "garbanz0",
+          "url": "https://news.ycombinator.com/item?id=34010502",
+          "excerpt": "Natural selection is a massive amount of computation. It's not like we got to skip that. Any learning that we do without computation is based on structures that were computed by evolution. One way or another the \"learning\" process is happening somewhere.",
+          "engagement": 1
+        },
+        "hn-37151192": {
+          "id": "hn-37151192",
+          "source": "Hacker News",
+          "author": "tysam_and",
+          "url": "https://news.ycombinator.com/item?id=37151192",
+          "excerpt": "Hi, I say this so much that it is almost a revolving PSA at this point, but here we go again: Big reminder that the Bitter Lesson is _not_ saying \"just scale your methods and they work\". What the Bitter Lesson _is_, however, is \"work on methods that scale\". There is a _huge_ dist…",
+          "engagement": 0
+        },
+        "hn-44763166": {
+          "id": "hn-44763166",
+          "source": "Hacker News",
+          "author": "itkovian_",
+          "url": "https://news.ycombinator.com/item?id=44763166",
+          "excerpt": "I don’t think people understand the point sutton was making; he’s saying that general, simple systems that get better with scale tend to outperform hand engineered systems that don’t. It’s a kind of subtle point that’s implicitly saying hand engineering inhibits scale because it …",
+          "engagement": 3
+        },
+        "hn-44762552": {
+          "id": "hn-44762552",
+          "source": "Hacker News",
+          "author": "grubbypaw",
+          "url": "https://news.ycombinator.com/item?id=44762552",
+          "excerpt": "I was not at all a fan of \"The Bitter Lesson versus The Garbage Can\", but this misses the same thing that it missed. The Bitter Lesson is from the perspective of how to spend your entire career. It is correct over the course of a very long time, and bakes in Moore's Law. The Bitt…",
+          "engagement": 3
+        },
+        "hn-23782081": {
+          "id": "hn-23782081",
+          "source": "Hacker News",
+          "author": "jefft255",
+          "url": "https://news.ycombinator.com/item?id=23782081",
+          "excerpt": "His advice really concerns more scientific research and its long-term progress, and not really immediate applications. I think that injecting human knowledge can lead to faster, more immediate progress, and he seems to believe that too. The \"bitter lesson\" is that general, data-d…",
+          "engagement": 0
+        },
+        "hn-34007920": {
+          "id": "hn-34007920",
+          "source": "Hacker News",
+          "author": "fnbr",
+          "url": "https://news.ycombinator.com/item?id=34007920",
+          "excerpt": "I don’t follow your critique for #2. SVMs, Random forests, etc., aren’t the counterexample to Rich’s post (for anyone who knows him, Rich doesn’t even particularly _like_ neural networks). The counterexample is hand crafted features. A counter example would be showing a number of…",
+          "engagement": 1
+        },
+        "hn-44627720": {
+          "id": "hn-44627720",
+          "source": "Hacker News",
+          "author": "rhaps0dy",
+          "url": "https://news.ycombinator.com/item?id=44627720",
+          "excerpt": "Sutton was talking about progress in AI overall, whereas Pinhasi (OP) is talking about building one model for production right now. Of course adding some hand-coded knowledge is essential for the latter, but it has not provided much long-term progress. (Even CNNs and group-convol…",
+          "engagement": 0
+        },
+        "hn-44628133": {
+          "id": "hn-44628133",
+          "source": "Hacker News",
+          "author": "rdw",
+          "url": "https://news.ycombinator.com/item?id=44628133",
+          "excerpt": "The bitter lesson is becoming misunderstood as the world moves on. Unstated yet core to it is that AI researchers were historically attempting to build an understanding of human intelligence. They intended to, piece-by-piece, assemble a human brain and thus be able to explain (an…",
+          "engagement": 2
+        },
+        "hn-45124004": {
+          "id": "hn-45124004",
+          "source": "Hacker News",
+          "author": "lawrencechen",
+          "url": "https://news.ycombinator.com/item?id=45124004",
+          "excerpt": "In the bitter lesson essay [0], the word \"data\" is not mentioned a single time. The author fundamentally misunderstands the bitter lesson. [0] https://www.cs.utexas.edu/~eunsol/courses/data/bitter_lesson...",
+          "engagement": 1
+        },
+        "hn-43112258": {
+          "id": "hn-43112258",
+          "source": "Hacker News",
+          "author": "petesergeant",
+          "url": "https://news.ycombinator.com/item?id=43112258",
+          "excerpt": "The author has come up with their own, _unusual_ definition of the bitter lesson. In fact, as a direct quote, the original Is: > Seeking an improvement that makes a difference in the shorter term, researchers seek to leverage their human knowledge of the domain, but the only thin…",
+          "engagement": 0
+        },
+        "hn-43112214": {
+          "id": "hn-43112214",
+          "source": "Hacker News",
+          "author": "GaggiX",
+          "url": "https://news.ycombinator.com/item?id=43112214",
+          "excerpt": "The bitter lesson is about the fact that general methods that leverage computation are ultimately the most effective. Grok 3 is not more general than DeepSeek or OpenAI models so mentioning the bitter lesson here doesn't make much sense, it's just the scaling law.",
+          "engagement": 0
+        },
+        "hn-34007565": {
+          "id": "hn-34007565",
+          "source": "Hacker News",
+          "author": "coldtea",
+          "url": "https://news.ycombinator.com/item?id=34007565",
+          "excerpt": ">The biggest lesson that can be read from 70 years of AI research is that general methods that leverage computation are ultimately the most effective, and by a large margin. The ultimate reason for this is Moore's law, or rather its generalization of continued exponentially falli…",
+          "engagement": 0
+        },
+        "hn-23782018": {
+          "id": "hn-23782018",
+          "source": "Hacker News",
+          "author": "astrophysician",
+          "url": "https://news.ycombinator.com/item?id=23782018",
+          "excerpt": "I think what he's basically saying is that priors (i.e. domain knowledge + custom, domain-inspired models) help when you're data limited or when your data is very biased, but once that's not the case (e.g. we have an infinite supply of voice samples), model capacity is usually al…",
+          "engagement": 0
+        },
+        "hn-44763075": {
+          "id": "hn-44763075",
+          "source": "Hacker News",
+          "author": "logicchains",
+          "url": "https://news.ycombinator.com/item?id=44763075",
+          "excerpt": ">It's not better because of huge computation resources, it's actually more computationally efficient than some classic alternatives It's similar with options pricing. The most sophisticated models like multivariate stochastic volatility are computationally expensive to approximat…",
+          "engagement": 3
+        },
+        "hn-44763033": {
+          "id": "hn-44763033",
+          "source": "Hacker News",
+          "author": "sorenjan",
+          "url": "https://news.ycombinator.com/item?id=44763033",
+          "excerpt": "The last time I was reminded of the bitter lesson was when I read about Guidance & Control Networks, after seeing them used in an autonomous drone that beat the best human FPV pilots [0]. Basically it's using a small MLP (Multi Layer Perceptron) on the order of 200 parameters, an…",
+          "engagement": 5
+        }
+      },
+      "date": "2026-11-03T16:47:17.881Z"
+    },
+    {
+      "summary": "The submission claims that general methods which leverage computation win in the long run, and names Moore's law, the exponentially falling cost of computation, as the ultimate reason. It recommends that researchers stop encoding domain knowledge and bet on search and learning, which keep improving as compute grows.",
+      "strengths": "- **The historical pattern is real and the essay states it crisply.** Even reviewers who think the lesson is now running out of road agree it fit the past and say the essay itself is not misunderstood [hn-45120799] [hn-19395431]. When it was written it was contrarian, addressed to serious practitioners, and written without a financial stake in the outcome [hn-44763337].\n- **The long-run claim may survive even its critics.** The sharpest data-scarcity critique concludes \"there's nothing wrong with the Bitter Lesson\": it is a longitudinal prophecy about decades, misread as a cross-sectional battle plan for today [resp-45057283].\n- **It names its load-bearing assumption.** Because the essay explicitly rests on falling compute costs, it gives a clear test for when it might fail [hn-19395038] [hn-19402462].",
+      "weaknesses": "- **The premise is expiring.** The essay's own stated cause, Moore's law, has slowed: transistors cannot shrink much further and future hardware gains will be an order of magnitude smaller [hn-19395431] [hn-23782544] [hn-19402462]. Model size grew far faster than hardware ever did, so the run was always going to end [hn-37144776]. Hindsight bias is a concern: a lesson inferred from a trend holds until it doesn't [hn-19395038] [hn-19395162].\n- **Compute is now bought, not delivered.** Recent gains come from spending billions, not from cheaper chips, so the lesson is \"more about money now than the hardware\" [hn-43112225] [hn-43112350] [hn-44762555]. The essay has become an article of faith among AI boosters while hinging on an industrial performance target [bsky-3my3fbos4os2v], and one reviewer asks how much current lesson-peddling comes from compute salesmen [hn-44762695] [hn-44763337].\n- **Data, not compute, is the binding constraint.** Combining C ~ 6ND with Chinchilla's N ~ D gives C ~ D^2, so doubling GPUs without ~40% more data is lighting cash on fire; after quality filtering only ~10T useful pre-training tokens exist, and there is no second internet [resp-45057283] [hn-45120799]. The proposed way forward is telling: an 'Architect' path that re-embeds inductive biases (Mamba, HRM) for steady 20-30% gains, and an 'Alchemist' path of self-play and synthetic data that is a high-variance lottery ticket [resp-45057283]. Uncurated data yields garbage models, and the best labs spend billions on data curation [hn-44627888] [hn-44628113] [hn-45121020]. In many domains the data itself is riddled with human reasoning errors [hn-45120698]. More compute cannot improve the quality of data [hn-42672968].\n- **Recent evidence shows diminishing returns.** Grok 3 used roughly 15x the compute for 5-15% better benchmarks, \"basically the exact opposite of the bitter lesson\" [hn-43117652] [hn-43116111], while DeepSeek reached comparable results with far less compute by investing in talent [hn-43112235]. Benchmark gains themselves are suspect under Goodhart's law [hn-43112611] [hn-43112908] [hn-43112334].\n- **Sample efficiency remains unexplained.** Teenagers win math olympiads on under a million tokens of math text, and a toddler learns some things from one example [hn-45124563] [hn-19395026] [hn-19394853]. A human mathematician runs on a few meals a day [hn-44368208], which suggests the general methods favoured here are wildly inefficient [hn-45125140].",
+      "questions": "1. If Moore's law was the \"ultimate reason\", does the lesson weaken or reverse as hardware gains slow [hn-19402462] [hn-23782544]?\n2. When compute must be bought with billions of dollars, is this still a lesson about methods, or about capital [hn-43112225] [hn-44762695]?\n3. What happens when the data runs out? Can verifiable rewards, self-play, agentic traces, video and real-world interaction serve as the next source of scalable data, and if the answer is better architectures instead, is that not a return to building in knowledge [resp-45057283] [hn-45121713] [hn-45122966] [hn-45123812]?\n4. How should the essay account for humans learning from orders of magnitude less data [hn-45124563]?",
+      "soundness": 2,
+      "presentation": 3,
+      "contribution": 3,
+      "rating": 5,
+      "confidence": 4,
+      "hype_index": 2,
+      "flag_for_ethics_review": false,
+      "reviewer": 2,
+      "cluster": {
+        "label": "The free lunch is ending",
+        "summary": "The lesson rests on exponentially cheaper compute and an endless supply of data, and both assumptions are breaking: Moore's law is slowing, scaling is now bought with billions rather than delivered by hardware, the internet's text has been eaten, and 15x compute buying 5-15% gains looks like diminishing returns. Some suspect the lesson has become a sales pitch for people who sell or can afford compute.",
+        "stance": "mixed",
+        "size": 45,
+        "total": 242,
+        "representative": [
+          {
+            "id": "resp-45057283",
+            "source": "Response post",
+            "author": "Kushal Chakrabarti",
+            "url": "https://obviouslywrong.substack.com/p/the-bitter-lesson-is-misunderstood",
+            "excerpt": "tl;dr: For years, we've been reading the Bitter Lesson backwards. It wasn't about compute — it was about data. Here's the part of Scaling Laws no one talks about: \\(C \\sim D^2\\) Translation: Double your GPUs? You need 40% more data or you're just lighting cash on fire. But there'…",
+            "engagement": 369
+          },
+          {
+            "id": "hn-45120799",
+            "source": "Hacker News",
+            "author": "cs702",
+            "url": "https://news.ycombinator.com/item?id=45120799",
+            "excerpt": "I don't think Sutton's essay is misunderstood, but I agree with the OP's conclusion: We're reaching scaling limits with transformers. The number of parameters in our largest transformers, N, is now in the order of trillions, which is the most we can apply given the total number o…",
+            "engagement": 4
+          },
+          {
+            "id": "hn-43117652",
+            "source": "Hacker News",
+            "author": "horsawlarway",
+            "url": "https://news.ycombinator.com/item?id=43117652",
+            "excerpt": "I agree. There's a lot of attention being paid to metrics that often don't align all that well with actual production use-cases, and frankly the metrics are good but hardly breath-taking. They have an absolutely insane outlay of additional compute, which appears to have given the…",
+            "engagement": 0
+          },
+          {
+            "id": "hn-44763337",
+            "source": "Hacker News",
+            "author": "benreesman",
+            "url": "https://news.ycombinator.com/item?id=44763337",
+            "excerpt": "When The Bitter Lesson essay came out it was a bunch of important things: addressing an audience of serious practitioners, contrarian and challenging entrenched dogma, written without any serious reputational or (especially) financial stake in the outcome. It needed saying and it…",
+            "engagement": 0
+          },
+          {
+            "id": "hn-19395431",
+            "source": "Hacker News",
+            "author": "norswap",
+            "url": "https://news.ycombinator.com/item?id=19395431",
+            "excerpt": "I'm suspicious of hindsight bias. I'm not sure if that had written 10-20 years ago, that \"learning\" would figure out so predominantly. Who's to say there isn't a third such big method? Also, while the lesson fit the facts (easy in hindsight), it will hold... until it doesn't anym…",
+            "engagement": 3
+          },
+          {
+            "id": "hn-43112235",
+            "source": "Hacker News",
+            "author": "smy20011",
+            "url": "https://news.ycombinator.com/item?id=43112235",
+            "excerpt": "Did they? Deepseek spent about 17 months achieving SOTA results with a significantly smaller budget. While xAI's model isn't a substantial leap beyond Deepseek R1, it utilizes 100 times more compute. If you had $3 billion, xAI would choose to invest $2.5 billion in GPUs and $0.5 …",
+            "engagement": 10
+          }
+        ]
+      },
+      "citations": {
+        "hn-45120799": {
+          "id": "hn-45120799",
+          "source": "Hacker News",
+          "author": "cs702",
+          "url": "https://news.ycombinator.com/item?id=45120799",
+          "excerpt": "I don't think Sutton's essay is misunderstood, but I agree with the OP's conclusion: We're reaching scaling limits with transformers. The number of parameters in our largest transformers, N, is now in the order of trillions, which is the most we can apply given the total number o…",
+          "engagement": 4
+        },
+        "hn-19395431": {
+          "id": "hn-19395431",
+          "source": "Hacker News",
+          "author": "norswap",
+          "url": "https://news.ycombinator.com/item?id=19395431",
+          "excerpt": "I'm suspicious of hindsight bias. I'm not sure if that had written 10-20 years ago, that \"learning\" would figure out so predominantly. Who's to say there isn't a third such big method? Also, while the lesson fit the facts (easy in hindsight), it will hold... until it doesn't anym…",
+          "engagement": 3
+        },
+        "hn-44763337": {
+          "id": "hn-44763337",
+          "source": "Hacker News",
+          "author": "benreesman",
+          "url": "https://news.ycombinator.com/item?id=44763337",
+          "excerpt": "When The Bitter Lesson essay came out it was a bunch of important things: addressing an audience of serious practitioners, contrarian and challenging entrenched dogma, written without any serious reputational or (especially) financial stake in the outcome. It needed saying and it…",
+          "engagement": 0
+        },
+        "resp-45057283": {
+          "id": "resp-45057283",
+          "source": "Response post",
+          "author": "Kushal Chakrabarti",
+          "url": "https://obviouslywrong.substack.com/p/the-bitter-lesson-is-misunderstood",
+          "excerpt": "tl;dr: For years, we've been reading the Bitter Lesson backwards. It wasn't about compute — it was about data. Here's the part of Scaling Laws no one talks about: \\(C \\sim D^2\\) Translation: Double your GPUs? You need 40% more data or you're just lighting cash on fire. But there'…",
+          "engagement": 369
+        },
+        "hn-19395038": {
+          "id": "hn-19395038",
+          "source": "Hacker News",
+          "author": "zimablue",
+          "url": "https://news.ycombinator.com/item?id=19395038",
+          "excerpt": "You can only reliably say that something which has happened several times is something that will always happen if you know the reason why it happened several times. This article seems to think it's Moore's law, which has ended. I think history tends to go in cycles as people over…",
+          "engagement": 2
+        },
+        "hn-19402462": {
+          "id": "hn-19402462",
+          "source": "Hacker News",
+          "author": "gregw2",
+          "url": "https://news.ycombinator.com/item?id=19402462",
+          "excerpt": "So if Moore's Law is slowing down and expected to end in 2025 (per it's Wikipedia entry https://en.wikipedia.org/wiki/Moore%27s_law ), does this \"bitter lesson\" then need to be reversed?",
+          "engagement": 0
+        },
+        "hn-23782544": {
+          "id": "hn-23782544",
+          "source": "Hacker News",
+          "author": "aszen",
+          "url": "https://news.ycombinator.com/item?id=23782544",
+          "excerpt": "Interesting, I wonder what happens now that Moore's law is considered dead and we can't rely on computation power increasing year over year. To make further progess with general purpose search and learning methods we will need lots more computational power which may not be cheapl…",
+          "engagement": 5
+        },
+        "hn-37144776": {
+          "id": "hn-37144776",
+          "source": "Hacker News",
+          "author": "rstuart4133",
+          "url": "https://news.ycombinator.com/item?id=37144776",
+          "excerpt": "I don't doubt the taste was bitter at the time, but it was never going to be forever. In 2018 models had 100e6 parameters, and in 2013 GPT4 has (wild guess) 2e12 parameters [0]. Conservatively that's 500% per year. At it's peak, hardware never improved at that rate and has since …",
+          "engagement": 0
+        },
+        "hn-19395162": {
+          "id": "hn-19395162",
+          "source": "Hacker News",
+          "author": "bshipp",
+          "url": "https://news.ycombinator.com/item?id=19395162",
+          "excerpt": "This seems to be a trait of humanity in general, not just IT. Look at the finance industry: banks loan based on historical track records, right up until the bubble pops. Every. Single. Time. Momentum lends itself to easy statistical support, and paradigm shifts are notoriously di…",
+          "engagement": 0
+        },
+        "hn-43112225": {
+          "id": "hn-43112225",
+          "source": "Hacker News",
+          "author": "aqueueaqueue",
+          "url": "https://news.ycombinator.com/item?id=43112225",
+          "excerpt": "How bitter is the bitter lesson when throwing more compute js costing billions. Maybe the bitter lesson is more about money now than the hardware. You are scaling up investments not just relying on moores law. But I think there is a path for the less power consuming models that p…",
+          "engagement": 2
+        },
+        "hn-43112350": {
+          "id": "hn-43112350",
+          "source": "Hacker News",
+          "author": "viraptor",
+          "url": "https://news.ycombinator.com/item?id=43112350",
+          "excerpt": "This is a weird takeaway from the recent changes. Right now companies can scale because there's stupid amount of stupid money flowing into the AI craze, but that's going to end. Companies are already discovering the issues with monetising those systems. Sure, they can \"let go\" an…",
+          "engagement": 1
+        },
+        "hn-44762555": {
+          "id": "hn-44762555",
+          "source": "Hacker News",
+          "author": "Animats",
+          "url": "https://news.ycombinator.com/item?id=44762555",
+          "excerpt": "The question is when price/performance hits financial limits. That point may be close, if not already passed. Interestingly, this hasn't happened for wafer fabs. A modern wafer fab costs US$1bn to US$3bn, and there is talk of US$20bn wafer fabs. Around the year 2000, those would …",
+          "engagement": 3
+        },
+        "bsky-3my3fbos4os2v": {
+          "id": "bsky-3my3fbos4os2v",
+          "source": "Bluesky",
+          "author": "dorian (@doriantaylor.com)",
+          "url": "https://bsky.app/profile/doriantaylor.com/post/3my3fbos4os2v",
+          "excerpt": "so something i have been meditating on recently is sutton's \"bitter lesson\" (www.incompleteideas.net/IncIdeas/Bit...) which is basically an article of faith among ai bros that roughly reduces to \"just throw moar compute at it\" but that hinges on moore's law which is an industrial…",
+          "engagement": 2
+        },
+        "hn-44762695": {
+          "id": "hn-44762695",
+          "source": "Hacker News",
+          "author": "thrawa8387336",
+          "url": "https://news.ycombinator.com/item?id=44762695",
+          "excerpt": "This brings about a good point: How much of the recent bitter lesson peddling is done by compute salesmen? How much of it is done by people who can buy a lot of compute? Deepseek was scandalous for a reason.",
+          "engagement": 0
+        },
+        "hn-44627888": {
+          "id": "hn-44627888",
+          "source": "Hacker News",
+          "author": "aabhay",
+          "url": "https://news.ycombinator.com/item?id=44627888",
+          "excerpt": "The main problem with the “Bitter Lesson” is that there’s something even bitter-er behind it — the “Harsh Reality” that while we may scale models on compute and data, that simply broadly inserting tons of data without any sort of curation yields essentially garbage models. The “H…",
+          "engagement": 4
+        },
+        "hn-44628113": {
+          "id": "hn-44628113",
+          "source": "Hacker News",
+          "author": "bobbiechen",
+          "url": "https://news.ycombinator.com/item?id=44628113",
+          "excerpt": "So true. I recently wrote about how Merlin achieved magical bird identification not through better algorithms, but better expertise in creating great datasets: https://digitalseams.com/blog/what-birdsong-and-backends-can... I think \"harsh reality\" is one way to look at it, but yo…",
+          "engagement": 1
+        },
+        "hn-45121020": {
+          "id": "hn-45121020",
+          "source": "Hacker News",
+          "author": "stego-tech",
+          "url": "https://news.ycombinator.com/item?id=45121020",
+          "excerpt": "This is my current drum I bang on when an uninformed stakeholder tries shoving LLMs blindly down everyone’s throats: it’s the data, stupid. Current data aggregates outside of industries wholly dependent on it (so anyone not in web advertising, GIS, or intelligence) are garbage, r…",
+          "engagement": 4
+        },
+        "hn-45120698": {
+          "id": "hn-45120698",
+          "source": "Hacker News",
+          "author": "FloorEgg",
+          "url": "https://news.ycombinator.com/item?id=45120698",
+          "excerpt": "The problem I am facing in my domain is that all of the data is human generated and riddled with human errors. I am not talking about typos in phone numbers, but rather fundamental errors in critical thinking, reasoning, semantic and pragmatic oversights, etc. all in long-form un…",
+          "engagement": 4
+        },
+        "hn-42672968": {
+          "id": "hn-42672968",
+          "source": "Hacker News",
+          "author": "doctorpangloss",
+          "url": "https://news.ycombinator.com/item?id=42672968",
+          "excerpt": "More computation cannot improve the quality or domain of data. Maybe the bitter lesson lesson is, lobby bitterly, for copyright laws that favor what you are doing, and weakened anti trust, to give you the insurmountable moat of exclusive data in a walled garden media network.",
+          "engagement": 1
+        },
+        "hn-43117652": {
+          "id": "hn-43117652",
+          "source": "Hacker News",
+          "author": "horsawlarway",
+          "url": "https://news.ycombinator.com/item?id=43117652",
+          "excerpt": "I agree. There's a lot of attention being paid to metrics that often don't align all that well with actual production use-cases, and frankly the metrics are good but hardly breath-taking. They have an absolutely insane outlay of additional compute, which appears to have given the…",
+          "engagement": 0
+        },
+        "hn-43116111": {
+          "id": "hn-43116111",
+          "source": "Hacker News",
+          "author": "bccdee",
+          "url": "https://news.ycombinator.com/item?id=43116111",
+          "excerpt": "The creation of a model which is \"co-state-of-the-art\" (assuming it wasn't trained on the benchmarks directly) is not a win for scaling laws. I could just as easily claim out that xAI's failure to significantly outperform existing models despite \"throwing more compute at Grok 3 t…",
+          "engagement": 2
+        },
+        "hn-43112235": {
+          "id": "hn-43112235",
+          "source": "Hacker News",
+          "author": "smy20011",
+          "url": "https://news.ycombinator.com/item?id=43112235",
+          "excerpt": "Did they? Deepseek spent about 17 months achieving SOTA results with a significantly smaller budget. While xAI's model isn't a substantial leap beyond Deepseek R1, it utilizes 100 times more compute. If you had $3 billion, xAI would choose to invest $2.5 billion in GPUs and $0.5 …",
+          "engagement": 10
+        },
+        "hn-43112611": {
+          "id": "hn-43112611",
+          "source": "Hacker News",
+          "author": "bambax",
+          "url": "https://news.ycombinator.com/item?id=43112611",
+          "excerpt": "This article is weak and just general speculation. Many people doubt the actual performance of Grok 3 and suspect it has been specifically trained on the benchmarks. And Sabine Hossenfelder says this: > Asked Grok 3 to explain Bell's theorem. It gets it wrong just like all other …",
+          "engagement": 7
+        },
+        "hn-43112908": {
+          "id": "hn-43112908",
+          "source": "Hacker News",
+          "author": "ttoinou",
+          "url": "https://news.ycombinator.com/item?id=43112908",
+          "excerpt": "Many people doubt the actual performance of Grok 3 and suspect it has been specifically trained on the benchmarks That's something I always wondered about, Goodhart's law is so obvious to apply to each new AI release. Even the fact that writers and journalists don't mention that …",
+          "engagement": 1
+        },
+        "hn-43112334": {
+          "id": "hn-43112334",
+          "source": "Hacker News",
+          "author": "rfoo",
+          "url": "https://news.ycombinator.com/item?id=43112334",
+          "excerpt": "I'm pretty skeptical of that 75% on GPQA Diamond for a non-reasoning model. Hope that xAI can make Grok 3 API available next week so I can run it against some private evaluations to see if it's really this good. Another nit-pick: I don't think DeepSeek had 50k Hopper GPUs. Maybe …",
+          "engagement": 2
+        },
+        "hn-45124563": {
+          "id": "hn-45124563",
+          "source": "Hacker News",
+          "author": "mdemare",
+          "url": "https://news.ycombinator.com/item?id=45124563",
+          "excerpt": "Just using common sense, if we had a genius, who had tremendous reasoning ability, total recall of memories, and an unlimited lifespan and patience, and he'd read what the current LLMs have read, we'd expect quite a bit more from him than what we're getting now from LLMs. There a…",
+          "engagement": 5
+        },
+        "hn-19395026": {
+          "id": "hn-19395026",
+          "source": "Hacker News",
+          "author": "opwieurposiu",
+          "url": "https://news.ycombinator.com/item?id=19395026",
+          "excerpt": "Humans require few or many examples depending on the situation. For example my toddler got some candy from the hospital gift shop six months ago. Walking past the same place today he took off on his own accord and went directly to the candy. A single example was enough to train h…",
+          "engagement": 0
+        },
+        "hn-19394853": {
+          "id": "hn-19394853",
+          "source": "Hacker News",
+          "author": "tschellenbach",
+          "url": "https://news.ycombinator.com/item?id=19394853",
+          "excerpt": "On the other hand at some point we will want AI to learn based on a small number of interactions. IE an AI that beats a human after playing 10 games of chess/starcraft etc. Right now it takes millions of training matches. Many real world situations don't happen that often so this…",
+          "engagement": 3
+        },
+        "hn-44368208": {
+          "id": "hn-44368208",
+          "source": "Hacker News",
+          "author": "qoez",
+          "url": "https://news.ycombinator.com/item?id=44368208",
+          "excerpt": "The counter argument is that the theoretical minimum is a few mcdonalds meals a day worth of energy even for the highest ranked human pure mathematician.",
+          "engagement": 1
+        },
+        "hn-45125140": {
+          "id": "hn-45125140",
+          "source": "Hacker News",
+          "author": "bob1029",
+          "url": "https://news.ycombinator.com/item?id=45125140",
+          "excerpt": "I think quantization is the simplest canary. If we can reduce the precision of the model parameters by 2~32x without much perceptible drop in performance, we are clearly dealing with something wildly inefficient. I'm open to the possibility that over parameterization is essential…",
+          "engagement": 1
+        },
+        "hn-45121713": {
+          "id": "hn-45121713",
+          "source": "Hacker News",
+          "author": "kushalc",
+          "url": "https://news.ycombinator.com/item?id=45121713",
+          "excerpt": "Hey folks, OOP/original author and 20-year HN lurker here — a friend just told me about this and thought I'd chime in. Reading through the comments, I think there's one key point that might be getting lost: this isn't really about whether scaling is \"dead\" (it's not), but rather …",
+          "engagement": 11
+        },
+        "hn-45122966": {
+          "id": "hn-45122966",
+          "source": "Hacker News",
+          "author": "credit_guy",
+          "url": "https://news.ycombinator.com/item?id=45122966",
+          "excerpt": "> There is no second internet I don't know about that. LLMs have been trained mostly on text. If you add photos, audio and videos, and later even 3D games, or 3D videos, you get massively more data than the old plain text. Maybe by many orders of magnitude. And this is certainly …",
+          "engagement": 3
+        },
+        "hn-45123812": {
+          "id": "hn-45123812",
+          "source": "Hacker News",
+          "author": "aerospades",
+          "url": "https://news.ycombinator.com/item?id=45123812",
+          "excerpt": "I disagree with the author's thesis about data scarcity. There's an infinite amount of data available in the real world. The real world is how all generally intelligent humans have been trained. Currently, LLMs have just been trained on the derived shadows (as in Plato's allegory…",
+          "engagement": 0
+        }
+      },
+      "date": "2026-11-03T17:47:17.881Z"
+    },
+    {
+      "summary": "The submission argues that across chess, Go, speech and vision, brute computation via search and learning eventually beat approaches built on human knowledge, and that researchers should stop building in how they think they think. It recommends general meta-methods over encoded domain structure.",
+      "strengths": "- **A useful corrective against over-engineering.** The essay is a fair reminder that hand-coded knowledge in a solution is likely temporary [hn-44765165] [hn-44764341], and the general pattern of specialized models eventually being overtaken is acknowledged [hn-44762662].\n- **Well written and persuasive.** Even a skeptic calls it \"an incredibly well written essay\" whose argument is compelling because of its simplicity, and slots it among the historic blows to the human ego, where betting on 'we are less special' has a good track record [resp-44762022].",
+      "weaknesses": "- **The historical examples do not support a pure compute story.** Deep Blue's \"massive, deep search\" started from an opening book, used alpha-beta minimax designed for two-player deterministic games and a hand-crafted evaluation function; human expertise permeated its design [hn-23783149]. Go yielded only after theoretical breakthroughs in MCTS guided by learned networks, which is not brute force [hn-37143904] [hn-19396009]. ImageNet progress came from initialization tricks, ImageNet-scale data and architectural ingenuity, not compute alone [hn-19394859], and edges and SIFT-like features live on inside learned vision networks rather than being discarded [hn-19394728]. Brute-force chess search in fact did not scale; learning did [hn-37146369].\n- **Inductive bias is the hidden ingredient.** Architectures work because they encode the right prior information, discovered by trial and error [hn-37143980] [hn-42673551]; attention modules and search heuristics are domain knowledge too, and the line between defining a search space and encoding knowledge is blurry [hn-34009162]. Once general algorithms are understood, the field re-specializes them [hn-34007561]. Even \"raw bytes\" are a human-designed tokenizer [hn-44373939] [hn-44371956].\n- **Compute plus knowledge beats compute alone.** Leela Chess Zero briefly beat Stockfish, but Stockfish took back the crown by adding a learned network to its existing heuristics [hn-44629195]; that network is hundreds of times smaller than Leela's, and the result runs on a phone [resp-44762022]. On ARC-AGI-1, o3's breakthrough reportedly cost ~$30,000 per task, while a 27M-parameter task-specific model scored 40.3 [resp-44762022]. A reactive/deliberative hybrid made the same point for robotics decades ago [hn-44765165]. LLMs still need a calculator to add 1000-digit numbers [hn-44630016] [hn-44375446].\n- **In practice, knowledge wins under realistic constraints.** Outside FAANG-scale data, simple intelligible models repeatedly beat neural ones [hn-44628727], a hand-crafted vision pipeline beat months of ML on precision [hn-23781784], and FFT features beat raw-signal deep nets for machinery faults [hn-44763950]. For products, the problem is building a reliable system on an unreliable model, plus context and ETL, which waiting for better models does not solve [hn-42673000] [hn-42673005] [hn-42673295]; \"eventually\" is doing a lot of work [hn-42673116]. Every field the essay cites has an airtight, quantifiable objective (win the game, match the transcript, label the image) and is easy to turn into data; organizations cannot define quality firmly, their metrics get gamed like OKRs, and their 'garbage can' processes are not recorded anywhere, so the lesson has nothing to learn from [resp-44762022].\n- **The claim is vague and cuts against science.** \"Ultimately\" and \"most effective\" are squishy enough to make the thesis hard to test [hn-44764421]. It advocates replacing understanding with opaque black boxes [hn-19400261] [hn-23781556], ignores the lasting tools that came from modelling reasoning, such as Prolog, Lisp and proof assistants [hn-19395615], and reads in places as a self-endorsement of RL [hn-34008250]. The useful question is why humans do so well *without* search [hn-23783149] [hn-23782025].",
+      "questions": "1. How much of Deep Blue's and AlphaGo's success came from encoded domain knowledge (opening books, evaluation functions, MCTS design), and how would the essay's argument change if that were credited [hn-23783149] [hn-37143904]?\n2. Are architectural inductive biases such as convolutions and attention \"human knowledge\"? If so, what remains of the thesis [hn-37143980] [hn-34009162]?\n3. What time horizon and what measure of \"most effective\" (accuracy, data efficiency, energy, cost per task) would falsify the claim [hn-44764421] [resp-44762022]?\n4. Does the lesson apply at all to domains without a clear, measurable objective or adequate data [resp-44762022]?\n5. Why does a hybrid of learned and hand-built components (Stockfish NNUE plus heuristics) beat a purely learned engine, if the lesson holds [hn-44629195]?",
+      "soundness": 2,
+      "presentation": 3,
+      "contribution": 2,
+      "rating": 3,
+      "confidence": 4,
+      "hype_index": 2,
+      "flag_for_ethics_review": false,
+      "reviewer": 3,
+      "cluster": {
+        "label": "Knowledge still does the work",
+        "summary": "The history is oversimplified: Deep Blue ran on opening books and a hand-built evaluation function, AlphaGo needed clever MCTS, and successful architectures work because they encode the right inductive biases. In practice, with constrained data or real products, human knowledge, engineering and simple models still win, and 'ultimately' makes the claim unfalsifiable.",
+        "stance": "negative",
+        "size": 59,
+        "total": 242,
+        "representative": [
+          {
+            "id": "resp-44762022",
+            "source": "Response post",
+            "author": "Drew Breunig",
+            "url": "https://www.dbreunig.com/2025/08/01/does-the-bitter-lesson-have-limits.html",
+            "excerpt": "Recently, “the bitter lesson” is having a moment. Coined in an essay by Rich Sutton, the bitter lesson is that, “general methods that leverage computation are ultimately the most effective, and by a large margin.” Why is the lesson bitter? Sutton writes: > The bitter lesson is ba…",
+            "engagement": 180
+          },
+          {
+            "id": "hn-23783149",
+            "source": "Hacker News",
+            "author": "YeGoblynQueenne",
+            "url": "https://news.ycombinator.com/item?id=23783149",
+            "excerpt": ">> In computer chess, the methods that defeated the world champion, Kasparov, in 1997, were based on massive, deep search. \"Massive, deep search\" that started from a book of opening moves and the combined expert knowledge of several chess Grandmasters. And that was an instance of…",
+            "engagement": 4
+          },
+          {
+            "id": "hn-19394859",
+            "source": "Hacker News",
+            "author": "sweezyjeezy",
+            "url": "https://news.ycombinator.com/item?id=19394859",
+            "excerpt": "This post oversimplifies the story by putting all the emphasis on compute power. Deep Blue using brute force to solve chess obviously fits this pattern, but the others? Let's take computer vision. Alex Krizhevsky et al destroyed the ImageNet competition with a neural network in 2…",
+            "engagement": 3
+          },
+          {
+            "id": "hn-44629195",
+            "source": "Hacker News",
+            "author": "littlestymaar",
+            "url": "https://news.ycombinator.com/item?id=44629195",
+            "excerpt": "The Leela Chess Zero vs Stockfish case also offers an interesting perspective on the bitter lesson. Here's my (maybe a bit loose) recollection of what happened: Step 1- Stockfish was the typical human-knowledge AI, with tons of actual chess knowledge injected in the process of bu…",
+            "engagement": 2
+          },
+          {
+            "id": "hn-42673000",
+            "source": "Hacker News",
+            "author": "NameError",
+            "url": "https://news.ycombinator.com/item?id=42673000",
+            "excerpt": "I think the core problem at hand for people trying to use AI in user-facing production systems is \"how can we build a reliable system on top of an unreliable (but capable) model?\". I don't think that's the same problem that AI researchers are facing, so I'm not sure it's sound to…",
+            "engagement": 0
+          },
+          {
+            "id": "hn-44628727",
+            "source": "Hacker News",
+            "author": "roadside_picnic",
+            "url": "https://news.ycombinator.com/item?id=44628727",
+            "excerpt": "\"The Bitter Lesson\" certainly seems correct when applied to whatever the limit of the current state of the art is, but in practice solving day-to-day ML problems, outside of FAANG-style companies and cutting edge research, data is always much more constrained. I have, multiple ti…",
+            "engagement": 0
+          }
+        ]
+      },
+      "citations": {
+        "hn-44765165": {
+          "id": "hn-44765165",
+          "source": "Hacker News",
+          "author": "lisper",
+          "url": "https://news.ycombinator.com/item?id=44765165",
+          "excerpt": "Por que no los dos? Thirty-five years ago they gave me a Ph.D. basically for pointing out that the controversy du jour -- reactive vs deliberative control for autonomous robots -- was not a dichotomy. You could have the best of both worlds by combining a reactive system with a de…",
+          "engagement": 3
+        },
+        "hn-44764341": {
+          "id": "hn-44764341",
+          "source": "Hacker News",
+          "author": "softwaredoug",
+          "url": "https://news.ycombinator.com/item?id=44764341",
+          "excerpt": "In my experience, there's an opposing \"bitter lesson\" when trying to make incremental, tactical progress in user-facing AI / ML applications: _you're not a researcher_. Stay to tried-and-true, boring ML methods that have been proven at scale and then add human knowledge and rules…",
+          "engagement": 0
+        },
+        "hn-44762662": {
+          "id": "hn-44762662",
+          "source": "Hacker News",
+          "author": "schmidtleonard",
+          "url": "https://news.ycombinator.com/item?id=44762662",
+          "excerpt": "Right, and if you spot a job that needs doing and can be done by a specialized model, waving your hands about general purpose scale-leveraging models eventually overtaking specialized models has not historically been a winning approach. Except in the last year or two, which is wh…",
+          "engagement": 1
+        },
+        "resp-44762022": {
+          "id": "resp-44762022",
+          "source": "Response post",
+          "author": "Drew Breunig",
+          "url": "https://www.dbreunig.com/2025/08/01/does-the-bitter-lesson-have-limits.html",
+          "excerpt": "Recently, “the bitter lesson” is having a moment. Coined in an essay by Rich Sutton, the bitter lesson is that, “general methods that leverage computation are ultimately the most effective, and by a large margin.” Why is the lesson bitter? Sutton writes: > The bitter lesson is ba…",
+          "engagement": 180
+        },
+        "hn-23783149": {
+          "id": "hn-23783149",
+          "source": "Hacker News",
+          "author": "YeGoblynQueenne",
+          "url": "https://news.ycombinator.com/item?id=23783149",
+          "excerpt": ">> In computer chess, the methods that defeated the world champion, Kasparov, in 1997, were based on massive, deep search. \"Massive, deep search\" that started from a book of opening moves and the combined expert knowledge of several chess Grandmasters. And that was an instance of…",
+          "engagement": 4
+        },
+        "hn-37143904": {
+          "id": "hn-37143904",
+          "source": "Hacker News",
+          "author": "isaacfrond",
+          "url": "https://news.ycombinator.com/item?id=37143904",
+          "excerpt": "I think the Go example is facetious. For the longest time, Go simply was not amenable to search. It is only because of breakthrough in theory that Go became amendable to search. And, it is hardly a straightforward search mind you. Two self learning networks are involved. A first …",
+          "engagement": 3
+        },
+        "hn-19396009": {
+          "id": "hn-19396009",
+          "source": "Hacker News",
+          "author": "sdenton4",
+          "url": "https://news.ycombinator.com/item?id=19396009",
+          "excerpt": "Likewise, the search in Go is a Monte Carlo search, very different from the kind of search used in chess. And the neutral nets in alpha go are guiding where to run the search, which is very very different from brute force search. Many of these things have required the giant leaks…",
+          "engagement": 1
+        },
+        "hn-19394859": {
+          "id": "hn-19394859",
+          "source": "Hacker News",
+          "author": "sweezyjeezy",
+          "url": "https://news.ycombinator.com/item?id=19394859",
+          "excerpt": "This post oversimplifies the story by putting all the emphasis on compute power. Deep Blue using brute force to solve chess obviously fits this pattern, but the others? Let's take computer vision. Alex Krizhevsky et al destroyed the ImageNet competition with a neural network in 2…",
+          "engagement": 3
+        },
+        "hn-19394728": {
+          "id": "hn-19394728",
+          "source": "Hacker News",
+          "author": "casual_slacker",
+          "url": "https://news.ycombinator.com/item?id=19394728",
+          "excerpt": "> Early methods conceived of vision as searching for edges, or generalized cylinders, or in terms of SIFT features. But today all this is discarded. These aren't discarded, they are part of ML vision networks today. Edges are one of the 3x3 convolutions that a network can learn, …",
+          "engagement": 0
+        },
+        "hn-37146369": {
+          "id": "hn-37146369",
+          "source": "Hacker News",
+          "author": "cubefox",
+          "url": "https://news.ycombinator.com/item?id=37146369",
+          "excerpt": "Sutton cites people who were not convinced by the success of Deep Blue in chess: > They said that ``brute force\" search may have won this time, but it was not a general strategy, and anyway it was not how people played chess. But it is now clear that these people were completely …",
+          "engagement": 4
+        },
+        "hn-37143980": {
+          "id": "hn-37143980",
+          "source": "Hacker News",
+          "author": "niemandhier",
+          "url": "https://news.ycombinator.com/item?id=37143980",
+          "excerpt": "I think the Bitter Lessons do not consider two important points with regards to neural nets : 1. Not all nets work for all problems, those that work tend to have the right inductive biases. We discovered the architectures partially by trial an error, nevertheless they work becaus…",
+          "engagement": 3
+        },
+        "hn-42673551": {
+          "id": "hn-42673551",
+          "source": "Hacker News",
+          "author": "leviliebvin",
+          "url": "https://news.ycombinator.com/item?id=42673551",
+          "excerpt": "Controversial opinion: I don't believe in the bitter lesson. I just think that the current DNN+SGD approaches are just not that good at learning deep general expressive patterns. With less inductive bias the model memorizes a lot of scenarios and is able to emulate whatever real …",
+          "engagement": 3
+        },
+        "hn-34009162": {
+          "id": "hn-34009162",
+          "source": "Hacker News",
+          "author": "evrydayhustling",
+          "url": "https://news.ycombinator.com/item?id=34009162",
+          "excerpt": "I think there's also a challenging line to draw about where a defining a search space stops and where encoding knowledge begins. When you define attention modules for an LLM, encode a search heuristic into A*, or define a feature space for a random forest, you are encoding domain…",
+          "engagement": 0
+        },
+        "hn-34007561": {
+          "id": "hn-34007561",
+          "source": "Hacker News",
+          "author": "g42gregory",
+          "url": "https://news.ycombinator.com/item?id=34007561",
+          "excerpt": "I think this bitter lesson needs to be taken for a several grains of salt. Number one, the progress in a particular AI field tends to go, at first, from custom to more general algorithms, exactly as Professor Richard Sutton described. However, there is a second part to this progr…",
+          "engagement": 2
+        },
+        "hn-44373939": {
+          "id": "hn-44373939",
+          "source": "Hacker News",
+          "author": "rryan",
+          "url": "https://news.ycombinator.com/item?id=44373939",
+          "excerpt": "Don't make me tap the sign: There is no such thing as \"bytes\". There are only encodings. UTF-8 is the encoding most people are using when they talk about modeling \"raw bytes\" of text. UTF-8 is just a shitty (biased) human-designed tokenizer of the unicode codepoints.",
+          "engagement": 2
+        },
+        "hn-44371956": {
+          "id": "hn-44371956",
+          "source": "Hacker News",
+          "author": "fooker",
+          "url": "https://news.ycombinator.com/item?id=44371956",
+          "excerpt": "‘Bytes’ is tokenization. There’s no reason to assume it’s the best solution. It might be the case that a better tokenization scheme is needed for math, reasoning, video, etc models.",
+          "engagement": 0
+        },
+        "hn-44629195": {
+          "id": "hn-44629195",
+          "source": "Hacker News",
+          "author": "littlestymaar",
+          "url": "https://news.ycombinator.com/item?id=44629195",
+          "excerpt": "The Leela Chess Zero vs Stockfish case also offers an interesting perspective on the bitter lesson. Here's my (maybe a bit loose) recollection of what happened: Step 1- Stockfish was the typical human-knowledge AI, with tons of actual chess knowledge injected in the process of bu…",
+          "engagement": 2
+        },
+        "hn-44630016": {
+          "id": "hn-44630016",
+          "source": "Hacker News",
+          "author": "grillitoazul",
+          "url": "https://news.ycombinator.com/item?id=44630016",
+          "excerpt": "it should be noted that \"The Bitter Lesson\" is not a general principle, for example LLMs are not able to sum 1000 digits numbers, but a python program with a few lines can do it. Also we provide tools (algorithms) for LLMs, these examples show that \"The Bitter Lesson\" is not true…",
+          "engagement": 0
+        },
+        "hn-44375446": {
+          "id": "hn-44375446",
+          "source": "Hacker News",
+          "author": "williamdclt",
+          "url": "https://news.ycombinator.com/item?id=44375446",
+          "excerpt": "Even if LLMs get better at arithmetic, they don't seem like the right tool for the job. LLMs might never be able to crunch numbers reliably, however I expect they should be very good at identifying the right formula and the inputs for a problem (\"i need the answer to x*y, where x…",
+          "engagement": 0
+        },
+        "hn-44628727": {
+          "id": "hn-44628727",
+          "source": "Hacker News",
+          "author": "roadside_picnic",
+          "url": "https://news.ycombinator.com/item?id=44628727",
+          "excerpt": "\"The Bitter Lesson\" certainly seems correct when applied to whatever the limit of the current state of the art is, but in practice solving day-to-day ML problems, outside of FAANG-style companies and cutting edge research, data is always much more constrained. I have, multiple ti…",
+          "engagement": 0
+        },
+        "hn-23781784": {
+          "id": "hn-23781784",
+          "source": "Hacker News",
+          "author": "auggierose",
+          "url": "https://news.ycombinator.com/item?id=23781784",
+          "excerpt": "I guess it depends on what you trying to do. I had a computer vision problem where I was like, hell yeah, let's machine learn the hell out of this. 2 months later, and the results were just not precise enough. It took me 2 more months, and now I am solving the task easily on an i…",
+          "engagement": 1
+        },
+        "hn-44763950": {
+          "id": "hn-44763950",
+          "source": "Hacker News",
+          "author": "bsoles",
+          "url": "https://news.ycombinator.com/item?id=44763950",
+          "excerpt": "But I have also seen people trying to use deep networks to identify rotating machinery faults, like bearings, from raw accelerometer data collected a high frequencies like 40 kHz. Whereas the spectrum of the data from running FFT on the signal contains fault information much more…",
+          "engagement": 2
+        },
+        "hn-42673000": {
+          "id": "hn-42673000",
+          "source": "Hacker News",
+          "author": "NameError",
+          "url": "https://news.ycombinator.com/item?id=42673000",
+          "excerpt": "I think the core problem at hand for people trying to use AI in user-facing production systems is \"how can we build a reliable system on top of an unreliable (but capable) model?\". I don't think that's the same problem that AI researchers are facing, so I'm not sure it's sound to…",
+          "engagement": 0
+        },
+        "hn-42673005": {
+          "id": "hn-42673005",
+          "source": "Hacker News",
+          "author": "CharlieDigital",
+          "url": "https://news.ycombinator.com/item?id=42673005",
+          "excerpt": "There's only one core problem in AI worth solving for most startups building AI powered software: context. No matter how good the AI gets, it can't answer about what it doesn't know. It can't perform a process for which it doesn't know the steps or the rules. No LLM is going to k…",
+          "engagement": 21
+        },
+        "hn-42673295": {
+          "id": "hn-42673295",
+          "source": "Hacker News",
+          "author": "antonvs",
+          "url": "https://news.ycombinator.com/item?id=42673295",
+          "excerpt": "Agreed. There's a difference between developing new AI, and developing applications of existing AI. The OP seems to blur this distinction a bit. The original \"Bitter Lesson\" article referenced in the OP is about developing new AI. In that domain, its point makes sense. But for th…",
+          "engagement": 0
+        },
+        "hn-42673116": {
+          "id": "hn-42673116",
+          "source": "Hacker News",
+          "author": "DebtDeflation",
+          "url": "https://news.ycombinator.com/item?id=42673116",
+          "excerpt": ">Eventually, you’ll just need to connect a model to a computer to solve most problems - no complex engineering required. The word \"eventually\" is doing a lot of work here. Yes, it's true in the abstract, but over what time horizon? We have to build products to solve today's probl…",
+          "engagement": 2
+        },
+        "hn-44764421": {
+          "id": "hn-44764421",
+          "source": "Hacker News",
+          "author": "xpe",
+          "url": "https://news.ycombinator.com/item?id=44764421",
+          "excerpt": "> The biggest lesson that can be read from 70 years of AI research is that general methods that leverage computation are ultimately the most effective, and by a large margin. Be careful when anyone, even a giant in the field such as Sutton, posits a sweeping claim like this. My t…",
+          "engagement": 0
+        },
+        "hn-19400261": {
+          "id": "hn-19400261",
+          "source": "Hacker News",
+          "author": "emilfihlman",
+          "url": "https://news.ycombinator.com/item?id=19400261",
+          "excerpt": "This is a horrible post. It advocates to just throwing out research and replacing it with black boxes. Sure, they approximate (or even fully extract) the actual behaviour, but they are opaque. I'd like to remind everyone that science is in the business of understanding, making th…",
+          "engagement": 1
+        },
+        "hn-23781556": {
+          "id": "hn-23781556",
+          "source": "Hacker News",
+          "author": "JoeAltmaier",
+          "url": "https://news.ycombinator.com/item?id=23781556",
+          "excerpt": "Got to believe, this is like heroin. Its a win until it isn't. Then where will AI researchers be? No progress for 20 (50?) years because the temptation to not understand but to just build performant engineering solutions, was so strong. In fact, is the researcher supposed to be b…",
+          "engagement": 2
+        },
+        "hn-19395615": {
+          "id": "hn-19395615",
+          "source": "Hacker News",
+          "author": "sevensor",
+          "url": "https://news.ycombinator.com/item?id=19395615",
+          "excerpt": "What's missing in this account is all the interesting stuff that came from the attempt to emulate human reasoning. Sure, it didn't get us image recognition or chess mastery, but we have Prolog, much of what we now know as Lisp, and proof assistants. Deep, powerful tools that augm…",
+          "engagement": 0
+        },
+        "hn-34008250": {
+          "id": "hn-34008250",
+          "source": "Hacker News",
+          "author": "tensorturtle",
+          "url": "https://news.ycombinator.com/item?id=34008250",
+          "excerpt": "On the whole I agree, but having read \"Reinforcement Learning: An Introduction\" by him and Barto, this article comes across as a hardly nuanced self-endorsement of RL as \"the inevitable future of AI\". Without mentioning RL by name (but hinting at it with HMM, search&learning- lik…",
+          "engagement": 0
+        },
+        "hn-23782025": {
+          "id": "hn-23782025",
+          "source": "Hacker News",
+          "author": "maest",
+          "url": "https://news.ycombinator.com/item?id=23782025",
+          "excerpt": "For contrast, take this Hofstadter quote: > This, then, is the trillion-dollar question: Will the approach undergirding AI today—an approach that borrows little from the mind, that’s grounded instead in big data and big engineering—get us to where we want to go? How do you make a…",
+          "engagement": 1
+        }
+      },
+      "date": "2026-11-03T18:47:17.881Z"
+    }
+  ],
+  "metaReview": {
+    "metareview": "**Summary.** The submission, a short essay that has outlived most of the papers it inspired, claims that seventy years of AI research teach one lesson: general methods that leverage computation (search and learning) beat human-knowledge-driven methods by a large margin in the long run, because compute keeps getting cheaper. Researchers keep forgetting this because building in what they know feels good and works for a while.\n\n**Reviewer 1** (accept) presents the strongest empirical case: in the years since publication essentially every major advance has ridden on compute, and the lesson keeps reappearing in new places, from tokenization to agent tooling to Stockfish replacing its handwritten evaluation with a learned network. Reviewer 1 also makes a careful interpretive point the AC found important: the essay says *work on methods that scale*, over a career-length horizon, not *make it bigger this quarter*.\n\n**Reviewer 2** (borderline) does not dispute the history but attacks the stated mechanism. If Moore's law is the ultimate reason, the lesson inherits Moore's law's mortality; compute is now bought with capital rather than delivered by physics, data looks like the binding constraint, and recent frontier models show steep compute bills for modest gains. This is a fair stress test of the essay's own premise, though much of it targets later readers who turned the lesson into \"scale always wins\", a reading Reviewer 1 also rejects. Notably, Reviewer 2's own lead source ends up agreeing with Reviewer 1 that the lesson is a decades-long trend rather than a plan for this quarter, and its proposed fix (better architectures) is uncomfortably close to building knowledge back in.\n\n**Reviewer 3** (reject) argues the examples are oversimplified: Deep Blue had opening books and a hand-tuned evaluator, AlphaGo needed clever search, and architectures win because they encode good priors. On the details Reviewer 3 is largely right and the essay is breezy. But the rebuttal mostly relocates the human knowledge into *meta-methods* (MCTS, convolutions, attention), which is close to what the essay prescribes. The practitioner evidence (small data, product reliability, a phone-sized Stockfish) mostly describes the short horizon the essay explicitly sets aside. One point does not: every success story in the essay had a crisp objective and abundant data, and Reviewer 3 fairly asks whether the lesson says anything about domains that have neither.\n\n**Assessment.** The three reviews disagree less than their scores suggest. All agree the historical pattern is real; they disagree on its cause (cheap compute vs. learning vs. learning plus good priors) and on whether it holds outside research timelines. The AC finds Reviewer 1's interpretation the most faithful to the text, Reviewer 2's concern about the stated mechanism the most serious open issue, and Reviewer 3's historical corrections valid but not fatal. A position paper is not required to be falsifiable to the last decimal place; it is required to be right about something important, and this one has been unusually right for unusually long.",
+    "additional_comments_on_reviewer_discussion": "Decisive: Reviewer 1's point that the claim is about methods that scale over long horizons, which defuses many objections from Reviewers 2 and 3 aimed at the 'just scale it' misreading, and the accumulated post-2019 track record (including Stockfish going fully learned). Taken seriously: Reviewer 2's argument that grounding the lesson in Moore's law makes it hostage to hardware and capital trends; the authors should state whether the lesson survives if compute stops getting cheaper. Also taken seriously: Reviewer 3's scope objection that chess, Go, speech and vision all have airtight objectives and plentiful data, which the essay never names as preconditions. Partly discounted: Reviewer 3's product-engineering and small-data objections, which are true but concern the short-term regime the essay explicitly concedes; and arguments over Grok 3's benchmarks and compute bill, which are reviews of other submissions. The AC notes that both sides cite Stockfish as a decisive example, which suggests it is not one.",
+    "decision": "Accept (Oral)",
+    "decision_comment": "A two-page essay that a decade of compute bills has been trying to confirm, and which its critics mostly attack through other people's misreadings. Accepted as an oral; the authors are asked to say what happens when the free lunch ends.",
+    "date": "2026-11-03T19:47:17.881Z",
+    "areaChairId": "d5PF"
+  }
+}

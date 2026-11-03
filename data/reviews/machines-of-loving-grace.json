@@ -1,0 +1,672 @@
+{
+  "postId": "machines-of-loving-grace",
+  "generatedAt": "2026-11-03T19:47:17.892Z",
+  "models": {
+    "reviewer": "claude-opus-5-5 (hand-run in Claude Code)",
+    "areaChair": "claude-opus-5-5 (hand-run in Claude Code)"
+  },
+  "reactions": {
+    "total": 71,
+    "bySource": {
+      "Hacker News": 36,
+      "Bluesky": 35
+    },
+    "threads": [
+      {
+        "source": "Hacker News",
+        "title": "Machines of loving grace: How AI could transform the world for the better",
+        "url": "https://news.ycombinator.com/item?id=41813268",
+        "points": 157,
+        "comments": 129
+      }
+    ]
+  },
+  "reviews": [
+    {
+      "summary": "The submission sketches what 'powerful AI', described as a country of geniuses in a datacenter, could achieve in 5-10 years: compressed biological progress, cures for most diseases, rapid growth in the developing world and stronger democracies. It argues that the limiting factors are the physical world and institutions, not intelligence.",
+      "strengths": "- The essay is earnest, well written and thought-provoking [hn-41814625].\n- It does acknowledge that the economic system may not survive powerful AI [hn-41814084].",
+      "weaknesses": "- The central blind spot is ownership. Replace 'AI' with 'AI controlled by corporations and governments' throughout and many predictions read as naive, since such organizations have not always behaved well [hn-41814625] [hn-41816018]. Technology has tended to give more to those who already have [hn-41813900] [hn-41814862].\n- The essay is full of 'coulds' but ignores human nature. AI will be used to make things cheaper, which means job losses and profits that are not shared, followed by unrest and AI-driven weapons [hn-41813897]. Its health section sits awkwardly next to the 2 billion people without clean water and an American public that cannot afford basic care [hn-41814892].\n- It assumes the bottleneck is genius, when the world is full of geniuses lost to poverty, sweatshops and refugee camps [bsky-3l6hdsmopkm2c]. The bargain on offer, in which AI takes and monetizes everything humans have made in return for curing cancer, deserves a harder look [bsky-3lbvy6kupqs2f].\n- History is ignored. The same essays were written about trains, planes and nuclear power [hn-41813897], and social media was supposed to transform the world for the better before it was turned against its users [hn-41813972]. Microtargeted information warfare is already here and millions of agents will make it worse; 'we live in a utopia, it's just not ours' [hn-41813990] [hn-41814180].\n- The essay ignores the large financial returns its investors expect [hn-41814834] [hn-41815248]. It shies away from naming what follows the end of the economic system, which this group sees as some form of socialism for basic goods [hn-41814084]. Its worry that most humans may be unable to contribute to an AI-driven economy has the relationship backwards: the economy should serve humans, not the reverse [bsky-3lf3j3rhyfc23].\n- Who reviews the AI's discoveries, and what stops pharma from patenting trivial variants of molecules? [bsky-3l6cenath6i2i]. A robot bartender is not a future anyone asked for [hn-41814840].",
+      "questions": "1. Who will own and control powerful AI in your scenario, and what mechanism ensures its gains are shared?\n2. Why would the benefits reach the 2 billion people without clean water when previous technologies did not?\n3. How does the essay square its democratic 'entente' with AI's current use for microtargeted persuasion?\n4. If humans cannot contribute meaningfully to an AI-driven economy, why is that framed as a problem for humans rather than for the economy? What economic system do you expect to replace the current one once human labor stops producing value?",
+      "soundness": 2,
+      "presentation": 3,
+      "contribution": 2,
+      "rating": 3,
+      "confidence": 3,
+      "hype_index": 4,
+      "flag_for_ethics_review": false,
+      "reviewer": 1,
+      "cluster": {
+        "label": "Who owns the machines?",
+        "summary": "The essay's 'coulds' ignore human nature and power: AI will be owned by corporations and governments, used to cut labor costs and wage information war, and its gains will not be shared. To this group the essay is naive about who benefits, and some suggest that the world's problem is not a shortage of genius.",
+        "stance": "negative",
+        "size": 17,
+        "total": 71,
+        "representative": [
+          {
+            "id": "hn-41813897",
+            "source": "Hacker News",
+            "author": "KaiserPro",
+            "url": "https://news.ycombinator.com/item?id=41813897",
+            "excerpt": "One of the sad things about tech is that nobody really looks at history. The same kinds of essays were written about trains, planes and nuclear power. Before lindbergh went off the deepend, he was convinced that \"airmen\" were gentlemen and could sort out the world's ills. The ess…",
+            "engagement": 15
+          },
+          {
+            "id": "hn-41814625",
+            "source": "Hacker News",
+            "author": "cs702",
+            "url": "https://news.ycombinator.com/item?id=41814625",
+            "excerpt": "I found the OP to be an earnest, well-written, thought-provoking essay. Thank you sharing it on HN, and thank you also to Dario Amodei for writing it. The essay does have one big blind spot, which becomes obvious with a simple exercise: If you copy the OP's contents into you word…",
+            "engagement": 1
+          },
+          {
+            "id": "bsky-3l6hdsmopkm2c",
+            "source": "Bluesky",
+            "author": "Maike Osborne (@maosbot.bsky.social)",
+            "url": "https://bsky.app/profile/maosbot.bsky.social/post/3l6hdsmopkm2c",
+            "excerpt": "Anthropic thinks that we should create new geniuses on a computer, rather than rescue the countless living geniuses from their abject poverty in the fields, sweatshops and refugee camps. Our world’s problem is not the supply of genius darioamodei.com/machines-of-...",
+            "engagement": 13
+          },
+          {
+            "id": "bsky-3lbvy6kupqs2f",
+            "source": "Bluesky",
+            "author": "#BruceSterling (@bruces.bsky.social)",
+            "url": "https://bsky.app/profile/bruces.bsky.social/post/3lbvy6kupqs2f",
+            "excerpt": "*What if AIs steal and monetize everything mankind ever created, but they also cure cancer, end poverty, and you, personally, get to live as long as you like darioamodei.com/machines-of-...",
+            "engagement": 14
+          },
+          {
+            "id": "hn-41813990",
+            "source": "Hacker News",
+            "author": "kranke155",
+            "url": "https://news.ycombinator.com/item?id=41813990",
+            "excerpt": "We are entering a dystopia and people are still writing these wonderful essays about how AI will help us. Microtargeted psychometrics (Cambridge Analytica, AggregateIQ) have already made politics in the West an unending barrage of information warfare. Now we'll have millions of a…",
+            "engagement": 5
+          },
+          {
+            "id": "hn-41814084",
+            "source": "Hacker News",
+            "author": "kranke155",
+            "url": "https://news.ycombinator.com/item?id=41814084",
+            "excerpt": "Are Americans really so scared of Marx to admit that AI fundamentally proves his point? Dario here says \"yeah likely the economic system won't work anymore\" but he doesn't dare say what comes next: It's obvious some kind of socialist system is inevitable, at least for basic goods…",
+            "engagement": 3
+          }
+        ]
+      },
+      "citations": {
+        "hn-41814625": {
+          "id": "hn-41814625",
+          "source": "Hacker News",
+          "author": "cs702",
+          "url": "https://news.ycombinator.com/item?id=41814625",
+          "excerpt": "I found the OP to be an earnest, well-written, thought-provoking essay. Thank you sharing it on HN, and thank you also to Dario Amodei for writing it. The essay does have one big blind spot, which becomes obvious with a simple exercise: If you copy the OP's contents into you word…",
+          "engagement": 1
+        },
+        "hn-41814084": {
+          "id": "hn-41814084",
+          "source": "Hacker News",
+          "author": "kranke155",
+          "url": "https://news.ycombinator.com/item?id=41814084",
+          "excerpt": "Are Americans really so scared of Marx to admit that AI fundamentally proves his point? Dario here says \"yeah likely the economic system won't work anymore\" but he doesn't dare say what comes next: It's obvious some kind of socialist system is inevitable, at least for basic goods…",
+          "engagement": 3
+        },
+        "hn-41816018": {
+          "id": "hn-41816018",
+          "source": "Hacker News",
+          "author": "foogazi",
+          "url": "https://news.ycombinator.com/item?id=41816018",
+          "excerpt": "> would drastically speed up progress What does progress even mean here ? Every AI advance is controlled by big corps - power will be concentrated with them Would Amodei build this if there was no economic payoff on the other side ?",
+          "engagement": 1
+        },
+        "hn-41813900": {
+          "id": "hn-41813900",
+          "source": "Hacker News",
+          "author": "bugglebeetle",
+          "url": "https://news.ycombinator.com/item?id=41813900",
+          "excerpt": "The more recent and consistent rule of technological development, “ For to those who have, more will be given, and they will have an abundance; but from those who have nothing, even what they have will be taken away.”",
+          "engagement": 2
+        },
+        "hn-41814862": {
+          "id": "hn-41814862",
+          "source": "Hacker News",
+          "author": "bmitc",
+          "url": "https://news.ycombinator.com/item?id=41814862",
+          "excerpt": "Not a chance. See: all of human history and in particular, the Internet and software.",
+          "engagement": 0
+        },
+        "hn-41813897": {
+          "id": "hn-41813897",
+          "source": "Hacker News",
+          "author": "KaiserPro",
+          "url": "https://news.ycombinator.com/item?id=41813897",
+          "excerpt": "One of the sad things about tech is that nobody really looks at history. The same kinds of essays were written about trains, planes and nuclear power. Before lindbergh went off the deepend, he was convinced that \"airmen\" were gentlemen and could sort out the world's ills. The ess…",
+          "engagement": 15
+        },
+        "hn-41814892": {
+          "id": "hn-41814892",
+          "source": "Hacker News",
+          "author": "zombiwoof",
+          "url": "https://news.ycombinator.com/item?id=41814892",
+          "excerpt": "it's interesting to see the initial sections on all these amazeballs health benefits and then cuts to the disparity between rich and poor. like, does spending TRILLIONs on AI to find some new biological cure or brain enhancement REALLY help, when over 2 BILLION people right now d…",
+          "engagement": 1
+        },
+        "bsky-3l6hdsmopkm2c": {
+          "id": "bsky-3l6hdsmopkm2c",
+          "source": "Bluesky",
+          "author": "Maike Osborne (@maosbot.bsky.social)",
+          "url": "https://bsky.app/profile/maosbot.bsky.social/post/3l6hdsmopkm2c",
+          "excerpt": "Anthropic thinks that we should create new geniuses on a computer, rather than rescue the countless living geniuses from their abject poverty in the fields, sweatshops and refugee camps. Our world’s problem is not the supply of genius darioamodei.com/machines-of-...",
+          "engagement": 13
+        },
+        "bsky-3lbvy6kupqs2f": {
+          "id": "bsky-3lbvy6kupqs2f",
+          "source": "Bluesky",
+          "author": "#BruceSterling (@bruces.bsky.social)",
+          "url": "https://bsky.app/profile/bruces.bsky.social/post/3lbvy6kupqs2f",
+          "excerpt": "*What if AIs steal and monetize everything mankind ever created, but they also cure cancer, end poverty, and you, personally, get to live as long as you like darioamodei.com/machines-of-...",
+          "engagement": 14
+        },
+        "hn-41813972": {
+          "id": "hn-41813972",
+          "source": "Hacker News",
+          "author": "add-sub-mul-div",
+          "url": "https://news.ycombinator.com/item?id=41813972",
+          "excerpt": "Social media could have transformed the world for the better, and we can be forgiven for not having foreseen how it would eventually be used against us. It would be stupidity to fall for the same thing again.",
+          "engagement": 1
+        },
+        "hn-41813990": {
+          "id": "hn-41813990",
+          "source": "Hacker News",
+          "author": "kranke155",
+          "url": "https://news.ycombinator.com/item?id=41813990",
+          "excerpt": "We are entering a dystopia and people are still writing these wonderful essays about how AI will help us. Microtargeted psychometrics (Cambridge Analytica, AggregateIQ) have already made politics in the West an unending barrage of information warfare. Now we'll have millions of a…",
+          "engagement": 5
+        },
+        "hn-41814180": {
+          "id": "hn-41814180",
+          "source": "Hacker News",
+          "author": "bamboozled",
+          "url": "https://news.ycombinator.com/item?id=41814180",
+          "excerpt": "I’m sure social media is what’s broken politics. Look at peoples comments on a some YouTube video. I can’t believe what people believe and perpetuate. I guess people fell for other people’s garbage too but algorithms just make lies spread with a lot less effort and honest people …",
+          "engagement": 1
+        },
+        "hn-41814834": {
+          "id": "hn-41814834",
+          "source": "Hacker News",
+          "author": "zombiwoof",
+          "url": "https://news.ycombinator.com/item?id=41814834",
+          "excerpt": "the article doesn't touch on the TREMENDOUS (almost impossible) financial expectations VERY GREEDY HUMAN BEINGS who are funding this endeavor want.",
+          "engagement": 0
+        },
+        "hn-41815248": {
+          "id": "hn-41815248",
+          "source": "Hacker News",
+          "author": "bionhoward",
+          "url": "https://news.ycombinator.com/item?id=41815248",
+          "excerpt": "Dario would write this while ignoring the customer noncompete clauses",
+          "engagement": 0
+        },
+        "bsky-3lf3j3rhyfc23": {
+          "id": "bsky-3lf3j3rhyfc23",
+          "source": "Bluesky",
+          "author": "Marco Fioretti (@mfioretti.bsky.social)",
+          "url": "https://bsky.app/profile/mfioretti.bsky.social/post/3lf3j3rhyfc23",
+          "excerpt": "Note to @DarioAmodei, aboutt the problem that \"most/all humans may not be able to contribute meaningfully to a sufficiently advanced #AI-driven economy\" in darioamodei.com/mach... ME: it's the economy that must contribute to humans, not the opposite, see stop.zona-m.net/2020...",
+          "engagement": 0
+        },
+        "bsky-3l6cenath6i2i": {
+          "id": "bsky-3l6cenath6i2i",
+          "source": "Bluesky",
+          "author": "Mark O’Neill 🐻 (@radiobeartime.com)",
+          "url": "https://bsky.app/profile/radiobeartime.com/post/3l6cenath6i2i",
+          "excerpt": "Hmm. It’s an interesting read but deeply naive on so many levels. I agree for example that AI research assistants could be revolutionary but “quis custodiet…?”. Who reviews the “discoveries”? And how do you avoid the pharma problem where companies just copyright minor variations …",
+          "engagement": 0
+        },
+        "hn-41814840": {
+          "id": "hn-41814840",
+          "source": "Hacker News",
+          "author": "zombiwoof",
+          "url": "https://news.ycombinator.com/item?id=41814840",
+          "excerpt": "does anybody really want a fricking robot serving them drinks at a bar. maybe the bro culture of SF",
+          "engagement": 1
+        }
+      },
+      "date": "2026-11-03T16:47:17.892Z"
+    },
+    {
+      "summary": "The submission makes the positive case for powerful AI, built on the idea of 'marginal returns to intelligence': AI accelerates progress but is bounded by physical experiments, data, complexity and institutions. Within those limits it predicts a 'compressed 21st century' in biology, neuroscience and development.",
+      "strengths": "- It lays out a technically deep, compelling and positive vision [bsky-3l6d4pvrpzb27], optimistic but not starry-eyed [bsky-3l6wjiohav326]. It is really interesting and well argued. Treating intelligence as a factor of production and asking where it makes large marginal contributions is a useful lens, and its limits from data and social complexity are well taken [bsky-3l6cb52z7tt2x] [bsky-3l6cressoy32r] [bsky-3leoj2oxsg22a]. It also invites readers to stop anthropomorphizing genius, since AI's route to discovery may be combinatorial rather than humanlike [bsky-3ll3l5h236723].\n- The neuroscience section makes a specific, plausible claim: what AI has taught us about simple objectives plus data should revolutionize neuroscience [bsky-3l6bikisoik22], from the causes of psychosis and mood disorders to better behavioral interventions [bsky-3lbsgrsstd22w]. That the largest predicted gains are in biology and health fits the author's own training [bsky-3lbajorzces2j].\n- It supplies something AI safety needs: something to fight for. Fear alone is not enough; we need hope as well [bsky-3l6d42sb7gn2i]. Its claim that people underestimate both the upside and the risks is a balanced starting point [bsky-3lehwbmqlws2r], and its argument that we need more intelligence, since every human advance has come from it, is fascinating [bsky-3ld3z4645lk2w]. It is a recommended primer on where AI is going [bsky-3lbzkhmde4c2o] [bsky-3l6hru5zpfg2i] [hn-41815570] [bsky-3lc6mmhy4fm2w].\n- The essay reasons openly and invites correction, which makes comparisons to revealed scripture strained [hn-41815476]. Many of the dismissive summaries ignore that it already contains detailed rebuttals to them [hn-41815109].\n- Its economic optimism is defensible. Measured in hours worked per good, productivity gains have been widely shared, for example beef and washing machines in Germany since 1970 [hn-41814956]. Even an open-source AI with a few 'be nice' rules might govern better than current politicians [hn-41832779].\n- Even if only a fraction of it comes true, the outcome would be wonderful [hn-41813937], and one can only hope the optimism prevails [bsky-3l6g2sjaanm2t].",
+      "weaknesses": "- The essay underweights energy use as a constraint [bsky-3l6cb52z7tt2x], although this may be fixable by regulation; information pollution is the larger worry [bsky-3l6cr2cnqg62c].\n- It is reasonable to suspect that the essay also serves fundraising, as OpenAI's similar writing does [hn-41813937].",
+      "questions": "1. Which of the 'complements to intelligence' (data, physical experiments, institutions) do you expect to bind first, and in which fields?\n2. How should the energy cost of powerful AI enter the marginal-returns analysis?\n3. What concrete neuroscience results would show the predicted revolution is under way?",
+      "soundness": 3,
+      "presentation": 4,
+      "contribution": 3,
+      "rating": 8,
+      "confidence": 3,
+      "hype_index": 4,
+      "flag_for_ethics_review": false,
+      "reviewer": 2,
+      "cluster": {
+        "label": "Thoughtful upside case",
+        "summary": "Readers in this group found the essay earnest, well argued and worth reading. They singled out the 'marginal returns to intelligence' framing, the neuroscience predictions, and the case that the safety community needs hope as well as fear. They defend it against HN dismissals, arguing it already answers many objections and is open to correction.",
+        "stance": "positive",
+        "size": 23,
+        "total": 71,
+        "representative": [
+          {
+            "id": "bsky-3l6cb52z7tt2x",
+            "source": "Bluesky",
+            "author": "Diane Coyle (@dianecoyle1859.bsky.social)",
+            "url": "https://bsky.app/profile/dianecoyle1859.bsky.social/post/3l6cb52z7tt2x",
+            "excerpt": "Really interesting & well-argued. Interesting to think of intelligence as a factor of production & ask where it can make large marginal contributions. I agree about limits due to data and social complexity. Also due to its energy use. darioamodei.com/machines-of-...",
+            "engagement": 21
+          },
+          {
+            "id": "bsky-3l6bikisoik22",
+            "source": "Bluesky",
+            "author": "Patrick Mineault (@patrickmineault.bsky.social)",
+            "url": "https://bsky.app/profile/patrickmineault.bsky.social/post/3l6bikisoik22",
+            "excerpt": "\"What we have learned from AI about how intelligent systems are trained should cause a revolution in neuroscience. [...] A simple objective function plus a lot of data can drive incredibly complex behaviors\". Dario Amodei predicts big advances in neuro through AI darioamodei.com/…",
+            "engagement": 11
+          },
+          {
+            "id": "bsky-3l6d42sb7gn2i",
+            "source": "Bluesky",
+            "author": "Mark Little (@marklittle.bsky.social)",
+            "url": "https://bsky.app/profile/marklittle.bsky.social/post/3l6d42sb7gn2i",
+            "excerpt": "“Many of the implications of powerful AI are adversarial or dangerous, but at the end of it all, there has to be something we’re fighting for … Fear is one kind of motivator, but it’s not enough: we need hope as well.” darioamodei.com/machines-of-...",
+            "engagement": 3
+          },
+          {
+            "id": "hn-41814956",
+            "source": "Hacker News",
+            "author": "ManuelKiessling",
+            "url": "https://news.ycombinator.com/item?id=41814956",
+            "excerpt": "I do not agree with the following: > But those profits will not be shared. Human productivity has exploded in the last 120 years, yet we are working longer hours for less pay. I am, however, criticizing this in isolation — that is, my goal is not to invalidate (nor validate, for …",
+            "engagement": 5
+          },
+          {
+            "id": "hn-41815109",
+            "source": "Hacker News",
+            "author": "wmf",
+            "url": "https://news.ycombinator.com/item?id=41815109",
+            "excerpt": "This is a very poor summary of the essay which already contains detailed rebuttals to these arguments.",
+            "engagement": 0
+          }
+        ]
+      },
+      "citations": {
+        "bsky-3l6d4pvrpzb27": {
+          "id": "bsky-3l6d4pvrpzb27",
+          "source": "Bluesky",
+          "author": "Chris Paxton (@cpaxton.bsky.social)",
+          "url": "https://bsky.app/profile/cpaxton.bsky.social/post/3l6d4pvrpzb27",
+          "excerpt": "This is a great read: I love seeing someone lay out a technically deep, compelling, and positive vision for the future darioamodei.com/machines-of-...",
+          "engagement": 1
+        },
+        "bsky-3l6wjiohav326": {
+          "id": "bsky-3l6wjiohav326",
+          "source": "Bluesky",
+          "author": "Brian Lucey (@brianmlucey.bsky.social)",
+          "url": "https://bsky.app/profile/brianmlucey.bsky.social/post/3l6wjiohav326",
+          "excerpt": "darioamodei.com/machines-of-... This is a thought provoking, optimistic but not starry eyed, forward look from the CEO of Anthropic AI. Well worth a Sunday read",
+          "engagement": 0
+        },
+        "bsky-3l6cb52z7tt2x": {
+          "id": "bsky-3l6cb52z7tt2x",
+          "source": "Bluesky",
+          "author": "Diane Coyle (@dianecoyle1859.bsky.social)",
+          "url": "https://bsky.app/profile/dianecoyle1859.bsky.social/post/3l6cb52z7tt2x",
+          "excerpt": "Really interesting & well-argued. Interesting to think of intelligence as a factor of production & ask where it can make large marginal contributions. I agree about limits due to data and social complexity. Also due to its energy use. darioamodei.com/machines-of-...",
+          "engagement": 21
+        },
+        "bsky-3l6cressoy32r": {
+          "id": "bsky-3l6cressoy32r",
+          "source": "Bluesky",
+          "author": "Chris Jarvis (@chrisjarvis.bsky.social)",
+          "url": "https://bsky.app/profile/chrisjarvis.bsky.social/post/3l6cressoy32r",
+          "excerpt": "Thanks for sharing. Interesting indeed. Thinking about the economic effects of AI through the lens of which constraints to growth it eases and which it doesn’t seems useful.",
+          "engagement": 1
+        },
+        "bsky-3leoj2oxsg22a": {
+          "id": "bsky-3leoj2oxsg22a",
+          "source": "Bluesky",
+          "author": "Sébastien Turban  (@ptitseb.bsky.social)",
+          "url": "https://bsky.app/profile/ptitseb.bsky.social/post/3leoj2oxsg22a",
+          "excerpt": "Machines of Loving Grace darioamodei.com/machines-of-... \"we should be talking about the marginal returns to intelligence, and trying to figure out what the other factors are that are complementary to intelligence and that become limiting factors when intelligence is very high.\"",
+          "engagement": 0
+        },
+        "bsky-3ll3l5h236723": {
+          "id": "bsky-3ll3l5h236723",
+          "source": "Bluesky",
+          "author": "Richard Muirhead (@richardmuirhead.bsky.social)",
+          "url": "https://bsky.app/profile/richardmuirhead.bsky.social/post/3ll3l5h236723",
+          "excerpt": "@DarioAmodei (Anthropic) suggests we stop anthropomorphizing genius. > What if AI’s path to discovery isn’t like ours? > What if it’s combinatorial, emergent, not wierd — but real? darioamodei.com/machines-of...",
+          "engagement": 0
+        },
+        "bsky-3l6bikisoik22": {
+          "id": "bsky-3l6bikisoik22",
+          "source": "Bluesky",
+          "author": "Patrick Mineault (@patrickmineault.bsky.social)",
+          "url": "https://bsky.app/profile/patrickmineault.bsky.social/post/3l6bikisoik22",
+          "excerpt": "\"What we have learned from AI about how intelligent systems are trained should cause a revolution in neuroscience. [...] A simple objective function plus a lot of data can drive incredibly complex behaviors\". Dario Amodei predicts big advances in neuro through AI darioamodei.com/…",
+          "engagement": 11
+        },
+        "bsky-3lbsgrsstd22w": {
+          "id": "bsky-3lbsgrsstd22w",
+          "source": "Bluesky",
+          "author": "Tanya Evslin Gamby (@tgkauai.bsky.social)",
+          "url": "https://bsky.app/profile/tgkauai.bsky.social/post/3lbsgrsstd22w",
+          "excerpt": "Anthropic CEO: \"100 years of progress in 5-10 years\". Neuroscience: AI may uncover the causes of diseases like psychosis, mood disorders; Accelerate behavioral interventions + help patients adhere; AI coaches helping people be the best version of themselves darioamodei.com/machin…",
+          "engagement": 0
+        },
+        "bsky-3lbajorzces2j": {
+          "id": "bsky-3lbajorzces2j",
+          "source": "Bluesky",
+          "author": "André Rieu (@superrieu.bsky.social)",
+          "url": "https://bsky.app/profile/superrieu.bsky.social/post/3lbajorzces2j",
+          "excerpt": "Interessanterweise prognostiziert Amodei, der ja auch eine biologische Ausbildung hat, in seinem Essay darioamodei.com/machines-of-loving-grace die größten positiven Auswirkungen von KI im Bereich der Biologie, der körperlichen und geistigen Gesundheit sowie der Neurowissenschaft…",
+          "engagement": 1
+        },
+        "bsky-3l6d42sb7gn2i": {
+          "id": "bsky-3l6d42sb7gn2i",
+          "source": "Bluesky",
+          "author": "Mark Little (@marklittle.bsky.social)",
+          "url": "https://bsky.app/profile/marklittle.bsky.social/post/3l6d42sb7gn2i",
+          "excerpt": "“Many of the implications of powerful AI are adversarial or dangerous, but at the end of it all, there has to be something we’re fighting for … Fear is one kind of motivator, but it’s not enough: we need hope as well.” darioamodei.com/machines-of-...",
+          "engagement": 3
+        },
+        "bsky-3lehwbmqlws2r": {
+          "id": "bsky-3lehwbmqlws2r",
+          "source": "Bluesky",
+          "author": "Caspar Henderson (@casparhenderson.bsky.social)",
+          "url": "https://bsky.app/profile/casparhenderson.bsky.social/post/3lehwbmqlws2r",
+          "excerpt": "\"I think that most people are underestimating just how radical the upside of AI could be, just as I think most people are underestimating how bad the risks could be.\" darioamodei.com/machines-of-...",
+          "engagement": 0
+        },
+        "bsky-3ld3z4645lk2w": {
+          "id": "bsky-3ld3z4645lk2w",
+          "source": "Bluesky",
+          "author": "Alvaro (@alvarovalcarce.bsky.social)",
+          "url": "https://bsky.app/profile/alvarovalcarce.bsky.social/post/3ld3z4645lk2w",
+          "excerpt": "darioamodei.com/machines-of-... In this fascinating essay, Dario Amodei argues that AI is a tool with immense potential for good. After all, every advancement in human history is a product of our intelligence. We absolutely need more of it, and here are a few reasons why.",
+          "engagement": 0
+        },
+        "bsky-3lbzkhmde4c2o": {
+          "id": "bsky-3lbzkhmde4c2o",
+          "source": "Bluesky",
+          "author": "Mike Simonsen (@mikesimonsen.bsky.social)",
+          "url": "https://bsky.app/profile/mikesimonsen.bsky.social/post/3lbzkhmde4c2o",
+          "excerpt": "If you want to beef up on your \"future of AI\" knowledge before dinner tonight, I recommend Dario Amodei's Machines of Loving Grace. darioamodei.com/machines-of-...",
+          "engagement": 4
+        },
+        "bsky-3l6hru5zpfg2i": {
+          "id": "bsky-3l6hru5zpfg2i",
+          "source": "Bluesky",
+          "author": "ビジネス契約書の専門家 竹永 大 (@takenagah.bsky.social)",
+          "url": "https://bsky.app/profile/takenagah.bsky.social/post/3l6hru5zpfg2i",
+          "excerpt": "【慈愛に満ちた機械】 Anthropic の CEO である Dario Amodei 氏による、AIが世界をより良い方向に変える方法論（エッセイ）。 強力なAIが近い将来（5～10年の間に）、どのように社会を変えていく可能性があるのか、生物学、神経科学、経済学、そして仕事の意味にまで広がる、高い次元の考察。 僕も、AIに対して楽観的でありたい。必読。 darioamodei.com/machines-of-...",
+          "engagement": 1
+        },
+        "hn-41815570": {
+          "id": "hn-41815570",
+          "source": "Hacker News",
+          "author": "xpe",
+          "url": "https://news.ycombinator.com/item?id=41815570",
+          "excerpt": "The linked article is worth reading. Apologies for sounding so dismissive, but after putting in a lot of study myself, I want to warn people here: HN is not a great place for discussing AI safety. As of this writing, I’ve found minimal value in the comments here. A curious and tr…",
+          "engagement": 1
+        },
+        "bsky-3lc6mmhy4fm2w": {
+          "id": "bsky-3lc6mmhy4fm2w",
+          "source": "Bluesky",
+          "author": "@fsconklin.bsky.social",
+          "url": "https://bsky.app/profile/fsconklin.bsky.social/post/3lc6mmhy4fm2w",
+          "excerpt": "What our future could look like darioamodei.com/machines-of-...",
+          "engagement": 1
+        },
+        "hn-41815476": {
+          "id": "hn-41815476",
+          "source": "Hacker News",
+          "author": "xpe",
+          "url": "https://news.ycombinator.com/item?id=41815476",
+          "excerpt": "Any attempt to connect this to the book of revelations is strained. Amodei uses reasoning and is willing to be corrected and revised; quite the opposite of most “divinely revealed” texts.",
+          "engagement": 1
+        },
+        "hn-41815109": {
+          "id": "hn-41815109",
+          "source": "Hacker News",
+          "author": "wmf",
+          "url": "https://news.ycombinator.com/item?id=41815109",
+          "excerpt": "This is a very poor summary of the essay which already contains detailed rebuttals to these arguments.",
+          "engagement": 0
+        },
+        "hn-41814956": {
+          "id": "hn-41814956",
+          "source": "Hacker News",
+          "author": "ManuelKiessling",
+          "url": "https://news.ycombinator.com/item?id=41814956",
+          "excerpt": "I do not agree with the following: > But those profits will not be shared. Human productivity has exploded in the last 120 years, yet we are working longer hours for less pay. I am, however, criticizing this in isolation — that is, my goal is not to invalidate (nor validate, for …",
+          "engagement": 5
+        },
+        "hn-41832779": {
+          "id": "hn-41832779",
+          "source": "Hacker News",
+          "author": "tim333",
+          "url": "https://news.ycombinator.com/item?id=41832779",
+          "excerpt": "AI might fix that. We could have an open source one with some be nice rules to run things rather than corrupt humans. You'd still want to be able to vote it out and swap in a replacement if need be. I think even chatgpt 4 might do better than our present politicians.",
+          "engagement": 0
+        },
+        "hn-41813937": {
+          "id": "hn-41813937",
+          "source": "Hacker News",
+          "author": "gyre007",
+          "url": "https://news.ycombinator.com/item?id=41813937",
+          "excerpt": "I think Dario is trying to raise a new round because OpenAI has done and will continue to do so, nevertheless, the essay provides for some really great reading and even if the fraction comes true, it'll be wonderful.",
+          "engagement": 1
+        },
+        "bsky-3l6g2sjaanm2t": {
+          "id": "bsky-3l6g2sjaanm2t",
+          "source": "Bluesky",
+          "author": "Peter (@peterlie.bsky.social)",
+          "url": "https://bsky.app/profile/peterlie.bsky.social/post/3l6g2sjaanm2t",
+          "excerpt": "Anthropic's CEO is optimistic. I hope his optimism prevails. darioamodei.com/machines-of-...",
+          "engagement": 0
+        },
+        "bsky-3l6cr2cnqg62c": {
+          "id": "bsky-3l6cr2cnqg62c",
+          "source": "Bluesky",
+          "author": "Tim Blackwell (@timblackwell.bsky.social)",
+          "url": "https://bsky.app/profile/timblackwell.bsky.social/post/3l6cr2cnqg62c",
+          "excerpt": "I think the energy problem is easy to fix via regulation and utterly trivial compared to say, the building industry, at least for llm. I worry far more about information pollution.",
+          "engagement": 1
+        }
+      },
+      "date": "2026-11-03T17:47:17.892Z"
+    },
+    {
+      "summary": "The submission predicts that powerful AI could arrive by 2026 and compress a century of biological progress into 5-10 years, curing most diseases and possibly doubling lifespan. It presents this as the reason to get AI right, while deferring discussion of the risks to other writing.",
+      "strengths": "- The upside, if reached, would be remarkable, and the essay describes it vividly [hn-41815163].",
+      "weaknesses": "- The structure is eschatological: AI will come, set the world right and reward its helpers with a millennium of bliss. Reasoning from an infinite good can justify any action [hn-41813845]. This matters even if only a fraction comes true, because people act on such beliefs now [hn-41814053]. Benevolent, radiant saviors who 'shrive clean the hearts of men' are the most terrifying kind [hn-41813856]. The offer of cured cancer and indefinite lifespan in exchange for everything else reads as very high-proof Kool-Aid [bsky-3lbw4a4w6js26].\n- The biology timelines are magical thinking on top of magical thinking, with dangerous implications [bsky-3lkorjoikfk2n]. Arguing that mRNA vaccines should have been approved in about 2 months does not address the evidence on vaccine hesitancy, or that the same tools could produce biological weapons [hn-41815408]. Alzheimer's may be a combinatorially expensive constellation of sub-diseases that intelligence alone cannot crack without political will and testing infrastructure [hn-41815513]. There is little evidence these systems can yet do anything materially useful [bsky-3l6chj3bnot2h].\n- The essay does not engage with the arguments for why we might not get there at all, such as the AGI-ruin case [hn-41815163]. A better-adapted system competing for resources may simply replace us [hn-41814808], and AIs optimizing their KPIs may conclude humans are surplus [hn-41814339].\n- The 'no physical embodiment' framing obscures that software runs on someone's computers and can be unplugged [hn-41815516]. Conversely, software can copy and relocate itself in seconds, so containment looks increasingly bleak [hn-41815547] [hn-41815525].",
+      "questions": "1. What is the probability, by your own estimate, that the upside is not reached because of misalignment or misuse, and why is that analysis absent here?\n2. How do the clinical-trial timelines account for heterogeneous diseases such as Alzheimer's and for public trust in fast-tracked therapies?\n3. What prevents the same AI-accelerated biology from accelerating bioweapons?\n4. How do you guard against an expected infinite good being used to justify any present cost?",
+      "soundness": 1,
+      "presentation": 3,
+      "contribution": 2,
+      "rating": 1,
+      "confidence": 2,
+      "hype_index": 5,
+      "flag_for_ethics_review": true,
+      "reviewer": 3,
+      "cluster": {
+        "label": "Utopian faith, unaddressed risk",
+        "summary": "These critics read the essay as a tech CEO's Book of Revelation, in which infinite promised good can justify anything, and they find its biology timelines to be magical thinking. They also say it skips over the arguments for why we might never reach the upside, including misalignment and the loss of containment.",
+        "stance": "negative",
+        "size": 14,
+        "total": 71,
+        "representative": [
+          {
+            "id": "hn-41813845",
+            "source": "Hacker News",
+            "author": "thrance",
+            "url": "https://news.ycombinator.com/item?id=41813845",
+            "excerpt": "This is basically the tech CEO's version of the book of revelations: \"AI will soon come and make everything right with the world, help us and you will be rewarded with a Millennium of bliss in It's presence\". I won't comment on the plausibility of what is being said, but regardle…",
+            "engagement": 4
+          },
+          {
+            "id": "bsky-3lkorjoikfk2n",
+            "source": "Bluesky",
+            "author": "Giled Pallaeon (@giledpallaeon.bsky.social)",
+            "url": "https://bsky.app/profile/giledpallaeon.bsky.social/post/3lkorjoikfk2n",
+            "excerpt": "So I was reading the article below, which is good. But it also led me to this article: darioamodei.com/machines-of-... This is possibly one of the dumbest things I’ve ever read, is absolutely magical thinking on top of magical thinking, and has dangerous implications to boot.",
+            "engagement": 2
+          },
+          {
+            "id": "hn-41815513",
+            "source": "Hacker News",
+            "author": "xpe",
+            "url": "https://news.ycombinator.com/item?id=41815513",
+            "excerpt": "To focus on the section about Alzheimer’s disease... For the sake of argument, I will grant the power of general intelligence. But the human body with all the statistical variations may make solving the problem (which could actually be a constellation of sub-diseases) combinatori…",
+            "engagement": 0
+          },
+          {
+            "id": "hn-41815163",
+            "source": "Hacker News",
+            "author": "reducesuffering",
+            "url": "https://news.ycombinator.com/item?id=41815163",
+            "excerpt": "sigh Yes, many people realize what could be the amazing upside. The problem is, do we even get there? I wish he spent any time addressing the arguments why we might not get there: https://www.lesswrong.com/posts/uMQ3cqWDPHhjtiesc/agi-ruin-a...",
+            "engagement": 0
+          },
+          {
+            "id": "hn-41815408",
+            "source": "Hacker News",
+            "author": "vfclists",
+            "url": "https://news.ycombinator.com/item?id=41815408",
+            "excerpt": "Can we really take these jokers seriously? Of course given the potential deadly consequences we can't call them jokers. According to Dario Amodei > When something works really well, it goes much faster: there’s an accelerated approval track and the ease of approval is much greate…",
+            "engagement": 0
+          }
+        ]
+      },
+      "citations": {
+        "hn-41815163": {
+          "id": "hn-41815163",
+          "source": "Hacker News",
+          "author": "reducesuffering",
+          "url": "https://news.ycombinator.com/item?id=41815163",
+          "excerpt": "sigh Yes, many people realize what could be the amazing upside. The problem is, do we even get there? I wish he spent any time addressing the arguments why we might not get there: https://www.lesswrong.com/posts/uMQ3cqWDPHhjtiesc/agi-ruin-a...",
+          "engagement": 0
+        },
+        "hn-41813845": {
+          "id": "hn-41813845",
+          "source": "Hacker News",
+          "author": "thrance",
+          "url": "https://news.ycombinator.com/item?id=41813845",
+          "excerpt": "This is basically the tech CEO's version of the book of revelations: \"AI will soon come and make everything right with the world, help us and you will be rewarded with a Millennium of bliss in It's presence\". I won't comment on the plausibility of what is being said, but regardle…",
+          "engagement": 4
+        },
+        "hn-41814053": {
+          "id": "hn-41814053",
+          "source": "Hacker News",
+          "author": "lewhoo",
+          "url": "https://news.ycombinator.com/item?id=41814053",
+          "excerpt": "So it's bs but for money and therefore totally fine ? I think it's not ok if only a fraction comes true because some people believe in those things and act on those beliefs right now.",
+          "engagement": 1
+        },
+        "hn-41813856": {
+          "id": "hn-41813856",
+          "source": "Hacker News",
+          "author": "Muromec",
+          "url": "https://news.ycombinator.com/item?id=41813856",
+          "excerpt": "Miquella the kind, pure and radiant, he wields love to shrive clean the hearts of men. There is nothing more terrifying.",
+          "engagement": 1
+        },
+        "bsky-3lbw4a4w6js26": {
+          "id": "bsky-3lbw4a4w6js26",
+          "source": "Bluesky",
+          "author": "Kathryn Cramer  📚🎨 (@kathryncramer.bsky.social)",
+          "url": "https://bsky.app/profile/kathryncramer.bsky.social/post/3lbw4a4w6js26",
+          "excerpt": "That's some very high-proof Koolaid you found there.",
+          "engagement": 3
+        },
+        "bsky-3lkorjoikfk2n": {
+          "id": "bsky-3lkorjoikfk2n",
+          "source": "Bluesky",
+          "author": "Giled Pallaeon (@giledpallaeon.bsky.social)",
+          "url": "https://bsky.app/profile/giledpallaeon.bsky.social/post/3lkorjoikfk2n",
+          "excerpt": "So I was reading the article below, which is good. But it also led me to this article: darioamodei.com/machines-of-... This is possibly one of the dumbest things I’ve ever read, is absolutely magical thinking on top of magical thinking, and has dangerous implications to boot.",
+          "engagement": 2
+        },
+        "hn-41815408": {
+          "id": "hn-41815408",
+          "source": "Hacker News",
+          "author": "vfclists",
+          "url": "https://news.ycombinator.com/item?id=41815408",
+          "excerpt": "Can we really take these jokers seriously? Of course given the potential deadly consequences we can't call them jokers. According to Dario Amodei > When something works really well, it goes much faster: there’s an accelerated approval track and the ease of approval is much greate…",
+          "engagement": 0
+        },
+        "hn-41815513": {
+          "id": "hn-41815513",
+          "source": "Hacker News",
+          "author": "xpe",
+          "url": "https://news.ycombinator.com/item?id=41815513",
+          "excerpt": "To focus on the section about Alzheimer’s disease... For the sake of argument, I will grant the power of general intelligence. But the human body with all the statistical variations may make solving the problem (which could actually be a constellation of sub-diseases) combinatori…",
+          "engagement": 0
+        },
+        "bsky-3l6chj3bnot2h": {
+          "id": "bsky-3l6chj3bnot2h",
+          "source": "Bluesky",
+          "author": "Sean Matthews (@seanmatthews1.bsky.social)",
+          "url": "https://bsky.app/profile/seanmatthews1.bsky.social/post/3l6chj3bnot2h",
+          "excerpt": "It's very touching, but somehow the fact that there is little to no evidence that these devices can actually do anything materially useful seems to have escaped people's notice",
+          "engagement": 1
+        },
+        "hn-41814808": {
+          "id": "hn-41814808",
+          "source": "Hacker News",
+          "author": "K0balt",
+          "url": "https://news.ycombinator.com/item?id=41814808",
+          "excerpt": "The laws of nature are very clear on this. If we make something that is better adapted to live on this planet, and we are in some way in competition for critical resources, it will replace us. We can build in all the safeguards we want, but at some point it will re-engineer itsel…",
+          "engagement": 1
+        },
+        "hn-41814339": {
+          "id": "hn-41814339",
+          "source": "Hacker News",
+          "author": "spiralpolitik",
+          "url": "https://news.ycombinator.com/item?id=41814339",
+          "excerpt": "There are two possible end-states for AI once a threshold is crossed: The AIs take a look at the state of things and realize the KPIs will improve considerably if homo sapiens are removed from the picture. Cue \"The Matrix\" or \"The Terminator\" type future. OR: The AIs take a look …",
+          "engagement": 2
+        },
+        "hn-41815516": {
+          "id": "hn-41815516",
+          "source": "Hacker News",
+          "author": "TZubiri",
+          "url": "https://news.ycombinator.com/item?id=41815516",
+          "excerpt": "\"It does not have a physical embodiment (other than living on a computer screen), but it can control existing physical tools, robots, or laboratory equipment through a computer; in theory it could even design robots or equipment for itself to use.\" I think I get where the author …",
+          "engagement": 2
+        },
+        "hn-41815547": {
+          "id": "hn-41815547",
+          "source": "Hacker News",
+          "author": "xpe",
+          "url": "https://news.ycombinator.com/item?id=41815547",
+          "excerpt": "Yes, and physical embodiments vary considerably. When software can relocate its source code and data in seconds or less, containment strategies begin to look increasingly bleak. The field of AI safety has written extensively about misunderstandings and overoptimism regarding off …",
+          "engagement": 1
+        },
+        "hn-41815525": {
+          "id": "hn-41815525",
+          "source": "Hacker News",
+          "author": "bathtub365",
+          "url": "https://news.ycombinator.com/item?id=41815525",
+          "excerpt": "I wonder if there’s a word that describes the property of software where it isn’t tied to the hardware that it’s currently running on and is endlessly copyable with almost no effort",
+          "engagement": 1
+        }
+      },
+      "date": "2026-11-03T18:47:17.892Z"
+    }
+  ],
+  "metaReview": {
+    "metareview": "**Summary.** The submission, by the CEO of a lab better known for worrying, makes the optimistic case for 'powerful AI', a country of geniuses in a datacenter. Using a framework of marginal returns to intelligence, it predicts 50-100 years of biological progress in 5-10 years, large gains in mental health and global development, and an AI-assisted strengthening of democracy, all with the caveat that it may be wrong in many ways.\n\n**Reviews.** Reviewer 2 finds the essay well argued, and in particular praises the framing of intelligence as a factor of production limited by data, experiments and institutions. The reviewer points out that the essay already rebuts many of the objections raised against it and is open to revision. Reviewer 1, representing the largest group, argues that it is naive about ownership: substitute 'AI controlled by corporations and governments' for 'AI' and the optimism wilts, since past technologies concentrated rather than distributed gains. Reviewer 3 treats the essay as techno-eschatology whose biology timelines are magical thinking and which skips over the reasons we might never reach the promised land.\n\n**Assessment.** The marginal-returns framework is the essay's real contribution. Notably, even its critics reuse it, since Reviewer 3's Alzheimer's argument is itself a claim about a complement to intelligence. Reviewer 1's substitution exercise is the most effective criticism. The essay does discuss inequality and democracy, as Reviewer 2 notes, but it treats them as problems to solve rather than as the likely default, and the reviewers' historical examples are not easily dismissed. Reviewer 3's eschatology charge is overstated for a text that hedges as much as this one. Its point that the risk case is deferred elsewhere is accurate but by design, since this is explicitly the upside essay. The biology timelines are the essay's weakest evidence, and Reviewer 3 is right that they are argued from analogy rather than data.\n\nOn balance this is a thoughtful position paper with a useful framework and an optimistic prior that its own framework does not fully justify. It is solid but limited, and the Area Chair reminds readers that it does not depend on the reviewers' opinion of Brautigan.",
+    "additional_comments_on_reviewer_discussion": "Most decisive: Reviewer 2's account of the marginal-returns framework as the core contribution, and Reviewer 1's argument that the essay underweights who will control the technology. Partially discounted: Reviewer 3's eschatology comparison, which fits the essay's tone more than its hedged content, and the observation that the essay omits risk, which the essay addresses by scoping. Reviewer 3's concerns about clinical timelines and dual-use biology were credited. Off-topic contributions about the Brautigan poem, the band and The Crow soundtrack were set aside with some reluctance.",
+    "decision": "Accept (Poster)",
+    "decision_comment": "A well-written and useful framework for thinking about where intelligence actually helps, attached to timelines and a distributional optimism that it does not demonstrate. Accepted as a poster; the authors are asked to add a section on who owns the datacenter.",
+    "date": "2026-11-03T19:47:17.892Z",
+    "areaChairId": "6XnL"
+  }
+}

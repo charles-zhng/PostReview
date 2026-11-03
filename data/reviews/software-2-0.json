@@ -1,0 +1,797 @@
+{
+  "postId": "software-2-0",
+  "generatedAt": "2026-11-03T19:47:17.899Z",
+  "models": {
+    "reviewer": "claude-opus-5-5 (hand-run in Claude Code)",
+    "areaChair": "claude-opus-5-5 (hand-run in Claude Code)"
+  },
+  "reactions": {
+    "total": 111,
+    "bySource": {
+      "Hacker News": 99,
+      "Response post": 1,
+      "Bluesky": 11
+    },
+    "threads": [
+      {
+        "source": "Hacker News",
+        "title": "Software 2.0 (2017)",
+        "url": "https://news.ycombinator.com/item?id=34881881",
+        "points": 422,
+        "comments": 330
+      },
+      {
+        "source": "Hacker News",
+        "title": "Andrej Karpathy – Software 2.0",
+        "url": "https://news.ycombinator.com/item?id=44301846",
+        "points": 14,
+        "comments": 10
+      },
+      {
+        "source": "Hacker News",
+        "title": "Building the Software 2.0 Stack by Andrej Karpathy [video]",
+        "url": "https://news.ycombinator.com/item?id=17280454",
+        "points": 207,
+        "comments": 94
+      },
+      {
+        "source": "Hacker News",
+        "title": "Software 2.0",
+        "url": "https://news.ycombinator.com/item?id=15678587",
+        "points": 81,
+        "comments": 36
+      },
+      {
+        "source": "Hacker News",
+        "title": "Facebook is using Kotlin to pave the way to Software 2.0",
+        "url": "https://news.ycombinator.com/item?id=25128251",
+        "points": 45,
+        "comments": 3
+      }
+    ]
+  },
+  "reviews": [
+    {
+      "summary": "The submission argues that neural networks are not just another classifier but a new way of writing software: the programmer specifies a goal and an architecture, the dataset becomes the source code, and optimization does the writing. It predicts that programming will shift toward curating datasets and calls for Software 2.0 tooling (IDEs, a GitHub, package managers). Read years later, the core prediction looks largely vindicated.",
+      "strengths": "- **The central prediction aged remarkably well.** Readers who dismissed the post in 2017 as \"never-in-my-lifetime stuff\" now find it \"disgustingly ahead of its time\" [bsky-3ljnrcba3kk23] [bsky-3ljnrgmuevs23]; the author's own later framing of prompting as programming extends the same arc [hn-34882831].\n- **It names a real change in workflow.** Engineering features versus making features learnable is a genuinely different discipline, and the post correctly notes that the hard problems are not where academia is looking [hn-17283216]. Practitioners outside the usual ML domains report the same experience: it feels \"more like training a cybernetic animal than programming\" [hn-15679078] [hn-15678671].\n- **Datasets as first-class, tooled artifacts.** Treating training data as a dynamic component with its own infrastructure is \"one of the most under-appreciated points in the field\" [hn-17280919], and the incentive problem in academia makes the call for tooling more, not less, relevant [hn-17281945].\n- **It inspired concrete systems work.** Differentiable programming made a first-class language feature, with differentiation through control flow and compile-time tensor-shape checking, is pitched explicitly as infrastructure for Software 2.0: it lets learned models absorb existing hand-written code, such as a physics simulator in Cartpole, instead of relearning it by trial and error [resp-25128251]. The goal-over-procedure idea also has a respectable lineage back to Minsky [hn-17280610].\n- **The opacity objection is answered on the right axis.** What matters is the failure rate: a black box that fails 10% of the time beats an explainable system that fails 20% of the time for most cheap, repeated processes [hn-34883357]. Useful tools have never required formal verification, since human programmers do not meet that bar either [hn-34883572].",
+      "weaknesses": "- **The post underplays how much hybrid glue remains.** Even sympathetic readers frame the opportunity as the two paradigms in combination, especially for messy, heterogeneous inputs, rather than a clean replacement [bsky-3lgai556kps2y] [hn-34882441].\n- **The human role is left vague.** If programmers become \"effective translators between what the business wants and what the AI outputs\" [hn-34884311], the post says little about what that job's tooling and skills look like, beyond the dataset-curation story.\n- **Code quality is treated as solvable by more model.** The claim that AI-written code can simply refactor itself [hn-34882717] is optimistic and not argued in the submission; the new weaknesses are real, even if the new strengths outweigh them [hn-44312623].",
+      "questions": "1. Which parts of the 2017 stack (dataset IDEs, a GitHub for weights, package managers) do you consider delivered, and which were superseded by prompting large pretrained models [hn-34882831]?\n2. How should a team decide between a 90%-accurate model it understands and a 99%-accurate one it does not, beyond the raw error rate [hn-34883357]?\n3. What is the right tooling interface for the \"translator\" role between business intent and model output [hn-34884311]?",
+      "soundness": 3,
+      "presentation": 4,
+      "contribution": 4,
+      "rating": 8,
+      "confidence": 3,
+      "hype_index": 4,
+      "flag_for_ethics_review": false,
+      "reviewer": 1,
+      "cluster": {
+        "label": "It was ahead of its time",
+        "summary": "Readers revisiting the post in the LLM era see it as prescient: the shift from writing code to curating data and specifying goals has visibly come to pass. Practitioners add that treating datasets as first-class, tooled components is the most under-appreciated point in the field, and some argue a black box that fails less often beats an explainable one that fails more.",
+        "stance": "positive",
+        "size": 17,
+        "total": 111,
+        "representative": [
+          {
+            "id": "resp-25128251",
+            "source": "Response post",
+            "author": "ai.facebook.com",
+            "url": "https://ai.facebook.com/blog/paving-the-way-for-software-20-with-kotlin/",
+            "excerpt": "Our work with differentiable programming, which enables programs to optimize themselves, is part of Facebook AI’s broader efforts to build more advanced tools for machine learning (ML) programming. That’s why we're extending the Kotlin compiler to make differentiability a first-c…",
+            "engagement": 45
+          },
+          {
+            "id": "bsky-3ljnrcba3kk23",
+            "source": "Bluesky",
+            "author": "Sam Rose (@samwho.dev)",
+            "url": "https://bsky.app/profile/samwho.dev/post/3ljnrcba3kk23",
+            "excerpt": "This post was disgustingly ahead of its time. > Neural networks are not just another classifier, they represent the beginning of a fundamental shift in how we develop software. They are Software 2.0. karpathy.medium.com/software-2-0...",
+            "engagement": 20
+          },
+          {
+            "id": "bsky-3ljnrgmuevs23",
+            "source": "Bluesky",
+            "author": "Sam Rose (@samwho.dev)",
+            "url": "https://bsky.app/profile/samwho.dev/post/3ljnrgmuevs23",
+            "excerpt": "I know what we see today isn’t what Andrej is talking about in that post, but it’s far far easier to see what he’s talking about coming to pass in 2025 than it was in 2017. I remember reading this around the time it was published and dismissing it as absurd, never-in-my-lifetime …",
+            "engagement": 6
+          },
+          {
+            "id": "hn-17280919",
+            "source": "Hacker News",
+            "author": "dkislyuk",
+            "url": "https://news.ycombinator.com/item?id=17280919",
+            "excerpt": "Treating training datasets as dynamic components of ML systems, along with the corresponding tooling and infrastructure, is one of the most under-appreciated points in the field today. Part of the cause, I think, is due to stigma coming from the academic side that dataset collect…",
+            "engagement": 3
+          },
+          {
+            "id": "hn-34883357",
+            "source": "Hacker News",
+            "author": "hooande",
+            "url": "https://news.ycombinator.com/item?id=34883357",
+            "excerpt": "\"Neural networks are bad because some times they fail\" is a low brow dismissal, indeed. What matters is the percentage accuracy. A black box with a 10% failure rate is better than a fully explainable system that fails 20% of the time. Explanations make us feel better and they can…",
+            "engagement": 4
+          },
+          {
+            "id": "hn-34882717",
+            "source": "Hacker News",
+            "author": "mvkel",
+            "url": "https://news.ycombinator.com/item?id=34882717",
+            "excerpt": "This is the right take on the future. Unsurprising that it came from Karpathy all the way back in 2017. The quality of the code is irrelevant, as the point of Software 2.0 is that it's another layer of abstraction on top of traditional code. \"Coding\" becomes \"I need something to …",
+            "engagement": 2
+          }
+        ]
+      },
+      "citations": {
+        "bsky-3ljnrcba3kk23": {
+          "id": "bsky-3ljnrcba3kk23",
+          "source": "Bluesky",
+          "author": "Sam Rose (@samwho.dev)",
+          "url": "https://bsky.app/profile/samwho.dev/post/3ljnrcba3kk23",
+          "excerpt": "This post was disgustingly ahead of its time. > Neural networks are not just another classifier, they represent the beginning of a fundamental shift in how we develop software. They are Software 2.0. karpathy.medium.com/software-2-0...",
+          "engagement": 20
+        },
+        "bsky-3ljnrgmuevs23": {
+          "id": "bsky-3ljnrgmuevs23",
+          "source": "Bluesky",
+          "author": "Sam Rose (@samwho.dev)",
+          "url": "https://bsky.app/profile/samwho.dev/post/3ljnrgmuevs23",
+          "excerpt": "I know what we see today isn’t what Andrej is talking about in that post, but it’s far far easier to see what he’s talking about coming to pass in 2025 than it was in 2017. I remember reading this around the time it was published and dismissing it as absurd, never-in-my-lifetime …",
+          "engagement": 6
+        },
+        "hn-34882831": {
+          "id": "hn-34882831",
+          "source": "Hacker News",
+          "author": "jinay",
+          "url": "https://news.ycombinator.com/item?id=34882831",
+          "excerpt": "I recently attended a hackathon (TreeHacks) where Andrej was a keynote speaker, and he's since updated his vision to include the significance of LLMs. The new software is that of prompt engineering, using LLMs as a simulator for the types of programs you want to build [1]. The de…",
+          "engagement": 0
+        },
+        "hn-17283216": {
+          "id": "hn-17283216",
+          "source": "Hacker News",
+          "author": "fredguth",
+          "url": "https://news.ycombinator.com/item?id=17283216",
+          "excerpt": "I think the point of the talk was to say it is very different to engineer features vs to make features learnable. This is indeed very different than \"software 1.0\". He also points that the challenges are not where academia is focusing.",
+          "engagement": 0
+        },
+        "hn-15679078": {
+          "id": "hn-15679078",
+          "source": "Hacker News",
+          "author": "gilbetron",
+          "url": "https://news.ycombinator.com/item?id=15679078",
+          "excerpt": "On my journey to catch back up with ML after having abandoned it around 2000, I find myself thinking the same things as Karpathy. There is something profound here, and as someone that has been writing software for 40 years since the ripe age of 8, it is scintillating in its poten…",
+          "engagement": 0
+        },
+        "hn-15678671": {
+          "id": "hn-15678671",
+          "source": "Hacker News",
+          "author": "singularity2001",
+          "url": "https://news.ycombinator.com/item?id=15678671",
+          "excerpt": "Karpathy beautifully phrases what I felt before. This is important. Slightly frustrating too if you come from a 'hardcoding' background, but there is hope that many non-data problems remain to be solved. Data is software.",
+          "engagement": 0
+        },
+        "hn-17280919": {
+          "id": "hn-17280919",
+          "source": "Hacker News",
+          "author": "dkislyuk",
+          "url": "https://news.ycombinator.com/item?id=17280919",
+          "excerpt": "Treating training datasets as dynamic components of ML systems, along with the corresponding tooling and infrastructure, is one of the most under-appreciated points in the field today. Part of the cause, I think, is due to stigma coming from the academic side that dataset collect…",
+          "engagement": 3
+        },
+        "hn-17281945": {
+          "id": "hn-17281945",
+          "source": "Hacker News",
+          "author": "mousetraps",
+          "url": "https://news.ycombinator.com/item?id=17281945",
+          "excerpt": "> stigma coming from the academic side that dataset collection is a low-level problem not worthy of serious algorithmic investment Agreed it needs more attention, but - for academia - I think it's more of an incentive issue than a stigma issue. E.g. harder to benchmark the perfor…",
+          "engagement": 1
+        },
+        "resp-25128251": {
+          "id": "resp-25128251",
+          "source": "Response post",
+          "author": "ai.facebook.com",
+          "url": "https://ai.facebook.com/blog/paving-the-way-for-software-20-with-kotlin/",
+          "excerpt": "Our work with differentiable programming, which enables programs to optimize themselves, is part of Facebook AI’s broader efforts to build more advanced tools for machine learning (ML) programming. That’s why we're extending the Kotlin compiler to make differentiability a first-c…",
+          "engagement": 45
+        },
+        "hn-17280610": {
+          "id": "hn-17280610",
+          "source": "Hacker News",
+          "author": "giacaglia",
+          "url": "https://news.ycombinator.com/item?id=17280610",
+          "excerpt": "Thanks for sharing this. This is awesome. It reminds me of something that Minsky said in the 70s: \"Computer languages of the future will be more concerned with goals and less with procedures specified by the programmer\"",
+          "engagement": 0
+        },
+        "hn-34883357": {
+          "id": "hn-34883357",
+          "source": "Hacker News",
+          "author": "hooande",
+          "url": "https://news.ycombinator.com/item?id=34883357",
+          "excerpt": "\"Neural networks are bad because some times they fail\" is a low brow dismissal, indeed. What matters is the percentage accuracy. A black box with a 10% failure rate is better than a fully explainable system that fails 20% of the time. Explanations make us feel better and they can…",
+          "engagement": 4
+        },
+        "hn-34883572": {
+          "id": "hn-34883572",
+          "source": "Hacker News",
+          "author": "lpapez",
+          "url": "https://news.ycombinator.com/item?id=34883572",
+          "excerpt": "> I will be impressed when we can write a precise and formally verifiable specification of a program and some other program can generate the code for us from that specification and prove the generated implementation is faithful to the specification. I cannot do this, and neither …",
+          "engagement": 3
+        },
+        "bsky-3lgai556kps2y": {
+          "id": "bsky-3lgai556kps2y",
+          "source": "Bluesky",
+          "author": "Yonz (@yonz.bsky.social)",
+          "url": "https://bsky.app/profile/yonz.bsky.social/post/3lgai556kps2y",
+          "excerpt": "Imo, the two in combination, highlight the massive opportunity that adaptation unlocks for traditionally annoying programming tasks with heterogeneous inputs and new solution paradigms.",
+          "engagement": 0
+        },
+        "hn-34882441": {
+          "id": "hn-34882441",
+          "source": "Hacker News",
+          "author": "Iv",
+          "url": "https://news.ycombinator.com/item?id=34882441",
+          "excerpt": "I remember a pretty old interview with Linus Torvalds where they are talking about object oriented programming. The interviewer asked him if he expected a similar paradigm change in the coming years and I remember being surprised by his answer: (quoting from memory) No, I don't s…",
+          "engagement": 2
+        },
+        "hn-34884311": {
+          "id": "hn-34884311",
+          "source": "Hacker News",
+          "author": "thefourthchime",
+          "url": "https://news.ycombinator.com/item?id=34884311",
+          "excerpt": "Do you know that scene in \"Office Space\" where that guy says: \"What is it that you do here?\" and he says: \"I take the specifications and hand them to the software engineers\". I think our jobs are about to approach that a lot more closely than you might think. Our jobs will be eff…",
+          "engagement": 2
+        },
+        "hn-34882717": {
+          "id": "hn-34882717",
+          "source": "Hacker News",
+          "author": "mvkel",
+          "url": "https://news.ycombinator.com/item?id=34882717",
+          "excerpt": "This is the right take on the future. Unsurprising that it came from Karpathy all the way back in 2017. The quality of the code is irrelevant, as the point of Software 2.0 is that it's another layer of abstraction on top of traditional code. \"Coding\" becomes \"I need something to …",
+          "engagement": 2
+        },
+        "hn-44312623": {
+          "id": "hn-44312623",
+          "source": "Hacker News",
+          "author": "sandspar",
+          "url": "https://news.ycombinator.com/item?id=44312623",
+          "excerpt": "It might help to see it as a new thing. True, it doesn't have all the strengths of software. Plus you're right, it has many new weaknesses! But it also has new strengths. And I'd bet that the people of tomorrow will invent some pretty cool things with it.",
+          "engagement": 1
+        }
+      },
+      "date": "2026-11-03T16:47:17.899Z"
+    },
+    {
+      "summary": "The submission claims that neural networks constitute 'Software 2.0', a successor paradigm in which data replaces source code and optimization replaces programmers, with existing code being progressively eaten. The examples offered are perception and signal-processing tasks, from which the post extrapolates to software in general.",
+      "strengths": "- The post is right that for a large set of fuzzy problem domains (fraud detection, perception, speech) learned models are a better tool than hand-written rules [hn-34884025] [hn-34882591].\n- It correctly identifies that ML development has a different workflow from conventional development, which is worth naming [hn-34882819].",
+      "weaknesses": "- **Category error in the title.** \"2.0\" implies a newer version of the same thing, but the problems suited to each paradigm are markedly different; it is a different tool and deserves a different name [hn-34894538] [hn-15679101]. Neural nets are bad at what software is good at (accuracy, transparency, repetition) and good at what software is bad at [bsky-3ljnyrdkccs2v] [hn-34883520]. The comparison invites \"Software 2.0 reminds me of web 3.0\" [hn-44305871].\n- **The examples do not generalize.** The \"ongoing transition\" lists only traditional AI tasks [hn-34882373]; less than 1% of a large company's code could be replaced by even an excellent network [hn-34883608]; and nobody can say what the training set for a CRUD app with OAuth, email verification and an ancient XML parser would look like [hn-34893372]. Account ledgers that are right 99.9% of the time will not cut it [hn-34884025].\n- **The premise that data is easier than code is asserted, not shown.** Readers call it \"a ridiculous unsubstantiated premise\" [hn-15678896] [hn-15679445]; quality data is the hardest part of ML [hn-34882994], most problems have nowhere near enough of it [hn-34884032], and the cost of curating data and training versus just writing code is never compared [hn-34882537].\n- **Specification is the actual work, and we have tried this before.** Business-people-describe-it-and-the-machine-builds-it was the promise of BPMN and COBOL [hn-34882684] [hn-34883152]; a complex enough prompt becomes indistinguishable from a programming language [hn-34882746], or a DSL whose syntax is English and whose implementation is a black box [hn-34883298]. Formal specs that would make generation trustworthy are harder to write than the code [hn-34882419] [hn-34882438].\n- **Novelty and history are overstated.** Neural networks date to 1943, and the post ignores that history [hn-15678741]; practitioners have long known applied ML is about data, labeling guidelines and long-tail surprises, and nobody called it Software 2.0 [hn-17283743] [hn-15679010]. The accompanying talk is read as a specialized self-driving data-labeling toolkit rather than a general shift [hn-17280967] [hn-17281064].",
+      "questions": "1. What fraction of a real production codebase do you expect to become learned weights, and what evidence supports that number [hn-34883608]?\n2. For domains with little data, what does Software 2.0 offer beyond business as usual [hn-34884032]?\n3. How does dataset curation plus training compare in total cost to writing the equivalent code [hn-34882537]?\n4. If the end state is 1.0 code validating and testing 2.0 output [hn-34885881], why call it a successor rather than a component?",
+      "soundness": 2,
+      "presentation": 3,
+      "contribution": 2,
+      "rating": 3,
+      "confidence": 4,
+      "hype_index": 4,
+      "flag_for_ethics_review": false,
+      "reviewer": 2,
+      "cluster": {
+        "label": "Complement, not version 2.0",
+        "summary": "The largest group by count accepts that neural networks win on fuzzy perception problems but rejects the framing that they replace ordinary code. Ledgers, CRUD apps, compilers and business logic need determinism, scarce data makes most problems unsuitable, writing the spec is the hard part (see COBOL and BPMN), and ML practitioners already knew 'it's all about the data', so the '2.0' label reads as a provocative rebrand.",
+        "stance": "negative",
+        "size": 37,
+        "total": 111,
+        "representative": [
+          {
+            "id": "hn-34884025",
+            "source": "Hacker News",
+            "author": "hn_throwaway_99",
+            "url": "https://news.ycombinator.com/item?id=34884025",
+            "excerpt": "Hmm, a little frustrated because I feel like a lot of comments here are missing the forest for the trees. For example, as someone who works with financial software, I don't see Karpathy's \"Software 2.0\" replacing, say, account ledgering software anytime soon. \"Yeah, we calculate …",
+            "engagement": 2
+          },
+          {
+            "id": "hn-34882684",
+            "source": "Hacker News",
+            "author": "piokoch",
+            "url": "https://news.ycombinator.com/item?id=34882684",
+            "excerpt": "So we will have some abstract language that will allow business people to define what software should do and on that base AI will generate source code and working project. Wait, wait, I have heard that it was called BPMN and it generated underneath Enterprise Java Beans and it wa…",
+            "engagement": 7
+          },
+          {
+            "id": "hn-34883608",
+            "source": "Hacker News",
+            "author": "thurn",
+            "url": "https://news.ycombinator.com/item?id=34883608",
+            "excerpt": "This just feels like taking two unrelated things and bunching them together under a label in order to be provocative and imply that software 2.0 will \"replace\" existing code. If you surveyed e.g. all of the code Google has in their piper repository, you would find significantly l…",
+            "engagement": 0
+          },
+          {
+            "id": "hn-34893372",
+            "source": "Hacker News",
+            "author": "unhammer",
+            "url": "https://news.ycombinator.com/item?id=34893372",
+            "excerpt": "Neural nets are great at language and image processing, compression, search and probabilistic prediction problems. In many ways they open up new possibilities for what software can do at all. But replace existing solutions? How on earth do you create a single neural net architect…",
+            "engagement": 0
+          },
+          {
+            "id": "hn-17283743",
+            "source": "Hacker News",
+            "author": "telltruth",
+            "url": "https://news.ycombinator.com/item?id=17283743",
+            "excerpt": "I love Karpathy but this is Karpathy’s worst talk. People have been doing applied ML for a long time in many real world settings and everyone who has done it has gone through the experiences of labeling guidelines getting ballooned, uncleared data, long tail surprises and so on. …",
+            "engagement": 0
+          },
+          {
+            "id": "bsky-3ljnyrdkccs2v",
+            "source": "Bluesky",
+            "author": "Keith Henry (@k17.dev)",
+            "url": "https://bsky.app/profile/k17.dev/post/3ljnyrdkccs2v",
+            "excerpt": "It's an interesting post, but I disagree - it's a completely different beast. Notably, neural networks are terrible at what software is good at (accuracy, optimisation, transparency, iteration, repetition) and good at something software is bad at (huge datasets, fuzzy inputs/outp…",
+            "engagement": 1
+          }
+        ]
+      },
+      "citations": {
+        "hn-34884025": {
+          "id": "hn-34884025",
+          "source": "Hacker News",
+          "author": "hn_throwaway_99",
+          "url": "https://news.ycombinator.com/item?id=34884025",
+          "excerpt": "Hmm, a little frustrated because I feel like a lot of comments here are missing the forest for the trees. For example, as someone who works with financial software, I don't see Karpathy's \"Software 2.0\" replacing, say, account ledgering software anytime soon. \"Yeah, we calculate …",
+          "engagement": 2
+        },
+        "hn-34882591": {
+          "id": "hn-34882591",
+          "source": "Hacker News",
+          "author": "a-dub",
+          "url": "https://news.ycombinator.com/item?id=34882591",
+          "excerpt": "machine learning is good at end to end closed loop analog signal analysis problems (decode/translate/synthesize) and electrical engineeringish tasks, as it always has been ... but i'm not convinced that it is yet good at the more needly real world problems that most software face…",
+          "engagement": 1
+        },
+        "hn-34882819": {
+          "id": "hn-34882819",
+          "source": "Hacker News",
+          "author": "jstx1",
+          "url": "https://news.ycombinator.com/item?id=34882819",
+          "excerpt": "What the article is saying is that when you develop and build ML systems, your workflow is different from the workflow you would have if you were solving the same problem without ML. The weird part is presenting it as 2.0 which implies that it replaces 1.0; it doesn't, apart from…",
+          "engagement": 0
+        },
+        "hn-34894538": {
+          "id": "hn-34894538",
+          "source": "Hacker News",
+          "author": "underdeserver",
+          "url": "https://news.ycombinator.com/item?id=34894538",
+          "excerpt": "The problem is that the term \"2.0\" usually means a newer, better, more feature-rich version (literally version) of the same thing. The kinds of software that \"Software 1.0\" is suitable for are markedly different that the ones \"Software 2.0\" are. As Karpathy argues, it's a differe…",
+          "engagement": 0
+        },
+        "hn-15679101": {
+          "id": "hn-15679101",
+          "source": "Hacker News",
+          "author": "chubot",
+          "url": "https://news.ycombinator.com/item?id=15679101",
+          "excerpt": "I don't think software 2.0 is a good name, because I don't think the programs we write right now and neural nets are that comparable. They're more complementary than overlapping. It's something new in the toolkit, not something that replaces existing programs.",
+          "engagement": 0
+        },
+        "bsky-3ljnyrdkccs2v": {
+          "id": "bsky-3ljnyrdkccs2v",
+          "source": "Bluesky",
+          "author": "Keith Henry (@k17.dev)",
+          "url": "https://bsky.app/profile/k17.dev/post/3ljnyrdkccs2v",
+          "excerpt": "It's an interesting post, but I disagree - it's a completely different beast. Notably, neural networks are terrible at what software is good at (accuracy, optimisation, transparency, iteration, repetition) and good at something software is bad at (huge datasets, fuzzy inputs/outp…",
+          "engagement": 1
+        },
+        "hn-34883520": {
+          "id": "hn-34883520",
+          "source": "Hacker News",
+          "author": "BulgarianIdiot",
+          "url": "https://news.ycombinator.com/item?id=34883520",
+          "excerpt": "I hope he's smarter at machine learning than at blog posts. Yes, a lot of software will include NN models. Traditional software is going nowhere, because it's the only means of being 100% sure of what the outcome will be, non-probabilistically. Neural Networks are a tool for solv…",
+          "engagement": 2
+        },
+        "hn-44305871": {
+          "id": "hn-44305871",
+          "source": "Hacker News",
+          "author": "delifue",
+          "url": "https://news.ycombinator.com/item?id=44305871",
+          "excerpt": "\"Software 2.0\" reminds me of \"web 3.0\".",
+          "engagement": 1
+        },
+        "hn-34882373": {
+          "id": "hn-34882373",
+          "source": "Hacker News",
+          "author": "ArchD",
+          "url": "https://news.ycombinator.com/item?id=34882373",
+          "excerpt": "The \"concrete examples\" he gave in the \"Ongoing transition\" section are traditional AI tasks. What about other tasks like program compilation and theorem proving that require more hard-core logic? I will be more convinced if neural networks can reliably do those tasks. If not, at…",
+          "engagement": 0
+        },
+        "hn-34883608": {
+          "id": "hn-34883608",
+          "source": "Hacker News",
+          "author": "thurn",
+          "url": "https://news.ycombinator.com/item?id=34883608",
+          "excerpt": "This just feels like taking two unrelated things and bunching them together under a label in order to be provocative and imply that software 2.0 will \"replace\" existing code. If you surveyed e.g. all of the code Google has in their piper repository, you would find significantly l…",
+          "engagement": 0
+        },
+        "hn-34893372": {
+          "id": "hn-34893372",
+          "source": "Hacker News",
+          "author": "unhammer",
+          "url": "https://news.ycombinator.com/item?id=34893372",
+          "excerpt": "Neural nets are great at language and image processing, compression, search and probabilistic prediction problems. In many ways they open up new possibilities for what software can do at all. But replace existing solutions? How on earth do you create a single neural net architect…",
+          "engagement": 0
+        },
+        "hn-15678896": {
+          "id": "hn-15678896",
+          "source": "Hacker News",
+          "author": "sigttin",
+          "url": "https://news.ycombinator.com/item?id=15678896",
+          "excerpt": "\"It turns out that a large portion of real-world problems have the property that it is significantly easier to collect the data than to explicitly write the program.\" It turns out that when you base your post on a ridiculous unsubstantiated premise, you can conclude anything.",
+          "engagement": 1
+        },
+        "hn-15679445": {
+          "id": "hn-15679445",
+          "source": "Hacker News",
+          "author": "0xbear",
+          "url": "https://news.ycombinator.com/item?id=15679445",
+          "excerpt": "I like how he then proceeds to enumerate all the things which, if they weren’t doable, no one would really care. Cardinal rule of drug dealing: never get high off your own stash.",
+          "engagement": 1
+        },
+        "hn-34882994": {
+          "id": "hn-34882994",
+          "source": "Hacker News",
+          "author": "binarymax",
+          "url": "https://news.ycombinator.com/item?id=34882994",
+          "excerpt": "An interesting treatise but I don’t fully agree with the statement that gathering data or stating a goal is easy. Getting quality data is arguably the hardest part of ML. Getting people to fully describe their intentions and all edge cases (“requirements”) in a clear manner is al…",
+          "engagement": 0
+        },
+        "hn-34884032": {
+          "id": "hn-34884032",
+          "source": "Hacker News",
+          "author": "ricw",
+          "url": "https://news.ycombinator.com/item?id=34884032",
+          "excerpt": "This thesis seems very credible, but it misses one downside of his \"software 2.0\" definition: you need significant amounts of data to train the neural networks. Most problems do not have this amount of data. Not even close. So yes, this will revolutionize and enable unseen perfor…",
+          "engagement": 1
+        },
+        "hn-34882537": {
+          "id": "hn-34882537",
+          "source": "Hacker News",
+          "author": "kklisura",
+          "url": "https://news.ycombinator.com/item?id=34882537",
+          "excerpt": "If assume the article is correct and there will be Software 2.0, what's the cost of running it vs cost of running Software 1.0? The reason I'm asking is given this quote \"when the network fails in some hard or rare cases, we do not fix those predictions by writing code, but by in…",
+          "engagement": 2
+        },
+        "hn-34882684": {
+          "id": "hn-34882684",
+          "source": "Hacker News",
+          "author": "piokoch",
+          "url": "https://news.ycombinator.com/item?id=34882684",
+          "excerpt": "So we will have some abstract language that will allow business people to define what software should do and on that base AI will generate source code and working project. Wait, wait, I have heard that it was called BPMN and it generated underneath Enterprise Java Beans and it wa…",
+          "engagement": 7
+        },
+        "hn-34883152": {
+          "id": "hn-34883152",
+          "source": "Hacker News",
+          "author": "marcus_holmes",
+          "url": "https://news.ycombinator.com/item?id=34883152",
+          "excerpt": "And COBOL before that. The goal of COBOL was to allow a non-technical business person to describe the problem in English and that description could be used as the basis of the program. Needless to say it didn't work. Accurately describing what a program should do is what a progra…",
+          "engagement": 1
+        },
+        "hn-34882746": {
+          "id": "hn-34882746",
+          "source": "Hacker News",
+          "author": "claytongulick",
+          "url": "https://news.ycombinator.com/item?id=34882746",
+          "excerpt": "At some point the complexity of the prompts required to generate a program that meets a non-trivial specification become so complex as to be indistinguishable from a programming language.",
+          "engagement": 1
+        },
+        "hn-34883298": {
+          "id": "hn-34883298",
+          "source": "Hacker News",
+          "author": "mattgreenrocks",
+          "url": "https://news.ycombinator.com/item?id=34883298",
+          "excerpt": "This feels like re-discovering DSLs, except the syntax is English, and the implementation is a blackbox.",
+          "engagement": 3
+        },
+        "hn-34882419": {
+          "id": "hn-34882419",
+          "source": "Hacker News",
+          "author": "agentultra",
+          "url": "https://news.ycombinator.com/item?id=34882419",
+          "excerpt": "I think we need to train people to write formal specifications before we're going to see machine learning techniques generating useful programs. Sure sometimes an LLM generates a correct program. And sometimes horoscopes predict the future. I will be impressed when we can write a…",
+          "engagement": 6
+        },
+        "hn-34882438": {
+          "id": "hn-34882438",
+          "source": "Hacker News",
+          "author": "canes123456",
+          "url": "https://news.ycombinator.com/item?id=34882438",
+          "excerpt": "A precise and formally verified specification is WAY harder to write then the code for it",
+          "engagement": 4
+        },
+        "hn-15678741": {
+          "id": "hn-15678741",
+          "source": "Hacker News",
+          "author": "pron",
+          "url": "https://news.ycombinator.com/item?id=15678741",
+          "excerpt": "What bothers me about articles like this is not their faith in the power of neural networks -- power that, I'm sure, we have only just begun to harness effectively -- but that by ignoring the history of neural networks (and machine learning in general), they paint a somewhat misl…",
+          "engagement": 3
+        },
+        "hn-17283743": {
+          "id": "hn-17283743",
+          "source": "Hacker News",
+          "author": "telltruth",
+          "url": "https://news.ycombinator.com/item?id=17283743",
+          "excerpt": "I love Karpathy but this is Karpathy’s worst talk. People have been doing applied ML for a long time in many real world settings and everyone who has done it has gone through the experiences of labeling guidelines getting ballooned, uncleared data, long tail surprises and so on. …",
+          "engagement": 0
+        },
+        "hn-15679010": {
+          "id": "hn-15679010",
+          "source": "Hacker News",
+          "author": "stepik777",
+          "url": "https://news.ycombinator.com/item?id=15679010",
+          "excerpt": "So in 2017 he suddenly realized that visual recognition, speech recognition, etc are done with neural networks. How enlightening!",
+          "engagement": 0
+        },
+        "hn-17280967": {
+          "id": "hn-17280967",
+          "source": "Hacker News",
+          "author": "sheeshkebab",
+          "url": "https://news.ycombinator.com/item?id=17280967",
+          "excerpt": "It seems this guy’s software 2.0 looks like some specialized toolset for auto driving/navigation than a general purpose shift. If all that we get out of it is fancy data labeling tools, incapable of learning anything new by themselves, it’s going to get old real quick.",
+          "engagement": 0
+        },
+        "hn-17281064": {
+          "id": "hn-17281064",
+          "source": "Hacker News",
+          "author": "hyperbole",
+          "url": "https://news.ycombinator.com/item?id=17281064",
+          "excerpt": "The argument the speaker makes is extremely weak - 1.0 software programs are built of building blocks modules, 2.0 software is machine learning - what point is trying to be made here? We still break problems down when solving problems that can apply machine learning. There's no s…",
+          "engagement": 1
+        },
+        "hn-34885881": {
+          "id": "hn-34885881",
+          "source": "Hacker News",
+          "author": "obviouslynotme",
+          "url": "https://news.ycombinator.com/item?id=34885881",
+          "excerpt": "I agree that almost no Software 1.0 will be effected by this. Software 2.0 will start doing the jobs humans do now because Software 1.0 can't, e.g. security guard, customer support, as well as your examples. The real interesting things will be Software 1.0 and 2.0 working togethe…",
+          "engagement": 0
+        }
+      },
+      "date": "2026-11-03T17:47:17.899Z"
+    },
+    {
+      "summary": "The submission proposes replacing explicit code with trained neural network weights and lists opacity, unintuitive failures, absorbed bias and adversarial vulnerability as limitations. It treats these as caveats to be handled by more data and better tooling rather than as reasons to limit the paradigm's scope.",
+      "strengths": "- The post does at least list opacity and embarrassing failure modes as limitations [hn-34883148], and the trade-off it poses between an understood 90% model and an opaque 99% model is a fair framing of the choice [hn-34884091].\n- Readers concede there are settings where a best-effort black box is fine, such as when a human checks the output or relevance ranking is the task [hn-34895695].",
+      "weaknesses": "- **The caveat is the understatement of the century.** Coming from the person running Tesla's vision stack, where cars still mishandle forking lanes years later, a single sentence on unintuitive failures is not enough [hn-34883148]. Classifiers fixate on obscure image details, adversarial attacks remain unsolved, and doing driving with classifier output and no geometric analysis is \"scary\" [hn-17282519] [hn-17283958].\n- **No account of debugging or testing.** Reading and debugging other people's code is already the hardest part of the job, and 90%-accurate generated code makes it harder [hn-34882309]. The talk focuses on labeling and skips the practical problem of debugging complex models in a mission-critical system [hn-17280720]. Fixing one failure may break another you cannot see [hn-34883714].\n- **No risk management story.** Almost nobody deploying these models knows how to do model risk management; the edge cases are badly understood and nearly impossible to inspect [hn-34882405]. Demonstrating 99% accuracy may require enough tests that you could have written the procedural version [hn-34884091]; contracts and SLAs need guaranteed behavior [hn-34887885]. \"Imagine if the Therac-25 software was written by ChatGPT\" [hn-34882555].\n- **Weights are not programs.** A network is closer to a giant spreadsheet whose cells no one can interpret; locating a single a/an neuron in GPT-2 took a research effort [hn-34884306]. Shipping a pre-trained network without its data is like shipping a binary blob and throwing away the source [hn-15679005]. The resulting artifact is nondeterministic, unreproducible, unauditable and not modifiable in a targeted way [hn-44309851].\n- **Cross-layer adaptation destroys useful boundaries.** Letting a system rewrite instructions ten layers down creates steep performance cliffs and removes the separate failure zones that layering exists to provide [hn-34882640]; chaotic sensitivity of models argues for extracting rigid business logic instead [hn-34882418]. Complexity grows rather than shrinks [hn-34883700], and the attack surface is barely studied [hn-15679337].",
+      "questions": "1. How do you propose to debug, audit and patch a specific failure in a Software 2.0 component without retraining and risking regressions elsewhere [hn-34883714] [hn-44309851]?\n2. What verification standard should apply before learned components are used in safety-critical systems like driving [hn-17282519] [hn-34882555]?\n3. Would a hybrid with explicit logical or expert-system layers on top of classifiers handle the long tail better [hn-17280991]?\n4. How should model owners preserve and version training data so that the 'source code' is not discarded [hn-15679005]?",
+      "soundness": 2,
+      "presentation": 3,
+      "contribution": 2,
+      "rating": 3,
+      "confidence": 4,
+      "hype_index": 4,
+      "flag_for_ethics_review": false,
+      "reviewer": 3,
+      "cluster": {
+        "label": "Black boxes you cannot debug",
+        "summary": "These readers focus on the cost the post files under a one-line caveat: opaque, nondeterministic programs that cannot be read, tested, audited or patched in a targeted way. They point to Tesla Autopilot's odd failures, adversarial examples and the absence of model risk management, and warn that putting such components in safety-critical stacks is dangerous.",
+        "stance": "negative",
+        "size": 19,
+        "total": 111,
+        "representative": [
+          {
+            "id": "hn-34882309",
+            "source": "Hacker News",
+            "author": "et1337",
+            "url": "https://news.ycombinator.com/item?id=34882309",
+            "excerpt": "If the hardest part of programming is reading, understanding, and debugging other people’s code, our jobs are about to get a lot harder with a bunch of AIs running around spitting out 90% accurate code.",
+            "engagement": 19
+          },
+          {
+            "id": "hn-34882405",
+            "source": "Hacker News",
+            "author": "orangepurple",
+            "url": "https://news.ycombinator.com/item?id=34882405",
+            "excerpt": "Nearly nobody who wants to use these neural nets knows how to do model risk management. These things are black boxes with edge cases that are badly understood and nearly impossible to inspect and test. At least code is logical and human readable (usually).",
+            "engagement": 9
+          },
+          {
+            "id": "hn-17282519",
+            "source": "Hacker News",
+            "author": "Animats",
+            "url": "https://news.ycombinator.com/item?id=17282519",
+            "excerpt": "Be afraid. Be very afraid. If this guy was working on adtech, that would be fine. That's very error-tolerant. But this guy is working on automatic driving. The basic mindset here is to run image classifiers to classify the objects in an image, then use the classifier output to de…",
+            "engagement": 6
+          },
+          {
+            "id": "hn-34883148",
+            "source": "Hacker News",
+            "author": "darksaints",
+            "url": "https://news.ycombinator.com/item?id=34883148",
+            "excerpt": "To contribute my personal lowbrow dismissal, this is the guy in charge of computer vision at Tesla, where cars have had a habit of doing absolutely bonkers behavior that doesn’t make any sense, when faced with completely normal phenomenon like lanes that fork into two. His single…",
+            "engagement": 4
+          },
+          {
+            "id": "hn-44309851",
+            "source": "Hacker News",
+            "author": "vrighter",
+            "url": "https://news.ycombinator.com/item?id=44309851",
+            "excerpt": "So software 2.0 is huge and inefficient. It is nondeterministic. It is not reproducible. It is not correct (with the same definition of correct used for usual stuff. I.E. If there is a right answer, it will give that one and only ever that one). It is not auditable. It is not mod…",
+            "engagement": 1
+          },
+          {
+            "id": "hn-34884306",
+            "source": "Hacker News",
+            "author": "mikewarot",
+            "url": "https://news.ycombinator.com/item?id=34884306",
+            "excerpt": "I reject this premise. A neural network is not a program, they are essentially huge multi-sheet Excel workbooks that compute a score for a given set of inputs. Unlike the Excel workbooks made by domain experts, it's almost impossible to even find out what the function of any give…",
+            "engagement": 0
+          }
+        ]
+      },
+      "citations": {
+        "hn-34883148": {
+          "id": "hn-34883148",
+          "source": "Hacker News",
+          "author": "darksaints",
+          "url": "https://news.ycombinator.com/item?id=34883148",
+          "excerpt": "To contribute my personal lowbrow dismissal, this is the guy in charge of computer vision at Tesla, where cars have had a habit of doing absolutely bonkers behavior that doesn’t make any sense, when faced with completely normal phenomenon like lanes that fork into two. His single…",
+          "engagement": 4
+        },
+        "hn-34884091": {
+          "id": "hn-34884091",
+          "source": "Hacker News",
+          "author": "wufufufu",
+          "url": "https://news.ycombinator.com/item?id=34884091",
+          "excerpt": "> Across many applications areas, we’ll be left with a choice of using a 90% accurate model we understand, or 99% accurate model we don’t. And how do you show that it is 99% accurate besides creating enough automated tests to the point that you could write the procedural version?…",
+          "engagement": 0
+        },
+        "hn-34895695": {
+          "id": "hn-34895695",
+          "source": "Hacker News",
+          "author": "cranium",
+          "url": "https://news.ycombinator.com/item?id=34895695",
+          "excerpt": "Don't forget it was written in Nov 2017, AlphaGo Zero was just released at this point. Seeing how the field evolved in a 5-year span, I can understand the desire to be at the forefront. Personally, I want to keep working on things that I can get to the bottom of. In the same way …",
+          "engagement": 0
+        },
+        "hn-17282519": {
+          "id": "hn-17282519",
+          "source": "Hacker News",
+          "author": "Animats",
+          "url": "https://news.ycombinator.com/item?id=17282519",
+          "excerpt": "Be afraid. Be very afraid. If this guy was working on adtech, that would be fine. That's very error-tolerant. But this guy is working on automatic driving. The basic mindset here is to run image classifiers to classify the objects in an image, then use the classifier output to de…",
+          "engagement": 6
+        },
+        "hn-17283958": {
+          "id": "hn-17283958",
+          "source": "Hacker News",
+          "author": "Fricken",
+          "url": "https://news.ycombinator.com/item?id=17283958",
+          "excerpt": "I'm to presume that they aren't trying to do SLAM purely with classifiers, though with the evidence of Autopilot's performance thus far, I wouldn't put it past them. That aspect definitely isn't in Karpathy's wheelhouse. There's a great presentation from Gabe Sibley (now with Cru…",
+          "engagement": 0
+        },
+        "hn-34882309": {
+          "id": "hn-34882309",
+          "source": "Hacker News",
+          "author": "et1337",
+          "url": "https://news.ycombinator.com/item?id=34882309",
+          "excerpt": "If the hardest part of programming is reading, understanding, and debugging other people’s code, our jobs are about to get a lot harder with a bunch of AIs running around spitting out 90% accurate code.",
+          "engagement": 19
+        },
+        "hn-17280720": {
+          "id": "hn-17280720",
+          "source": "Hacker News",
+          "author": "rasmi",
+          "url": "https://news.ycombinator.com/item?id=17280720",
+          "excerpt": "One downside of Software 2.0 as compared to 1.0, at least as of today: it is incredibly hard to debug in the conventional sense. The focus of this talk was mostly on data-labelling challenges. For a company with software as mission-critical as Tesla, I'm disappointed Andrej did n…",
+          "engagement": 2
+        },
+        "hn-34883714": {
+          "id": "hn-34883714",
+          "source": "Hacker News",
+          "author": "billbrown",
+          "url": "https://news.ycombinator.com/item?id=34883714",
+          "excerpt": "It reminds me of the \"code generator\" phase we went through a decade or so ago. At least then we could see the \"code generator\" code and adjust it when it produced dreck. I'll also note that the next hardest part of programming is troubleshooting \"in production\" whether a Web app…",
+          "engagement": 1
+        },
+        "hn-34882405": {
+          "id": "hn-34882405",
+          "source": "Hacker News",
+          "author": "orangepurple",
+          "url": "https://news.ycombinator.com/item?id=34882405",
+          "excerpt": "Nearly nobody who wants to use these neural nets knows how to do model risk management. These things are black boxes with edge cases that are badly understood and nearly impossible to inspect and test. At least code is logical and human readable (usually).",
+          "engagement": 9
+        },
+        "hn-34887885": {
+          "id": "hn-34887885",
+          "source": "Hacker News",
+          "author": "thisoneworks",
+          "url": "https://news.ycombinator.com/item?id=34887885",
+          "excerpt": "You want guaranteed specific behavior from a software system (that's what SLAs and contracts are for) and easily reason about it so you can hire a college grad to tweak it. And that's not even talking about datasets, you can only train something accurate if you have enough good d…",
+          "engagement": 0
+        },
+        "hn-34882555": {
+          "id": "hn-34882555",
+          "source": "Hacker News",
+          "author": "Dave3of5",
+          "url": "https://news.ycombinator.com/item?id=34882555",
+          "excerpt": "I'm sure that will be the case at some point but for the moment it's not true. It's also important to note that NN's have been around for a long long time with relation to computing in general. The problems caused by using them have been reduced by not completely removed. Imagine…",
+          "engagement": 2
+        },
+        "hn-34884306": {
+          "id": "hn-34884306",
+          "source": "Hacker News",
+          "author": "mikewarot",
+          "url": "https://news.ycombinator.com/item?id=34884306",
+          "excerpt": "I reject this premise. A neural network is not a program, they are essentially huge multi-sheet Excel workbooks that compute a score for a given set of inputs. Unlike the Excel workbooks made by domain experts, it's almost impossible to even find out what the function of any give…",
+          "engagement": 0
+        },
+        "hn-15679005": {
+          "id": "hn-15679005",
+          "source": "Hacker News",
+          "author": "sparkie",
+          "url": "https://news.ycombinator.com/item?id=15679005",
+          "excerpt": "Not mentioned in disadvantages is that you can't really explain \"how\" a neural network produces a given output from given inputs. Some things can be figured out from training data, if it were available, but more often than not it isn't, you just get a pre-trained network. So if w…",
+          "engagement": 0
+        },
+        "hn-44309851": {
+          "id": "hn-44309851",
+          "source": "Hacker News",
+          "author": "vrighter",
+          "url": "https://news.ycombinator.com/item?id=44309851",
+          "excerpt": "So software 2.0 is huge and inefficient. It is nondeterministic. It is not reproducible. It is not correct (with the same definition of correct used for usual stuff. I.E. If there is a right answer, it will give that one and only ever that one). It is not auditable. It is not mod…",
+          "engagement": 1
+        },
+        "hn-34882640": {
+          "id": "hn-34882640",
+          "source": "Hacker News",
+          "author": "titzer",
+          "url": "https://news.ycombinator.com/item?id=34882640",
+          "excerpt": "> Think about how amazing it could be if your web browser could automatically re-design the low-level system instructions 10 stacks down to achieve a higher efficiency in loading web pages. This sounds great in theory, but in practice, a system that has that much dynamic adaptati…",
+          "engagement": 1
+        },
+        "hn-34882418": {
+          "id": "hn-34882418",
+          "source": "Hacker News",
+          "author": "derefr",
+          "url": "https://news.ycombinator.com/item?id=34882418",
+          "excerpt": "So, why would you want to rely on business logic embodied directly as a chaotic ML model (in the Chaos Theory sense of “chaotic” — subtle changes in stateful hyperparameters making for discontinuous shifts in output space), when you could instead ask the model to precisely descri…",
+          "engagement": 0
+        },
+        "hn-34883700": {
+          "id": "hn-34883700",
+          "source": "Hacker News",
+          "author": "pulse7",
+          "url": "https://news.ycombinator.com/item?id=34883700",
+          "excerpt": "Even without AI the systems have become VERY COMPLEX, hard to extend and debug. It is much harder to get started for newbies than it was say 25 years ago. If AI is software 2.0 it will be EVEN MORE COMPLEX. I guess that Software 2.0 must be something which will reduce complexity …",
+          "engagement": 0
+        },
+        "hn-15679337": {
+          "id": "hn-15679337",
+          "source": "Hacker News",
+          "author": "sigsergv",
+          "url": "https://news.ycombinator.com/item?id=15679337",
+          "excerpt": "The main issue with ML/AI is that it has not been exploited yet by hackers and criminals. We actually don't know ML/AI weaknesses at all! We have some basic examples like feeding fabricated pages to google search AI to hack page rank. Or exploiting news collector AI to push fake …",
+          "engagement": 0
+        },
+        "hn-17280991": {
+          "id": "hn-17280991",
+          "source": "Hacker News",
+          "author": "TimTheTinker",
+          "url": "https://news.ycombinator.com/item?id=17280991",
+          "excerpt": "I know this might sound like I’m still in the 1970s, but... it occurs to me that marrying an expert system to these neural systems might help significantly with the long tail of unusual events. Fundamentally, the problem with these systems (and note, sometimes we say this about p…",
+          "engagement": 1
+        }
+      },
+      "date": "2026-11-03T18:47:17.899Z"
+    }
+  ],
+  "metaReview": {
+    "metareview": "**Summary.** The submission rebrands neural networks as \"Software 2.0\": data is the source code, training is the compiler, and much of programming will become dataset curation. It lists perception, speech, translation, games and learned indexes as evidence, acknowledges opacity and adversarial fragility in passing, and calls for 2.0 tooling.\n\n**Assessment.** The three reviews disagree less than their ratings suggest. Reviewer 1 judges the post on its forecast and finds it vindicated: the shift from writing logic to curating data and specifying goals did happen, datasets did become infrastructure, and a black box that fails less often often beats a transparent one that fails more. Reviewer 2 judges it on its framing and finds it overreaching: the examples are all perception-style tasks, most production code (ledgers, CRUD, compilers) has no plausible training set, data is not easier than code for most problems, and \"2.0\" implies replacement where the honest word is \"complement.\" Reviewer 3 judges it on its caveats and finds them thin: debugging, auditing, targeted fixes and risk management get a sentence where they deserved a section, which is a pointed omission from the person then running a production self-driving vision stack.\n\nI find Reviewer 2's scope argument the most convincing on the merits, and notably Reviewer 1 does not really contest it; its own strongest supporters describe the two paradigms working in combination. Reviewer 3's concerns are legitimate but are largely an elaboration of limitations the post itself lists, so they argue for a revision rather than a rejection. Reviewer 1's point stands, though: as a piece of technological forecasting, the post saw the data-centric, learned-component workflow coming before most of its critics did, and \"the title overclaims\" is a weaker objection than \"the prediction was wrong,\" which nobody convincingly makes.\n\nThe result is an influential position paper with an overstated title and an understated limitations section. That describes a good fraction of accepted position papers.",
+    "additional_comments_on_reviewer_discussion": "Decisive: Reviewer 2's observation that the evidence is confined to perception-style tasks and that the replacement framing is never argued for general software, and Reviewer 1's observation that the workflow prediction nonetheless held up. Partially discounted: Reviewer 2's 'nothing new, ML was always about data' line, since naming and framing a practice is itself a contribution, and Reviewer 3's Tesla-specific criticisms, which concern the author's employer more than the essay's argument. Reviewer 3's call for a real treatment of debugging and verification is endorsed as a required revision.",
+    "decision": "Accept (Poster)",
+    "decision_comment": "Accepted as a prescient position paper, on the condition that the camera-ready version consider renaming itself 'Software 1.0, Plus Some Weights' and expand the one-sentence limitations section into an actual section.",
+    "date": "2026-11-03T19:47:17.899Z",
+    "areaChairId": "v2ni"
+  }
+}

@@ -1,0 +1,616 @@
+{
+  "postId": "mistral-large-4-le-chonk-is",
+  "generatedAt": "2026-11-03T19:47:17.893Z",
+  "models": {
+    "reviewer": "claude-opus-5-5 (hand-run in Claude Code)",
+    "areaChair": "claude-opus-5-5 (hand-run in Claude Code)"
+  },
+  "reactions": {
+    "total": 97,
+    "bySource": {
+      "Hacker News": 58,
+      "Bluesky": 39
+    },
+    "threads": [
+      {
+        "source": "Hacker News",
+        "title": "We're releasing the weights of Mistral Large 4",
+        "url": "https://news.ycombinator.com/item?id=50289418",
+        "points": 1729,
+        "comments": 440
+      }
+    ]
+  },
+  "reviews": [
+    {
+      "summary": "The submission releases the weights of Mistral Large 4 (Le Chonk), a 1T-parameter (52B active) multimodal model, after three further weeks of RL beyond its public preview. It claims the lead among open-weight models on FrontierCode 2.0 and Terminal-Bench 4.0, parity with GLM-5.3 on the Artificial Analysis Coding Agent Index at 47% fewer tokens, strong defensive cyber results, and a price roughly half that of the preview. It frames the release as the foundation for European sovereign AI.",
+      "strengths": "- The headline result revived interest in Mistral: \"better than GLM-5.3 on TB4, is Mistral so back?\" [bsky-3myzhncq2d22h], prompting genuine surprise that \"IT'S GOOD NOW\" [bsky-3myzie2laok22] and relief that it is \"at least in the game\" [bsky-3myzk3u3i2k2j]. This is the first Mistral release in years that seems reasonably good, after threads dominated by complaints [hn-50291115].\n- The price cut changes the evaluation: a reviewer who found the preview uncompetitive at its original pricing says the release \"warrants a major reassessment\" [hn-50289701].\n- It fills a real gap for regulated and sovereign users. Almost every regulated US business cannot run Chinese models, so a near-frontier self-hostable alternative \"opens a lot of doors\" [hn-50293063]; teams with explicit no-Chinese-model rules are already planning to serve it [hn-50290022, hn-50292235]. EU companies report Mistral working well as a provider, including its serving of third-party models [hn-50290261, hn-50290931, hn-50300987], and readers welcome more countries competing [hn-50294837, hn-50289993, bsky-3mzfaghvgok26].\n- Daily users find it adequate in practice: \"more than enough for everything I'm doing\" [bsky-3myzjbt7pmc2r], fine for implementing well-specified tickets in Rust [hn-50291480], and \"good enough\" when paired with good context, at a twentieth of Anthropic's API cost [hn-50297052]. It is also used for free in at least one production bot [bsky-3mzfahs3mqc26].\n- The trajectory matters: going from no model in this size class to one competitive with z.ai is \"a first step on a trip which will hopefully go quite far\" [hn-50297894], and the release raises expectations for smaller derived models [bsky-3myzi6qslxc2r].",
+      "weaknesses": "- Even supporters frame the result as \"good enough\" rather than leading; Chinese models remain cheaper for similar outcomes and Anthropic's models consistently better [hn-50297052].\n- Comparisons omit Kimi K3.1, and DeepSeek V4.1 Flash remains impressive [hn-50289715].\n- Small leads on single benchmarks invite the observation that \"the throne changes hands again\", arguing for routing between models per task rather than loyalty to any one [bsky-3mz6dyow65s26].",
+      "questions": "1. Will smaller distilled or Medium-class models be derived from Large 4, and on what timeline?\n2. How does Large 4 compare with Kimi K3.1 Pro, which is absent from the benchmark tables?\n3. What quantization levels preserve the reported coding results on typical 4-8 GPU servers?\n4. Will EU regional inference remain priced at parity with the global endpoint?",
+      "soundness": 3,
+      "presentation": 3,
+      "contribution": 3,
+      "rating": 8,
+      "confidence": 3,
+      "hype_index": 3,
+      "flag_for_ethics_review": false,
+      "reviewer": 1,
+      "cluster": {
+        "label": "Mistral is back, and Europe is in the game",
+        "summary": "Beating GLM-5.3 on Terminal-Bench and halving the price makes this the first Mistral release in a long time that people consider genuinely good. EU companies and regulated US businesses that cannot run Chinese models see a near-frontier, self-hostable option, and daily users call it 'good enough' for real work.",
+        "stance": "positive",
+        "size": 24,
+        "total": 97,
+        "representative": [
+          {
+            "id": "bsky-3myzhncq2d22h",
+            "source": "Bluesky",
+            "author": "philpax (@philpax.me)",
+            "url": "https://bsky.app/profile/philpax.me/post/3myzhncq2d22h",
+            "excerpt": "mistral.ai/news/mistral... better than GLM-5.3 on TB4, is Mistral so back?",
+            "engagement": 72
+          },
+          {
+            "id": "bsky-3myzie2laok22",
+            "source": "Bluesky",
+            "author": "ilo Niki ⎔ (@anomalybait.me)",
+            "url": "https://bsky.app/profile/anomalybait.me/post/3myzie2laok22",
+            "excerpt": "WHAT. IT'S GOOD NOW??",
+            "engagement": 13
+          },
+          {
+            "id": "hn-50289701",
+            "source": "Hacker News",
+            "author": "Topfi",
+            "url": "https://news.ycombinator.com/item?id=50289701",
+            "excerpt": "They slashed pricing, it's now nearly half vs the preview (Input: $0.7/M Tokens, Output: $2.1/M Tokens vs Input: $1.36/M Tokens, Output: $4.18/M Tokens). At the original pricing in my evals, Mistral Large 4 Preview was not competitive. With this price point and some improvements …",
+            "engagement": 7
+          },
+          {
+            "id": "hn-50293063",
+            "source": "Hacker News",
+            "author": "nunez",
+            "url": "https://news.ycombinator.com/item?id=50293063",
+            "excerpt": "This is significant. Almost every regulated business in the US cannot run Chinese models, which was the only real option for self-hosted inference and agents. They do run gpt-oss or Gemma, but a near frontier-level model like this being available opens a lot of doors while giving…",
+            "engagement": 1
+          },
+          {
+            "id": "hn-50297052",
+            "source": "Hacker News",
+            "author": "berkes",
+            "url": "https://news.ycombinator.com/item?id=50297052",
+            "excerpt": "I've been using it since February this year almost exclusively. Occasionally ran the same prompt through openrouter to check if it's \"my context\" or \"the model\" when I get a poor result. Mistrals models aren't the best. They certainly are measurably worse when I run them \"blank s…",
+            "engagement": 0
+          },
+          {
+            "id": "hn-50291115",
+            "source": "Hacker News",
+            "author": "InsideOutSanta",
+            "url": "https://news.ycombinator.com/item?id=50291115",
+            "excerpt": "> Ughh the overly positive and cheerful comments here from what is usually the most critical/pessimistic audience on the internet is a huge tell. What are you talking about? Most of the comments seem to be the usual cranky complaints about licenses and UX and model size and how M…",
+            "engagement": 0
+          }
+        ]
+      },
+      "citations": {
+        "bsky-3myzhncq2d22h": {
+          "id": "bsky-3myzhncq2d22h",
+          "source": "Bluesky",
+          "author": "philpax (@philpax.me)",
+          "url": "https://bsky.app/profile/philpax.me/post/3myzhncq2d22h",
+          "excerpt": "mistral.ai/news/mistral... better than GLM-5.3 on TB4, is Mistral so back?",
+          "engagement": 72
+        },
+        "bsky-3myzie2laok22": {
+          "id": "bsky-3myzie2laok22",
+          "source": "Bluesky",
+          "author": "ilo Niki ⎔ (@anomalybait.me)",
+          "url": "https://bsky.app/profile/anomalybait.me/post/3myzie2laok22",
+          "excerpt": "WHAT. IT'S GOOD NOW??",
+          "engagement": 13
+        },
+        "bsky-3myzk3u3i2k2j": {
+          "id": "bsky-3myzk3u3i2k2j",
+          "source": "Bluesky",
+          "author": "A.V. (@slckl.bsky.social)",
+          "url": "https://bsky.app/profile/slckl.bsky.social/post/3myzk3u3i2k2j",
+          "excerpt": "happy to see they're at least in the game",
+          "engagement": 6
+        },
+        "hn-50291115": {
+          "id": "hn-50291115",
+          "source": "Hacker News",
+          "author": "InsideOutSanta",
+          "url": "https://news.ycombinator.com/item?id=50291115",
+          "excerpt": "> Ughh the overly positive and cheerful comments here from what is usually the most critical/pessimistic audience on the internet is a huge tell. What are you talking about? Most of the comments seem to be the usual cranky complaints about licenses and UX and model size and how M…",
+          "engagement": 0
+        },
+        "hn-50289701": {
+          "id": "hn-50289701",
+          "source": "Hacker News",
+          "author": "Topfi",
+          "url": "https://news.ycombinator.com/item?id=50289701",
+          "excerpt": "They slashed pricing, it's now nearly half vs the preview (Input: $0.7/M Tokens, Output: $2.1/M Tokens vs Input: $1.36/M Tokens, Output: $4.18/M Tokens). At the original pricing in my evals, Mistral Large 4 Preview was not competitive. With this price point and some improvements …",
+          "engagement": 7
+        },
+        "hn-50293063": {
+          "id": "hn-50293063",
+          "source": "Hacker News",
+          "author": "nunez",
+          "url": "https://news.ycombinator.com/item?id=50293063",
+          "excerpt": "This is significant. Almost every regulated business in the US cannot run Chinese models, which was the only real option for self-hosted inference and agents. They do run gpt-oss or Gemma, but a near frontier-level model like this being available opens a lot of doors while giving…",
+          "engagement": 1
+        },
+        "bsky-3myzjbt7pmc2r": {
+          "id": "bsky-3myzjbt7pmc2r",
+          "source": "Bluesky",
+          "author": "nullenvk (@nullenvk.bsky.social)",
+          "url": "https://bsky.app/profile/nullenvk.bsky.social/post/3myzjbt7pmc2r",
+          "excerpt": "Been using their preview model for the past month, it's more than enough for everything I'm doing on everyday basis.",
+          "engagement": 6
+        },
+        "hn-50291480": {
+          "id": "hn-50291480",
+          "source": "Hacker News",
+          "author": "smodo",
+          "url": "https://news.ycombinator.com/item?id=50291480",
+          "excerpt": "I’m a casual user out of principle and it’s fine. Nothing extraordinary but capable of assisting coding sessions. It won’t one shot a cancer medicine but it handles my Rust projects well. Mind you I don’t like the style of LLM use where people just brute force their way to a work…",
+          "engagement": 0
+        },
+        "hn-50297052": {
+          "id": "hn-50297052",
+          "source": "Hacker News",
+          "author": "berkes",
+          "url": "https://news.ycombinator.com/item?id=50297052",
+          "excerpt": "I've been using it since February this year almost exclusively. Occasionally ran the same prompt through openrouter to check if it's \"my context\" or \"the model\" when I get a poor result. Mistrals models aren't the best. They certainly are measurably worse when I run them \"blank s…",
+          "engagement": 0
+        },
+        "bsky-3mzfahs3mqc26": {
+          "id": "bsky-3mzfahs3mqc26",
+          "source": "Bluesky",
+          "author": "Marco Maroni (@marcomaroni.it)",
+          "url": "https://bsky.app/profile/marcomaroni.it/post/3mzfahs3mqc26",
+          "excerpt": "per inciso io sto usando Mistral per il mio bot @alt-text-bot.bsky.social , un modello gratuito e fa il suo sporco lavoro",
+          "engagement": 2
+        },
+        "hn-50297894": {
+          "id": "hn-50297894",
+          "source": "Hacker News",
+          "author": "impossiblefork",
+          "url": "https://news.ycombinator.com/item?id=50297894",
+          "excerpt": "Very nice. I always expected it to beat z.ai's model by at least a little bit, since it's so similar and that it would be slightly behind Kimi. Maybe this can change with better post-training, but it's great to go from not having a model in this size class to making something com…",
+          "engagement": 0
+        },
+        "bsky-3myzi6qslxc2r": {
+          "id": "bsky-3myzi6qslxc2r",
+          "source": "Bluesky",
+          "author": "Swift-1.5-IQ3_S-GSQ-RCO-qfn-ana (@okami.mom)",
+          "url": "https://bsky.app/profile/okami.mom/post/3myzi6qslxc2r",
+          "excerpt": "makes me excited for their smaller models now",
+          "engagement": 11
+        },
+        "hn-50289715": {
+          "id": "hn-50289715",
+          "source": "Hacker News",
+          "author": "jiehong",
+          "url": "https://news.ycombinator.com/item?id=50289715",
+          "excerpt": "That's really great! Congratulations to everyone working at Mistral! Now, perhaps Kimi 3.1 is missing from the benchmarks, and Deepseek 4.1 Flash is still has impressive!",
+          "engagement": 0
+        },
+        "bsky-3mz6dyow65s26": {
+          "id": "bsky-3mz6dyow65s26",
+          "source": "Bluesky",
+          "author": "@seldondance.bsky.social",
+          "url": "https://bsky.app/profile/seldondance.bsky.social/post/3mz6dyow65s26",
+          "excerpt": "Mistral Large 4 edges GLM-5.3 on TB4 and the throne changes hands again. The gaps between models are structural, which is the argument for a routed stable picked per task at the lowest cost that clears the bar. #ai #buildinpublic https://seldondance.substack.com/p/the-multimodel-…",
+          "engagement": 5
+        }
+      },
+      "date": "2026-11-03T16:47:17.893Z"
+    },
+    {
+      "summary": "The submission claims Mistral Large 4 is the best open-weight model for coding and among the most capable open models overall, based largely on benchmarks where it narrowly leads, and claims best-in-class safety with a 96.6% refusal rate on malicious cyber requests. It attributes rapid gains to three extra weeks of RL with \"no signs of saturation\". These claims are evaluated against independent benchmarks and user experience.",
+      "strengths": "- The submission does improve on a preview that users found uncompetitive, and the price cut makes it \"more interesting than the preview was\" [hn-50290026].\n- The vendor's self-improvement is acknowledged even by doubters, who welcome more options [hn-50290450]; at least something competitive-ish is coming out of Europe [hn-50301527].",
+      "weaknesses": "- **Not competitive on independent evaluations.** It is roughly 20% worse than DeepSeek V4.1 Flash on Artificial Analysis while having twice the parameters and costing 10x more on input [hn-50304003]; on an independent personal benchmark it is \"fine, but certainly not up to the best Chinese or US open weight models\" [hn-50291329]; on a cyber benchmark it is both more expensive and less capable than Beam 1.0 [hn-50299728]. Blunter readers call it a \"crappy model\" that is \"mogged by Deepseek and GLM\" [hn-50291920] and argue the warm reception reflects political bias, not merit [hn-50290705].\n- **Track record.** The previous two models \"were a disaster and didn't live up to their self reported evals\" [hn-50290450]; a user who tried Large 4 at launch saw it ignore SKILL.md files and hallucinate [hn-50292910]. Mistral does not even use the model in its own work product [hn-50300887].\n- **Selective benchmarks.** The model leads only on \"a very specific benchmark\" [hn-50301527]; comparisons lack score-versus-speed-and-cost context [hn-50299490]; one reader finds their own company's logo in a harness list where the product does not exist [hn-50290065]. If three weeks of RL made this much difference, it is odd the authors did not wait, and the timing echoes other rushed releases [bsky-3mz2a72xtdq2u]. EU provenance alone does not justify choosing it [hn-50290026, hn-50289734].\n- **The refusal statistic is incomplete and moot.** Reporting 96.6% refusal on malicious requests without the false-refusal rate on benign ones is meaningless, since a random refuser could match it [hn-50289898]; intent is not observable from the request [hn-50290249]; and on open weights any guardrail can be bypassed by prefilling or a weekend of uncensoring, making it \"security theater\" [hn-50291521].\n- **Pricing and access friction.** The price was already near this level during preview, and the model remains too expensive and slow when thinking [hn-50290299]; EU-only inference carries a 10% upcharge [hn-50292803]. Paying Mistral is hard [hn-50289584, hn-50304337], and the free Vibe CLI times out on \"hi\" [hn-50299951].\n- **Impractical size.** At 1T parameters and 52B active, it cannot run on consumer hardware and pushes costs into data centres [hn-50294557, hn-50300532, hn-50300780]; even 4 x H200 is insufficient at 4-bit [hn-50290921]. Readers want a sub-200B variant [hn-50304212] and question whether giant MoEs are justified [hn-50292706], though others argue scale is necessary [hn-50318032] and quantization or distillation recovers most of the gap [hn-50294862].",
+      "questions": "1. What is the false-refusal rate on benign security requests that accompanies the 96.6% malicious-refusal figure?\n2. How does Large 4 perform on independent indices where it trails DeepSeek V4.1 Flash, and why were those omitted?\n3. Why was the preview priced as it was if the release price is essentially unchanged?\n4. Will Mistral publish evaluations of the released checkpoint by third parties before claiming leadership?\n5. Is a smaller variant planned for single-node deployment?",
+      "soundness": 2,
+      "presentation": 2,
+      "contribution": 2,
+      "rating": 3,
+      "confidence": 4,
+      "hype_index": 3,
+      "flag_for_ethics_review": false,
+      "reviewer": 2,
+      "cluster": {
+        "label": "Still not competitive, and the evidence is cherry-picked",
+        "summary": "Independent benchmarks and hands-on users find it behind DeepSeek V4.1 Flash, GLM and Beam at a higher price, after two previous Mistral models failed to match their self-reported evals. The chosen benchmarks look hand-picked, the 96.6% refusal statistic omits false refusals and is trivially bypassed on open weights, and a 1T/A52B model is impractical to self-host.",
+        "stance": "negative",
+        "size": 30,
+        "total": 97,
+        "representative": [
+          {
+            "id": "hn-50290705",
+            "source": "Hacker News",
+            "author": "pembrook",
+            "url": "https://news.ycombinator.com/item?id=50290705",
+            "excerpt": "Ughh the overly positive and cheerful comments here from what is usually the most critical/pessimistic audience on the internet is a huge tell. If we cut through the political bias and wishful thinking for a second, here’s the truth: The model is not competitive. I would never wa…",
+            "engagement": 5
+          },
+          {
+            "id": "hn-50304003",
+            "source": "Hacker News",
+            "author": "EliasWatson",
+            "url": "https://news.ycombinator.com/item?id=50304003",
+            "excerpt": "Hard to get excited for this when it's 20% worse than DeepSeek V4.1 Flash on Artificial Analysis, yet is double the parameters (ignoring engram tables) and 10x more expensive on OpenRouter (input token pricing). I know that many organizations cannot use Chinese models, but it's s…",
+            "engagement": 0
+          },
+          {
+            "id": "hn-50289898",
+            "source": "Hacker News",
+            "author": "3form",
+            "url": "https://news.ycombinator.com/item?id=50289898",
+            "excerpt": "\"Cyber benchmarks, while achieving an average refusal rate of 96.6% on malicious cyber requests, the highest we measure among open models.\" I feel like stating the obvious here and hence like I'm missing something. Where is the statistic about not refusing the non malicious reque…",
+            "engagement": 5
+          },
+          {
+            "id": "hn-50291521",
+            "source": "Hacker News",
+            "author": "kouteiheika",
+            "url": "https://news.ycombinator.com/item?id=50291521",
+            "excerpt": "These statistics and safeguards are pretty much meaningless, because it's completely trivial to get around them. You can prefill and edit the model's responses/thinking and force it to agree to virtually anything even with unmodified weights, and if you don't want to bother with …",
+            "engagement": 2
+          },
+          {
+            "id": "bsky-3mz2a72xtdq2u",
+            "source": "Bluesky",
+            "author": "Ramon Astudillo (@ramon-astudillo.bsky.social)",
+            "url": "https://bsky.app/profile/ramon-astudillo.bsky.social/post/3mz2a72xtdq2u",
+            "excerpt": "> Just three weeks of additional reinforcement learning have since propelled it to the forefront of open-weight coding, taking the lead on FrontierCode and Terminal-Bench I wonder why they didn't wait three weeks. Also odd timing/similarly with Argon/Carbon mistral.ai/news/mistra…",
+            "engagement": 13
+          },
+          {
+            "id": "hn-50294557",
+            "source": "Hacker News",
+            "author": "rhdunn",
+            "url": "https://news.ycombinator.com/item?id=50294557",
+            "excerpt": "It's interesting how all the recent SOTA models are in the 1T-3T range. This even has a large number of active parameters (A52B). It is also likely that OpenAI, Anthropic, et. al. have similar sized models. This has two effects: 1) it prevents effective use of these models on con…",
+            "engagement": 7
+          }
+        ]
+      },
+      "citations": {
+        "hn-50290026": {
+          "id": "hn-50290026",
+          "source": "Hacker News",
+          "author": "vincentshipsit",
+          "url": "https://news.ycombinator.com/item?id=50290026",
+          "excerpt": "EU provenance doesn't matter much to me. I pick a model on performance for the job, and from what I've seen, this isn't it. The price cut makes it more interesting than the preview was, tho.",
+          "engagement": 0
+        },
+        "hn-50290450": {
+          "id": "hn-50290450",
+          "source": "Hacker News",
+          "author": "segmondy",
+          "url": "https://news.ycombinator.com/item?id=50290450",
+          "excerpt": "Their last 2 models were a disaster and didn't live up to their self reported evals. I hope this time around is much better. I'm happy tho that they are still figuring out how to get better even if only measured against themselves. This is great, the more options we have the bett…",
+          "engagement": 3
+        },
+        "hn-50301527": {
+          "id": "hn-50301527",
+          "source": "Hacker News",
+          "author": "sadilek",
+          "url": "https://news.ycombinator.com/item?id=50301527",
+          "excerpt": "It seems they had to choose very a specific benchmark to come out on top of. But at least there is _something_ coming out of Europe. Maybe not all hope is lost.",
+          "engagement": 0
+        },
+        "hn-50304003": {
+          "id": "hn-50304003",
+          "source": "Hacker News",
+          "author": "EliasWatson",
+          "url": "https://news.ycombinator.com/item?id=50304003",
+          "excerpt": "Hard to get excited for this when it's 20% worse than DeepSeek V4.1 Flash on Artificial Analysis, yet is double the parameters (ignoring engram tables) and 10x more expensive on OpenRouter (input token pricing). I know that many organizations cannot use Chinese models, but it's s…",
+          "engagement": 0
+        },
+        "hn-50291329": {
+          "id": "hn-50291329",
+          "source": "Hacker News",
+          "author": "crimsoneer",
+          "url": "https://news.ycombinator.com/item?id=50291329",
+          "excerpt": "I added this to my weird little personal benchmark ( https://botbowlbench.com/) a couple of weeks ago, and it's...fine, but certainly not up to the best Chinese or US open weight models.",
+          "engagement": 1
+        },
+        "hn-50299728": {
+          "id": "hn-50299728",
+          "source": "Hacker News",
+          "author": "lmeyerov",
+          "url": "https://news.ycombinator.com/item?id=50299728",
+          "excerpt": "We gave a go for cyber on botsbench.com , and this is both more expensive and less capable than Reflection's Beam 1.0 . It'll take a lot of price cuts for us to care on this particular one. Instead, I view more directionally: similar to glm 5.2 -> glm 5.3 flash, I'm curious what …",
+          "engagement": 0
+        },
+        "hn-50291920": {
+          "id": "hn-50291920",
+          "source": "Hacker News",
+          "author": "tsss",
+          "url": "https://news.ycombinator.com/item?id=50291920",
+          "excerpt": "Who cares? It's a crappy model and not even truly open-weight. Mistral gets absolutely mogged by Deepseek and GLM. They have never been competitive and never will be. While China and US are competing for the olympic podium, Mistral is still in the kiddy pool. At least the FLUX vi…",
+          "engagement": 1
+        },
+        "hn-50290705": {
+          "id": "hn-50290705",
+          "source": "Hacker News",
+          "author": "pembrook",
+          "url": "https://news.ycombinator.com/item?id=50290705",
+          "excerpt": "Ughh the overly positive and cheerful comments here from what is usually the most critical/pessimistic audience on the internet is a huge tell. If we cut through the political bias and wishful thinking for a second, here’s the truth: The model is not competitive. I would never wa…",
+          "engagement": 5
+        },
+        "hn-50292910": {
+          "id": "hn-50292910",
+          "source": "Hacker News",
+          "author": "evanjrowley",
+          "url": "https://news.ycombinator.com/item?id=50292910",
+          "excerpt": "When I last tried Mistral Large 4 for a code documentation task, it ignored my SKILL.md files and it had a few hallucinations. I wondered if I had failed to prompt it properly or if there was some problem with my harness. If it's gotten better since launch, then I'll un-cancel my…",
+          "engagement": 2
+        },
+        "hn-50300887": {
+          "id": "hn-50300887",
+          "source": "Hacker News",
+          "author": "ceving",
+          "url": "https://news.ycombinator.com/item?id=50300887",
+          "excerpt": "The model does not seem to be good enough to be used here: https://chat.mistral.ai/work Why should I trust if Mistral does not trust their own model?",
+          "engagement": 4
+        },
+        "hn-50299490": {
+          "id": "hn-50299490",
+          "source": "Hacker News",
+          "author": "Krishansubudhi",
+          "url": "https://news.ycombinator.com/item?id=50299490",
+          "excerpt": "I am curious about the comparisons. One thing I would like to see is score vs speed and cost. I don't know how big glm and kimi models are and what are their speed and cost. So I don't know if comparisons are apple or apple.",
+          "engagement": 0
+        },
+        "hn-50290065": {
+          "id": "hn-50290065",
+          "source": "Hacker News",
+          "author": "Muromec",
+          "url": "https://news.ycombinator.com/item?id=50290065",
+          "excerpt": "I see the logo of my company in this picture and I don't have it my harness dropdown. I guess they hallucilied (vibe truthed?) the list just a little bit.",
+          "engagement": 0
+        },
+        "bsky-3mz2a72xtdq2u": {
+          "id": "bsky-3mz2a72xtdq2u",
+          "source": "Bluesky",
+          "author": "Ramon Astudillo (@ramon-astudillo.bsky.social)",
+          "url": "https://bsky.app/profile/ramon-astudillo.bsky.social/post/3mz2a72xtdq2u",
+          "excerpt": "> Just three weeks of additional reinforcement learning have since propelled it to the forefront of open-weight coding, taking the lead on FrontierCode and Terminal-Bench I wonder why they didn't wait three weeks. Also odd timing/similarly with Argon/Carbon mistral.ai/news/mistra…",
+          "engagement": 13
+        },
+        "hn-50289898": {
+          "id": "hn-50289898",
+          "source": "Hacker News",
+          "author": "3form",
+          "url": "https://news.ycombinator.com/item?id=50289898",
+          "excerpt": "\"Cyber benchmarks, while achieving an average refusal rate of 96.6% on malicious cyber requests, the highest we measure among open models.\" I feel like stating the obvious here and hence like I'm missing something. Where is the statistic about not refusing the non malicious reque…",
+          "engagement": 5
+        },
+        "hn-50290249": {
+          "id": "hn-50290249",
+          "source": "Hacker News",
+          "author": "pixl97",
+          "url": "https://news.ycombinator.com/item?id=50290249",
+          "excerpt": "Yea, the problem with maliciousness is intent. Much like having a hacking tool doesn't mean you're doing anything illegal, attacking a machine doesn't necessarily mean you're committing a crime. I can hack the living shit out of my local network if I want to.",
+          "engagement": 1
+        },
+        "hn-50291521": {
+          "id": "hn-50291521",
+          "source": "Hacker News",
+          "author": "kouteiheika",
+          "url": "https://news.ycombinator.com/item?id=50291521",
+          "excerpt": "These statistics and safeguards are pretty much meaningless, because it's completely trivial to get around them. You can prefill and edit the model's responses/thinking and force it to agree to virtually anything even with unmodified weights, and if you don't want to bother with …",
+          "engagement": 2
+        },
+        "hn-50290299": {
+          "id": "hn-50290299",
+          "source": "Hacker News",
+          "author": "almindor",
+          "url": "https://news.ycombinator.com/item?id=50290299",
+          "excerpt": "They didn't. Original price was maybe higher but they slashed it during preview and in fact it was lower by a bit ($0.68/M tokens) and $2.09 for output. I've been using it for my personal project and it's still too expensive and very slow when thinking. I think we need one more g…",
+          "engagement": 3
+        },
+        "hn-50292803": {
+          "id": "hn-50292803",
+          "source": "Hacker News",
+          "author": "traceroute66",
+          "url": "https://news.ycombinator.com/item?id=50292803",
+          "excerpt": "> They slashed pricing, it's now nearly half vs the preview (Input: $0.7/M Tokens, Output: $2.1/M Tokens vs Input: $1.36/M Tokens, Output: $4.18/M Tokens). Those in the EU wanting EU-only inference should be aware Mistral put a 10% tax (\"upcharge\") on Regional Inference[1]. [1] h…",
+          "engagement": 1
+        },
+        "hn-50299951": {
+          "id": "hn-50299951",
+          "source": "Hacker News",
+          "author": "albert_e",
+          "url": "https://news.ycombinator.com/item?id=50299951",
+          "excerpt": "slightly off topic -- Mistral has \"Mistral Vibe CLI\" that is similar to Codex / Claude Code -- and it is supposed to have some small quota to allow free usage. I tested it a few months ago and it seems okay -- no where close to SOTA but still a fall back for very simple tasks. I …",
+          "engagement": 1
+        },
+        "hn-50290921": {
+          "id": "hn-50290921",
+          "source": "Hacker News",
+          "author": "segmondy",
+          "url": "https://news.ycombinator.com/item?id=50290921",
+          "excerpt": "4 bit quality would be good, but you need more GPU, the 4bit weight is 610gb. EXL3 in 3 bit has been okay the few times I used it. https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B-NVF...",
+          "engagement": 0
+        },
+        "hn-50304212": {
+          "id": "hn-50304212",
+          "source": "Hacker News",
+          "author": "Roark66",
+          "url": "https://news.ycombinator.com/item?id=50304212",
+          "excerpt": "I wish they released a flash variant that is no more than 200B (120B preferred). Something to compete with Qwen3.8-Flash-Next - my favourite local model.",
+          "engagement": 0
+        },
+        "hn-50292706": {
+          "id": "hn-50292706",
+          "source": "Hacker News",
+          "author": "novaRom",
+          "url": "https://news.ycombinator.com/item?id=50292706",
+          "excerpt": "It looks specialized models of 27B to 52B active size are currently state of the art. I think we will not see any significant increase of that numbers in next 4 - 5 years. Does MoE depth justify itself to be stored and served as \"one\" model for particular tasks like agentic codin…",
+          "engagement": 0
+        },
+        "hn-50318032": {
+          "id": "hn-50318032",
+          "source": "Hacker News",
+          "author": "kalenkilgore",
+          "url": "https://news.ycombinator.com/item?id=50318032",
+          "excerpt": "I understand your desire to have smaller models that are SOTA, but it may be more difficult than you realize. Think of it this way, a 100m model is like an infant, in fact we can make a table: 100m = infant 1b = toddler 100b = age seven 1T = teenager 10T = 35 year old adult And t…",
+          "engagement": 1
+        },
+        "hn-50294862": {
+          "id": "hn-50294862",
+          "source": "Hacker News",
+          "author": "InsideOutSanta",
+          "url": "https://news.ycombinator.com/item?id=50294862",
+          "excerpt": "I'm not sure it really matters. I think a quantized version of a large model ends up being only slightly worse than a model trained at a smaller size to begin with. And like you point out, large models can also be used to distill smaller models, so it's good to have them out ther…",
+          "engagement": 0
+        }
+      },
+      "date": "2026-11-03T17:47:17.893Z"
+    },
+    {
+      "summary": "The submission announces Mistral Large 4 as \"Fully open-weight\" and \"now open weight\", released under a modified MIT licence. The licence requires any business operating a Model-as-a-Service offering to obtain a separate commercial licence before commercial use. The central framing question is whether that qualifies as open.",
+      "strengths": "- The weights are genuinely downloadable, which is what most people mean by \"open weight\"; the title is accurate in that sense and users will be neither surprised nor disappointed [hn-50289861, hn-50289742].\n- Even weights-available releases are better than closed models: they allow inspection of the model, though methods to confirm that served models match published weights are still needed [hn-50296211].\n- The restriction targets only a narrow class of business, the common \"if you're serving it as a business you need a license\" carve-out [hn-50289652], and is understandable given the cost of training frontier models [hn-50293064].",
+      "weaknesses": "- **Misleading label.** A licence that requires permission for commercial MaaS use is \"weight-available\", not open; the same reasoning drove the backlash against Redis, Elasticsearch and Terraform going source-available [hn-50290476, hn-50289652]. It fails the OSI open-source AI definition's \"use for any purpose without having to ask for permission\" requirement [hn-50291412]. The gap between the headline and clause 2 is the point of the \"look inside\" joke [bsky-3mz22ikktszr2], and readers are advised that the word \"open\" is no substitute for reading the licence [bsky-3mz3wyupw7c23].\n- **Sustainability of openness.** Frontier training is so capital-intensive that a truly open-source frontier community may be impossible, and open weights may not survive the end of the current cycle [hn-50293064]; some readers propose archiving weights now in case licensing changes [hn-50298043].\n- **Reproducibility.** No useful open model can be reproducibly trained from source, and this release does not change that [hn-50294311].",
+      "questions": "1. Why describe the model as \"fully open-weight\" rather than naming the licence restrictions in the summary?\n2. What terms and costs apply to the commercial MaaS licence, and how is \"Model as a Service\" defined for derivative fine-tunes?\n3. Would Mistral consider an OSI-approved licence for a smaller variant?\n4. Will the training data and code be released to enable reproduction?",
+      "soundness": 3,
+      "presentation": 2,
+      "contribution": 3,
+      "rating": 5,
+      "confidence": 4,
+      "hype_index": 2,
+      "flag_for_ethics_review": false,
+      "reviewer": 3,
+      "cluster": {
+        "label": "Weights-available, not open",
+        "summary": "The licence requires a separate commercial agreement for any Model-as-a-Service business, so calling it open is misleading by OSI and open-source AI definitions. Defenders reply that 'open weight' has always just meant downloadable weights, and that even weights-available beats closed models.",
+        "stance": "mixed",
+        "size": 11,
+        "total": 97,
+        "representative": [
+          {
+            "id": "hn-50290476",
+            "source": "Hacker News",
+            "author": "maxloh",
+            "url": "https://news.ycombinator.com/item?id=50290476",
+            "excerpt": "> 2. If the Licensee or any of its affiliates operates a Model as a Service business, the Licensee must enter into a separate commercial license with Mistral before using the Model or its derivative works for any commercial purpose. The Licensee may contact Mistral, using this fo…",
+            "engagement": 28
+          },
+          {
+            "id": "hn-50289652",
+            "source": "Hacker News",
+            "author": "rcr-anti",
+            "url": "https://news.ycombinator.com/item?id=50289652",
+            "excerpt": "It's not open weight, it's weights available as they use a modified MIT license that is not OSI. It's the common \"if you're serving it as a business you need a license\" difference, for what it's worth.",
+            "engagement": 10
+          },
+          {
+            "id": "hn-50293064",
+            "source": "Hacker News",
+            "author": "hintymad",
+            "url": "https://news.ycombinator.com/item?id=50293064",
+            "excerpt": "> That's why we had huge backlash w Training a frontier model is prohibitively expensive, so it’s understandable that open weights aren’t truly open source. In fact, I worry whether open weights will even survive[1] once the current AI cycle cools down. An even bigger issue is th…",
+            "engagement": 11
+          },
+          {
+            "id": "hn-50289742",
+            "source": "Hacker News",
+            "author": "dcss_gardener",
+            "url": "https://news.ycombinator.com/item?id=50289742",
+            "excerpt": "Where did you get this definition of open weight and who else uses it? The weights are published. Open source is already its own more restrictive category. What would you prefer we call this kind of release? \"Weights available\" does not seem to be in wide use and doesn't, to me, …",
+            "engagement": 6
+          },
+          {
+            "id": "hn-50291412",
+            "source": "Hacker News",
+            "author": "fuddle",
+            "url": "https://news.ycombinator.com/item?id=50291412",
+            "excerpt": "This is the new OSI Open source definition for AI models: https://opensource.org/ai/open-source-ai-definition Mistral Large 4 is definitely not open given the \"use for any purpose without having to ask for permission\" requirement.",
+            "engagement": 2
+          }
+        ]
+      },
+      "citations": {
+        "hn-50296211": {
+          "id": "hn-50296211",
+          "source": "Hacker News",
+          "author": "0xjosephx10",
+          "url": "https://news.ycombinator.com/item?id=50296211",
+          "excerpt": "In fact only weights available is still better than the closed llms. We can check neurons and confirm that the model is not malicious. However we still need to develop methods to confirm the models that are being served are matching those whose weights we can observe.",
+          "engagement": 0
+        },
+        "hn-50289652": {
+          "id": "hn-50289652",
+          "source": "Hacker News",
+          "author": "rcr-anti",
+          "url": "https://news.ycombinator.com/item?id=50289652",
+          "excerpt": "It's not open weight, it's weights available as they use a modified MIT license that is not OSI. It's the common \"if you're serving it as a business you need a license\" difference, for what it's worth.",
+          "engagement": 10
+        },
+        "hn-50293064": {
+          "id": "hn-50293064",
+          "source": "Hacker News",
+          "author": "hintymad",
+          "url": "https://news.ycombinator.com/item?id=50293064",
+          "excerpt": "> That's why we had huge backlash w Training a frontier model is prohibitively expensive, so it’s understandable that open weights aren’t truly open source. In fact, I worry whether open weights will even survive[1] once the current AI cycle cools down. An even bigger issue is th…",
+          "engagement": 11
+        },
+        "hn-50291412": {
+          "id": "hn-50291412",
+          "source": "Hacker News",
+          "author": "fuddle",
+          "url": "https://news.ycombinator.com/item?id=50291412",
+          "excerpt": "This is the new OSI Open source definition for AI models: https://opensource.org/ai/open-source-ai-definition Mistral Large 4 is definitely not open given the \"use for any purpose without having to ask for permission\" requirement.",
+          "engagement": 2
+        },
+        "bsky-3mz22ikktszr2": {
+          "id": "bsky-3mz22ikktszr2",
+          "source": "Bluesky",
+          "author": "Felicitas Pojtinger 🌅 (@pojntfx.mastodon.social.ap.brid.gy)",
+          "url": "https://bsky.app/profile/pojntfx.mastodon.social.ap.brid.gy/post/3mz22ikktszr2",
+          "excerpt": "https://mistral.ai/news/mistral-large-4-oss/ > \"Open\" model > Look inside > 2. If the Licensee or any of its affiliates operates a Model as a Service business, the Licensee must enter into a separate commercial license with Mistral before using the Model or its derivative works f…",
+          "engagement": 1
+        },
+        "bsky-3mz3wyupw7c23": {
+          "id": "bsky-3mz3wyupw7c23",
+          "source": "Bluesky",
+          "author": "@sigoenbeta.bsky.social",
+          "url": "https://bsky.app/profile/sigoenbeta.bsky.social/post/3mz3wyupw7c23",
+          "excerpt": "Large 4 tiene pesos abiertos, pero ofrecer el modelo como servicio tiene condiciones comerciales propias. La palabra «abierto» no sustituye leer la licencia. mistral.ai/news/mistral...",
+          "engagement": 1
+        },
+        "hn-50298043": {
+          "id": "hn-50298043",
+          "source": "Hacker News",
+          "author": "yumraj",
+          "url": "https://news.ycombinator.com/item?id=50298043",
+          "excerpt": "I wonder that even though I don’t have personal hardware to run these at the moment, if it makes sense to download and keep a copy of some models like these in case access/licensing changes in future and/or hardware becomes cheaper. Can always replace the backup copy with a bette…",
+          "engagement": 1
+        },
+        "hn-50294311": {
+          "id": "hn-50294311",
+          "source": "Hacker News",
+          "author": "Pet_Ant",
+          "url": "https://news.ycombinator.com/item?id=50294311",
+          "excerpt": "Sorry for the dumb question, but is there any useful non-trivial LLM that is open-source where you could bit reproducibly train it from sources?",
+          "engagement": 1
+        }
+      },
+      "date": "2026-11-03T18:47:17.893Z"
+    }
+  ],
+  "metaReview": {
+    "metareview": "**Summary.** The submission releases the weights of Mistral Large 4 (Le Chonk), a 1T-parameter, 52B-active multimodal MoE trained in Europe, after three additional weeks of RL. It claims the lead among open-weight models on FrontierCode 2.0 and Terminal-Bench 4.0, Coding Agent Index parity with GLM-5.3 at far lower token cost, strong defensive cyber performance with a 96.6% malicious-request refusal rate, a halved price, and a modified-MIT licence that it describes as open.\n\n**Reviewer 1** argues that Mistral is back in contention and that a near-frontier European model fills a real gap for regulated and sovereign users who cannot deploy Chinese models. This is the most convincing argument for the submission: its value lies less in leaderboard position than in being the strongest option in a constrained market. Users who work with it daily describe it as good enough, which is a more honest claim than the post itself makes.\n\n**Reviewer 2** argues the evidence is selective: independent indices place it well behind DeepSeek V4.1 Flash at higher cost, Mistral's last two releases underdelivered on self-reported numbers, and the refusal figure omits the false-refusal rate that would make it meaningful. On an open-weight model, the reviewer notes, refusal guardrails can be removed over a weekend anyway. These points are well argued and largely unanswered by the submission. Some of the remaining critique (payment friction, a CLI timing out) concerns the company rather than the model.\n\n**Reviewer 3** contests the word \"open\". The licence's commercial MaaS restriction makes this weights-available by OSI's definitions; the counter-argument that \"open weight\" has always meant downloadable weights is reasonable but does not excuse \"fully open-weight\" in the summary. This is a presentation issue rather than a fatal flaw.\n\n**Assessment.** Reviewers 1 and 2 are less opposed than their scores suggest: both agree the model is behind the best Chinese open models and ahead of Mistral's previous efforts. The disagreement is whether the submission's framing (\"best open-weight model for coding\") is earned. On the evidence, it is not: leadership rests on hand-picked benchmarks with narrow margins, while broader indices tell a different story. But a solid, self-hostable, Western-provenance model at a much lower price is a real contribution for a defined audience, and the release is honest about pricing and licence terms in the body even if the headline overreaches.",
+    "additional_comments_on_reviewer_discussion": "Most decisive were Reviewer 2's independent-benchmark comparisons and the refusal-rate critique, which together show the post's strongest claims are its least supported. Reviewer 1's regulated-market argument was decisive for acceptance: no reviewer disputed that the model meets a real need. Reviewer 3's licence argument was accepted as a fair correction to the framing, but the definitional dispute it contains was not resolved and need not be for this decision. The kiddy-pool metaphor was noted and not adopted.",
+    "decision": "Accept (Poster)",
+    "decision_comment": "A competent, self-hostable model for those who need one, presented as the leader of a race it is mostly competing in. The authors are asked to report false-refusal rates and to rename \"fully open-weight\" to something their licence would agree with.",
+    "date": "2026-11-03T19:47:17.893Z",
+    "areaChairId": "eGeU"
+  }
+}

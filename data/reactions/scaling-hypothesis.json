@@ -1,0 +1,257 @@
+{
+  "postId": "scaling-hypothesis",
+  "gatheredAt": "2026-11-03T19:33:58.275Z",
+  "threads": [
+    {
+      "source": "Hacker News",
+      "title": "The Scaling Hypothesis (2021)",
+      "url": "https://news.ycombinator.com/item?id=31564033",
+      "points": 97,
+      "comments": 63
+    }
+  ],
+  "reactions": [
+    {
+      "id": "resp-31564033",
+      "source": "Response post",
+      "kind": "response",
+      "author": "Gwern",
+      "text": "On GPT-3: meta-learning, scaling, implications, and deep theory. The scaling hypothesis: neural nets absorb data & compute, generalizing and becoming more Bayesian as problems get harder, manifesting new abilities even at trivial-by-global-standards-scale. The deep learning revolution has begun as foretold.\n\n> GPT-3, announced by OpenAI in May 2020, is the largest neural network ever trained, by over an order of magnitude. Trained on Internet text data, it is the successor to GPT-2, which had surprised everyone by its natural language understanding & generation ability. To the surprise of most (including myself), this vast increase in size did not run into diminishing or negative returns, as many expected, but the benefits of scale continued to happen as forecasted by OpenAI. These benefits were not merely learning more facts & text than GPT-2, but qualitatively distinct & even more surprising in showing meta-learning: while GPT-2 learned how to do common natural language tasks like text summarization, GPT-3 instead learned how to follow directions and learn new tasks from a few examples. (As a result, GPT-3 outputs & interaction are more fascinating & human-like than GPT-2.) While the immediate applications of GPT-3, like my poetry or humor writings, are nice, the short-term implications of GPT-3 are much more important. First, while GPT-3 is expensive by conventional DL standards, it is cheap by scientific/commercial/military/government budget standards, and the results indicate that models could be made much larger. Second, models can also be made much more powerful, as GPT is an old approach known to be flawed in both minor & major ways, and far from an ‘ideal’ Transformer. Third, GPT-3’s capabilities come from learning on raw (unsupervised) data; that has long been one of the weakest areas of DL, holding back progress in other areas like reinforcement learning or robotics. Models like GPT-3 suggest that large unsupervised models will be vital components of future DL systems, as they can be ‘plugged into’ systems to immediately provide understanding of the world, humans, natural language, and reasoning. The meta-learning has a longer-term implication: it is a demonstration of the blessings of scale, where problems with simple neural networks vanish, and they become more powerful, more generalizable, more human-like when simply made very large & trained on very large datasets with very large compute—even though those properties are believed to require complicated architectures & fancy algorithms (and this perceived need drives much research). Unsupervised models benefit from this, as training on large corpuses like Internet-scale text present a myriad of difficult problems to solve; this is enough to drive meta-learning despite GPT not being designed for meta-learning in any way. (This family of phenomena is perhaps driven by neural networks functioning as ensembles of many sub-networks with them all averaging out to an Occam’s razor, which for small data & models, learn superficial or memorized parts of the data, but can be forced into true learning by making the problems hard & rich enough; as meta-learners learn amortized Bayesian inference, they build in informative priors when trained over many tasks, and become dramatically more sample-efficient and better at generalization.) The blessings of scale in turn support a radical theory: an old AI paradigm held by a few pioneers in connectionism (early artificial neural network research) and by more recent deep learning researchers, the scaling hypothesis. The scaling hypothesis regards the blessings of scale as the secret of AGI: intelligence is ‘just’ simple neural units & learning algorithms applied to diverse experiences at a (currently) unreachable scale. As increasing computational resources permit running such algorithms at the necessary scale, the neural networks will get ever more intelligent. When? Estimates of Moore’s law-like progress curves decades ago by pioneers like Hans Moravec indicated that it would take until the 2010s for the sufficiently-cheap compute for tiny insect-level prototype systems to be available, and the 2020s for the first sub-human systems to become feasible, and these forecasts are holding up. (Despite this vindication, the scaling hypothesis is so unpopular an idea, and difficult to prove in advance rather than as a fait accompli, that while the GPT-3 results finally drew some public notice after OpenAI enabled limited public access & people could experiment with it live, it is unlikely that many entities will modify their research philosophies, much less kick off an ‘arms race’.) More concerningly, GPT-3’s scaling curves, unpredicted meta-learning, and success on various anti-AI challenges suggests that in terms of futurology, AI researchers’ forecasts are an emperor sans garments: they have no coherent model of how AI progress happens or why GPT-3 was possible or what specific achievements should cause alarm, where intelligence comes from, and do not learn from any falsified predictions. Their primary concerns appear to be supporting the status quo, placating public concern, and remaining respectable. As such, their comments on AI risk are meaningless: they would make the same public statements if the scaling hypothesis were true or not. Depending on what investments are made into scaling DL, and how fast compute grows, the 2020s should be quite interesting—sigmoid or singularity? For more ML scaling research, follow the /r/MLScaling subreddit. For a fiction treatment as SF short story, see “It Looks Like You’re Trying To Take Over The World”. For my May 2022 followup 2 years later, see “Scaling Hypothesis Revisited”; see also Situational Awareness & AI 2027. For more speculation on how and why DL scaling works, see “Human-like Neural Nets by Catapulting”.\n\n**Meta-Learning**\n\nLearning to learn. In May 2020, OA released—to remarkably little interest from researchers, no blog post, no media blitz, and little public discussion beyond the snidely dismissive—the long-awaited followup to GPT-2, one model to rule them all: a 117× larger 175b-parameter model with far more powerful language generation, which lets it solve a wide variety of problems from arithmetic1 to English translation to unscrambling anagrams to SAT analogies—purely from being prompted with text examples, without any specialized training or finetuning whatsoever, merely next-word prediction training on a big Internet text corpus. This implies GPT-3’s attention mechanisms serve as “fast weights” that have “learned to learn” by training on sufficiently varied data2, forcing it to do more than just learn ordinary textual relationships. Like OpenAI’s Jukebox just weeks ago (itself a remarkable demonstration of scaling in synthesizing raw audio music complete with remarkably realistic voices/instruments), the announcement of GPT-3 appears to have sunk almost without a trace, so I will go into more depth than usual.\n\n**Flexing GPT**\n\n> ‘“They are absolutely reasonable. I think that is their distinguishing characteristic. Yes, Mr. Erskine, an absolutely reasonable people. I assure you there is no nonsense about the Americans.” “How dreadful!” cried Lord Henry. “I can stand brute force, but brute reason is quite unbearable. There is something unfair about its use. It is hitting below the intellect.”’ The Picture of Dorian Gray, Oscar Wilde\n\n“Attacks only get better.” 2 years ago, GPT-1 was interestingly useful pretraining and adorable with its “sentiment neuron”. 1 year ago, GPT-2 was impressive with its excellent text generation & finetuning capabilities. This year, GPT-3 is scary because it’s a magnificently obsolete architecture from early 2018 (used mostly for software engineering convenience as the infrastructure has been debugged), which is small & shallow compared to what’s possible34, with a simple uniform architecture5 trained in the dumbest way possible (unidirectional prediction of next text token) on a single impoverished modality (random Internet HTML text dumps6) on tiny data (fits on a laptop), sampled in a dumb way7, its benchmark performance sabotaged by bad prompts & data tokenization problems (especially arithmetic & commonsense reasoning), and yet, the first version already manifests crazy runtime meta-learning—and the scaling curves still are not bending! The samples are also better than ever, whether it’s GPT-3 inventing new penis jokes8 or writing (mostly working) JavaScript tutorials about rotating arrays.\n\nIt’s odd that this qualitative leap appears to be largely missed by the standard NLP benchmarks. Nothing in the raw metrics reported on, say, Penn Tree Bank or LAMBADA or WinoGrande would lead you to expect all of this hilarious and creative output; the meta-learning results might, but only if you already thought meta-learning was important. This suggests to me that a useful post-GPT-3 contribution would be figuring out how to benchmark these sorts of flexible text generation capabilities (possibly something along the lines of Chollet’s image-based Abstraction and Reasoning Corpus (ARC)).\n\n**Baking The Cake**\n\nIs GPT actually part of AGI—or is the cake a lie? (LeCun 2019)\n\nNot the whole picture, but a big part. Does it set SOTA on every task? No, of course not. But the question is not whether we can lawyerly find any way in which it might not work, but whether there is any way which it might work. And there are many ways it might work better (see the “Limitations” section for just a few). Does GPT-3 do anything like steer a robot around SF shooting lasers and rockets at humans⸮ No, of course not. It is ‘just’ a text prediction model, an idiot savant of text; but an idiot savant, we should remember, is only a genetic mutation or bit of brain damage away from a normal human. If RL is the cherry on the top of the supervised learning frosting, and supervised learning is the frosting on top of the unsupervised learning cake, well, it looks like the cake layers are finally rising.\n\nA better GPT-3 lesson.\n\nScaling still working. I was surprised, as I had expected closer to 100b parameters, and I thought that the performance of CTRL/Meena/MegatronLM/T5/Turing-NLG/GPipe suggested that, the scaling papers9 notwithstanding, the scaling curves had started to bend and by 100b, it might be hard to justify further scaling. However, in the latest version of “the unreasonable effectiveness of data” where “the curves cross”/“scissor effect” and the neural method eventually wins (eg. Banko & Brill 2001, Brants et al 2007, Koehn & Knowles 2017), GPT-3 hits twice that without noticeable change in scaling factors: its scaling continues to be roughly logarithmic/power-law, as it was for much smaller models & as forecast, and it has not hit a regime where gains effectively halt or start to require increases vastly beyond feasibility. That suggests that it would be both possible and useful to head to trillions of parameters (which are still well within available compute & budgets, requiring merely thousands of GPUs & perhaps $12.58$102020–$125.78$1002020m budgets assuming no improvements which of course there will be, see Hernandez & Brown 2020 etc.), and eyeballing the graphs, many benchmarks like the Winograd schema WinoGrande would fall by 10t parameters. The predictability of scaling is striking, and makes scaling models more like statistics than AI. (AI is statistics which does what we want it to but doesn’t work; and statistics is AI which works but doesn’t do what we want.)\n\nGPT-3: not even that much compute—3640 petaflop/s-day, only 2× their estimate for AlphaGo Zero, 1860166ya. (Historical graph modified by myself from “AI and Compute”, Amodei et al 2018.)\n\nAnti-scaling: penny-wise, pound-foolish. GPT-3 is an extraordinarily expensive model by the standards of machine learning: it is estimated that training it may require the annual cost of more machine learning researchers than you can count on one hand (~$6.29$52020m10), up to $37.73$302020 of hard drive space to store the model (500–800GB), and multiple pennies of electricity per 100 pages of output (0.4 kWH). Researchers are concerned about the prospects for scaling: can ML afford to run projects which cost more than 0.1 milli-Manhattan-Projects⸮11 Surely it would be too expensive, even if it represented another large leap in AI capabilities, to spend up to 10 milli-Manhattan-Projects to scale GPT-3 100× to a trivial thing like human-like performance in many domains⸮ Many researchers feel that such a suggestion is absurd and refutes the entire idea of scaling machine learning research further; they asseverate that their favored approaches (you know, the ones which don’t work12) will run far more efficiently, and that the field would be more productive if it instead focused on research which can be conducted by an impoverished goatherder on an old laptop running off solar panels.13 Nonetheless, I think we can expect further scaling. (10×? No, 10× isn’t cool. You know what’s cool? 100–1000×, trained on a fancy new supercomputer.) It is, after all, easier to make something efficient after it exists than before.\n\n**Scaling**\n\nHow far will scaling go? The scaling papers suggest that the leaps we have seen over the past few years are not even half way there in terms of absolute likelihood loss, never mind what real-world capabilities each additional decrement translates into. The scaling curves are clean; from “Scaling Laws for Neural Language Models”, Kaplan et al 2020:\n\nDL scaling laws: compute, data, model parameters. (Figure 1)\n\nGPT-3 represents ~103 on this chart, leaving plenty of room for further loss decreases—especially given the uncertainty in extrapolation:\n\nProjecting DL power laws: still room beyond GPT-3.\n\nLo and behold, the scaling laws continue for GPT-3 models for several orders past Kaplan et al 2020; from Brown et al 2020:\n\nGPT-3 continues to scale as predicted. (Note GPT-3’s curve has not ‘bounced’, and it trained only ~0.5 epochs, see Table 2.2)\n\nIf we see such striking gains in halving the validation loss but with so far left to go, what is left to emerge as we third or halve again? How far does this go, exactly? How do we predict what emerges when? Bueller? Bueller? (See also Meena’s perplexity vs human-ness chatbot ratings, GPT-3-written news articles’ probability of fooling humans by parameter count, and GPT-3 model size vs Q&A from Hendrycks et al 2020.)\n\n**Blessings Of Scale**\n\n> Extrapolating the spectacular performance of GPT-3 into the future suggests that the answer to life, the universe and everything is just 4.398 trillion parameters. Geoff Hinton\n\nWe don’t know how to train NNs. The blessings of scale is the observation that for deep learning, hard problems are easier to solve than easy problems—everything gets better as it gets larger (in contrast to the usual outcome in research, where small things are hard and large things impossible). The bigger the neural net/compute/data/problem, the faster it learns, the better it learns, the stabler it learns, and so on. A problem we can’t solve at all at small n may suddenly become straightforward with millions or billions of n. “NNs are lazy”: they can do far more than we make them do when we push them beyond easy answers & cheap shortcuts. The bitter lesson is the harder and bigger, the better. (Besides GPT-3, one could mention recent progress in semi-supervised learning & the model-based DRL renaissance.)\n\nAlphaGo Zero: ‘just stack moar layers lol!’\n\nBlessings of scale: stability → generalization → meta-learning. GPT-3 is hamstrung by its training & data, but DL enjoys an unreasonably effective blessing of dimensionality—just simply training a big model on a lot of data induces better properties like meta-learning without even the slightest bit of that architecture being built in; and in general, training on more and harder tasks creates ever more human-like performance, generalization, and robustness. The GPT natural-language & programming language models, iGPT/Vision Transformer for images (and to some degree GPT-f), show that simply scaling up models & datasets without any supervision produces results competitive with the best (and most complex) alternatives, using the same simple architecture, gradually passing from superficial surface correlations to more human-like brain activity (Schrimpf et al 2020) and linguistic biases as data increases (eg. Warstadt et al 2020). In fact, one may not even need complicated attention mechanisms at scale, as fully-connected networks—hard to get much simpler than them!—work surprisingly well for many tasks. One typically trains such large models with simple optimizers like Adam—because the complicated ones lose their advantages as batch sizes increase and the simple optimizers work fine and are more memory-efficient anyway. OA5 does not just scale to, but stabilizes at, minibatches of millions due to gradient noise. OA5-like, BigGAN stabilizes at large-scale image datasets like JFT-300M & benefits from unusually large minibatches and VAEs (long an also-ran to GANs or autoregressive models in terms of sharp image generation) catch up if you make them very deep (Child 2020, Vahdat & Kautz 2020); while classifier CNNs like BiT14/Dojolonga et al 2020 or ResNeXt or Noisy Student transfer & robustify with human-like errors15, multimodal learning produces better representations on fewer data (eg. ViLBERT/VideoBERT, motivating OA’s interest in big multimodal models), and RNNs can predict videos. AlphaStar reaches human-level with hundreds of competing self-players to cover possible strategies. Imitation learning DRL like MetaMimic generalizes at hundreds of tasks to train a deep net. Disentanglement emerges in StyleGAN with sufficiently deep w embeddings, with enough parameters to train raw audio in the aforementioned Jukebox, or in relational networks/GQN/Transformers with enough samples to force factorization. (See also Hill et al 2019/Chaplot et al 2017/Yu et al 2018/Lake 2019/Interactive Agents Group 2020.) Training Dactyl (or humanoid robots) on millions of domain randomizations induced similar implicit meta-learning where during each runtime invocation, the RNN probes its environment and encodes its understanding of robot hand control into its hidden state; and DD-PPO outperforms classical robot planners by scaling 2 orders. Or in Procgen or CoinRun, training on hundreds of levels trains agents to solve levels individually and worsens performance on other levels, but at thousands of levels, they begin to generalize to unseen levels. (Similarly, language model pretraining-finetuning overfits at small numbers of datasets but improves markedly with enough diversity.) AlphaZero demonstrated truly superhuman Go without ‘delusions’ just by training a bigger model on a richer signal & pro-level play without any search—and MuZero, for that matter, demonstrated that just training an RNN end-to-end to predict a reward on enough data is enough to obsolete even AlphaZero and learn tree search implicitly (but better). And on and on. DM researcher Matthew Botvinick, discussing their meta-reinforcement learning work where they were surprised to discover meta-learning emerging, and that it did so regardless of which specific architecture they used:\n\n> …it’s something that just happens. In a sense, you can’t avoid this happening. If you have a system that has memory, and the function of that memory is shaped by reinforcement learning, and this system is trained on a series of interrelated tasks, this is going to happen. You can’t stop it.\n\nPace Breiman, why? Why do they transfer and generalize? Why do these blessings of scale exist? Why do we need to train large models when small models provably exist with the same performance? Why do larger models not overfit (though they can) and generalize better than smaller models? What’s up with the whole ‘double descent’ anyway?\n\nThese are all, ahem, deep questions about",
+      "url": "https://www.gwern.net/Scaling-hypothesis",
+      "engagement": 97,
+      "date": "2020-05-28",
+      "context": "Response post \"The Scaling Hypothesis · Gwern.net\""
+    },
+    {
+      "id": "hn-31564974",
+      "source": "Hacker News",
+      "kind": "comment",
+      "author": "light_hue_1",
+      "text": "As an ML researcher, simple back of the envelope math shows you that the scaling hypothesis is totally wrong. We will never reach human-level AI by simply scaling what we have today.\n\nGPT-3 has 10^11 parameters and needs 10^14 bytes of training data. Averaged performance on a bunch of benchmarks is 40-50% depending on what kind of prompts you provide: https://res.cloudinary.com/dyd911kmh/image/upload/f_auto,q_a... 10x fewer parameters drops your performance by about 10%.\n\nIf you just linearly extrapolate that graph, and ML doesn't generally scale linearly, models tend to peter out eventually, you're talking about needing models that are 10^6 or more larger with a similar increase in training data. This is.. starting to be impractical.\n\nThat's 10^17 or more parameters and 10^20 or more data. And that's assuming the models actually continue to learn.\n\nThis is also extrapolating with an average. Datasets in machine learning are not difficulty calibrated at all. We have no idea how to measure difficulty. So this extrapolation is being driven by the easier datasets, and it won't saturate the hard ones. For example, GPT-3 makes a lot of systematic errors and there are plenty of benchmarks where it just isn't very good regardless of how many parameters it has.\n\nOur understanding of what intelligence is in the first place is the biggest hurdle here. This is why we can't benchmark systems. Why we can't come up with a benchmark, where performance on that benchmark means we're x% of the…",
+      "url": "https://news.ycombinator.com/item?id=31564974",
+      "engagement": 4,
+      "date": "2022-05-31T00:18:44.000Z",
+      "context": "HN thread on response \"The Scaling Hypothesis (2021)\", top-level comment #1"
+    },
+    {
+      "id": "hn-31565274",
+      "source": "Hacker News",
+      "kind": "comment",
+      "author": "Jack000",
+      "text": "I think the main disconnect between large language models and what people expect from \"AI\" is the fact that LMs learn meaningful representations whereas most people associate intelligence with meaningful behaviors. All examples of \"natural\" intelligence are embodied agents so it's difficult to imagine any other kind of intelligence.\n\nThe large transformer models we have now are really the low hanging fruit. When you have a lot of data and compute, the easiest way to scale is to train a supervised model with ground truth labels. In contrast it's much harder to train an RL agent, where you have to design the environment and keep track of its state.\n\nLanguage modelling is a problem where you can get arbitrarily close to perfect but never actually achieve it. Without some kind of grounding in vision/proprioception there will always be gaps in understanding. When they start scaling GATO-like models I think we'll be a lot closer to human-like intelligence.",
+      "url": "https://news.ycombinator.com/item?id=31565274",
+      "engagement": 3,
+      "date": "2022-05-31T01:24:43.000Z",
+      "context": "HN thread on response \"The Scaling Hypothesis (2021)\", top-level comment #2"
+    },
+    {
+      "id": "hn-31568290",
+      "source": "Hacker News",
+      "kind": "comment",
+      "author": "ZeroGravitas",
+      "text": "> The scaling hypothesis regards the blessings of scale as the secret of AGI: intelligence is ‘just’ simple neural units & learning algorithms applied to diverse experiences at a (currently) unreachable scale. As increasing computational resources permit running such algorithms at the necessary scale, the neural networks will get ever more intelligent.\n\nI think this is what I believe i.e. that animals and humans are just evolved machines, with no divine spark. Not sure that I agree that it's unpopular or that it allows you to make decades long predictions on progress that'll come true.\n\nI'm also not sure why you'd want to do this if smaller models are meeting your needs. Feels a bit like the future of flight being predicted as a man with flapping wings rather than a jet engine.",
+      "url": "https://news.ycombinator.com/item?id=31568290",
+      "engagement": 2,
+      "date": "2022-05-31T11:27:49.000Z",
+      "context": "HN thread on response \"The Scaling Hypothesis (2021)\", top-level comment #3"
+    },
+    {
+      "id": "hn-31564641",
+      "source": "Hacker News",
+      "kind": "comment",
+      "author": "rossdavidh",
+      "text": "On the one hand, it is clearly true that much of the requirements for neural networks (in silicon) to achieve intelligence of a general sort, is to simply be big enough.\n\nOn the other hand, anyone acquainted with the facts of biological brain size vs. intelligence, can see that this cannot be all that is going on.  Bison are not clearly more intelligent than crows, not even when the part of the brain involved in operating the body parts and processing raw sensory data is excluded.  Something other than scale must be involved, even if scale is a necessary condition.",
+      "url": "https://news.ycombinator.com/item?id=31564641",
+      "engagement": 4,
+      "date": "2022-05-30T23:17:46.000Z",
+      "context": "HN thread on response \"The Scaling Hypothesis (2021)\", top-level comment #4"
+    },
+    {
+      "id": "hn-31565337",
+      "source": "Hacker News",
+      "kind": "comment",
+      "author": "RodgerTheGreat",
+      "text": "Even if neural nets continue to come up with adequate solutions to challenging problems (sometimes, hopefully, maybe), at the end of the day the best-case scenario is a model that cannot be audited, holistically understood, or trusted with decisions of any gravity.\n\nIf beating the strongest human Go players with a self-trained ML model was detonating a fission bomb, pervasive automation with zero accountability is a nuclear winter.",
+      "url": "https://news.ycombinator.com/item?id=31565337",
+      "engagement": 2,
+      "date": "2022-05-31T01:37:19.000Z",
+      "context": "HN thread on response \"The Scaling Hypothesis (2021)\", top-level comment #5"
+    },
+    {
+      "id": "hn-31567276",
+      "source": "Hacker News",
+      "kind": "reply",
+      "author": "matusp",
+      "text": "Yep, the data requirements are especially condemning. We have recently scaled from using Wikipedia as a training corpus to basically the entire Internet. And it helped a lot. But where are we going to scale next? There is simply not enough useful data for the models to learn. People generate a lot of text and language, but most of it is repetitive and not really that useful. The fact that GPT-3 is already two years old and nothing got better than that is telling. If the road to AGI was as simple as scaling, we would have bigger and better models by now. I suspect that even the top labs have found out that GPT-3 is probably near the limits of what they can realistically achieve with deep learning LMs.",
+      "url": "https://news.ycombinator.com/item?id=31567276",
+      "engagement": 1,
+      "date": "2022-05-31T08:38:14.000Z",
+      "context": "HN thread on response \"The Scaling Hypothesis (2021)\", reply to light_hue_1: \"As an ML researcher, simple back of the envelope math shows you that the scaling hypothesis is totally wrong. We will ne…\""
+    },
+    {
+      "id": "hn-31567110",
+      "source": "Hacker News",
+      "kind": "reply",
+      "author": "graboid",
+      "text": "I got a question. How can researchers who are not working at the largest tech companies even \"compete\" with models like GPT-3? From what I understand, these currently best performing models need an amount of training data and specialized hardware that is not obtainable for 99% of ML researchers. If you think you came up with a better architecture for a language model, one that could in theory beat GPT-3 on benchmarks, wouldn't you face the problem that you cannot actually prove that it would perform better?",
+      "url": "https://news.ycombinator.com/item?id=31567110",
+      "engagement": 1,
+      "date": "2022-05-31T08:00:32.000Z",
+      "context": "HN thread on response \"The Scaling Hypothesis (2021)\", reply to light_hue_1: \"As an ML researcher, simple back of the envelope math shows you that the scaling hypothesis is totally wrong. We will ne…\""
+    },
+    {
+      "id": "hn-31566176",
+      "source": "Hacker News",
+      "kind": "reply",
+      "author": "joe_the_user",
+      "text": "I think the main disconnect between large language models and what people expect from \"AI\" is the fact that LMs learn meaningful representations whereas most people associate intelligence with meaningful behaviors.\n\nThe term meaningful is a bit tricky to define. But when GPT-3 says one thing in one paragraph but the exact opposite in the next paragraph, my impression is it hasn't learned \"meaningful representations\" but just \"plausible associations\". A lot of language is just loose associations and so GPT-3 can do that as well as many people there and it can pull some logic and seem to reason (but can't do that reliably). IE, I think even just informal language has state that human track and so GPT-3 falls at this part of informal language (while can seem to otherwise do well).",
+      "url": "https://news.ycombinator.com/item?id=31566176",
+      "engagement": 1,
+      "date": "2022-05-31T04:42:41.000Z",
+      "context": "HN thread on response \"The Scaling Hypothesis (2021)\", reply to Jack000: \"I think the main disconnect between large language models and what people expect from \"AI\" is the fact that LMs learn me…\""
+    },
+    {
+      "id": "hn-31568548",
+      "source": "Hacker News",
+      "kind": "reply",
+      "author": "semi-extrinsic",
+      "text": "There is also clearly something fundamentally different about how humans learn language. Even if you are an extremely prolific reader, you will struggle to read much more than 20 million words in one year. GPT-3 was trained on several hundred billion words, which a human would need more than 20 000 years to achieve. If we get language models that can convince humans after training on 1000x smaller datasets than GPT3, and that would sound convincingly like a child after training on a 10 000x less words, we can start to argue they might function similarly to humans.",
+      "url": "https://news.ycombinator.com/item?id=31568548",
+      "engagement": 1,
+      "date": "2022-05-31T12:00:17.000Z",
+      "context": "HN thread on response \"The Scaling Hypothesis (2021)\", reply to Jack000: \"I think the main disconnect between large language models and what people expect from \"AI\" is the fact that LMs learn me…\""
+    },
+    {
+      "id": "hn-31569016",
+      "source": "Hacker News",
+      "kind": "reply",
+      "author": "paskozdilar",
+      "text": "> I think this is what I believe i.e. that animals and humans are just evolved machines, with no divine spark.\n\nI think so, too. It seems to me that a fundamental intelligent activity is the act of \"association\" - associating two stimuli that occur at the same time/sequentially, which is what NNs already do (I suppose?).",
+      "url": "https://news.ycombinator.com/item?id=31569016",
+      "engagement": 0,
+      "date": "2022-05-31T13:05:01.000Z",
+      "context": "HN thread on response \"The Scaling Hypothesis (2021)\", reply to ZeroGravitas: \"> The scaling hypothesis regards the blessings of scale as the secret of AGI: intelligence is ‘just’ simple neural units…\""
+    },
+    {
+      "id": "hn-31568761",
+      "source": "Hacker News",
+      "kind": "reply",
+      "author": "abriosi",
+      "text": "If you think humans are only interpolating machines then I agree with your statement. Personally, I don't think humans or animals are only capable of doing interpolation\n\nNonetheless, assuming that these models are only doing interpolation it is astonishing\n\nNow, a question arises; is there some emerging weak extrapolation going on? I have no idea, until very recently I though I had a good grasp of what interpolation/extrapolation meant in \"human conceptual space\". Not anymore.",
+      "url": "https://news.ycombinator.com/item?id=31568761",
+      "engagement": 1,
+      "date": "2022-05-31T12:31:48.000Z",
+      "context": "HN thread on response \"The Scaling Hypothesis (2021)\", reply to ZeroGravitas: \"> The scaling hypothesis regards the blessings of scale as the secret of AGI: intelligence is ‘just’ simple neural units…\""
+    },
+    {
+      "id": "bsky-3mwhx3xlv6s25",
+      "source": "Bluesky",
+      "kind": "post",
+      "author": "Victor Levoso (@victor-levoso.bsky.social)",
+      "text": "Not really?\nLike it was pretty clear from scaling laws you likely could scale transformers to AGI, see gwern's famous post from 2020 fe \ngwern.net/scaling-hypo...\nA lot of people just had really bad takes on this and still do.\nBut to predict human text correctly you need to learn reasoning.",
+      "url": "https://bsky.app/profile/victor-levoso.bsky.social/post/3mwhx3xlv6s25",
+      "engagement": 15,
+      "date": "2026-09-27T04:20:09.679Z",
+      "context": "Bluesky post sharing the submission"
+    },
+    {
+      "id": "bsky-3mvm52dclnc22",
+      "source": "Bluesky",
+      "kind": "post",
+      "author": "Victor Levoso (@victor-levoso.bsky.social)",
+      "text": "There were actually good reasons thou see fe.\ngwern.net/scaling-hypo... \nNamely SGD finds simple solutions that generalize to some extent and scaling was predictably leading to less loss implying better capabilities in a way that was posible to extrapolate to future progress.",
+      "url": "https://bsky.app/profile/victor-levoso.bsky.social/post/3mvm52dclnc22",
+      "engagement": 3,
+      "date": "2026-09-16T02:52:04.626Z",
+      "context": "Bluesky post sharing the submission"
+    },
+    {
+      "id": "bsky-3kplg2fvu2h2w",
+      "source": "Bluesky",
+      "kind": "post",
+      "author": "Ryan Moulton (@moultano.bsky.social)",
+      "text": "This is where I ask the \"humanities bros\" to do the reading... gwern.net/scaling-hypo...",
+      "url": "https://bsky.app/profile/moultano.bsky.social/post/3kplg2fvu2h2w",
+      "engagement": 3,
+      "date": "2024-04-08T00:36:58.763Z",
+      "context": "Bluesky post sharing the submission"
+    },
+    {
+      "id": "bsky-3kbn6sura5q2q",
+      "source": "Bluesky",
+      "kind": "post",
+      "author": "Daniel Van Zant (@danielvanzant.bsky.social)",
+      "text": "Wild to see the Scaling Hypothesis (gwern.net/scaling-hypo...) mentioned all the way back in 1966. From \"Speculations Concerning the First Ultraintelligent Machine\" by IJ Good: doi.org/10.1016/S006...",
+      "url": "https://bsky.app/profile/danielvanzant.bsky.social/post/3kbn6sura5q2q",
+      "engagement": 0,
+      "date": "2023-10-13T13:40:04.895Z",
+      "context": "Bluesky post sharing the submission"
+    },
+    {
+      "id": "bsky-3kpnympsv732y",
+      "source": "Bluesky",
+      "kind": "post",
+      "author": "Nico (@nico-encounter.bsky.social)",
+      "text": "Which is also why the scaling hypothesis has started to break down, and improvement in the last few generations hasn't come from making bigger models. Basically right after this was published. \ngwern.net/scaling-hypo...",
+      "url": "https://bsky.app/profile/nico-encounter.bsky.social/post/3kpnympsv732y",
+      "engagement": 0,
+      "date": "2024-04-09T01:14:37.187Z",
+      "context": "Bluesky post sharing the submission"
+    },
+    {
+      "id": "bsky-3k77re2hnnt2e",
+      "source": "Bluesky",
+      "kind": "post",
+      "author": "Ryan Moulton (@moultano.bsky.social)",
+      "text": "Gwern's \"The Scaling Hypothesis.\" Reading this with no context would be an impenetrable wall, but I think the \"Why does Pretraining Work\" section is the best expression of why we expect LLMs to be able to do things.\n\ngwern.net/scaling-hypo...",
+      "url": "https://bsky.app/profile/moultano.bsky.social/post/3k77re2hnnt2e",
+      "engagement": 0,
+      "date": "2023-09-12T18:44:09.026Z",
+      "context": "Bluesky post sharing the submission"
+    },
+    {
+      "id": "bsky-3lb46lmlu2x2b",
+      "source": "Bluesky",
+      "kind": "post",
+      "author": "Russ Wilcox (@russwilcox.bsky.social)",
+      "text": "This is a long discussion of scaling https://gwern.net/scaling-hypothesis",
+      "url": "https://bsky.app/profile/russwilcox.bsky.social/post/3lb46lmlu2x2b",
+      "engagement": 0,
+      "date": "2023-02-26T19:22:25Z",
+      "context": "Bluesky post sharing the submission"
+    },
+    {
+      "id": "bsky-3mwjrkeit7k2c",
+      "source": "Bluesky",
+      "kind": "reply",
+      "author": "Joshua Pfohl (@pfohl.bsky.social)",
+      "text": "sure you could see it as a potential pathway but there was a tendency to think there would need to be something else other than just more of the same. Gwern even notes how the scalability hypothesis is quite unpopular in that article.",
+      "url": "https://bsky.app/profile/pfohl.bsky.social/post/3mwjrkeit7k2c",
+      "engagement": 3,
+      "date": "2026-09-27T21:46:09.992Z",
+      "context": "Reply on victor-levoso.bsky.social's post: \"Not really?\nLike it was pretty clear from scaling laws you likely could scale transformers to AGI, s…\""
+    },
+    {
+      "id": "bsky-3mwjspxygck2i",
+      "source": "Bluesky",
+      "kind": "reply",
+      "author": "nadia (@nadia9.bsky.social)",
+      "text": "Hindsight makes it so hard to evaluate  how reasonable past predictions were given the information at the time (especially if they were correct!). But I’d point out that in fact just scaling pretraining was not enough; it required training innovations like huge amounts of RLVR to get us to today.",
+      "url": "https://bsky.app/profile/nadia9.bsky.social/post/3mwjspxygck2i",
+      "engagement": 2,
+      "date": "2026-09-27T22:07:11.946Z",
+      "context": "Reply on victor-levoso.bsky.social's post: \"Not really?\nLike it was pretty clear from scaling laws you likely could scale transformers to AGI, s…\""
+    },
+    {
+      "id": "bsky-3mvm5hdx3c222",
+      "source": "Bluesky",
+      "kind": "reply",
+      "author": "Victor Levoso (@victor-levoso.bsky.social)",
+      "text": "And like the fact LLM could like write coherent English and solve some simple problems even back then is clearly early signs of reasoning and understanding developing in them.\nAlso a lot of the reasons skeptics gave for this not being posible were in fact just very wrong.",
+      "url": "https://bsky.app/profile/victor-levoso.bsky.social/post/3mvm5hdx3c222",
+      "engagement": 3,
+      "date": "2026-09-16T02:59:21.504Z",
+      "context": "Reply on victor-levoso.bsky.social's post: \"There were actually good reasons thou see fe.\ngwern.net/scaling-hypo... \nNamely SGD finds simple sol…\""
+    }
+  ]
+}

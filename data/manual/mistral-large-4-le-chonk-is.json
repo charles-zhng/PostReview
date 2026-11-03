@@ -1,0 +1,163 @@
+{
+  "model": "claude-opus-5-5 (hand-run in Claude Code)",
+  "clustering": {
+    "clusters": [
+      {
+        "label": "Mistral is back, and Europe is in the game",
+        "summary": "Beating GLM-5.3 on Terminal-Bench and halving the price makes this the first Mistral release in a long time that people consider genuinely good. EU companies and regulated US businesses that cannot run Chinese models see a near-frontier, self-hostable option, and daily users call it 'good enough' for real work.",
+        "stance": "positive",
+        "reaction_ids": [
+          "bsky-3myzhncq2d22h",
+          "bsky-3myzie2laok22",
+          "bsky-3myzi6qslxc2r",
+          "bsky-3mzfaghvgok26",
+          "bsky-3myzk3u3i2k2j",
+          "bsky-3myzjbt7pmc2r",
+          "bsky-3mz6dyow65s26",
+          "bsky-3mzfahs3mqc26",
+          "bsky-3mz24qjur322i",
+          "bsky-3mz4hn27bxe2p",
+          "hn-50289701",
+          "hn-50294837",
+          "hn-50290261",
+          "hn-50290931",
+          "hn-50300987",
+          "hn-50293063",
+          "hn-50289993",
+          "hn-50297894",
+          "hn-50289715",
+          "hn-50291115",
+          "hn-50291480",
+          "hn-50297052",
+          "hn-50290022",
+          "hn-50292235"
+        ],
+        "representative_ids": [
+          "bsky-3myzhncq2d22h",
+          "bsky-3myzie2laok22",
+          "hn-50289701",
+          "hn-50293063",
+          "hn-50297052",
+          "hn-50291115"
+        ]
+      },
+      {
+        "label": "Still not competitive, and the evidence is cherry-picked",
+        "summary": "Independent benchmarks and hands-on users find it behind DeepSeek V4.1 Flash, GLM and Beam at a higher price, after two previous Mistral models failed to match their self-reported evals. The chosen benchmarks look hand-picked, the 96.6% refusal statistic omits false refusals and is trivially bypassed on open weights, and a 1T/A52B model is impractical to self-host.",
+        "stance": "negative",
+        "reaction_ids": [
+          "hn-50290705",
+          "hn-50291920",
+          "hn-50304003",
+          "hn-50291329",
+          "hn-50290450",
+          "hn-50290299",
+          "hn-50300887",
+          "hn-50299728",
+          "hn-50301527",
+          "hn-50292910",
+          "hn-50290026",
+          "hn-50289734",
+          "hn-50289898",
+          "hn-50291521",
+          "hn-50290249",
+          "hn-50292803",
+          "hn-50290065",
+          "hn-50299490",
+          "hn-50294557",
+          "hn-50318032",
+          "hn-50294862",
+          "hn-50304212",
+          "hn-50300532",
+          "hn-50300780",
+          "hn-50292706",
+          "hn-50290921",
+          "hn-50289584",
+          "hn-50304337",
+          "hn-50299951",
+          "bsky-3mz2a72xtdq2u"
+        ],
+        "representative_ids": [
+          "hn-50290705",
+          "hn-50304003",
+          "hn-50289898",
+          "hn-50291521",
+          "bsky-3mz2a72xtdq2u",
+          "hn-50294557"
+        ]
+      },
+      {
+        "label": "Weights-available, not open",
+        "summary": "The licence requires a separate commercial agreement for any Model-as-a-Service business, so calling it open is misleading by OSI and open-source AI definitions. Defenders reply that 'open weight' has always just meant downloadable weights, and that even weights-available beats closed models.",
+        "stance": "mixed",
+        "reaction_ids": [
+          "hn-50290476",
+          "hn-50289652",
+          "hn-50293064",
+          "hn-50289742",
+          "hn-50289861",
+          "hn-50291412",
+          "hn-50296211",
+          "hn-50298043",
+          "hn-50294311",
+          "bsky-3mz22ikktszr2",
+          "bsky-3mz3wyupw7c23"
+        ],
+        "representative_ids": [
+          "hn-50290476",
+          "hn-50289652",
+          "hn-50293064",
+          "hn-50289742",
+          "hn-50291412"
+        ]
+      }
+    ]
+  },
+  "reviews": [
+    {
+      "summary": "The submission releases the weights of Mistral Large 4 (Le Chonk), a 1T-parameter (52B active) multimodal model, after three further weeks of RL beyond its public preview. It claims the lead among open-weight models on FrontierCode 2.0 and Terminal-Bench 4.0, parity with GLM-5.3 on the Artificial Analysis Coding Agent Index at 47% fewer tokens, strong defensive cyber results, and a price roughly half that of the preview. It frames the release as the foundation for European sovereign AI.",
+      "strengths": "- The headline result revived interest in Mistral: \"better than GLM-5.3 on TB4, is Mistral so back?\" [bsky-3myzhncq2d22h], prompting genuine surprise that \"IT'S GOOD NOW\" [bsky-3myzie2laok22] and relief that it is \"at least in the game\" [bsky-3myzk3u3i2k2j]. This is the first Mistral release in years that seems reasonably good, after threads dominated by complaints [hn-50291115].\n- The price cut changes the evaluation: a reviewer who found the preview uncompetitive at its original pricing says the release \"warrants a major reassessment\" [hn-50289701].\n- It fills a real gap for regulated and sovereign users. Almost every regulated US business cannot run Chinese models, so a near-frontier self-hostable alternative \"opens a lot of doors\" [hn-50293063]; teams with explicit no-Chinese-model rules are already planning to serve it [hn-50290022, hn-50292235]. EU companies report Mistral working well as a provider, including its serving of third-party models [hn-50290261, hn-50290931, hn-50300987], and readers welcome more countries competing [hn-50294837, hn-50289993, bsky-3mzfaghvgok26].\n- Daily users find it adequate in practice: \"more than enough for everything I'm doing\" [bsky-3myzjbt7pmc2r], fine for implementing well-specified tickets in Rust [hn-50291480], and \"good enough\" when paired with good context, at a twentieth of Anthropic's API cost [hn-50297052]. It is also used for free in at least one production bot [bsky-3mzfahs3mqc26].\n- The trajectory matters: going from no model in this size class to one competitive with z.ai is \"a first step on a trip which will hopefully go quite far\" [hn-50297894], and the release raises expectations for smaller derived models [bsky-3myzi6qslxc2r].",
+      "weaknesses": "- Even supporters frame the result as \"good enough\" rather than leading; Chinese models remain cheaper for similar outcomes and Anthropic's models consistently better [hn-50297052].\n- Comparisons omit Kimi K3.1, and DeepSeek V4.1 Flash remains impressive [hn-50289715].\n- Small leads on single benchmarks invite the observation that \"the throne changes hands again\", arguing for routing between models per task rather than loyalty to any one [bsky-3mz6dyow65s26].",
+      "questions": "1. Will smaller distilled or Medium-class models be derived from Large 4, and on what timeline?\n2. How does Large 4 compare with Kimi K3.1 Pro, which is absent from the benchmark tables?\n3. What quantization levels preserve the reported coding results on typical 4-8 GPU servers?\n4. Will EU regional inference remain priced at parity with the global endpoint?",
+      "soundness": 3,
+      "presentation": 3,
+      "contribution": 3,
+      "rating": 8,
+      "confidence": 3,
+      "hype_index": 3,
+      "flag_for_ethics_review": false
+    },
+    {
+      "summary": "The submission claims Mistral Large 4 is the best open-weight model for coding and among the most capable open models overall, based largely on benchmarks where it narrowly leads, and claims best-in-class safety with a 96.6% refusal rate on malicious cyber requests. It attributes rapid gains to three extra weeks of RL with \"no signs of saturation\". These claims are evaluated against independent benchmarks and user experience.",
+      "strengths": "- The submission does improve on a preview that users found uncompetitive, and the price cut makes it \"more interesting than the preview was\" [hn-50290026].\n- The vendor's self-improvement is acknowledged even by doubters, who welcome more options [hn-50290450]; at least something competitive-ish is coming out of Europe [hn-50301527].",
+      "weaknesses": "- **Not competitive on independent evaluations.** It is roughly 20% worse than DeepSeek V4.1 Flash on Artificial Analysis while having twice the parameters and costing 10x more on input [hn-50304003]; on an independent personal benchmark it is \"fine, but certainly not up to the best Chinese or US open weight models\" [hn-50291329]; on a cyber benchmark it is both more expensive and less capable than Beam 1.0 [hn-50299728]. Blunter readers call it a \"crappy model\" that is \"mogged by Deepseek and GLM\" [hn-50291920] and argue the warm reception reflects political bias, not merit [hn-50290705].\n- **Track record.** The previous two models \"were a disaster and didn't live up to their self reported evals\" [hn-50290450]; a user who tried Large 4 at launch saw it ignore SKILL.md files and hallucinate [hn-50292910]. Mistral does not even use the model in its own work product [hn-50300887].\n- **Selective benchmarks.** The model leads only on \"a very specific benchmark\" [hn-50301527]; comparisons lack score-versus-speed-and-cost context [hn-50299490]; one reader finds their own company's logo in a harness list where the product does not exist [hn-50290065]. If three weeks of RL made this much difference, it is odd the authors did not wait, and the timing echoes other rushed releases [bsky-3mz2a72xtdq2u]. EU provenance alone does not justify choosing it [hn-50290026, hn-50289734].\n- **The refusal statistic is incomplete and moot.** Reporting 96.6% refusal on malicious requests without the false-refusal rate on benign ones is meaningless, since a random refuser could match it [hn-50289898]; intent is not observable from the request [hn-50290249]; and on open weights any guardrail can be bypassed by prefilling or a weekend of uncensoring, making it \"security theater\" [hn-50291521].\n- **Pricing and access friction.** The price was already near this level during preview, and the model remains too expensive and slow when thinking [hn-50290299]; EU-only inference carries a 10% upcharge [hn-50292803]. Paying Mistral is hard [hn-50289584, hn-50304337], and the free Vibe CLI times out on \"hi\" [hn-50299951].\n- **Impractical size.** At 1T parameters and 52B active, it cannot run on consumer hardware and pushes costs into data centres [hn-50294557, hn-50300532, hn-50300780]; even 4 x H200 is insufficient at 4-bit [hn-50290921]. Readers want a sub-200B variant [hn-50304212] and question whether giant MoEs are justified [hn-50292706], though others argue scale is necessary [hn-50318032] and quantization or distillation recovers most of the gap [hn-50294862].",
+      "questions": "1. What is the false-refusal rate on benign security requests that accompanies the 96.6% malicious-refusal figure?\n2. How does Large 4 perform on independent indices where it trails DeepSeek V4.1 Flash, and why were those omitted?\n3. Why was the preview priced as it was if the release price is essentially unchanged?\n4. Will Mistral publish evaluations of the released checkpoint by third parties before claiming leadership?\n5. Is a smaller variant planned for single-node deployment?",
+      "soundness": 2,
+      "presentation": 2,
+      "contribution": 2,
+      "rating": 3,
+      "confidence": 4,
+      "hype_index": 3,
+      "flag_for_ethics_review": false
+    },
+    {
+      "summary": "The submission announces Mistral Large 4 as \"Fully open-weight\" and \"now open weight\", released under a modified MIT licence. The licence requires any business operating a Model-as-a-Service offering to obtain a separate commercial licence before commercial use. The central framing question is whether that qualifies as open.",
+      "strengths": "- The weights are genuinely downloadable, which is what most people mean by \"open weight\"; the title is accurate in that sense and users will be neither surprised nor disappointed [hn-50289861, hn-50289742].\n- Even weights-available releases are better than closed models: they allow inspection of the model, though methods to confirm that served models match published weights are still needed [hn-50296211].\n- The restriction targets only a narrow class of business, the common \"if you're serving it as a business you need a license\" carve-out [hn-50289652], and is understandable given the cost of training frontier models [hn-50293064].",
+      "weaknesses": "- **Misleading label.** A licence that requires permission for commercial MaaS use is \"weight-available\", not open; the same reasoning drove the backlash against Redis, Elasticsearch and Terraform going source-available [hn-50290476, hn-50289652]. It fails the OSI open-source AI definition's \"use for any purpose without having to ask for permission\" requirement [hn-50291412]. The gap between the headline and clause 2 is the point of the \"look inside\" joke [bsky-3mz22ikktszr2], and readers are advised that the word \"open\" is no substitute for reading the licence [bsky-3mz3wyupw7c23].\n- **Sustainability of openness.** Frontier training is so capital-intensive that a truly open-source frontier community may be impossible, and open weights may not survive the end of the current cycle [hn-50293064]; some readers propose archiving weights now in case licensing changes [hn-50298043].\n- **Reproducibility.** No useful open model can be reproducibly trained from source, and this release does not change that [hn-50294311].",
+      "questions": "1. Why describe the model as \"fully open-weight\" rather than naming the licence restrictions in the summary?\n2. What terms and costs apply to the commercial MaaS licence, and how is \"Model as a Service\" defined for derivative fine-tunes?\n3. Would Mistral consider an OSI-approved licence for a smaller variant?\n4. Will the training data and code be released to enable reproduction?",
+      "soundness": 3,
+      "presentation": 2,
+      "contribution": 3,
+      "rating": 5,
+      "confidence": 4,
+      "hype_index": 2,
+      "flag_for_ethics_review": false
+    }
+  ],
+  "metaReview": {
+    "metareview": "**Summary.** The submission releases the weights of Mistral Large 4 (Le Chonk), a 1T-parameter, 52B-active multimodal MoE trained in Europe, after three additional weeks of RL. It claims the lead among open-weight models on FrontierCode 2.0 and Terminal-Bench 4.0, Coding Agent Index parity with GLM-5.3 at far lower token cost, strong defensive cyber performance with a 96.6% malicious-request refusal rate, a halved price, and a modified-MIT licence that it describes as open.\n\n**Reviewer 1** argues that Mistral is back in contention and that a near-frontier European model fills a real gap for regulated and sovereign users who cannot deploy Chinese models. This is the most convincing argument for the submission: its value lies less in leaderboard position than in being the strongest option in a constrained market. Users who work with it daily describe it as good enough, which is a more honest claim than the post itself makes.\n\n**Reviewer 2** argues the evidence is selective: independent indices place it well behind DeepSeek V4.1 Flash at higher cost, Mistral's last two releases underdelivered on self-reported numbers, and the refusal figure omits the false-refusal rate that would make it meaningful. On an open-weight model, the reviewer notes, refusal guardrails can be removed over a weekend anyway. These points are well argued and largely unanswered by the submission. Some of the remaining critique (payment friction, a CLI timing out) concerns the company rather than the model.\n\n**Reviewer 3** contests the word \"open\". The licence's commercial MaaS restriction makes this weights-available by OSI's definitions; the counter-argument that \"open weight\" has always meant downloadable weights is reasonable but does not excuse \"fully open-weight\" in the summary. This is a presentation issue rather than a fatal flaw.\n\n**Assessment.** Reviewers 1 and 2 are less opposed than their scores suggest: both agree the model is behind the best Chinese open models and ahead of Mistral's previous efforts. The disagreement is whether the submission's framing (\"best open-weight model for coding\") is earned. On the evidence, it is not: leadership rests on hand-picked benchmarks with narrow margins, while broader indices tell a different story. But a solid, self-hostable, Western-provenance model at a much lower price is a real contribution for a defined audience, and the release is honest about pricing and licence terms in the body even if the headline overreaches.",
+    "additional_comments_on_reviewer_discussion": "Most decisive were Reviewer 2's independent-benchmark comparisons and the refusal-rate critique, which together show the post's strongest claims are its least supported. Reviewer 1's regulated-market argument was decisive for acceptance: no reviewer disputed that the model meets a real need. Reviewer 3's licence argument was accepted as a fair correction to the framing, but the definitional dispute it contains was not resolved and need not be for this decision. The kiddy-pool metaphor was noted and not adopted.",
+    "decision": "Accept (Poster)",
+    "decision_comment": "A competent, self-hostable model for those who need one, presented as the leader of a race it is mostly competing in. The authors are asked to report false-refusal rates and to rename \"fully open-weight\" to something their licence would agree with."
+  }
+}

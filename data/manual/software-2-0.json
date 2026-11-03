@@ -1,0 +1,172 @@
+{
+  "model": "claude-opus-5-5 (hand-run in Claude Code)",
+  "clustering": {
+    "clusters": [
+      {
+        "label": "It was ahead of its time",
+        "summary": "Readers revisiting the post in the LLM era see it as prescient: the shift from writing code to curating data and specifying goals has visibly come to pass. Practitioners add that treating datasets as first-class, tooled components is the most under-appreciated point in the field, and some argue a black box that fails less often beats an explainable one that fails more.",
+        "stance": "positive",
+        "reaction_ids": [
+          "bsky-3ljnrcba3kk23",
+          "bsky-3ljnrgmuevs23",
+          "resp-25128251",
+          "hn-17280919",
+          "hn-17281945",
+          "hn-17283216",
+          "hn-17280610",
+          "hn-15679078",
+          "hn-15678671",
+          "hn-34882441",
+          "hn-34883357",
+          "hn-34882717",
+          "hn-34882831",
+          "hn-44312623",
+          "bsky-3lgai556kps2y",
+          "hn-34884311",
+          "hn-34883572"
+        ],
+        "representative_ids": [
+          "resp-25128251",
+          "bsky-3ljnrcba3kk23",
+          "bsky-3ljnrgmuevs23",
+          "hn-17280919",
+          "hn-34883357",
+          "hn-34882717"
+        ]
+      },
+      {
+        "label": "Complement, not version 2.0",
+        "summary": "The largest group by count accepts that neural networks win on fuzzy perception problems but rejects the framing that they replace ordinary code. Ledgers, CRUD apps, compilers and business logic need determinism, scarce data makes most problems unsuitable, writing the spec is the hard part (see COBOL and BPMN), and ML practitioners already knew 'it's all about the data', so the '2.0' label reads as a provocative rebrand.",
+        "stance": "negative",
+        "reaction_ids": [
+          "hn-34884025",
+          "hn-34882684",
+          "hn-34883152",
+          "hn-34882994",
+          "hn-34883520",
+          "hn-34882819",
+          "hn-34883608",
+          "hn-34893372",
+          "hn-34884032",
+          "hn-34882591",
+          "hn-34882373",
+          "hn-34882746",
+          "hn-34883298",
+          "hn-34885881",
+          "hn-34894538",
+          "hn-34887977",
+          "hn-44305871",
+          "hn-17281064",
+          "hn-17283743",
+          "hn-17282492",
+          "hn-17280967",
+          "hn-15678896",
+          "hn-15679445",
+          "hn-15678761",
+          "hn-15678798",
+          "hn-15678741",
+          "hn-15678979",
+          "hn-15679101",
+          "hn-15679010",
+          "hn-15678871",
+          "bsky-3ljnyrdkccs2v",
+          "hn-34882739",
+          "hn-34882537",
+          "hn-34882419",
+          "hn-34882438",
+          "hn-34884247",
+          "hn-17280746"
+        ],
+        "representative_ids": [
+          "hn-34884025",
+          "hn-34882684",
+          "hn-34883608",
+          "hn-34893372",
+          "hn-17283743",
+          "bsky-3ljnyrdkccs2v"
+        ]
+      },
+      {
+        "label": "Black boxes you cannot debug",
+        "summary": "These readers focus on the cost the post files under a one-line caveat: opaque, nondeterministic programs that cannot be read, tested, audited or patched in a targeted way. They point to Tesla Autopilot's odd failures, adversarial examples and the absence of model risk management, and warn that putting such components in safety-critical stacks is dangerous.",
+        "stance": "negative",
+        "reaction_ids": [
+          "hn-34882309",
+          "hn-34882405",
+          "hn-34883714",
+          "hn-34882640",
+          "hn-34883148",
+          "hn-34884091",
+          "hn-34882418",
+          "hn-34883700",
+          "hn-34884306",
+          "hn-34882555",
+          "hn-34887885",
+          "hn-34895695",
+          "hn-44309851",
+          "hn-17282519",
+          "hn-17280720",
+          "hn-17280991",
+          "hn-17283958",
+          "hn-15679005",
+          "hn-15679337"
+        ],
+        "representative_ids": [
+          "hn-34882309",
+          "hn-34882405",
+          "hn-17282519",
+          "hn-34883148",
+          "hn-44309851",
+          "hn-34884306"
+        ]
+      }
+    ]
+  },
+  "reviews": [
+    {
+      "summary": "The submission argues that neural networks are not just another classifier but a new way of writing software: the programmer specifies a goal and an architecture, the dataset becomes the source code, and optimization does the writing. It predicts that programming will shift toward curating datasets and calls for Software 2.0 tooling (IDEs, a GitHub, package managers). Read years later, the core prediction looks largely vindicated.",
+      "strengths": "- **The central prediction aged remarkably well.** Readers who dismissed the post in 2017 as \"never-in-my-lifetime stuff\" now find it \"disgustingly ahead of its time\" [bsky-3ljnrcba3kk23] [bsky-3ljnrgmuevs23]; the author's own later framing of prompting as programming extends the same arc [hn-34882831].\n- **It names a real change in workflow.** Engineering features versus making features learnable is a genuinely different discipline, and the post correctly notes that the hard problems are not where academia is looking [hn-17283216]. Practitioners outside the usual ML domains report the same experience: it feels \"more like training a cybernetic animal than programming\" [hn-15679078] [hn-15678671].\n- **Datasets as first-class, tooled artifacts.** Treating training data as a dynamic component with its own infrastructure is \"one of the most under-appreciated points in the field\" [hn-17280919], and the incentive problem in academia makes the call for tooling more, not less, relevant [hn-17281945].\n- **It inspired concrete systems work.** Differentiable programming made a first-class language feature, with differentiation through control flow and compile-time tensor-shape checking, is pitched explicitly as infrastructure for Software 2.0: it lets learned models absorb existing hand-written code, such as a physics simulator in Cartpole, instead of relearning it by trial and error [resp-25128251]. The goal-over-procedure idea also has a respectable lineage back to Minsky [hn-17280610].\n- **The opacity objection is answered on the right axis.** What matters is the failure rate: a black box that fails 10% of the time beats an explainable system that fails 20% of the time for most cheap, repeated processes [hn-34883357]. Useful tools have never required formal verification, since human programmers do not meet that bar either [hn-34883572].",
+      "weaknesses": "- **The post underplays how much hybrid glue remains.** Even sympathetic readers frame the opportunity as the two paradigms in combination, especially for messy, heterogeneous inputs, rather than a clean replacement [bsky-3lgai556kps2y] [hn-34882441].\n- **The human role is left vague.** If programmers become \"effective translators between what the business wants and what the AI outputs\" [hn-34884311], the post says little about what that job's tooling and skills look like, beyond the dataset-curation story.\n- **Code quality is treated as solvable by more model.** The claim that AI-written code can simply refactor itself [hn-34882717] is optimistic and not argued in the submission; the new weaknesses are real, even if the new strengths outweigh them [hn-44312623].",
+      "questions": "1. Which parts of the 2017 stack (dataset IDEs, a GitHub for weights, package managers) do you consider delivered, and which were superseded by prompting large pretrained models [hn-34882831]?\n2. How should a team decide between a 90%-accurate model it understands and a 99%-accurate one it does not, beyond the raw error rate [hn-34883357]?\n3. What is the right tooling interface for the \"translator\" role between business intent and model output [hn-34884311]?",
+      "soundness": 3,
+      "presentation": 4,
+      "contribution": 4,
+      "rating": 8,
+      "confidence": 3,
+      "hype_index": 4,
+      "flag_for_ethics_review": false
+    },
+    {
+      "summary": "The submission claims that neural networks constitute 'Software 2.0', a successor paradigm in which data replaces source code and optimization replaces programmers, with existing code being progressively eaten. The examples offered are perception and signal-processing tasks, from which the post extrapolates to software in general.",
+      "strengths": "- The post is right that for a large set of fuzzy problem domains (fraud detection, perception, speech) learned models are a better tool than hand-written rules [hn-34884025] [hn-34882591].\n- It correctly identifies that ML development has a different workflow from conventional development, which is worth naming [hn-34882819].",
+      "weaknesses": "- **Category error in the title.** \"2.0\" implies a newer version of the same thing, but the problems suited to each paradigm are markedly different; it is a different tool and deserves a different name [hn-34894538] [hn-15679101]. Neural nets are bad at what software is good at (accuracy, transparency, repetition) and good at what software is bad at [bsky-3ljnyrdkccs2v] [hn-34883520]. The comparison invites \"Software 2.0 reminds me of web 3.0\" [hn-44305871].\n- **The examples do not generalize.** The \"ongoing transition\" lists only traditional AI tasks [hn-34882373]; less than 1% of a large company's code could be replaced by even an excellent network [hn-34883608]; and nobody can say what the training set for a CRUD app with OAuth, email verification and an ancient XML parser would look like [hn-34893372]. Account ledgers that are right 99.9% of the time will not cut it [hn-34884025].\n- **The premise that data is easier than code is asserted, not shown.** Readers call it \"a ridiculous unsubstantiated premise\" [hn-15678896] [hn-15679445]; quality data is the hardest part of ML [hn-34882994], most problems have nowhere near enough of it [hn-34884032], and the cost of curating data and training versus just writing code is never compared [hn-34882537].\n- **Specification is the actual work, and we have tried this before.** Business-people-describe-it-and-the-machine-builds-it was the promise of BPMN and COBOL [hn-34882684] [hn-34883152]; a complex enough prompt becomes indistinguishable from a programming language [hn-34882746], or a DSL whose syntax is English and whose implementation is a black box [hn-34883298]. Formal specs that would make generation trustworthy are harder to write than the code [hn-34882419] [hn-34882438].\n- **Novelty and history are overstated.** Neural networks date to 1943, and the post ignores that history [hn-15678741]; practitioners have long known applied ML is about data, labeling guidelines and long-tail surprises, and nobody called it Software 2.0 [hn-17283743] [hn-15679010]. The accompanying talk is read as a specialized self-driving data-labeling toolkit rather than a general shift [hn-17280967] [hn-17281064].",
+      "questions": "1. What fraction of a real production codebase do you expect to become learned weights, and what evidence supports that number [hn-34883608]?\n2. For domains with little data, what does Software 2.0 offer beyond business as usual [hn-34884032]?\n3. How does dataset curation plus training compare in total cost to writing the equivalent code [hn-34882537]?\n4. If the end state is 1.0 code validating and testing 2.0 output [hn-34885881], why call it a successor rather than a component?",
+      "soundness": 2,
+      "presentation": 3,
+      "contribution": 2,
+      "rating": 3,
+      "confidence": 4,
+      "hype_index": 4,
+      "flag_for_ethics_review": false
+    },
+    {
+      "summary": "The submission proposes replacing explicit code with trained neural network weights and lists opacity, unintuitive failures, absorbed bias and adversarial vulnerability as limitations. It treats these as caveats to be handled by more data and better tooling rather than as reasons to limit the paradigm's scope.",
+      "strengths": "- The post does at least list opacity and embarrassing failure modes as limitations [hn-34883148], and the trade-off it poses between an understood 90% model and an opaque 99% model is a fair framing of the choice [hn-34884091].\n- Readers concede there are settings where a best-effort black box is fine, such as when a human checks the output or relevance ranking is the task [hn-34895695].",
+      "weaknesses": "- **The caveat is the understatement of the century.** Coming from the person running Tesla's vision stack, where cars still mishandle forking lanes years later, a single sentence on unintuitive failures is not enough [hn-34883148]. Classifiers fixate on obscure image details, adversarial attacks remain unsolved, and doing driving with classifier output and no geometric analysis is \"scary\" [hn-17282519] [hn-17283958].\n- **No account of debugging or testing.** Reading and debugging other people's code is already the hardest part of the job, and 90%-accurate generated code makes it harder [hn-34882309]. The talk focuses on labeling and skips the practical problem of debugging complex models in a mission-critical system [hn-17280720]. Fixing one failure may break another you cannot see [hn-34883714].\n- **No risk management story.** Almost nobody deploying these models knows how to do model risk management; the edge cases are badly understood and nearly impossible to inspect [hn-34882405]. Demonstrating 99% accuracy may require enough tests that you could have written the procedural version [hn-34884091]; contracts and SLAs need guaranteed behavior [hn-34887885]. \"Imagine if the Therac-25 software was written by ChatGPT\" [hn-34882555].\n- **Weights are not programs.** A network is closer to a giant spreadsheet whose cells no one can interpret; locating a single a/an neuron in GPT-2 took a research effort [hn-34884306]. Shipping a pre-trained network without its data is like shipping a binary blob and throwing away the source [hn-15679005]. The resulting artifact is nondeterministic, unreproducible, unauditable and not modifiable in a targeted way [hn-44309851].\n- **Cross-layer adaptation destroys useful boundaries.** Letting a system rewrite instructions ten layers down creates steep performance cliffs and removes the separate failure zones that layering exists to provide [hn-34882640]; chaotic sensitivity of models argues for extracting rigid business logic instead [hn-34882418]. Complexity grows rather than shrinks [hn-34883700], and the attack surface is barely studied [hn-15679337].",
+      "questions": "1. How do you propose to debug, audit and patch a specific failure in a Software 2.0 component without retraining and risking regressions elsewhere [hn-34883714] [hn-44309851]?\n2. What verification standard should apply before learned components are used in safety-critical systems like driving [hn-17282519] [hn-34882555]?\n3. Would a hybrid with explicit logical or expert-system layers on top of classifiers handle the long tail better [hn-17280991]?\n4. How should model owners preserve and version training data so that the 'source code' is not discarded [hn-15679005]?",
+      "soundness": 2,
+      "presentation": 3,
+      "contribution": 2,
+      "rating": 3,
+      "confidence": 4,
+      "hype_index": 4,
+      "flag_for_ethics_review": false
+    }
+  ],
+  "metaReview": {
+    "metareview": "**Summary.** The submission rebrands neural networks as \"Software 2.0\": data is the source code, training is the compiler, and much of programming will become dataset curation. It lists perception, speech, translation, games and learned indexes as evidence, acknowledges opacity and adversarial fragility in passing, and calls for 2.0 tooling.\n\n**Assessment.** The three reviews disagree less than their ratings suggest. Reviewer 1 judges the post on its forecast and finds it vindicated: the shift from writing logic to curating data and specifying goals did happen, datasets did become infrastructure, and a black box that fails less often often beats a transparent one that fails more. Reviewer 2 judges it on its framing and finds it overreaching: the examples are all perception-style tasks, most production code (ledgers, CRUD, compilers) has no plausible training set, data is not easier than code for most problems, and \"2.0\" implies replacement where the honest word is \"complement.\" Reviewer 3 judges it on its caveats and finds them thin: debugging, auditing, targeted fixes and risk management get a sentence where they deserved a section, which is a pointed omission from the person then running a production self-driving vision stack.\n\nI find Reviewer 2's scope argument the most convincing on the merits, and notably Reviewer 1 does not really contest it; its own strongest supporters describe the two paradigms working in combination. Reviewer 3's concerns are legitimate but are largely an elaboration of limitations the post itself lists, so they argue for a revision rather than a rejection. Reviewer 1's point stands, though: as a piece of technological forecasting, the post saw the data-centric, learned-component workflow coming before most of its critics did, and \"the title overclaims\" is a weaker objection than \"the prediction was wrong,\" which nobody convincingly makes.\n\nThe result is an influential position paper with an overstated title and an understated limitations section. That describes a good fraction of accepted position papers.",
+    "additional_comments_on_reviewer_discussion": "Decisive: Reviewer 2's observation that the evidence is confined to perception-style tasks and that the replacement framing is never argued for general software, and Reviewer 1's observation that the workflow prediction nonetheless held up. Partially discounted: Reviewer 2's 'nothing new, ML was always about data' line, since naming and framing a practice is itself a contribution, and Reviewer 3's Tesla-specific criticisms, which concern the author's employer more than the essay's argument. Reviewer 3's call for a real treatment of debugging and verification is endorsed as a required revision.",
+    "decision": "Accept (Poster)",
+    "decision_comment": "Accepted as a prescient position paper, on the condition that the camera-ready version consider renaming itself 'Software 1.0, Plus Some Weights' and expand the one-sentence limitations section into an actual section."
+  }
+}

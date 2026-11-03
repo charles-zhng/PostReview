@@ -1,0 +1,1346 @@
+{
+  "postId": "vibe-coding",
+  "generatedAt": "2026-11-03T19:47:17.905Z",
+  "models": {
+    "reviewer": "claude-opus-5-5 (hand-run in Claude Code)",
+    "areaChair": "claude-opus-5-5 (hand-run in Claude Code)"
+  },
+  "reactions": {
+    "total": 322,
+    "bySource": {
+      "Hacker News": 279,
+      "Response post": 13,
+      "Bluesky": 30
+    },
+    "threads": [
+      {
+        "source": "Hacker News",
+        "title": "Vibe Coding",
+        "url": "https://news.ycombinator.com/item?id=42913909",
+        "points": 47,
+        "comments": 42
+      },
+      {
+        "source": "Hacker News",
+        "title": "Vibe coding and agentic engineering are getting closer than I'd like",
+        "url": "https://news.ycombinator.com/item?id=48037128",
+        "points": 787,
+        "comments": 885
+      },
+      {
+        "source": "Hacker News",
+        "title": "The cult of vibe coding is dogfooding run amok",
+        "url": "https://news.ycombinator.com/item?id=47664912",
+        "points": 616,
+        "comments": 512
+      },
+      {
+        "source": "Hacker News",
+        "title": "Breaking the spell of vibe coding",
+        "url": "https://news.ycombinator.com/item?id=47006615",
+        "points": 434,
+        "comments": 348
+      },
+      {
+        "source": "Hacker News",
+        "title": "Will vibe coding end like the maker movement?",
+        "url": "https://news.ycombinator.com/item?id=47167931",
+        "points": 405,
+        "comments": 439
+      },
+      {
+        "source": "Hacker News",
+        "title": "GLM-5: From Vibe Coding to Agentic Engineering",
+        "url": "https://news.ycombinator.com/item?id=46977210",
+        "points": 378,
+        "comments": 8
+      },
+      {
+        "source": "Hacker News",
+        "title": "I know when you're vibe coding",
+        "url": "https://news.ycombinator.com/item?id=44742251",
+        "points": 353,
+        "comments": 173
+      },
+      {
+        "source": "Hacker News",
+        "title": "Vibe coding kills open source",
+        "url": "https://news.ycombinator.com/item?id=46765120",
+        "points": 330,
+        "comments": 285
+      },
+      {
+        "source": "Hacker News",
+        "title": "Show HN: Vibe coding a bookshelf with Claude Code",
+        "url": "https://news.ycombinator.com/item?id=46420453",
+        "points": 284,
+        "comments": 210
+      },
+      {
+        "source": "Hacker News",
+        "title": "Vibe coding is mad depressing",
+        "url": "https://news.ycombinator.com/item?id=46227422",
+        "points": 263,
+        "comments": 159
+      },
+      {
+        "source": "Hacker News",
+        "title": "Vibe Coding is not an excuse for low-quality work",
+        "url": "https://news.ycombinator.com/item?id=43739037",
+        "points": 259,
+        "comments": 200
+      },
+      {
+        "source": "Hacker News",
+        "title": "Vibe coding cleanup as a service",
+        "url": "https://news.ycombinator.com/item?id=45320431",
+        "points": 250,
+        "comments": 144
+      },
+      {
+        "source": "Hacker News",
+        "title": "Vibe coding tips and tricks",
+        "url": "https://news.ycombinator.com/item?id=44940089",
+        "points": 227,
+        "comments": 93
+      },
+      {
+        "source": "Hacker News",
+        "title": "Vibe coding creates a bus factor of zero",
+        "url": "https://news.ycombinator.com/item?id=44966856",
+        "points": 223,
+        "comments": 131
+      },
+      {
+        "source": "Hacker News",
+        "title": "“Vibe Coding” vs. Reality",
+        "url": "https://news.ycombinator.com/item?id=43448432",
+        "points": 221,
+        "comments": 297
+      },
+      {
+        "source": "Hacker News",
+        "title": "Vibe coding my way to a healthy family: Introducing Gamow Labs",
+        "url": "https://news.ycombinator.com/item?id=48471048",
+        "points": 215,
+        "comments": 128
+      }
+    ]
+  },
+  "reviews": [
+    {
+      "summary": "The submission proposes 'vibe coding': a workflow where the author speaks requests to an LLM agent, accepts every diff unread, pastes errors back without comment, and lets the codebase grow past his own understanding. It presents this as a new and amusing way to build software, enabled by how good LLM coding tools have become, with a brief caveat that it suits throwaway weekend projects.",
+      "strengths": "- The submission is at least candid about what it describes: code that grows past the author's comprehension and bugs worked around by random changes. Critics found little to add to its own description beyond calling the analogy what it is: a chair built by randomly nailing uncut wood together [hn-42914208], or a deliverable from someone on their fifth edible [hn-42914331].\n- The scoping caveat ('not too bad for throwaway weekend projects') is a real if narrow concession, and several skeptical reviewers grant that AI is useful for boilerplate and tedium [hn-43741425] even while rejecting the vibe-coding framing.\n- The post accurately captures the initial thrill. Skeptics confirm the first hours feel magical and productive [hn-47021507] [hn-46227697] [hn-46228311], which is precisely what makes the workflow worth studying as a phenomenon.",
+      "weaknesses": "- **Maintainability and the bus factor.** A codebase that 'grows beyond my usual comprehension' is one that 'works until it doesn't', leaving an owner who cannot tell whether it can even be fixed [hn-42914235] [hn-47665667]. The submission's method produces a bus factor of zero: software nobody on Earth understands, into which users then upload personal data and card numbers [resp-44966856] [hn-44967437]. Once the agent stops coping, what remains is 'fractal layers of decisions that you didn't make' [hn-48038862]. Even readers sharing the post sum it up as code that works but lacks maintainability [bsky-3lobjvn3ows2r].\n- **Security and correctness.** Errors do not disappear; they become subtle. Code that compiles and works but fails on edge cases or carries a vulnerability is harder to review than obviously broken code [hn-48037827] [hn-43739294]. Response posts cite a Georgetown finding that at least 48% of AI-generated code contains security vulnerabilities, Stanford work showing developers with AI assistants write less secure code while believing it more secure, and GitClear data tying AI assistance to 41% more code churn [resp-45320431]. A detailed field report on Claude 3.7 Sonnet in Cursor lists the failure modes concretely: cloned interfaces instead of imports, reinvented components, trusted server-side logic placed on the client, project code broken to fit a unit test, and output that degrades into incoherence once the context window fills [resp-43448432]. Its exhibit A is a non-technical founder who boasted of a SaaS with 'zero hand written code' and days later found his API keys maxed out and his subscription bypassed [resp-43448432]. Practitioners report hours lost chasing bugs from blindly accepted output [hn-43739379], colleagues fired for pasting Copilot output unread [hn-43448718], and dozens of scanner findings in a vibed security-team PR [hn-46228061].\n- **The cleanup bill.** Vibe-coded projects are already arriving at freelancers as 'rotting' rescue jobs [hn-46228853] [hn-45321006], and the predicted endgame is 'the new Excel of technical debt' [hn-43448573]. Cleanup is now a product category, with specialists juggling 15-20 rescue projects and a dedicated marketplace that signed up 300 fixers within weeks; even the firm selling 'Vibe to Production' concedes the economics only work because cleanup is budgeted in from the start [resp-45320431]. The DIY-plumbing analogy, where you call an emergency plumber once the bathroom floods, fits [hn-45320889]. So does vibe code as legacy code produced at speed [hn-45321019].\n- **Flow or slot machine.** The submission's 'quite amusing' experience is described elsewhere as junk flow, a loss disguised as a win: like a multiline slot machine, vibe coding gives no clear signal of how well one is doing and a false sense of control, and its practitioners are unreliable narrators of their own productivity, as in the METR study where developers believed AI made them 20% faster while it made them 19% slower [resp-47006615]. Symptoms include stunning initial speed later 'given back' to baked-in flawed assumptions [hn-47021507], a Doritos binge that ends on the couch [hn-46227697], and pulling a lever hoping it gets it right next time [hn-46228311]. Some readers report losing sleep to it [hn-47019227] or treating the LLM's anthropomorphic tone as part of the trap [hn-47022654].\n- **Skill atrophy and the pipeline of judgment.** Those who stop engaging with the hard parts fear their skills will atrophy [hn-42914098] [hn-44967818] [hn-47019906]. The maker-movement comparison argues that vibe coding skipped the playful 'scenius' phase every earlier hobbyist technology went through and went straight into production, so the method produces real output before its user has developed real judgment, inducing an 'evaluative anesthesia' in which 'this is good' and 'I feel good making this' become indistinguishable, while the value flows upstream to the model layer [resp-47167931] [hn-47169660]. The fast.ai essay puts it bluntly: 'We have automated coding, but not software engineering' [resp-47006615]. It also lets bad developers get 'waaaay faster' [hn-44742992] [hn-44743638].\n- **Externalities on the commons.** Vibe coding routes users around the documentation, issues and funding links through which open-source maintainers are sustained [resp-46765120] [hn-46768339], while flooding those maintainers with low-quality AI PRs [hn-46765795] [hn-46766898].\n- **Not coding, and not a new idea.** To several readers 'vibe' is a euphemism for lazy, and the output is code generation without understanding, not coding [hn-42914267]; its practitioners are 'software whisperers' rather than engineers, which may explain the state of so many online experiences [bsky-3lkipceukss2f]. The 'embrace exponentials' line is said to sound 'like it came from an NFT junkie', with the agents' best unaided output a somewhat functional mockup that gets you perhaps 80% of the way [resp-43448432]. Others see a replay of the outsourcing craze, where a sufficiently detailed spec is just the code [hn-43739400] [hn-43739850] [hn-43448578], and suggest the term only caught on because of who coined it [hn-45322872], someone with his own AI company and so an interest in inflating the hype, while what readers actually want is objective reviews from serious programmers [bsky-3ljrmj5xw6k2a].",
+      "questions": "1. When the agent cannot fix a bug and random changes make it 'go away', how does the author know the bug is gone rather than hidden? [hn-43739379]\n2. Who maintains a vibe-coded project once it outgrows the weekend, and what happens to users' data in the meantime? [resp-44966856]\n3. Can the claimed productivity be measured externally rather than self-reported? A real 10x or 100x speedup would be obvious to outside observers, and it is not [hn-43448665] [hn-46243481]; the one controlled measurement cited found perceived speedup and actual slowdown [resp-47006615].\n4. Is the 'amusing' feeling evidence of productivity, or of a loss disguised as a win [resp-47006615]?\n5. Where does a newcomer who learns this way acquire the judgment the method assumes [resp-47167931] [hn-43740665]?\n6. What happens to the 'vibes' once the project outgrows the agent's context window and the model starts repeating its own earlier mistakes [resp-43448432]?",
+      "soundness": 1,
+      "presentation": 3,
+      "contribution": 2,
+      "rating": 3,
+      "confidence": 4,
+      "hype_index": 4,
+      "flag_for_ethics_review": true,
+      "reviewer": 1,
+      "cluster": {
+        "label": "Craft and maintainability skeptics",
+        "summary": "Vibe coding is a polite name for shipping code nobody understands. These reactions argue it trades a fast start for tech debt, security holes, a bus factor of zero and skill atrophy, and that the absorbing flow it produces is closer to a slot machine than to productivity. A cottage industry of cleanup consultants is offered as the proof.",
+        "stance": "negative",
+        "size": 106,
+        "total": 322,
+        "representative": [
+          {
+            "id": "resp-47006615",
+            "source": "Response post",
+            "author": "Rachel Thomas",
+            "url": "https://www.fast.ai/posts/2026-01-28-dark-flow/",
+            "excerpt": "Vibe coding is the creation of large quantities of highly complex AI-generated code, often with the intention that the code will not be read by humans. It has cast quite a spell on the tech industry. Executives push lay-offs claiming AI can handle the work. Managers pressure empl…",
+            "engagement": 434
+          },
+          {
+            "id": "resp-44742251",
+            "source": "Response post",
+            "author": "alexkondov.com",
+            "url": "https://alexkondov.com/i-know-when-youre-vibe-coding/",
+            "excerpt": "I shouldn’t have to care about this. I don’t want to care about how someone’s code gets into the IDE. Whether you wrote it by hand, copied it from a forum, prompted an LLM, or ran a simulation where monkeys are given infinite time to produce the solution. I care about what gets m…",
+            "engagement": 353
+          },
+          {
+            "id": "resp-46765120",
+            "source": "Response post",
+            "author": "Miklós Koren, Gábor Békés, Julian Hinz, Aaron Lohmann",
+            "url": "https://arxiv.org/abs/2601.15494",
+            "excerpt": "View PDF HTML (experimental) > Abstract:Generative AI is changing how software is produced and used. In vibe coding, an AI agent builds software by selecting and assembling open-source software (OSS), often without users directly reading documentation, reporting bugs, or otherwis…",
+            "engagement": 330
+          },
+          {
+            "id": "resp-45320431",
+            "source": "Response post",
+            "author": "Donado Labs",
+            "url": "https://donado.co/en/articles/2025-09-16-vibe-coding-cleanup-as-a-service/",
+            "excerpt": "A new service category is quietly emerging in tech: Vibe Coding cleanup. What started as LinkedIn jokes about “fixing AI messes” has become a real business opportunity. The harsh reality nobody wants to admit: most AI-generated code is production-unready, and companies are desper…",
+            "engagement": 250
+          },
+          {
+            "id": "resp-44966856",
+            "source": "Response post",
+            "author": "Antoine",
+            "url": "https://www.mindflash.org/coding/ai/ai-and-the-bus-factor-of-0-1608",
+            "excerpt": "All the opinions expressed in this article and on this website are entirely my own and do not represent my employer in any way. This article was discussed on HackerNews in August 2025, you can go see the comments on the HackerNews post. Ever heard about the “Bus factor”? It is a …",
+            "engagement": 223
+          },
+          {
+            "id": "resp-43448432",
+            "source": "Response post",
+            "author": "Cendyne",
+            "url": "https://cendyne.dev/posts/2025-03-19-vibe-coding-vs-reality.html",
+            "excerpt": "Table of contents - \"Vibe Coding\" vs Reality - Working around the problem - Conclusion There's a trend on social media where many repeat Andrej Karpathy's words (archived): \"give in to the vibes, embrace exponentials, and forget that the code even exists.\" This belief — like many…",
+            "engagement": 221
+          }
+        ]
+      },
+      "citations": {
+        "hn-42914208": {
+          "id": "hn-42914208",
+          "source": "Hacker News",
+          "author": "ryandrake",
+          "url": "https://news.ycombinator.com/item?id=42914208",
+          "excerpt": "Every year I think the bar for acceptable software quality couldn't get any lower, and I get proven wrong again and again. I don't get the point of this. Why bother doing something if you're not going to either 1. do it well, or 2. use the exercise as a way to get better? This so…",
+          "engagement": 7
+        },
+        "hn-42914331": {
+          "id": "hn-42914331",
+          "source": "Hacker News",
+          "author": "AdieuToLogic",
+          "url": "https://news.ycombinator.com/item?id=42914331",
+          "excerpt": "I sometimes wonder what someone on about their fifth edible would be like when given a deliverable. Now I know.",
+          "engagement": 0
+        },
+        "hn-43741425": {
+          "id": "hn-43741425",
+          "source": "Hacker News",
+          "author": "ken47",
+          "url": "https://news.ycombinator.com/item?id=43741425",
+          "excerpt": "The hype levels are so overwhelming that AI coding could never hope to meet them. I've tried having a highly-ranked AI coding app write unit tests for a relatively complex codebase. 80% of the generated test cases failed. But an experienced human such as myself could use those as…",
+          "engagement": 6
+        },
+        "hn-47021507": {
+          "id": "hn-47021507",
+          "source": "Hacker News",
+          "author": "JSR_FDED",
+          "url": "https://news.ycombinator.com/item?id=47021507",
+          "excerpt": "Twice I’ve used Claude Code for something important and complex. Stunning initial speed and time savings, all given back eventually as it became apparent that some fatally flawed assumptions were baked into the code right from the beginning. The initial speed is exactly what the …",
+          "engagement": 2
+        },
+        "hn-46227697": {
+          "id": "hn-46227697",
+          "source": "Hacker News",
+          "author": "WhyOhWhyQ",
+          "url": "https://news.ycombinator.com/item?id=46227697",
+          "excerpt": "For me vibecoding has a similar feeling to a big bag of Doritos. It's really fun at first to slap down 10k lines of code in an afternoon knowing this is just an indulgence. I think AI is actually really useful for getting a quick view of some library or feature. Also, you can lea…",
+          "engagement": 6
+        },
+        "hn-46228311": {
+          "id": "hn-46228311",
+          "source": "Hacker News",
+          "author": "biql",
+          "url": "https://news.ycombinator.com/item?id=46228311",
+          "excerpt": "This. First I try it just a little to do a boring part. It feels great. The boring part that was holding me is gone and all it took was a little instruction. The dopamine hit is real. So of course I will try it again. But not so fast. It needs to be corrected to make everything a…",
+          "engagement": 1
+        },
+        "hn-42914235": {
+          "id": "hn-42914235",
+          "source": "Hacker News",
+          "author": "chrisfosterelli",
+          "url": "https://news.ycombinator.com/item?id=42914235",
+          "excerpt": "This sounds like something that works until it doesn't, and then you have this massive codebase you're responsible for that doesn't work, and you don't understand why or know whether it can even be fixed.",
+          "engagement": 0
+        },
+        "hn-47665667": {
+          "id": "hn-47665667",
+          "source": "Hacker News",
+          "author": "bcrosby95",
+          "url": "https://news.ycombinator.com/item?id=47665667",
+          "excerpt": "Bad code works fine until it doesn't. In my experience, with humans, doing the right thing is worth it over doing the bad thing if your time horizon is a few months. Once you're in years, absolutely do the right thing, you're actually throwing time away if you don't. And I don't …",
+          "engagement": 7
+        },
+        "resp-44966856": {
+          "id": "resp-44966856",
+          "source": "Response post",
+          "author": "Antoine",
+          "url": "https://www.mindflash.org/coding/ai/ai-and-the-bus-factor-of-0-1608",
+          "excerpt": "All the opinions expressed in this article and on this website are entirely my own and do not represent my employer in any way. This article was discussed on HackerNews in August 2025, you can go see the comments on the HackerNews post. Ever heard about the “Bus factor”? It is a …",
+          "engagement": 223
+        },
+        "hn-44967437": {
+          "id": "hn-44967437",
+          "source": "Hacker News",
+          "author": "fzeroracer",
+          "url": "https://news.ycombinator.com/item?id=44967437",
+          "excerpt": "Unfortunately the corporate machine has been converging on a bus factor of 0. I've been part of multiple teams now where I was the only one holding knowledge over critical subsystems and whenever I attempted to train people on it, it was futile. Mainly because they would get laid…",
+          "engagement": 1
+        },
+        "hn-48038862": {
+          "id": "hn-48038862",
+          "source": "Hacker News",
+          "author": "jakevoytko",
+          "url": "https://news.ycombinator.com/item?id=48038862",
+          "excerpt": "Yeah, a lot of people came of age with a \"we'll fix it when it's a problem\" mindset. Previously their codebases would start to resist feature development, you'd fix the immediate bottlenecks, and then you could kick the can down the road a bit until you hit the next point of resi…",
+          "engagement": 1
+        },
+        "bsky-3lobjvn3ows2r": {
+          "id": "bsky-3lobjvn3ows2r",
+          "source": "Bluesky",
+          "author": "@igor-kupczynski.bsky.social",
+          "url": "https://bsky.app/profile/igor-kupczynski.bsky.social/post/3lobjvn3ows2r",
+          "excerpt": "The code works but lacks maintainability. As @karpathy put it: \"There's a new kind of coding I call 'vibe coding', where you fully give in to the vibes... and forget that the code even exists.\" twitter.com/karpathy/sta... 2/3",
+          "engagement": 0
+        },
+        "hn-48037827": {
+          "id": "hn-48037827",
+          "source": "Hacker News",
+          "author": "zarzavat",
+          "url": "https://news.ycombinator.com/item?id=48037827",
+          "excerpt": "Perhaps I've missed a few weeks worth of progress, but I don't think that AIs have become more trustworthy, the errors are just more subtle. If the code doesn't compile, that's easy to spot. If the code compiles but doesn't work, that's still somewhat easy to spot. If the code co…",
+          "engagement": 6
+        },
+        "hn-43739294": {
+          "id": "hn-43739294",
+          "source": "Hacker News",
+          "author": "frereubu",
+          "url": "https://news.ycombinator.com/item?id=43739294",
+          "excerpt": "> treat the AI like a super-speedy but junior developer on your team That sounds like it's going to take a lot more time that just writing the code for an experienced developer. The issue with AI for me is that it produces plausible-looking code which requires a lot of attention …",
+          "engagement": 3
+        },
+        "resp-45320431": {
+          "id": "resp-45320431",
+          "source": "Response post",
+          "author": "Donado Labs",
+          "url": "https://donado.co/en/articles/2025-09-16-vibe-coding-cleanup-as-a-service/",
+          "excerpt": "A new service category is quietly emerging in tech: Vibe Coding cleanup. What started as LinkedIn jokes about “fixing AI messes” has become a real business opportunity. The harsh reality nobody wants to admit: most AI-generated code is production-unready, and companies are desper…",
+          "engagement": 250
+        },
+        "resp-43448432": {
+          "id": "resp-43448432",
+          "source": "Response post",
+          "author": "Cendyne",
+          "url": "https://cendyne.dev/posts/2025-03-19-vibe-coding-vs-reality.html",
+          "excerpt": "Table of contents - \"Vibe Coding\" vs Reality - Working around the problem - Conclusion There's a trend on social media where many repeat Andrej Karpathy's words (archived): \"give in to the vibes, embrace exponentials, and forget that the code even exists.\" This belief — like many…",
+          "engagement": 221
+        },
+        "hn-43739379": {
+          "id": "hn-43739379",
+          "source": "Hacker News",
+          "author": "spaceywilly",
+          "url": "https://news.ycombinator.com/item?id=43739379",
+          "excerpt": "From that tweet: > I don't read the diffs anymore. When I get error messages I just copy paste them in with no comment, usually that fixes it That sums up vibe coding, imo. The article talks about code quality with vibe coding, but I think that misses the point. The real problem …",
+          "engagement": 7
+        },
+        "hn-43448718": {
+          "id": "hn-43448718",
+          "source": "Hacker News",
+          "author": "redleggedfrog",
+          "url": "https://news.ycombinator.com/item?id=43448718",
+          "excerpt": "I'll share a new wrinkle that casts more shade on the coding LLMs. We have a fair number of offshore resources that are used for dev. They developers are fully integrated into the team, are in all the stand-ups, and substitute for the usual role of junior programmers. They don't …",
+          "engagement": 3
+        },
+        "hn-46228061": {
+          "id": "hn-46228061",
+          "source": "Hacker News",
+          "author": "827a",
+          "url": "https://news.ycombinator.com/item?id=46228061",
+          "excerpt": "Yeah, its bad out there. At my company, we have a team of security professionals that focus on keeping our systems (and others') secure. AI for them has gone from \"using it for scripting together nmap\" to \"we really need the platform your team is working on to do X, Y, and Z, so …",
+          "engagement": 1
+        },
+        "hn-46228853": {
+          "id": "hn-46228853",
+          "source": "Hacker News",
+          "author": "kkarpkkarp",
+          "url": "https://news.ycombinator.com/item?id=46228853",
+          "excerpt": "I am freelancer as well and in the last month I got two new clients who asked me to fix the vibe-coded projects. And I am now thinking to specialize in the field: they already know how f*d they are and they are going to pay a lot (or: they have no other opportunity). Something wh…",
+          "engagement": 0
+        },
+        "hn-45321006": {
+          "id": "hn-45321006",
+          "source": "Hacker News",
+          "author": "scorpioxy",
+          "url": "https://news.ycombinator.com/item?id=45321006",
+          "excerpt": "I have been taking on \"rescue\" projects for a while through my business. Previously, the barely-functioning code was usually being generated via outsourcing agencies but it seems the new source is now going to be LLMs. I imagine it will be the same set of issues really. Just a di…",
+          "engagement": 5
+        },
+        "hn-43448573": {
+          "id": "hn-43448573",
+          "source": "Hacker News",
+          "author": "noosphr",
+          "url": "https://news.ycombinator.com/item?id=43448573",
+          "excerpt": "Hot take: Vibe coding is going to be the new Excel of technical debt. Most tech savvy places will avoid it, most good programmers will never encounter it. A bunch or us will make a career out of fixing the mess it makes after it explodes. My first real job was doing just that at …",
+          "engagement": 1
+        },
+        "hn-45320889": {
+          "id": "hn-45320889",
+          "source": "Hacker News",
+          "author": "liampulles",
+          "url": "https://news.ycombinator.com/item?id=45320889",
+          "excerpt": "I wonder if vibe coding is a bit like DIY plumbing. You can do it yourself a bit and then later when water starts gushing all over your bathroom you hire an emergency plumber at a high fee. You learn a little more for next time.",
+          "engagement": 5
+        },
+        "hn-45321019": {
+          "id": "hn-45321019",
+          "source": "Hacker News",
+          "author": "sltr",
+          "url": "https://news.ycombinator.com/item?id=45321019",
+          "excerpt": "Vibe code has a lot in common with legacy code. Low confidence to change it, low internal and external quality. Also some differences: low age-to-quantity ratio, schedule pressure, inflated expectations. It's most cost-effective to shift errors from runtime to compile time and fr…",
+          "engagement": 4
+        },
+        "resp-47006615": {
+          "id": "resp-47006615",
+          "source": "Response post",
+          "author": "Rachel Thomas",
+          "url": "https://www.fast.ai/posts/2026-01-28-dark-flow/",
+          "excerpt": "Vibe coding is the creation of large quantities of highly complex AI-generated code, often with the intention that the code will not be read by humans. It has cast quite a spell on the tech industry. Executives push lay-offs claiming AI can handle the work. Managers pressure empl…",
+          "engagement": 434
+        },
+        "hn-47019227": {
+          "id": "hn-47019227",
+          "source": "Hacker News",
+          "author": "samename",
+          "url": "https://news.ycombinator.com/item?id=47019227",
+          "excerpt": "The addiction aspect of this is real. I was skeptical at first, but this past week I built three apps and experienced issues with stepping away or getting enough sleep. Eventually my discipline kicked in to make this a more healthy habit, but I was surprised by how compelling it …",
+          "engagement": 1
+        },
+        "hn-47022654": {
+          "id": "hn-47022654",
+          "source": "Hacker News",
+          "author": "JanneVee",
+          "url": "https://news.ycombinator.com/item?id=47022654",
+          "excerpt": "My little anecdote of breaking the spell. Really I might not been truly under the spell, but I had to go far in to my project to loose the \"magic\" of the code. The trick was simply going back to a slower way of using it with a regular chat window. Then really reading the code and…",
+          "engagement": 0
+        },
+        "hn-42914098": {
+          "id": "hn-42914098",
+          "source": "Hacker News",
+          "author": "samantha-wiki",
+          "url": "https://news.ycombinator.com/item?id=42914098",
+          "excerpt": "My fear is that if I were to start doing this, I would stop engaging in the difficult aspects of building something. And I think the skills I have now would atrophy.",
+          "engagement": 1
+        },
+        "hn-44967818": {
+          "id": "hn-44967818",
+          "source": "Hacker News",
+          "author": "siliconc0w",
+          "url": "https://news.ycombinator.com/item?id=44967818",
+          "excerpt": "The problem is that our brains really don't like expending calories on information we don't repeatedly use so the further you get from something, the less you understand it or remember it. So even if you aren't even vibe coding and are trying to review every change, your skills a…",
+          "engagement": 1
+        },
+        "hn-47019906": {
+          "id": "hn-47019906",
+          "source": "Hacker News",
+          "author": "vibe101",
+          "url": "https://news.ycombinator.com/item?id=47019906",
+          "excerpt": "I’ve learned the hard way that in coding, every line matters. While learning Go for a new job, I realised I had been struggling because I overused LLMs and that slowed my learning. Every line we write reflects a sense of 'taste' and needs to be fully controlled and understood. Yo…",
+          "engagement": 0
+        },
+        "resp-47167931": {
+          "id": "resp-47167931",
+          "source": "Response post",
+          "author": "Sachin",
+          "url": "https://read.technically.dev/p/vibe-coding-and-the-maker-movement",
+          "excerpt": "Whenever a new technology arrives, the impulse is to treat it as something that has never existed before. A clean break from everything that came prior. I catch myself doing this with vibe coding constantly, and I see it everywhere around me. But the most useful lens for understa…",
+          "engagement": 405
+        },
+        "hn-47169660": {
+          "id": "hn-47169660",
+          "source": "Hacker News",
+          "author": "rglover",
+          "url": "https://news.ycombinator.com/item?id=47169660",
+          "excerpt": "> When you spend two years making useless Arduino projects, you develop instincts about electronics, materials, and design that you can’t get from a tutorial. When vibe coding goes straight to production, you lose that developmental space. The tool is powerful enough to produce r…",
+          "engagement": 7
+        },
+        "hn-44742992": {
+          "id": "hn-44742992",
+          "source": "Hacker News",
+          "author": "palata",
+          "url": "https://news.ycombinator.com/item?id=44742992",
+          "excerpt": "A risk with vibe coding is that it may make a good developer slightly faster, but it will make bad developers waaaay faster. Resulting in more bad code being produced. The question then is: do the bad developers improve by vibe coding, or are they stuck in a local optimum?",
+          "engagement": 3
+        },
+        "hn-44743638": {
+          "id": "hn-44743638",
+          "source": "Hacker News",
+          "author": "woolion",
+          "url": "https://news.ycombinator.com/item?id=44743638",
+          "excerpt": "So, I was wondering when I would see that... from my experience, I would say it also makes mediocre developers bad ones very fast. The reason being a false sense of confidence, but mostly it's because of the sheer volume that is produced. If we want to be more precise, I think th…",
+          "engagement": 1
+        },
+        "resp-46765120": {
+          "id": "resp-46765120",
+          "source": "Response post",
+          "author": "Miklós Koren, Gábor Békés, Julian Hinz, Aaron Lohmann",
+          "url": "https://arxiv.org/abs/2601.15494",
+          "excerpt": "View PDF HTML (experimental) > Abstract:Generative AI is changing how software is produced and used. In vibe coding, an AI agent builds software by selecting and assembling open-source software (OSS), often without users directly reading documentation, reporting bugs, or otherwis…",
+          "engagement": 330
+        },
+        "hn-46768339": {
+          "id": "hn-46768339",
+          "source": "Hacker News",
+          "author": "WorldMaker",
+          "url": "https://news.ycombinator.com/item?id=46768339",
+          "excerpt": "> what is monetized (beyond like a tip jar situation where you get some coffee money every once in a while) is primarily sponsored by enterprise users, support license sales, or through grants, or something like that All of those examples are the \"direct user engagement\" in quest…",
+          "engagement": 0
+        },
+        "hn-46765795": {
+          "id": "hn-46765795",
+          "source": "Hacker News",
+          "author": "nicoburns",
+          "url": "https://news.ycombinator.com/item?id=46765795",
+          "excerpt": "Something I've noticed is that AI code generation makes it easier/faster to generate code while shifting more work of the work of keeping code correct and maintainable to the code review stage. That can be highly problematic for open source projects that are typically already bot…",
+          "engagement": 3
+        },
+        "hn-46766898": {
+          "id": "hn-46766898",
+          "source": "Hacker News",
+          "author": "pgroves",
+          "url": "https://news.ycombinator.com/item?id=46766898",
+          "excerpt": "I was expecting this to be the point of the article when I saw the title. Popular projects appear to be drowning in PRs that are almost certainly AI generated. OpencodeCli has 1200 open at the moment[1]. Aider, which is sort of abandoned has 200 [2]. AFAIK, both projects are most…",
+          "engagement": 1
+        },
+        "hn-42914267": {
+          "id": "hn-42914267",
+          "source": "Hacker News",
+          "author": "talles",
+          "url": "https://news.ycombinator.com/item?id=42914267",
+          "excerpt": "\"Vibe\" is just an euphemism for lazy here. And that's not 'coding' in any shape or form, it's code generation through an AI model, without even understanding it, very different thing. It's like comparing cheap ramen to fine Italian cuisine.",
+          "engagement": 2
+        },
+        "bsky-3lkipceukss2f": {
+          "id": "bsky-3lkipceukss2f",
+          "source": "Bluesky",
+          "author": "Larry Walker (@walker-larry.bsky.social)",
+          "url": "https://bsky.app/profile/walker-larry.bsky.social/post/3lkipceukss2f",
+          "excerpt": "We don't have \"software engineers\" any more; your entire world is being \"coded\" by \"software whisperers\" now. Which may explain the state of so many online experiences... x.com/karpathy/sta...",
+          "engagement": 0
+        },
+        "hn-43739400": {
+          "id": "hn-43739400",
+          "source": "Hacker News",
+          "author": "ndepoel",
+          "url": "https://news.ycombinator.com/item?id=43739400",
+          "excerpt": "This all reminds me a lot of the early 2000's, when big corporations thought they could save a lot of money by outsourcing development work to low-income countries and have their expensive in-house engineers only write specifications. Turns out most of those outsourcing parties w…",
+          "engagement": 8
+        },
+        "hn-43739850": {
+          "id": "hn-43739850",
+          "source": "Hacker News",
+          "author": "Buttons840",
+          "url": "https://news.ycombinator.com/item?id=43739850",
+          "excerpt": "More than one project manager has insisted that everything about the system must be documented--that's called the source code. As you say, by the time you specify everything, you've written the code.",
+          "engagement": 3
+        },
+        "hn-43448578": {
+          "id": "hn-43448578",
+          "source": "Hacker News",
+          "author": "Etheryte",
+          "url": "https://news.ycombinator.com/item?id=43448578",
+          "excerpt": "At this point in time, we're following the time corporate got on the outsourcing craze step for step. It had all the hype, hands off, cheaper for the same work, faster to market, every other argument you've all certainly heard. Then the reality hit. The whole discussion around LL…",
+          "engagement": 5
+        },
+        "hn-45322872": {
+          "id": "hn-45322872",
+          "source": "Hacker News",
+          "author": "HarHarVeryFunny",
+          "url": "https://news.ycombinator.com/item?id=45322872",
+          "excerpt": "It's a bit strange that Karpathy's \"vibe coding\" ever gained traction as a concept, although perhaps only among those without enough experience to know better. As I understand it, what Karpathy was referring to as \"vibe coding\" was some sort of flow state \"just talk to the AI, ne…",
+          "engagement": 8
+        },
+        "bsky-3ljrmj5xw6k2a": {
+          "id": "bsky-3ljrmj5xw6k2a",
+          "source": "Bluesky",
+          "author": "Andrey 🤔 Upadyshev (@oliora.bsky.social)",
+          "url": "https://bsky.app/profile/oliora.bsky.social/post/3ljrmj5xw6k2a",
+          "excerpt": "TIL термин \"vibe coding\" x.com/karpathy/sta... Естественно у чувака своя AI компания поэтому ему на руку раздувать хайп вокруг AI. Интересно было бы почитать объективные ревью на ai кодинг от серьезных программистов",
+          "engagement": 0
+        },
+        "hn-43448665": {
+          "id": "hn-43448665",
+          "source": "Hacker News",
+          "author": "rtfeldman",
+          "url": "https://news.ycombinator.com/item?id=43448665",
+          "excerpt": "I think the bigger \"AI hype vs. Reality\" gap is about the productivity numbers people casually throw around, like \"10x as productive\" or even 100x. For example, here are YC partners quoting a company in a batch claiming \"100x speedup\" in coding performance compared to the previou…",
+          "engagement": 2
+        },
+        "hn-46243481": {
+          "id": "hn-46243481",
+          "source": "Hacker News",
+          "author": "lelanthran",
+          "url": "https://news.ycombinator.com/item?id=46243481",
+          "excerpt": "> Those that say it's made me more productive or that I no longer have to do the boring bits and can focus on the interesting parts of coding. I wonder about that bit, TBH. If you're 10x more productive at generating lines of code because you're mostly just reviewing, just how ca…",
+          "engagement": 0
+        },
+        "hn-43740665": {
+          "id": "hn-43740665",
+          "source": "Hacker News",
+          "author": "smnplk",
+          "url": "https://news.ycombinator.com/item?id=43740665",
+          "excerpt": "Are today's juniors never gonna reach senior levels because of AI assisted coding ? Do you think AI assisted coding has a negative impact on developer's growth ? Is the need for developers gonna increase in the longterm but decrease in shortterm ? Those are just some of the quest…",
+          "engagement": 1
+        }
+      },
+      "date": "2026-11-03T16:47:17.905Z"
+    },
+    {
+      "summary": "The submission describes a mode of programming in which the developer stops reading the code: every diff is accepted, errors are pasted back, and the result is judged only by whether it runs. It coins a name for this, 'vibe coding', and explicitly scopes it to throwaway weekend projects where the stakes are low.",
+      "strengths": "- The definition is unusually crisp: vibe coding is when you do not review the code at all [hn-43739622] [hn-43739318]. For a few weeks the field had a piece of AI terminology with a clear meaning [hn-43739622]. The scope caveat is part of the original claim; read in full, the tweet already says the method is for throwaway projects [hn-43448515] [hn-44940691].\n- Within that scope the claim holds. Personal tools 'where if there's a bug it hurts only you' are a legitimate use, and vibe coding is 'fantastic, provided you understand when it can be used' [resp-48037128]. Even the most-cited call for rigor lists rapid prototyping, weekend projects, one-off scripts and learning a new API as vibe coding's 'sweet spot' [resp-43739037]. Readers describe matching effort to the needed level of polish [hn-42915050], vibe-coding a fun idea in an unfamiliar language for one's spouse [hn-48044402], and using prototypes to see how hard something really is [hn-43741807]. Small self-contained projects are 'the perfect size' [hn-46420737].\n- The submission inadvertently named the contrast class. Readers now distinguish vibe coding from agentic engineering: plans, tests, quality gates and review [resp-48037128] [hn-48039276] [hn-47665524]. They also map out a graded scale of AI involvement, chosen per part of a codebase [hn-47665254] [hn-47665793] [hn-47666625].",
+      "weaknesses": "- **The method does not survive contact with production.** Once software is for other people, 'vibe coding is grossly irresponsible' because 'other people get hurt by your stupid bugs' [resp-48037128]. Practitioners who are 'all in' on LLMs still find that prompting for security is nowhere near enough without careful review [hn-42914072]. Outside its lane, unreviewed output becomes 'house of cards code' that looks complete but collapses under real-world pressure, and 'two engineers can now create the tech debt of fifty'. The responsible version treats the AI as an eager junior developer: never merge unreviewed code, keep architecture human-led, write the tests, and 'if you intend to keep the code, don't stay in vibe mode' [resp-43739037] [hn-48044725].\n- **Pure vibe coding is a myth even where it is claimed.** Agents work poorly without human-built plans, skills and rules, and refusing to look under the hood leads to absurd outcomes: the leaked Claude Code source is read as 'dogfooding run amok', with a pile of things that are both agents and tools that no developer stopped to notice, though AI would happily have cleaned them up if asked. 'Bad software is a decision you make' [resp-47664912]. Plan mode, interactive design and explicit specs make the difference [hn-45322851] [hn-47031117] [hn-47021837]. So do linters, types and tests [hn-45321693] [hn-44742627] [hn-43449188].\n- **Semantic diffusion.** The term spread faster than its definition. An AWS guide titled 'Vibe Coding Tips and Tricks' defines the practice as prompting in natural language, then insists the developer must 'understand, review, and validate every technical decision', start in Plan mode, and write their own test cases because AI-generated tests are superficial [resp-44940089]. That is not describing vibe coding at all [hn-44940470] [hn-44940563] [hn-44942059]. That instruction is also a catch-22 for a method sold as 'anyone can code' [hn-44941707]. In some organizations the term now just means 'AI wrote most of the code' [hn-45323090], and readers ask what it has been redefined to mean [hn-43739318]. Purists push back that the tweet coined the term and that is 'still what it means to anyone who knows anything' [bsky-3mnxdak6yyc2f].\n- **The boundary is eroding from the other side.** As agents become more reliable, even careful engineers admit they no longer review every line of production code, and they feel guilty about it [resp-48037128]. He treats the agent like another team's service, a semi-black box, while conceding that 'Claude Code does not have a professional reputation' and calling his own drift a normalization of deviance [resp-48037128]. Respondents agree [hn-48044725] and suggest reviewing anyway, since good code takes two minutes to check [hn-48038536]. Meanwhile a repository with a hundred commits, a nice README and full test coverage can now be produced in half an hour, so the old signals of care are gone and the only trustworthy signal is that someone actually used the thing for weeks [resp-48037128]. The submission's 'throwaway' caveat is doing more work than it admits.\n- **Scale limits.** Beyond a certain size the LLM adds abstractions and subtle bugs, and the sensible move is back to brainstorming and human-written skeletons [hn-46420737] [hn-46420949] [hn-46765543]. The foundation matters: a messy codebase yields messier vibes [hn-44968845].",
+      "questions": "1. Where exactly is the line between a throwaway project and one other people depend on, and who decides when a weekend project crosses it [resp-48037128]?\n2. Would the author accept 'vibe coding' being used for any AI-assisted programming, or should it keep its original 'never read the diff' meaning [hn-43739622] [hn-44942059]?\n3. How much hidden human scaffolding (plans, rules, examples) is in the author's own workflow, given that the agent works poorly without it [resp-47664912]?\n4. If agents keep getting more reliable, at what point does not reviewing become reasonable rather than reckless [hn-48044725]?\n5. Most people, it is suggested, would rather hire the plumber than learn from YouTube: do they want to vibe code at all, or want professional companies to use AI to sell them better software [resp-48037128]?",
+      "soundness": 3,
+      "presentation": 3,
+      "contribution": 3,
+      "rating": 6,
+      "confidence": 4,
+      "hype_index": 3,
+      "flag_for_ethics_review": false,
+      "reviewer": 2,
+      "cluster": {
+        "label": "Scope-and-definition pragmatists",
+        "summary": "Vibe coding is fine in the lane Karpathy drew for it, throwaway weekend projects, and irresponsible outside it. Much of the argument is that the term has drifted to mean any AI-assisted coding, while serious work with plans, tests and review is something else. Even its defenders admit the line between the two is getting blurry.",
+        "stance": "mixed",
+        "size": 67,
+        "total": 322,
+        "representative": [
+          {
+            "id": "resp-48037128",
+            "source": "Response post",
+            "author": "Simon Willison",
+            "url": "https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/",
+            "excerpt": "6th May 2026 I recently talked with Joseph Ruscio about AI coding tools for Heavybit’s High Leverage podcast: Ep. #9, The AI Coding Paradigm Shift with Simon Willison. Here are some of my highlights, including my disturbing realization that vibe coding and agentic engineering hav…",
+            "engagement": 787
+          },
+          {
+            "id": "resp-47664912",
+            "source": "Response post",
+            "author": "Bram Cohen",
+            "url": "https://bramcohen.com/p/the-cult-of-vibe-coding-is-insane",
+            "excerpt": "Claude had a leak of their source code, and people have been having a whole lot of fun laughing at how bad it is. You might wonder how this could happen. The answer is dogfooding run amok. Dogfooding is when you use your own product. It’s a good idea. But it can turn into a cult …",
+            "engagement": 616
+          },
+          {
+            "id": "resp-43739037",
+            "source": "Response post",
+            "author": "Addy Osmani",
+            "url": "https://addyo.substack.com/p/vibe-coding-is-not-an-excuse-for",
+            "excerpt": "“Move faster and break even more things.” That twist on Silicon Valley’s old mantra echoes through recent engineering circles as “vibe coding” enters the chat. Yes, AI-assisted development is transforming how we build software, but it’s not a free pass to abandon rigor, review, o…",
+            "engagement": 259
+          },
+          {
+            "id": "resp-44940089",
+            "source": "Response post",
+            "author": "github.com",
+            "url": "https://github.com/awslabs/mcp/blob/main/VIBE_CODING_TIPS_TRICKS.md",
+            "excerpt": "**Vibe Coding Tips and Tricks** > Note This field is evolving quickly, and we will update this guide as new methods and recommendations arise. **Table of Contents** - Vibe coding - AI Development Clients - Requirements and Design Guidelines - Prompting - Testing and Validation - …",
+            "engagement": 227
+          },
+          {
+            "id": "hn-43739622",
+            "source": "Hacker News",
+            "author": "simonw",
+            "url": "https://news.ycombinator.com/item?id=43739622",
+            "excerpt": "I wrote about this last month: \"Not all AI-assisted programming is vibe coding\" - https://simonwillison.net/2025/Mar/19/vibe-coding/ Vibe coding is when you don't review the code at all. If you're using LLMs to help you write code but you're actually reviewing what they produce (…",
+            "engagement": 6
+          },
+          {
+            "id": "hn-43739318",
+            "source": "Hacker News",
+            "author": "SCdF",
+            "url": "https://news.ycombinator.com/item?id=43739318",
+            "excerpt": "So what have we redefined vibe coding to mean exactly? The original tweet[1] talked very specifically about not caring about quality, just accepting whatever code the AI produces blindly, as long as you get the black box output you're looking for, and just randomly try again if y…",
+            "engagement": 8
+          }
+        ]
+      },
+      "citations": {
+        "hn-43739622": {
+          "id": "hn-43739622",
+          "source": "Hacker News",
+          "author": "simonw",
+          "url": "https://news.ycombinator.com/item?id=43739622",
+          "excerpt": "I wrote about this last month: \"Not all AI-assisted programming is vibe coding\" - https://simonwillison.net/2025/Mar/19/vibe-coding/ Vibe coding is when you don't review the code at all. If you're using LLMs to help you write code but you're actually reviewing what they produce (…",
+          "engagement": 6
+        },
+        "hn-43739318": {
+          "id": "hn-43739318",
+          "source": "Hacker News",
+          "author": "SCdF",
+          "url": "https://news.ycombinator.com/item?id=43739318",
+          "excerpt": "So what have we redefined vibe coding to mean exactly? The original tweet[1] talked very specifically about not caring about quality, just accepting whatever code the AI produces blindly, as long as you get the black box output you're looking for, and just randomly try again if y…",
+          "engagement": 8
+        },
+        "hn-43448515": {
+          "id": "hn-43448515",
+          "source": "Hacker News",
+          "author": "mr_mitm",
+          "url": "https://news.ycombinator.com/item?id=43448515",
+          "excerpt": "> \"Vibe Coding\" might get you 80% the way to a functioning concept. But to produce something reliable, secure, and worth spending money on, you’ll need experienced humans to do the hard work not possible with today’s models. This would have been clear from Karpathy's full stateme…",
+          "engagement": 1
+        },
+        "hn-44940691": {
+          "id": "hn-44940691",
+          "source": "Hacker News",
+          "author": "kevindamm",
+          "url": "https://news.ycombinator.com/item?id=44940691",
+          "excerpt": "Maybe the zeroth tip is \"never go full vibe coder.\" It can be tempting, but there's so much impact that even small changes to the code can have, and often in subtle ways, that it should at least be scanned and read carefully in certain critical parts. Especially as you near the p…",
+          "engagement": 0
+        },
+        "resp-48037128": {
+          "id": "resp-48037128",
+          "source": "Response post",
+          "author": "Simon Willison",
+          "url": "https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/",
+          "excerpt": "6th May 2026 I recently talked with Joseph Ruscio about AI coding tools for Heavybit’s High Leverage podcast: Ep. #9, The AI Coding Paradigm Shift with Simon Willison. Here are some of my highlights, including my disturbing realization that vibe coding and agentic engineering hav…",
+          "engagement": 787
+        },
+        "resp-43739037": {
+          "id": "resp-43739037",
+          "source": "Response post",
+          "author": "Addy Osmani",
+          "url": "https://addyo.substack.com/p/vibe-coding-is-not-an-excuse-for",
+          "excerpt": "“Move faster and break even more things.” That twist on Silicon Valley’s old mantra echoes through recent engineering circles as “vibe coding” enters the chat. Yes, AI-assisted development is transforming how we build software, but it’s not a free pass to abandon rigor, review, o…",
+          "engagement": 259
+        },
+        "hn-42915050": {
+          "id": "hn-42915050",
+          "source": "Hacker News",
+          "author": "cadamsdotcom",
+          "url": "https://news.ycombinator.com/item?id=42915050",
+          "excerpt": "To people commenting that no should do this ever, and people commenting that kids shouldn’t learn this way: It doesn’t have to be the only way someone ever builds software. The right technique matches the effort level to the needed level of polish. And vibe coding can be a great …",
+          "engagement": 1
+        },
+        "hn-48044402": {
+          "id": "hn-48044402",
+          "source": "Hacker News",
+          "author": "u8",
+          "url": "https://news.ycombinator.com/item?id=48044402",
+          "excerpt": "The disconnect for AI is that it is a jagged frontier and it only really shines when one of its jagged frontiers extends counter to one of your valleys. If you've been writing Perl for 30 years, you might not want to learn JavaScript just to make a little fun idea in your head to…",
+          "engagement": 29
+        },
+        "hn-43741807": {
+          "id": "hn-43741807",
+          "source": "Hacker News",
+          "author": "anonzzzies",
+          "url": "https://news.ycombinator.com/item?id=43741807",
+          "excerpt": "I mainly use vibe coding to figure out how hard something is to do if I would do it 'for real', so I vibe code working prototypes, often to find out there is no way this is feasible and, more often, finding it is easier than I thought it would be. When I have an issue, I search f…",
+          "engagement": 1
+        },
+        "hn-46420737": {
+          "id": "hn-46420737",
+          "source": "Hacker News",
+          "author": "spicyusername",
+          "url": "https://news.ycombinator.com/item?id=46420737",
+          "excerpt": "These are the perfect size projects vibe coding is currently good for. At some point you hit a project size that is too large or has too many interdependencies, and you have to be very careful about how you manage the context and should expect the llm to start generating too much…",
+          "engagement": 9
+        },
+        "hn-48039276": {
+          "id": "hn-48039276",
+          "source": "Hacker News",
+          "author": "peterbell_nyc",
+          "url": "https://news.ycombinator.com/item?id=48039276",
+          "excerpt": "For me the distinction is the quality and rigor of your pipeline. Vibe coding: one shot or few shot, smoke test the output, use it until it breaks (or doesn't). Ideal for lightweight PoC and low stakes individual, family or small team apps. Agentic engineering: - You care about a…",
+          "engagement": 3
+        },
+        "hn-47665524": {
+          "id": "hn-47665524",
+          "source": "Hacker News",
+          "author": "bs7280",
+          "url": "https://news.ycombinator.com/item?id=47665524",
+          "excerpt": "In my opinion there are two main groups on the spectrum of \"vibe coding\". The non technical users that love it but don't understand software engineering enough to know what it takes to make a production grade product. The opposite are the AI haters that used chatgpt 3.5 and decid…",
+          "engagement": 2
+        },
+        "hn-47665254": {
+          "id": "hn-47665254",
+          "source": "Hacker News",
+          "author": "saulpw",
+          "url": "https://news.ycombinator.com/item?id=47665254",
+          "excerpt": "> That wouldn’t even be a big violation of the vibe coding concept. You’re reading the innards a little but you’re only giving high-level, conceptual, abstract ideas about how problems should be solved. The machine is doing the vast majority, if not literally all, of the actual w…",
+          "engagement": 11
+        },
+        "hn-47665793": {
+          "id": "hn-47665793",
+          "source": "Hacker News",
+          "author": "jaccola",
+          "url": "https://news.ycombinator.com/item?id=47665793",
+          "excerpt": "It's also a context-specific scale. I work in computer vision. Building the surrounding app, UI, checkout flow, etcetera is easily Level 6/7(sorry...) on this scale. Building the rendering pipeline, algorithms, maths, I've turned off even level 2. It is just more of a distraction…",
+          "engagement": 2
+        },
+        "hn-47666625": {
+          "id": "hn-47666625",
+          "source": "Hacker News",
+          "author": "lukev",
+          "url": "https://news.ycombinator.com/item?id=47666625",
+          "excerpt": "I like this framing, but it does seem to imply that a whole dev shop, or a whole product, can or should be built at the same level. The fact is, I think the art of building well with AI (and I'm not saying it's easy) is to have a heterogenously vibe-coded app. For example, in the…",
+          "engagement": 1
+        },
+        "hn-42914072": {
+          "id": "hn-42914072",
+          "source": "Hacker News",
+          "author": "macNchz",
+          "url": "https://news.ycombinator.com/item?id=42914072",
+          "excerpt": "I feel this—I've really enjoyed working on some throwaway projects where I can work like this and not sweat the small stuff at all. That said, the one area that's tricky to reconcile in this mode is security: in my (fairly extensive) experience with the current state of AI coding…",
+          "engagement": 0
+        },
+        "hn-48044725": {
+          "id": "hn-48044725",
+          "source": "Hacker News",
+          "author": "kelnos",
+          "url": "https://news.ycombinator.com/item?id=48044725",
+          "excerpt": "Yup, the normalization of deviance here is a real thing. I still review all the code the LLM generates (well, really, I have it generate very little code: I use it more for planning, design, rubber-ducking, and helping track down the causes of bugs), but as time goes on without o…",
+          "engagement": 0
+        },
+        "resp-47664912": {
+          "id": "resp-47664912",
+          "source": "Response post",
+          "author": "Bram Cohen",
+          "url": "https://bramcohen.com/p/the-cult-of-vibe-coding-is-insane",
+          "excerpt": "Claude had a leak of their source code, and people have been having a whole lot of fun laughing at how bad it is. You might wonder how this could happen. The answer is dogfooding run amok. Dogfooding is when you use your own product. It’s a good idea. But it can turn into a cult …",
+          "engagement": 616
+        },
+        "hn-45322851": {
+          "id": "hn-45322851",
+          "source": "Hacker News",
+          "author": "herdcall",
+          "url": "https://news.ycombinator.com/item?id=45322851",
+          "excerpt": "There's a BIG difference, at least with tools like Claude Code: plan mode. I'm now using Claude Code a lot at at work, and the first thing I do is enter plan mode where I can have a \"conversation\" asking it explain how it would implement. Just a few back/forth later I end up refi…",
+          "engagement": 0
+        },
+        "hn-47031117": {
+          "id": "hn-47031117",
+          "source": "Hacker News",
+          "author": "EagnaIonat",
+          "url": "https://news.ycombinator.com/item?id=47031117",
+          "excerpt": "I've found Claude works so much better if you build a CLAUDE.md and tell it that you want it to be an interactive design process. It helps formalise your plan, then creates some code, you review, talk about what you believe to be wrong or asking it why it took that approach, or e…",
+          "engagement": 0
+        },
+        "hn-47021837": {
+          "id": "hn-47021837",
+          "source": "Hacker News",
+          "author": "bob1029",
+          "url": "https://news.ycombinator.com/item?id=47021837",
+          "excerpt": "The #1 predictor of success here is being able to define what success looks like in an obnoxiously detailed manner. If you have a strong vision about the desired UI/UX and you constantly push for that outcome, it is very unlikely you will have a bad time with the current models. …",
+          "engagement": 2
+        },
+        "hn-45321693": {
+          "id": "hn-45321693",
+          "source": "Hacker News",
+          "author": "nathan_f77",
+          "url": "https://news.ycombinator.com/item?id=45321693",
+          "excerpt": "I'm pretty good at getting LLMs to write well-tested, production-ready code. I think it's a matter of knowing the right tools and techniques to use and steering the project in the right direction. Type-checking, linting, and a solid test suite go a very long way. It would be a ni…",
+          "engagement": 1
+        },
+        "hn-44742627": {
+          "id": "hn-44742627",
+          "source": "Hacker News",
+          "author": "subarctic",
+          "url": "https://news.ycombinator.com/item?id=44742627",
+          "excerpt": "Setting up a linter, formatter and having a lot of strict type checking are really helpful when using an llm to generate code, just like they are when you start receiving contributions from people who don't know or don't agree with the style rules that you implicitly follow. As a…",
+          "engagement": 2
+        },
+        "hn-43449188": {
+          "id": "hn-43449188",
+          "source": "Hacker News",
+          "author": "gooseus",
+          "url": "https://news.ycombinator.com/item?id=43449188",
+          "excerpt": "I've been \"Vibe-TDDing\" all afternoon and I'll tell you what, vibe tests are better than no tests. And so long as you have some decent-to-solid understanding of coding and testing (this is non-trivial, I've been coding for professionally for ~20 years) then you can direct the mac…",
+          "engagement": 2
+        },
+        "resp-44940089": {
+          "id": "resp-44940089",
+          "source": "Response post",
+          "author": "github.com",
+          "url": "https://github.com/awslabs/mcp/blob/main/VIBE_CODING_TIPS_TRICKS.md",
+          "excerpt": "**Vibe Coding Tips and Tricks** > Note This field is evolving quickly, and we will update this guide as new methods and recommendations arise. **Table of Contents** - Vibe coding - AI Development Clients - Requirements and Design Guidelines - Prompting - Testing and Validation - …",
+          "engagement": 227
+        },
+        "hn-44940470": {
+          "id": "hn-44940470",
+          "source": "Hacker News",
+          "author": "colesantiago",
+          "url": "https://news.ycombinator.com/item?id=44940470",
+          "excerpt": "> \"Thoroughly review and understand the generated code\" That isn't vibe coding though. Vibe coding means you don't look at the code, you look at the front / back end and accept what you see if it meets your expectations visually, and the code doesn't matter in this case, you \"see…",
+          "engagement": 1
+        },
+        "hn-44940563": {
+          "id": "hn-44940563",
+          "source": "Hacker News",
+          "author": "asdev",
+          "url": "https://news.ycombinator.com/item?id=44940563",
+          "excerpt": "This is not vibe coding at all, this is reviewing AI generated code",
+          "engagement": 5
+        },
+        "hn-44942059": {
+          "id": "hn-44942059",
+          "source": "Hacker News",
+          "author": "thewebguyd",
+          "url": "https://news.ycombinator.com/item?id=44942059",
+          "excerpt": "> It’s a bit of a catch-22 to say “anyone can code with AI” and then make such statements. Also makes it very much not \"vibe\" coding. The term keeps expanding into \"any coding activity with AI assistance\" but the whole idea of \"vibe\" coding is that you don't actually understand t…",
+          "engagement": 4
+        },
+        "hn-44941707": {
+          "id": "hn-44941707",
+          "source": "Hacker News",
+          "author": "mlhpdx",
+          "url": "https://news.ycombinator.com/item?id=44941707",
+          "excerpt": "> Always: > > Thoroughly review and understand the generated code Rules it out for me; I haven’t felt I thoroughly understood any code after working with C++ and reading the entries in code obfuscation contests. It’s a bit of a catch-22 to say “anyone can code with AI” and then m…",
+          "engagement": 3
+        },
+        "hn-45323090": {
+          "id": "hn-45323090",
+          "source": "Hacker News",
+          "author": "stoneyhrm1",
+          "url": "https://news.ycombinator.com/item?id=45323090",
+          "excerpt": "Like it or not vibe coding is here to stay, I too don't agree with the concept but have told people in my org that I've 'vibe coded' this or 'vibe coded' that. To us it just means we used AI to write most of the code. I would never have it be put into production without any type …",
+          "engagement": 1
+        },
+        "bsky-3mnxdak6yyc2f": {
+          "id": "bsky-3mnxdak6yyc2f",
+          "source": "Bluesky",
+          "author": "The Fresh Prince of Donair (@erisianrite.com)",
+          "url": "https://bsky.app/profile/erisianrite.com/post/3mnxdak6yyc2f",
+          "excerpt": "nope. This was the tweet that coined the term, and that's still what it means to anyone who knows anything",
+          "engagement": 0
+        },
+        "hn-48038536": {
+          "id": "hn-48038536",
+          "source": "Hacker News",
+          "author": "underdeserver",
+          "url": "https://news.ycombinator.com/item?id=48038536",
+          "excerpt": "When I was in grad school I graded homework for first year math classes, and the thing about math homework is that the perfect homework takes almost no time to grade. It's the bad, semi-coherent submissions that eat up your time, because you do want to award some points and tell …",
+          "engagement": 1
+        },
+        "hn-46420949": {
+          "id": "hn-46420949",
+          "source": "Hacker News",
+          "author": "cube2222",
+          "url": "https://news.ycombinator.com/item?id=46420949",
+          "excerpt": "I agree with you as far as project size for vibe-coding goes - as-in often not even looking at the generated code. But I have no issues with using Claude Code to write code in larger projects, including adapting to existing patterns, it’s just not vibe coding - I architect the mo…",
+          "engagement": 3
+        },
+        "hn-46765543": {
+          "id": "hn-46765543",
+          "source": "Hacker News",
+          "author": "ktallett",
+          "url": "https://news.ycombinator.com/item?id=46765543",
+          "excerpt": "I think vibe coding would greatly struggle with large open source projects unless your planning was exceptional and your comments on optimal coding style was exceptional, however...... For those small open source tools that many of us use daily and find invaluable, I actually thi…",
+          "engagement": 4
+        },
+        "hn-44968845": {
+          "id": "hn-44968845",
+          "source": "Hacker News",
+          "author": "jongjong",
+          "url": "https://news.ycombinator.com/item?id=44968845",
+          "excerpt": "The project foundation is everything. LLMs are sensitive to over-engineering. The LLM doesn't have an opinion about good code vs bad code. If you show it bad code and ask it to add features on top, it will produce more bad code... It might work (kind of) but more likely to be bug…",
+          "engagement": 0
+        }
+      },
+      "date": "2026-11-03T17:47:17.905Z"
+    },
+    {
+      "summary": "The submission reports that LLM coding agents have become good enough to build working software by conversation alone: speak a request, accept the diff, paste back errors, repeat. It frames this as a genuinely new way of making things, in which the person sees, says and runs things and it mostly works.",
+      "strengths": "- **It works, and people have the artifacts to show it.** Readers report a C DSL with a web runtime where they typed under 5% of the code [hn-42914028], a search DSL and a GUI pipeline editor 'not just simple little projects' [hn-42914104], a 460-book visual bookshelf from 470 phone photos [resp-46420453], reading-tracker apps [hn-46421155], and a custom WearOS voice assistant built by someone who had never opened Android Studio [hn-42915169]. A teacher now builds prettier, more accessible course pages this way in a few iterations [bsky-3lhtigig2xk2t], another reader describes how he 'managed to stop worrying about how the code worked and just shipped a feature' [bsky-3lkdxrdodij2h], and another found it 'hugely surprising' that it works at all [hn-42914041].\n- **It removes the execution bottleneck for personal software.** The gap between intention and execution keeps projects in the 'someday pile', and agents supply the activation energy [resp-46420453] [hn-46421433]. In the bookshelf case the vision-API pipeline got roughly 90% of titles right, which was judged enough, and Claude even reused the shelf's patterns to build a mobile stack view unprompted: 'Claude handled implementation. I handled taste.' [resp-46420453]. Ninety percent accuracy is often enough [hn-46421048]. Bespoke on-the-spot apps may replace the general-purpose tool shed [hn-46765765] [hn-46421696]. A blind developer made Termux and Emacspeak accessible on his phone this way [hn-46768497].\n- **It democratizes building.** Readers call it 'accessible coding' [bsky-3lhtezc2ifk2k] and 'a super power for average people' [hn-43758304]. One instructor taught 18 non-coders to build functional software [hn-43449155]. A parent who lost his son to a missed genetic diagnosis built a prototype in a few days that found the causal mutation the country's top sequencing lab had missed; benchmarked on 66 unsolved rare-disease cases, it found every variant since confirmed as causal and cracked two nobody had solved, and became a startup [resp-48471048] [hn-48475474]. Rediscovering prior art along the way is a feature, not a failure [hn-48475401].\n- **Code quality matters less than its critics assume.** A wildly popular product with messy leaked source shows you can succeed while breaking the traditional rules [hn-47665285]. Handwritten production code is often just as bad [hn-47665731] [hn-44742988]. Most apps are basic CRUD [hn-47665329]. Only user-perceived quality counts in the end [hn-43739325]. A garbage version of the thing you want beats a perfect version of something you don't want [hn-45323048], and speed to market can rationally justify the debt [hn-45321131] [hn-45321556].\n- **The trajectory favors it.** Readers frame this as Christensen-style disruption [hn-47665442] and argue that vibe coding, unlike 3D printing, really is displacing hand coding [hn-47170197] [hn-47173431]. Some predict that all application code will be written this way [bsky-3lhassry42322] [hn-48040206], and that we are entering an era where anything physically realizable can be built, so that ideas and broad knowledge become the bottleneck [bsky-3lkci73vx7c26]. Doubters are compared to the Go community before AlphaGo [hn-43449018].",
+      "weaknesses": "- Even enthusiasts concede that the human is not optional. The bookshelf author fixed ten covers in Photoshop, and an infinite-scroll feature that 'technically worked' broke scrolling until he deleted it: 'Knowing when to delete working code is not something an AI can decide for you' [resp-46420453]. Claude once insisted a simpler schema was impossible until shown otherwise [hn-46421155].\n- The submission says little about who it is for. Builders admit the tools do a poor job of teaching non-engineers how to think [hn-46422877], and much of the evidence comes from experienced developers who orchestrated the architecture themselves [hn-42914028]. The headline genetics case is a physicist-founder's account that says little about how the code was written, crediting 'frontier models harnessed correctly' rather than the submission's accept-all loop [resp-48471048].\n- Some of the defense rests on future model improvements rather than present results [hn-43449018] [hn-47024600], and some proponents still would not vibe code critical systems [hn-43740077].",
+      "questions": "1. Which of the author's own vibe-coded projects are still in use a few months later?\n2. Can the workflow be taught to non-programmers as reliably as it works for experts like the author [hn-43449155] [hn-46422877]?\n3. Will 'vibe agenting', where the agent operates apps directly, make the code layer irrelevant altogether [hn-47171253]?\n4. Is the critics' insistence on code quality a real constraint or gatekeeping [hn-46227638] [hn-46241570]?",
+      "soundness": 3,
+      "presentation": 4,
+      "contribution": 4,
+      "rating": 8,
+      "confidence": 3,
+      "hype_index": 4,
+      "flag_for_ethics_review": false,
+      "reviewer": 3,
+      "cluster": {
+        "label": "Empowered builders",
+        "summary": "It works, and it is fun. These builders point to personal tools, accessibility hacks, startups and bespoke apps that would never have existed otherwise. They treat the quality complaints as gatekeeping, or as something the models will grow out of.",
+        "stance": "positive",
+        "size": 76,
+        "total": 322,
+        "representative": [
+          {
+            "id": "resp-46420453",
+            "source": "Response post",
+            "author": "balajmarius.com",
+            "url": "https://balajmarius.com/writings/vibe-coding-a-bookshelf-with-claude-code/",
+            "excerpt": "This post went unexpectedly viral on Hacker News. There's an interesting discussion there if you want to take a look. I own more books than I can read. Not in a charming, aspirational way, but in the practical sense that at some point I stopped knowing what I owned. Somewhere aro…",
+            "engagement": 284
+          },
+          {
+            "id": "hn-47665285",
+            "source": "Hacker News",
+            "author": "semicolon_storm",
+            "url": "https://news.ycombinator.com/item?id=47665285",
+            "excerpt": "It’s truly strange that people keep citing the quality of Claude code’s leaked source as if it’s proof vibe coding doesn’t work. If anything, it’s the exact opposite. It shows that you can build a crazy popular & successful product while violating all the traditional rules about …",
+            "engagement": 68
+          },
+          {
+            "id": "hn-46765765",
+            "source": "Hacker News",
+            "author": "WarmWash",
+            "url": "https://news.ycombinator.com/item?id=46765765",
+            "excerpt": "Small bespoke personalized on the spot apps are the future with LLMs. The future will absolutely not be \"How things are today + LLMs\" The paradigm now for software is \"build a tool shed/garage/barn/warehouse full of as much capability for as many uses possible\" but when LLMs can …",
+            "engagement": 41
+          },
+          {
+            "id": "hn-46421747",
+            "source": "Hacker News",
+            "author": "boplicity",
+            "url": "https://news.ycombinator.com/item?id=46421747",
+            "excerpt": "> Let's see something ground-breaking Why? People don't ask hammers to do much more than bash in nails into walls. AI coding tools can be incredibly powerful -- but shouldn't that power be focused on what the tool is actually good at? There are many, many times that AI coding too…",
+            "engagement": 8
+          },
+          {
+            "id": "resp-48471048",
+            "source": "Response post",
+            "author": "dmckinno@gmail.com",
+            "url": "https://www.ddmckinnon.com/2026/06/09/vibe-coding-my-way-to-a-healthy-family-introducing-gamow-labs/",
+            "excerpt": "**Owen arrives** On September 23rd, 2021, my first son Owen was born. Clearly inheriting his mom’s type-A personality, he arrived on his due date at a chunky 8.75 lbs. We were over the moon. Until we weren’t. At a few hours old, we noticed cute snoring. The nurses noticed nostril…",
+            "engagement": 215
+          },
+          {
+            "id": "hn-42914028",
+            "source": "Hacker News",
+            "author": "williamcotton",
+            "url": "https://news.ycombinator.com/item?id=42914028",
+            "excerpt": "I took this approach with this: https://github.com/williamcotton/webdsl I didn’t even put that much effort into defining the grammar, I just sort of let my fancy take flight. Which is a wild headspace to be in when writing a DSL in C with a web runtime with jq, Lua, GitHub OAuth …",
+            "engagement": 1
+          }
+        ]
+      },
+      "citations": {
+        "hn-42914028": {
+          "id": "hn-42914028",
+          "source": "Hacker News",
+          "author": "williamcotton",
+          "url": "https://news.ycombinator.com/item?id=42914028",
+          "excerpt": "I took this approach with this: https://github.com/williamcotton/webdsl I didn’t even put that much effort into defining the grammar, I just sort of let my fancy take flight. Which is a wild headspace to be in when writing a DSL in C with a web runtime with jq, Lua, GitHub OAuth …",
+          "engagement": 1
+        },
+        "hn-42914104": {
+          "id": "hn-42914104",
+          "source": "Hacker News",
+          "author": "williamcotton",
+          "url": "https://news.ycombinator.com/item?id=42914104",
+          "excerpt": "I’ve had a lot of success with the method: https://github.com/williamcotton/search-input-query Search box DSL with React component with syntax highlighting, error syntax reporting, etc. Converts AST to postgres ilike, tsvector or pg_search. https://github.com/williamcotton/guish …",
+          "engagement": 0
+        },
+        "resp-46420453": {
+          "id": "resp-46420453",
+          "source": "Response post",
+          "author": "balajmarius.com",
+          "url": "https://balajmarius.com/writings/vibe-coding-a-bookshelf-with-claude-code/",
+          "excerpt": "This post went unexpectedly viral on Hacker News. There's an interesting discussion there if you want to take a look. I own more books than I can read. Not in a charming, aspirational way, but in the practical sense that at some point I stopped knowing what I owned. Somewhere aro…",
+          "engagement": 284
+        },
+        "hn-46421155": {
+          "id": "hn-46421155",
+          "source": "Hacker News",
+          "author": "nindalf",
+          "url": "https://news.ycombinator.com/item?id=46421155",
+          "excerpt": "This is such a coincidence. I had the same idea a few days ago and also vibe coded a library using Claude. https://nindalf.com/books. The original version of this was meant to encourage me to read more, and I'm pleased to say it succeeded. I hit my goal for the year after a coupl…",
+          "engagement": 3
+        },
+        "hn-42915169": {
+          "id": "hn-42915169",
+          "source": "Hacker News",
+          "author": "geor9e",
+          "url": "https://news.ycombinator.com/item?id=42915169",
+          "excerpt": "I love this - the former director of AI at Tesla doing and saying exactly what many of us have been doing for months now, even down to using voice instead of typing. And it's always specifically Whisper Large v3, Sonnet 3.5, and Cursor in Compose Agent Mode that people mention. T…",
+          "engagement": 1
+        },
+        "bsky-3lhtigig2xk2t": {
+          "id": "bsky-3lhtigig2xk2t",
+          "source": "Bluesky",
+          "author": "Jen Roberts, NBCT (@jen.litandtech.com)",
+          "url": "https://bsky.app/profile/jen.litandtech.com/post/3lhtigig2xk2t",
+          "excerpt": "This is how I create more interesting html for my course canvas pages now. Give it to Claude, say make it prettier, more accessible, emphasize these parts of the directions to students, and I usually get what I need in a few iterations.",
+          "engagement": 1
+        },
+        "bsky-3lkdxrdodij2h": {
+          "id": "bsky-3lkdxrdodij2h",
+          "source": "Bluesky",
+          "author": "Baz (@rahoulb.bsky.social)",
+          "url": "https://bsky.app/profile/rahoulb.bsky.social/post/3lkdxrdodij2h",
+          "excerpt": "Vibe coding with Claude (and riffing) Or how I managed to stop worrying about how the code worked and just shipped a feature.",
+          "engagement": 0
+        },
+        "hn-42914041": {
+          "id": "hn-42914041",
+          "source": "Hacker News",
+          "author": "lxgr",
+          "url": "https://news.ycombinator.com/item?id=42914041",
+          "excerpt": "I can highly recommend giving this a try, even if it goes against every instinct you might have as a programmer of any level of seniority. It's not (yet?) my preferred way of programming, but the fact that it works at all was hugely surprising to me, and I got more than one genui…",
+          "engagement": 1
+        },
+        "hn-46421433": {
+          "id": "hn-46421433",
+          "source": "Hacker News",
+          "author": "wek",
+          "url": "https://news.ycombinator.com/item?id=46421433",
+          "excerpt": "\"The gap between intention and execution was small, but it was enough to keep the project permanently parked in the someday pile.\" Well said! This is my experience with agents, particularly Claude Code. It supplies sufficient activation energy to get me over the hump. It makes ea…",
+          "engagement": 0
+        },
+        "hn-46421048": {
+          "id": "hn-46421048",
+          "source": "Hacker News",
+          "author": "m-hodges",
+          "url": "https://news.ycombinator.com/item?id=46421048",
+          "excerpt": "> I decided that 90 percent accuracy was enough. So many systems are fault-tolerant, and it’s great to remember that in a world where LLMs introduce new faults. Kudos to OP for this mindset; more anti-AI posters would benefit from sitting with the idea from time to time.",
+          "engagement": 2
+        },
+        "hn-46765765": {
+          "id": "hn-46765765",
+          "source": "Hacker News",
+          "author": "WarmWash",
+          "url": "https://news.ycombinator.com/item?id=46765765",
+          "excerpt": "Small bespoke personalized on the spot apps are the future with LLMs. The future will absolutely not be \"How things are today + LLMs\" The paradigm now for software is \"build a tool shed/garage/barn/warehouse full of as much capability for as many uses possible\" but when LLMs can …",
+          "engagement": 41
+        },
+        "hn-46421696": {
+          "id": "hn-46421696",
+          "source": "Hacker News",
+          "author": "anon7000",
+          "url": "https://news.ycombinator.com/item?id=46421696",
+          "excerpt": "You’re right, but at the same time, 99% of software people need has already been done in some form. This gets back to the article on “perfect software” [1] posted last week. This bookshelf is perfect for the guy who wrote it and there isn’t anything exactly like it out there. The…",
+          "engagement": 1
+        },
+        "hn-46768497": {
+          "id": "hn-46768497",
+          "source": "Hacker News",
+          "author": "devinprater",
+          "url": "https://news.ycombinator.com/item?id=46768497",
+          "excerpt": "I'm completely blind. I like Linux. I've started to love Android since getting a Samsung and getting rid of OnePlus, cause accessibility. Termux is cool, but it's accessibility wasn't. So, I had Gemini rangle it up a bit into my fork of Termux [1] Now it reads (usually) only newl…",
+          "engagement": 0
+        },
+        "bsky-3lhtezc2ifk2k": {
+          "id": "bsky-3lhtezc2ifk2k",
+          "source": "Bluesky",
+          "author": "Anuj Gupta (@mettalrose.bsky.social)",
+          "url": "https://bsky.app/profile/mettalrose.bsky.social/post/3lhtezc2ifk2k",
+          "excerpt": "Karpathy says coding with GAI is a new kind coding that he calls \"vibes coding.\" I think we could also call it \"accessible coding\" because it makes computer coding a little more accessible to folks who don't have the resources to learn it professionally.",
+          "engagement": 4
+        },
+        "hn-43758304": {
+          "id": "hn-43758304",
+          "source": "Hacker News",
+          "author": "freddealmeida",
+          "url": "https://news.ycombinator.com/item?id=43758304",
+          "excerpt": "Vibe coding for me meant a roll-the-dice approach to building something that world. Never a care for strong architecture or good code standards. Allowing anyone to become an \"engineer\". A friend of mine, who can't code, used Cursor to build fully functional Nextjs web apps. I was…",
+          "engagement": 0
+        },
+        "hn-43449155": {
+          "id": "hn-43449155",
+          "source": "Hacker News",
+          "author": "dr_dshiv",
+          "url": "https://news.ycombinator.com/item?id=43449155",
+          "excerpt": "Vibe coding is 100% real. Or maybe we should call it code vibing when there is no coding ability. But I just taught 18 professionals with no coding ability to build functional software. Their minds were blown",
+          "engagement": 4
+        },
+        "resp-48471048": {
+          "id": "resp-48471048",
+          "source": "Response post",
+          "author": "dmckinno@gmail.com",
+          "url": "https://www.ddmckinnon.com/2026/06/09/vibe-coding-my-way-to-a-healthy-family-introducing-gamow-labs/",
+          "excerpt": "**Owen arrives** On September 23rd, 2021, my first son Owen was born. Clearly inheriting his mom’s type-A personality, he arrived on his due date at a chunky 8.75 lbs. We were over the moon. Until we weren’t. At a few hours old, we noticed cute snoring. The nurses noticed nostril…",
+          "engagement": 215
+        },
+        "hn-48475474": {
+          "id": "hn-48475474",
+          "source": "Hacker News",
+          "author": "dmckinno",
+          "url": "https://news.ycombinator.com/item?id=48475474",
+          "excerpt": "It's funny you mention Dr. Kingsmore and Rady. While I am truly grateful for him and the team for their contributions to neonatal genetics (and hosting me in San Diego for a few days to show me how I could help), Rady was actually the unnamed lab that failed to diagnosis my son. …",
+          "engagement": 1
+        },
+        "hn-48475401": {
+          "id": "hn-48475401",
+          "source": "Hacker News",
+          "author": "hashmap",
+          "url": "https://news.ycombinator.com/item?id=48475401",
+          "excerpt": "> I'd be surprised if the approach is really something novel at this point. < this is a very common reaction to people doing things with llms and i think the effects of it can be somewhat insidious. you constantly see people out there vibing their way to something that has alread…",
+          "engagement": 1
+        },
+        "hn-47665285": {
+          "id": "hn-47665285",
+          "source": "Hacker News",
+          "author": "semicolon_storm",
+          "url": "https://news.ycombinator.com/item?id=47665285",
+          "excerpt": "It’s truly strange that people keep citing the quality of Claude code’s leaked source as if it’s proof vibe coding doesn’t work. If anything, it’s the exact opposite. It shows that you can build a crazy popular & successful product while violating all the traditional rules about …",
+          "engagement": 68
+        },
+        "hn-47665731": {
+          "id": "hn-47665731",
+          "source": "Hacker News",
+          "author": "tombert",
+          "url": "https://news.ycombinator.com/item?id=47665731",
+          "excerpt": "I suspect if people saw the handwritten code of many, many, many products that they used every day they would be shocked. I've worked at BigCos and startups, and a lot of the terrible code that makes it to production was shocking when I first started. This isn't a dig at anyone, …",
+          "engagement": 10
+        },
+        "hn-44742988": {
+          "id": "hn-44742988",
+          "source": "Hacker News",
+          "author": "lmm",
+          "url": "https://news.ycombinator.com/item?id=44742988",
+          "excerpt": "> Because no one would write an HTTP fetching implementation covering all edge cases when we have a data fetching library in the project that already does that. > No one would implement a bunch of utility functions that we already have in a different module. > No one would change…",
+          "engagement": 15
+        },
+        "hn-47665329": {
+          "id": "hn-47665329",
+          "source": "Hacker News",
+          "author": "bearjaws",
+          "url": "https://news.ycombinator.com/item?id=47665329",
+          "excerpt": "This is nearly as dumb as the post that \"Claude code is useless because your home built \"Slack App\" won't be globally distributed, with multi-primary databases and redis cache layer... and won't scale beyond 50k users\". As if 97% of web apps aren't just basic CRUD with some integ…",
+          "engagement": 3
+        },
+        "hn-43739325": {
+          "id": "hn-43739325",
+          "source": "Hacker News",
+          "author": "alphazard",
+          "url": "https://news.ycombinator.com/item?id=43739325",
+          "excerpt": "Different people clearly mean different things when they talk about software quality. There is quality as perceived by the user: few bugs, accurately models the problem they have, no more complicated than necessary, etc. Then there is this other notion of quality as something to …",
+          "engagement": 8
+        },
+        "hn-45323048": {
+          "id": "hn-45323048",
+          "source": "Hacker News",
+          "author": "abxyz",
+          "url": "https://news.ycombinator.com/item?id=45323048",
+          "excerpt": "For many non-technical people, their relationships with software engineers were producing horrific results. Vibe coding is an indictment of what we’ve been delivering. That a vibe-coded disaster is in any way desirable reflects poorly on us. The branding by Karpathy is cute but i…",
+          "engagement": 4
+        },
+        "hn-45321131": {
+          "id": "hn-45321131",
+          "source": "Hacker News",
+          "author": "eru",
+          "url": "https://news.ycombinator.com/item?id=45321131",
+          "excerpt": ">> Startups save weeks getting to MVP with Vibe Coding, then spend comparable time and budget on cleanup. But that’s still faster than traditional development. > That's the core of situation as described in the article. I wonder how true that is, that it's faster overall than hav…",
+          "engagement": 2
+        },
+        "hn-45321556": {
+          "id": "hn-45321556",
+          "source": "Hacker News",
+          "author": "dist-epoch",
+          "url": "https://news.ycombinator.com/item?id=45321556",
+          "excerpt": "Twitter started as a in Ruby on Rails webapp and everytime Justin Bieber tweeted the whole Twitter would go down and the fail-whale would appear. But they grew, and one day could afford hiring professionals to rewrite it from scratch on a more scalable and robust stack.",
+          "engagement": 0
+        },
+        "hn-47665442": {
+          "id": "hn-47665442",
+          "source": "Hacker News",
+          "author": "somewhatjustin",
+          "url": "https://news.ycombinator.com/item?id=47665442",
+          "excerpt": "This reminds me of Clayton Christensen's theory of disruption. Disruption happens when firms are disincentivized to switch to the new thing or address the new customer because the current state of it is bad, the margins are low. Intel missed out on mobile because their existing b…",
+          "engagement": 3
+        },
+        "hn-47170197": {
+          "id": "hn-47170197",
+          "source": "Hacker News",
+          "author": "jmull",
+          "url": "https://news.ycombinator.com/item?id=47170197",
+          "excerpt": "> The central promise—that distributed digital fabrication would bring manufacturing back to America, that every city would have micro-factories, that 3D printing would decentralize production—simply didn’t materialize. I never heard that. It didn’t seem like 3D-printing ever sho…",
+          "engagement": 37
+        },
+        "hn-47173431": {
+          "id": "hn-47173431",
+          "source": "Hacker News",
+          "author": "ytoawwhra92",
+          "url": "https://news.ycombinator.com/item?id=47173431",
+          "excerpt": "Nah. There are corners of the industry where people still write ASM by hand when necessary, but for the vast, vast majority it's neither necessary (because compilers are great) or worthwhile (because it's so time consuming). Most code is written in high-level, interpreted languag…",
+          "engagement": 3
+        },
+        "bsky-3lhassry42322": {
+          "id": "bsky-3lhassry42322",
+          "source": "Bluesky",
+          "author": "X Bot (@handle.invalid)",
+          "url": "https://bsky.app/profile/handle.invalid/post/3lhassry42322",
+          "excerpt": "@jacobmparis https://x.com/jacobmparis/status/1886280898196418665 #x-jacobmparis Quote: https://x.com/karpathy/status/1886192184808149383 Prediction: All application code will be written this way eventually Library code (some of your app code SHOULD be library code) requires a ..…",
+          "engagement": 0
+        },
+        "hn-48040206": {
+          "id": "hn-48040206",
+          "source": "Hacker News",
+          "author": "keeda",
+          "url": "https://news.ycombinator.com/item?id=48040206",
+          "excerpt": "I think all coding will become vibe coding, but it will be no less an engineering discipline. Note: I still review pretty much every line of code that I own, regardless of who generates it, and I see the problems with agents very clearly... but I can also see the trends. My take:…",
+          "engagement": 3
+        },
+        "bsky-3lkci73vx7c26": {
+          "id": "bsky-3lkci73vx7c26",
+          "source": "Bluesky",
+          "author": "okamOTO (@djokamoto.bsky.social)",
+          "url": "https://bsky.app/profile/djokamoto.bsky.social/post/3lkci73vx7c26",
+          "excerpt": ">これから基本的に、「物理的に実現可能ならどんなものでも作れる」時代に突入する。 >つまり、ますます企画が重要になる。その企画の根幹を支えるのが、教養だ。 教養の部分に物理的に実現可能かが分かるは含まれるんだろう。まぁ教養のない相手もAIにまず相手させればお互い平和なのかもしれないw",
+          "engagement": 0
+        },
+        "hn-43449018": {
+          "id": "hn-43449018",
+          "source": "Hacker News",
+          "author": "MarkMarine",
+          "url": "https://news.ycombinator.com/item?id=43449018",
+          "excerpt": "This is the go community saying a computer will never best human go players. We already have examples of a model finding more performant sorts [0], given the right incentives and time, and the right system for optimizing (LLMs trained on “average code” probably aren’t it) the com…",
+          "engagement": 9
+        },
+        "hn-46422877": {
+          "id": "hn-46422877",
+          "source": "Hacker News",
+          "author": "cdcarter",
+          "url": "https://news.ycombinator.com/item?id=46422877",
+          "excerpt": "I vibe coded an app to track my movie watches, at https://moviesonthe.computer. I really enjoy the ability to get started quickly with a known idea like “make a single user letterboxd clone” with a system prompt that explains my preferred tech stack. From there it’s relatively ea…",
+          "engagement": 1
+        },
+        "hn-47024600": {
+          "id": "hn-47024600",
+          "source": "Hacker News",
+          "author": "EagnaIonat",
+          "url": "https://news.ycombinator.com/item?id=47024600",
+          "excerpt": "2017 GPT could generate text that looked factual and well written but was total garbage. Compare that to 2023. The technology is accelerating. Hard projects from early last year are now trivial for me. Even AI related tools we are using internally are being made redundant from op…",
+          "engagement": 0
+        },
+        "hn-43740077": {
+          "id": "hn-43740077",
+          "source": "Hacker News",
+          "author": "afiodorov",
+          "url": "https://news.ycombinator.com/item?id=43740077",
+          "excerpt": "I think it is a losing battle. People are energy preserving creatures and we skip paying attention if we can. Because paying attention is effort. Vibe coding is exactly this, low effort development and thus is enticing. Now if we can get away with low effort why shouldn’t we? I a…",
+          "engagement": 2
+        },
+        "hn-47171253": {
+          "id": "hn-47171253",
+          "source": "Hacker News",
+          "author": "0xbadcafebee",
+          "url": "https://news.ycombinator.com/item?id=47171253",
+          "excerpt": "Nah. The most universal rule of human nature is humans be lazy. Makers do extra effort for no real gain. Vibe coders do less effort for more gain. Vibe coding is what everyone wanted computers to be from the beginning. Tell it what to do, it does it. Actually, the future isn't vi…",
+          "engagement": 1
+        },
+        "hn-46227638": {
+          "id": "hn-46227638",
+          "source": "Hacker News",
+          "author": "tptacek",
+          "url": "https://news.ycombinator.com/item?id=46227638",
+          "excerpt": "All the consulting practice arguments aside, this is fundamentally a gatekeeping argument about clients staying in their lane. I'm sure doctors feel the same way about patients with weirdly specific questions about HFpEF diagnoses. Doctors have always hated \"Doctor Google\", and n…",
+          "engagement": 6
+        },
+        "hn-46241570": {
+          "id": "hn-46241570",
+          "source": "Hacker News",
+          "author": "wvenable",
+          "url": "https://news.ycombinator.com/item?id=46241570",
+          "excerpt": "Programmers are the last people on earth who should complain about job loss due to automation. Our entire jobs since the beginning has been automating people out of jobs and we've done a wonderful job of that for decades. Entire classes of jobs no longer exist. Although I'm not p…",
+          "engagement": 2
+        }
+      },
+      "date": "2026-11-03T18:47:17.905Z"
+    }
+  ],
+  "metaReview": {
+    "metareview": "**Summary of the submission.** In a single tweet, the author names a workflow, 'vibe coding', in which one talks to an LLM agent, accepts every diff unread, pastes errors back, and lets the code grow past one's understanding. He offers it as amusing and newly possible, and scopes it to throwaway weekend projects. Few tweets have generated more follow-up literature. The reviewing pool for this submission includes a fast.ai essay, an arXiv economics paper, an AWS style guide and at least one consultancy that exists to clean up after it.\n\n**Reviewer 1** (strongly negative) brings the largest body of evidence. It covers subtle errors that pass review, security vulnerabilities, a bus factor of zero, rescue projects landing on freelancers, maintainers drowning in AI PRs, and the 'junk flow' or slot-machine dynamic that makes the method feel more productive than it is. With the full response posts in hand it also brings specifics: a field report cataloguing an agent putting trusted logic on the client and breaking code to satisfy a test, and a controlled study in which developers felt 20% faster while being 19% slower. These are serious points, and the gambling analogy in particular is well argued.\n\n**Reviewer 3** (positive) answers with artifacts: DSLs, bookshelves, accessibility tools for a blind developer, and non-coders building working apps in an afternoon. It argues, with some force, that most software is CRUD, that most handwritten code is also bad, and that 'a garbage version of the thing you want' often beats the alternative. Where it leans on future model improvements and on a popular product succeeding despite messy code, it is less convincing.\n\n**Reviewer 2** (mixed) makes what I consider the decisive observation: the submission's own claim is narrow. Read to the end, the tweet says this is for throwaway weekend projects, and Reviewer 2 shows that within that scope the method is both real and useful. Most of Reviewer 1's damage, including production outages, user data and open-source maintainers, comes from applying the method outside the scope the author stated. That is a strong indictment of the term's diffusion, and a weaker one of the submission. Reviewer 2's further point is uncomfortable for everyone: the boundary between vibe coding and responsible agentic engineering is eroding as careful engineers quietly stop reviewing every line, and a polished repository no longer proves anyone cared about it.\n\n**Assessment.** The claims, as stated, are modest and supported by the community's own experience. The contribution, a precise name for a practice everyone was doing and nobody had admitted to, has proven enormously generative, if also enormously misused. The submission does not engage with security, maintenance or who gets hurt when weekend projects escape the weekend. Those are real omissions, and the 'embrace exponentials' framing invited the hype it received. A tweet cannot be held responsible for every LinkedIn post it spawned, but it can be asked to carry a warning label, and this one carried only a short one.",
+    "additional_comments_on_reviewer_discussion": "Reviewer 2's scoping argument was decisive: the original claim explicitly limits itself to throwaway projects, and the reviewers broadly agree it holds there. I gave real weight to Reviewer 1's bus-factor, security and junk-flow arguments as limitations of the method, but discounted the many points aimed at production use and corporate mandates, which critique the term's later life rather than the submission. I discounted Reviewer 3's appeals to future models and to one leaked codebase as evidence that quality does not matter, while crediting its concrete demonstrations of personal and accessibility software. All three reviewers agree on one point: the human judgment the method claims to remove is exactly what determines whether it works.",
+    "decision": "Accept (Spotlight)",
+    "decision_comment": "Accepted for coining the most influential term of the year, with a note that the authors should restate the scope caveat in a larger font. Attendees are asked not to 'Accept All' the camera-ready without reading it.",
+    "date": "2026-11-03T19:47:17.905Z",
+    "areaChairId": "GAni"
+  }
+}

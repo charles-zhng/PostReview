@@ -1,0 +1,864 @@
+{
+  "postId": "intelligence-age",
+  "generatedAt": "2026-11-03T19:47:17.888Z",
+  "models": {
+    "reviewer": "claude-opus-5-5 (hand-run in Claude Code)",
+    "areaChair": "claude-opus-5-5 (hand-run in Claude Code)"
+  },
+  "reactions": {
+    "total": 106,
+    "bySource": {
+      "Hacker News": 62,
+      "Bluesky": 44
+    },
+    "threads": [
+      {
+        "source": "Hacker News",
+        "title": "The Intelligence Age",
+        "url": "https://news.ycombinator.com/item?id=41628167",
+        "points": 343,
+        "comments": 425
+      }
+    ]
+  },
+  "reviews": [
+    {
+      "summary": "The submission argues that humanity is entering an 'Intelligence Age' because deep learning works and improves predictably with compute and data, that superintelligence may arrive within a few thousand days, and that society must build vast energy and chip infrastructure so that AI does not become a scarce resource for the rich. It promises personal AI teams, tutors and shared prosperity.",
+      "strengths": "- The submission is candid that the timeline is uncertain, and its \"few thousand days\" figure, read literally as 6-9 years or more, is less breathless than the surrounding hype wave [hn-41628281].\n- It is, at least, an accomplished pitch: the narrative has been perfected since the early dotcom boom [bsky-3l4u6ustclh2m].",
+      "weaknesses": "- **No evidence, only assertion.** The essay declares that AI will make us prosperous beyond our wildest dreams without evidence or even a reference to evidence [bsky-3l4ui5rilpo24]; reviewers summarize it as \"pure marketing bullshit\" [bsky-3l4uuyj6bz22v] and note that even P.T. Barnum made it sound like something you would want to believe [bsky-3l4vzdzccic25]. \"There are a lot of details we still have to figure out\" is doing heroic work, since the details are everything [bsky-3l4twnziq332h].\n- **A capital-raising memo in disguise.** The infrastructure section translates to \"we need to fully privatize the OA subsidiary\" so it can raise more capital, framing inadequate commercialization as the chief threat [hn-41629493]; the essay is effectively \"me when i need $6.5B\" [hn-41630114]. A CEO cannot admit AI will wreck the job market without spooking politicians [hn-41638674], and the author's own earlier warnings that superhuman machine intelligence is the greatest threat to humanity go unmentioned [hn-41629504]. Executives are quiet when things are working [hn-41629288].\n- **The scaling claim is assumed, not shown.** \"We will solve the remaining problems\" is something you tell your team and your investors, not something you can know [hn-41628470]; each capability jump has needed exponentially more data and compute, and the easy increases are used up [hn-41628439]. Hallucination remains unsolved, which limits autonomy to cases where the cost of errors lands on someone else [hn-41629719].\n- **Mangled theory.** The claim that humanity discovered an algorithm that can learn any distribution, and its underlying rules, conflates representation with learning and turns the Universal Approximation Theorem into a falsehood [hn-41630031].\n- **The timeline is a rhetorical device.** \"A few thousand days\" is a 99-cents pricing trick that defamiliarizes \"about a decade\" [hn-41628745], and a decade, like fusion, can mean never [hn-41628806]; readers could not get past the phrase [bsky-3l4v2aebyi52u] [bsky-3l4vzbujkc625] [bsky-3l4uzdcjyd723].\n- **Unimaginative vision.** The flagship use case, an AI to coordinate your medical care, imagines superintelligence navigating a broken system rather than fixing it [hn-41628785] [hn-41628968]; better tooling, like a good compiler, has done more for productivity [hn-41629122]. The essay is vague enough that anyone who has read cyberpunk could have written it [hn-41629578], and several readers suspect a model did [hn-41629550] [bsky-3l4vzfr5x3i2l].",
+      "questions": "1. What evidence supports the claim that scaling will continue to deliver capability gains at acceptable cost [hn-41628439] [bsky-3l4ui5rilpo24]?\n2. How does the infrastructure argument relate to OpenAI's planned restructuring and capital raise [hn-41629493] [hn-41630114]?\n3. Do you still hold the view that superhuman machine intelligence is the greatest threat to humanity, and if so why does it not appear here [hn-41629504]?\n4. Can you state the learning claim precisely, distinguishing representational capacity from learnability and generalization [hn-41630031]?\n5. Why is the best use of superintelligence waiting on hold with a healthcare provider [hn-41628968]?",
+      "soundness": 1,
+      "presentation": 3,
+      "contribution": 1,
+      "rating": 1,
+      "confidence": 4,
+      "hype_index": 5,
+      "flag_for_ethics_review": false,
+      "reviewer": 1,
+      "cluster": {
+        "label": "Fundraising pitch dressed as prophecy",
+        "summary": "The dominant reaction reads the essay as marketing: a CEO who needs billions in capital and chips announcing that scale will solve everything, with superintelligence 'a few thousand days' away. Critics note there is no evidence offered, the scaling claim is asserted rather than argued, the learning theory is mangled, and the use cases (an AI to sit on hold with your insurer) are oddly unimaginative.",
+        "stance": "negative",
+        "size": 41,
+        "total": 106,
+        "representative": [
+          {
+            "id": "bsky-3l4uuyj6bz22v",
+            "source": "Bluesky",
+            "author": "M.H. Williams (@mhwilliams.bsky.social)",
+            "url": "https://bsky.app/profile/mhwilliams.bsky.social/post/3l4uuyj6bz22v",
+            "excerpt": "Bullshit. Just pure marketing bullshit. ia.samaltman.com",
+            "engagement": 28
+          },
+          {
+            "id": "bsky-3l4u6ustclh2m",
+            "source": "Bluesky",
+            "author": "Dave Karpf (@davekarpf.bsky.social)",
+            "url": "https://bsky.app/profile/davekarpf.bsky.social/post/3l4u6ustclh2m",
+            "excerpt": "This is the same basic narrative that we’ve heard since the early dotcom boom. Just put your faith in the entrepreneurs, investors, and engineers of Silicon Valley. Mass prosperity and unimaginable wonders await. Altman, to his credit, has perfected the pitch.",
+            "engagement": 20
+          },
+          {
+            "id": "hn-41629493",
+            "source": "Hacker News",
+            "author": "gwern",
+            "url": "https://news.ycombinator.com/item?id=41629493",
+            "excerpt": "> If we want to put AI into the hands of as many people as possible, we need to drive down the cost of compute and make it abundant (which requires lots of energy and chips). If we don’t build enough infrastructure, AI will be a very limited resource that wars get fought over and…",
+            "engagement": 12
+          },
+          {
+            "id": "hn-41628439",
+            "source": "Hacker News",
+            "author": "sharkjacobs",
+            "url": "https://news.ycombinator.com/item?id=41628439",
+            "excerpt": "> Deep learning works, and we will solve the remaining problems. We can say a lot of things about what may happen next, but the main one is that AI is going to get better with scale I'm not an AI skeptic at all, I use llms all the time, and find them very useful. But stuff like t…",
+            "engagement": 11
+          },
+          {
+            "id": "hn-41628785",
+            "source": "Hacker News",
+            "author": "Bjorkbat",
+            "url": "https://news.ycombinator.com/item?id=41628785",
+            "excerpt": "A complete tangent, but I think a big reason why I'm kind of dismissive of AI is because people who speculate on what it would enable make it honestly sound kind of unimaginative. > AI models will soon serve as autonomous personal assistants who carry out specific tasks on our be…",
+            "engagement": 15
+          },
+          {
+            "id": "hn-41628745",
+            "source": "Hacker News",
+            "author": "sharkjacobs",
+            "url": "https://news.ycombinator.com/item?id=41628745",
+            "excerpt": "> It is possible that we will have superintelligence in a few thousand days (!) \"a few thousand days\" is such a funny and fascinating way to say \"about a decade\" Superficially, reframing it as \"days\" not \"years\" is a classic marketing psychology trick, i.e. 99 cents versus a doll…",
+            "engagement": 5
+          }
+        ]
+      },
+      "citations": {
+        "hn-41628281": {
+          "id": "hn-41628281",
+          "source": "Hacker News",
+          "author": "kazcaptain",
+          "url": "https://news.ycombinator.com/item?id=41628281",
+          "excerpt": "The most interesting bit I find is the time period mentioned until super-intelligence: “thousands of days (!)” aka 6-9 years or more? With the current hype wave it feels like we’re almost there but this piece makes me think we’re not.",
+          "engagement": 4
+        },
+        "bsky-3l4u6ustclh2m": {
+          "id": "bsky-3l4u6ustclh2m",
+          "source": "Bluesky",
+          "author": "Dave Karpf (@davekarpf.bsky.social)",
+          "url": "https://bsky.app/profile/davekarpf.bsky.social/post/3l4u6ustclh2m",
+          "excerpt": "This is the same basic narrative that we’ve heard since the early dotcom boom. Just put your faith in the entrepreneurs, investors, and engineers of Silicon Valley. Mass prosperity and unimaginable wonders await. Altman, to his credit, has perfected the pitch.",
+          "engagement": 20
+        },
+        "bsky-3l4ui5rilpo24": {
+          "id": "bsky-3l4ui5rilpo24",
+          "source": "Bluesky",
+          "author": "Anna Mills (@annamillsoer.bsky.social)",
+          "url": "https://bsky.app/profile/annamillsoer.bsky.social/post/3l4ui5rilpo24",
+          "excerpt": "Sam Altman today declares that AI is going to make us all prosperous beyond our wildest dreams. No evidence, not even a reference to evidence. #AIliteracy should include the fact that this is the kind of reasoning or lack thereof we see from those driving AI development. ia.samal…",
+          "engagement": 4
+        },
+        "bsky-3l4uuyj6bz22v": {
+          "id": "bsky-3l4uuyj6bz22v",
+          "source": "Bluesky",
+          "author": "M.H. Williams (@mhwilliams.bsky.social)",
+          "url": "https://bsky.app/profile/mhwilliams.bsky.social/post/3l4uuyj6bz22v",
+          "excerpt": "Bullshit. Just pure marketing bullshit. ia.samaltman.com",
+          "engagement": 28
+        },
+        "bsky-3l4vzdzccic25": {
+          "id": "bsky-3l4vzdzccic25",
+          "source": "Bluesky",
+          "author": "Imran Khan (@imrankhan.bsky.social)",
+          "url": "https://bsky.app/profile/imrankhan.bsky.social/post/3l4vzdzccic25",
+          "excerpt": "At least P.T. Barnum had the wits to make it sound like something you want to believe.",
+          "engagement": 10
+        },
+        "bsky-3l4twnziq332h": {
+          "id": "bsky-3l4twnziq332h",
+          "source": "Bluesky",
+          "author": "Waxwing (@waxw.ing)",
+          "url": "https://bsky.app/profile/waxw.ing/post/3l4twnziq332h",
+          "excerpt": "Altman published a weird sort of AI manifesto: \"There are a lot of details we still have to figure out, but it’s a mistake to get distracted by any particular challenge.\" My dude, the details are everything. ia.samaltman.com",
+          "engagement": 1
+        },
+        "hn-41629493": {
+          "id": "hn-41629493",
+          "source": "Hacker News",
+          "author": "gwern",
+          "url": "https://news.ycombinator.com/item?id=41629493",
+          "excerpt": "> If we want to put AI into the hands of as many people as possible, we need to drive down the cost of compute and make it abundant (which requires lots of energy and chips). If we don’t build enough infrastructure, AI will be a very limited resource that wars get fought over and…",
+          "engagement": 12
+        },
+        "hn-41630114": {
+          "id": "hn-41630114",
+          "source": "Hacker News",
+          "author": "Apocryphon",
+          "url": "https://news.ycombinator.com/item?id=41630114",
+          "excerpt": "\"me when i need $6.5B\" https://x.com/netcapgirl/status/1838265672096243822",
+          "engagement": 3
+        },
+        "hn-41638674": {
+          "id": "hn-41638674",
+          "source": "Hacker News",
+          "author": "j_timberlake",
+          "url": "https://news.ycombinator.com/item?id=41638674",
+          "excerpt": "As if a tech CEO would ever speak the truth like that. If he admits that AI is going to wreck the job market, that would make the relevant politicians wary.",
+          "engagement": 0
+        },
+        "hn-41629504": {
+          "id": "hn-41629504",
+          "source": "Hacker News",
+          "author": "reducesuffering",
+          "url": "https://news.ycombinator.com/item?id=41629504",
+          "excerpt": "\"Currently, we don't have a solution for steering or controlling a potentially superintelligent AI, and preventing it from going rogue.\" -OpenAI \"Why You Should Fear Machine Intelligence Development of superhuman machine intelligence is probably the greatest threat to the continu…",
+          "engagement": 0
+        },
+        "hn-41629288": {
+          "id": "hn-41629288",
+          "source": "Hacker News",
+          "author": "screye",
+          "url": "https://news.ycombinator.com/item?id=41629288",
+          "excerpt": "Question for active professionals during the Moore's law era of computing. Back then, were executives writing such grand proclamations about the future ? In my experience, when things are working, executives are quiet. The outcomes speak for themselves. Thankfully, we have a rece…",
+          "engagement": 4
+        },
+        "hn-41628470": {
+          "id": "hn-41628470",
+          "source": "Hacker News",
+          "author": "sharkjacobs",
+          "url": "https://news.ycombinator.com/item?id=41628470",
+          "excerpt": "> we will solve the remaining problems This is the part that really gets me. This is a thing that you say to your team, and a thing you say to your investors, but this isn't a thing that you can actually believe with certainty is it?",
+          "engagement": 4
+        },
+        "hn-41628439": {
+          "id": "hn-41628439",
+          "source": "Hacker News",
+          "author": "sharkjacobs",
+          "url": "https://news.ycombinator.com/item?id=41628439",
+          "excerpt": "> Deep learning works, and we will solve the remaining problems. We can say a lot of things about what may happen next, but the main one is that AI is going to get better with scale I'm not an AI skeptic at all, I use llms all the time, and find them very useful. But stuff like t…",
+          "engagement": 11
+        },
+        "hn-41629719": {
+          "id": "hn-41629719",
+          "source": "Hacker News",
+          "author": "Animats",
+          "url": "https://news.ycombinator.com/item?id=41629719",
+          "excerpt": "Until the hallucination problem is solved, we can't trust LLM-type AIs to do anything on their own. This limits uses to ones where the cost of errors can be imposed on someone else.",
+          "engagement": 1
+        },
+        "hn-41630031": {
+          "id": "hn-41630031",
+          "source": "Hacker News",
+          "author": "ansk",
+          "url": "https://news.ycombinator.com/item?id=41630031",
+          "excerpt": "> humanity discovered an algorithm that could really, truly learn any distribution of data (or really, the underlying “rules” that produce any distribution of data) He's hand-waving around the idea presented in the Universal Approximation Theorem, but he's mangled it to the point…",
+          "engagement": 5
+        },
+        "hn-41628745": {
+          "id": "hn-41628745",
+          "source": "Hacker News",
+          "author": "sharkjacobs",
+          "url": "https://news.ycombinator.com/item?id=41628745",
+          "excerpt": "> It is possible that we will have superintelligence in a few thousand days (!) \"a few thousand days\" is such a funny and fascinating way to say \"about a decade\" Superficially, reframing it as \"days\" not \"years\" is a classic marketing psychology trick, i.e. 99 cents versus a doll…",
+          "engagement": 5
+        },
+        "hn-41628806": {
+          "id": "hn-41628806",
+          "source": "Hacker News",
+          "author": "7thaccount",
+          "url": "https://news.ycombinator.com/item?id=41628806",
+          "excerpt": "Probably because we all know \"a decade\" means maybe never. They've said the same thing about fusion for 5 decades.",
+          "engagement": 2
+        },
+        "bsky-3l4v2aebyi52u": {
+          "id": "bsky-3l4v2aebyi52u",
+          "source": "Bluesky",
+          "author": "Jeff Wilson (@awaywithwords.bsky.social)",
+          "url": "https://bsky.app/profile/awaywithwords.bsky.social/post/3l4v2aebyi52u",
+          "excerpt": "I have been unable to get past seeing the phrase “a few thousand days.” Who the hell talks like this?",
+          "engagement": 1
+        },
+        "bsky-3l4vzbujkc625": {
+          "id": "bsky-3l4vzbujkc625",
+          "source": "Bluesky",
+          "author": "Bryant Francis (@bryantfrancis.me)",
+          "url": "https://bsky.app/profile/bryantfrancis.me/post/3l4vzbujkc625",
+          "excerpt": "“A few thousand days” LMAO",
+          "engagement": 1
+        },
+        "bsky-3l4uzdcjyd723": {
+          "id": "bsky-3l4uzdcjyd723",
+          "source": "Bluesky",
+          "author": "Jaime Cross (@speedyjx.bsky.social)",
+          "url": "https://bsky.app/profile/speedyjx.bsky.social/post/3l4uzdcjyd723",
+          "excerpt": "\"a few thousand days\" lmao. The man is running the most expensive kettles in the world and wants people to play him for at least the next 5 years despite not going to have anything to show for it by then.",
+          "engagement": 2
+        },
+        "hn-41628785": {
+          "id": "hn-41628785",
+          "source": "Hacker News",
+          "author": "Bjorkbat",
+          "url": "https://news.ycombinator.com/item?id=41628785",
+          "excerpt": "A complete tangent, but I think a big reason why I'm kind of dismissive of AI is because people who speculate on what it would enable make it honestly sound kind of unimaginative. > AI models will soon serve as autonomous personal assistants who carry out specific tasks on our be…",
+          "engagement": 15
+        },
+        "hn-41628968": {
+          "id": "hn-41628968",
+          "source": "Hacker News",
+          "author": "idle_zealot",
+          "url": "https://news.ycombinator.com/item?id=41628968",
+          "excerpt": "It is pretty comical. \"We invented digital superintelligence so it can wait on the phone to talk to your healthcare provider\". If we had digital superintelligence then surely it could figure out how to actually provide healthcare to people who meed it, and innovate in treatments.…",
+          "engagement": 5
+        },
+        "hn-41629122": {
+          "id": "hn-41629122",
+          "source": "Hacker News",
+          "author": "mlsu",
+          "url": "https://news.ycombinator.com/item?id=41629122",
+          "excerpt": "The biggest productivity gain I've seen in my programming life has not been from Claude or ChatGPT. It's from the Rust compiler. A good compiler that catches errors at compile time instead of runtime, that makes writing tests and pulling down dependencies easy, that makes documen…",
+          "engagement": 2
+        },
+        "hn-41629578": {
+          "id": "hn-41629578",
+          "source": "Hacker News",
+          "author": "larodi",
+          "url": "https://news.ycombinator.com/item?id=41629578",
+          "excerpt": "Has Sam Altman ever talked about ways that he personally uses ChatGPT. Does he at all? does he have an all-smart watch? Is he dreaming of producing a perfect replicant like this guy in Blade Runner 2049... cause with his pathos and present position, he may be among these peoples …",
+          "engagement": 0
+        },
+        "hn-41629550": {
+          "id": "hn-41629550",
+          "source": "Hacker News",
+          "author": "cratermoon",
+          "url": "https://news.ycombinator.com/item?id=41629550",
+          "excerpt": "Did AI write this? \"This age is characterized by society's increasingly advanced capabilities, driven not by genetic changes but by societal infrastructure becoming smarter and more efficient over time.\"",
+          "engagement": 0
+        },
+        "bsky-3l4vzfr5x3i2l": {
+          "id": "bsky-3l4vzfr5x3i2l",
+          "source": "Bluesky",
+          "author": "Carli Boo-locci 👻 (@carlivelocci.com)",
+          "url": "https://bsky.app/profile/carlivelocci.com/post/3l4vzfr5x3i2l",
+          "excerpt": "you knwo this was written by AI lol",
+          "engagement": 0
+        }
+      },
+      "date": "2026-11-03T16:47:17.888Z"
+    },
+    {
+      "summary": "The submission predicts that AI will bring massive, broadly shared prosperity, that jobs will change rather than disappear, and that building abundant compute is the way to stop AI from becoming a tool of the rich. It supports the labor claim with the image of a lamplighter who would marvel at today's world.",
+      "strengths": "- The essay at least names labor-market disruption and the risk of AI being captured by the rich as problems, which some readers credit even while disagreeing with the remedy [hn-41628360] [hn-41630920].\n- Some readers defend the market mechanism implicitly behind it: free-market economies grew fast without strong unions [hn-41637199] [hn-41631232], and cheaper intelligence makes more projects worth funding [hn-41630441].",
+      "weaknesses": "- **Prosperity is asserted, distribution is ignored.** AI is likely to accelerate inequality by removing the coordination limits that previously capped how far organizations could scale [hn-41630920]; shared prosperity in past revolutions was won by labor organizers, not given by the Altmans of the world [hn-41630118]. The Industrial Revolution's gains were captured by robber barons for decades, and \"more compute\" as the cure for capture by the rich is laughable when compute is already concentrated [hn-41628331]. Access is not assets: the educated benefit most, and a nobody who designs the world's best car with AI still has no factory [hn-41640844] [hn-41630999] [hn-41630078]. We already have the capability to feed the planet and do not [hn-41629765].\n- **The lamplighter argument is Whig history.** The lamplighters were better off in the long run; we might not be [hn-41628888]. It is very easy for a very rich person to say it will be better for all of us while specialists, designers and stenographers watch their fields collapse [hn-41628360]; some readers would still rather be a lector or a lamplighter [bsky-3l4ukxfe6gs2p] [bsky-3l4ulbg26sz2x]. If AI does all the work, the promised AI tutor has no obvious purpose [hn-41629400] [hn-41634606], and a future with as little satisfaction in intellectual labor as in physical labor is not obviously bright [bsky-3l4u7fuqsyj2d] [hn-41639595].\n- **Resource and climate costs are inverted.** The author can imagine wars over AI but not wars over the energy and land needed to build the infrastructure [hn-41629557] [bsky-3l4tqpnolsi2f]. \"Fixing the climate\" is rich from an industry on track to match a small country's energy use [hn-41629215], climate is not obviously an intelligence problem [hn-41647817], and promising that more AI will solve the problems AI creates is \"like saying more bombs will solve war\" [bsky-3ldsj64llqc2o] [bsky-3l7j7ta52qz2w].\n- **Centralization is the plan, not the risk.** Nothing is said about open-source or local models as the actual democratizing path [hn-41629691] [hn-41630969]; the winner-takes-all race is itself the danger [hn-41628287], and the money might do more for human knowledge spent elsewhere [hn-41632327]. If the floor is not raised, the result is anguished inequality with better gadgets [bsky-3l4xwociltw2i] [hn-41629611].\n- **Intelligence may not be the bottleneck.** The brightest minds already sell ads; projects that are truly worthwhile can already raise the money, so cheap intelligence may unlock fewer of them than claimed [hn-41630299] [hn-41631143], and \"what are people for\" is not a question intelligence answers [hn-41628512].",
+      "questions": "1. What mechanism, beyond building more compute, ensures that productivity gains reach people who do not own the infrastructure [hn-41628331] [hn-41640844]?\n2. What do you propose for workers whose fields are automated within a few years of their training [hn-41628360]?\n3. How do you reconcile 'fixing the climate' with the energy demands of the infrastructure buildout [hn-41629215] [hn-41629557]?\n4. Why are open and local models absent from a plan meant to democratize AI [hn-41629691]?",
+      "soundness": 2,
+      "presentation": 3,
+      "contribution": 2,
+      "rating": 3,
+      "confidence": 3,
+      "hype_index": 5,
+      "flag_for_ethics_review": true,
+      "reviewer": 2,
+      "cluster": {
+        "label": "Prosperity for whom?",
+        "summary": "A second group takes the vision seriously enough to object to its economics. They argue AI will concentrate rather than spread wealth, that the lamplighter analogy is Whig history which hand-waves real people losing livelihoods, that more compute does not stop capture by the rich, and that the energy, climate and meaning costs are waved away.",
+        "stance": "negative",
+        "size": 34,
+        "total": 106,
+        "representative": [
+          {
+            "id": "hn-41630920",
+            "source": "Hacker News",
+            "author": "w10-1",
+            "url": "https://news.ycombinator.com/item?id=41630920",
+            "excerpt": "> a defining characteristic of the Intelligence Age will be massive prosperity That's the sales pitch, that this will benefit all. I'm very pro-AI, but here's the only prediction for the future I would ever make: AI will accelerate, not minimize, inequality and thus injustice, be…",
+            "engagement": 7
+          },
+          {
+            "id": "hn-41628360",
+            "source": "Hacker News",
+            "author": "leetharris",
+            "url": "https://news.ycombinator.com/item?id=41628360",
+            "excerpt": "I like Sam's philosophy on this and I generally agree with him. However, I do not like how all the wealthy AI people are hand-waving the massive labor market shift in the coming years. > As one example, we expect that this technology can cause a significant change in labor market…",
+            "engagement": 4
+          },
+          {
+            "id": "hn-41628331",
+            "source": "Hacker News",
+            "author": "CptFribble",
+            "url": "https://news.ycombinator.com/item?id=41628331",
+            "excerpt": "To paraphrase Goggins, \"Who's gonna carry the cabbage?\" While it's true there are a lot of jobs obsoleted by technological progress, the vision of personal AI teams creating a new age of prosperity only makes sense for knowledge workers. Sure, a field worker picking cabbage could…",
+            "engagement": 2
+          },
+          {
+            "id": "hn-41630118",
+            "source": "Hacker News",
+            "author": "slantedview",
+            "url": "https://news.ycombinator.com/item?id=41630118",
+            "excerpt": "> If a lamplighter could see the world today, he would think the prosperity all around him was unimaginable None of that shared prosperity was freely given by the Sam Altmans of the world, it was hard won by labor organizers and social movements. Without more of that, the progres…",
+            "engagement": 2
+          },
+          {
+            "id": "hn-41628888",
+            "source": "Hacker News",
+            "author": "tptacek",
+            "url": "https://news.ycombinator.com/item?id=41628888",
+            "excerpt": "I like ChatGPT 4o just fine, but the whole lamplighter bit is a bit Whig-history, right? The lamplighters were better off in the long run. We might not be. You can't just blow the problems off.",
+            "engagement": 1
+          },
+          {
+            "id": "bsky-3l4tqpnolsi2f",
+            "source": "Bluesky",
+            "author": "Elf M. Sternberg (@elfsternberg.bsky.social)",
+            "url": "https://bsky.app/profile/elfsternberg.bsky.social/post/3l4tqpnolsi2f",
+            "excerpt": "I have been on this Earth now for five decades and, to quote Ultron, \"You're unbelievably naive.\" All this power takes power. Electricity, land, water, labor. Those who have it will use it to take more. ia.samaltman.com",
+            "engagement": 4
+          }
+        ]
+      },
+      "citations": {
+        "hn-41628360": {
+          "id": "hn-41628360",
+          "source": "Hacker News",
+          "author": "leetharris",
+          "url": "https://news.ycombinator.com/item?id=41628360",
+          "excerpt": "I like Sam's philosophy on this and I generally agree with him. However, I do not like how all the wealthy AI people are hand-waving the massive labor market shift in the coming years. > As one example, we expect that this technology can cause a significant change in labor market…",
+          "engagement": 4
+        },
+        "hn-41630920": {
+          "id": "hn-41630920",
+          "source": "Hacker News",
+          "author": "w10-1",
+          "url": "https://news.ycombinator.com/item?id=41630920",
+          "excerpt": "> a defining characteristic of the Intelligence Age will be massive prosperity That's the sales pitch, that this will benefit all. I'm very pro-AI, but here's the only prediction for the future I would ever make: AI will accelerate, not minimize, inequality and thus injustice, be…",
+          "engagement": 7
+        },
+        "hn-41637199": {
+          "id": "hn-41637199",
+          "source": "Hacker News",
+          "author": "tim333",
+          "url": "https://news.ycombinator.com/item?id=41637199",
+          "excerpt": "Places like HK and Singapore had free markets and not much unions and became pretty prosperous, during my lifetime having GDP per capita go from something like a third of the UK to nearly twice it in Singapore in spite of us in the UK having the benefit of unions fighting to keep…",
+          "engagement": 1
+        },
+        "hn-41631232": {
+          "id": "hn-41631232",
+          "source": "Hacker News",
+          "author": "spencerchubb",
+          "url": "https://news.ycombinator.com/item?id=41631232",
+          "excerpt": "Labor organizers mostly make things worse for laborers. Capitalism has brought much prosperity. \"It is not from the benevolence of the butcher, the brewer, or the baker, that we expect our dinner, but from their regard to their own interest\"",
+          "engagement": 1
+        },
+        "hn-41630441": {
+          "id": "hn-41630441",
+          "source": "Hacker News",
+          "author": "benlivengood",
+          "url": "https://news.ycombinator.com/item?id=41630441",
+          "excerpt": "Capital follows the most profitable investments. It's why \"green\" technology took so long to develop (we probably could have had efficient solar panels in the 60s, but oil was super cheap and more importantly very profitable). Dropping the cost of a $1e7 problem to even $1e6 prob…",
+          "engagement": 2
+        },
+        "hn-41630118": {
+          "id": "hn-41630118",
+          "source": "Hacker News",
+          "author": "slantedview",
+          "url": "https://news.ycombinator.com/item?id=41630118",
+          "excerpt": "> If a lamplighter could see the world today, he would think the prosperity all around him was unimaginable None of that shared prosperity was freely given by the Sam Altmans of the world, it was hard won by labor organizers and social movements. Without more of that, the progres…",
+          "engagement": 2
+        },
+        "hn-41628331": {
+          "id": "hn-41628331",
+          "source": "Hacker News",
+          "author": "CptFribble",
+          "url": "https://news.ycombinator.com/item?id=41628331",
+          "excerpt": "To paraphrase Goggins, \"Who's gonna carry the cabbage?\" While it's true there are a lot of jobs obsoleted by technological progress, the vision of personal AI teams creating a new age of prosperity only makes sense for knowledge workers. Sure, a field worker picking cabbage could…",
+          "engagement": 2
+        },
+        "hn-41640844": {
+          "id": "hn-41640844",
+          "source": "Hacker News",
+          "author": "iteratethis",
+          "url": "https://news.ycombinator.com/item?id=41640844",
+          "excerpt": "I'm skeptical about the prosperity claim. If the entire planet has access to affordable/cheap and very capable AI, this still leaves two problems. Since the access itself is not differentiating, it's going to be the most educated benefiting the most. Already today few people can …",
+          "engagement": 0
+        },
+        "hn-41630999": {
+          "id": "hn-41630999",
+          "source": "Hacker News",
+          "author": "charlie0",
+          "url": "https://news.ycombinator.com/item?id=41630999",
+          "excerpt": "In a world of infinite leverage, those who can leverage will far outrun those who cannot leverage or do so poorly. The world is also getting flatter, so you will see massive clusters of people near the bottom, with a very long fat tail of people far away at the top. My only hope …",
+          "engagement": 0
+        },
+        "hn-41630078": {
+          "id": "hn-41630078",
+          "source": "Hacker News",
+          "author": "goldfeld",
+          "url": "https://news.ycombinator.com/item?id=41630078",
+          "excerpt": "I see how AI is used today and extrapolate. A lot. Everything in tech is extrapolation with the march of capital. It takes one to know one; rather it takes a smart ass to wield a smart tool. So the smart get smarter. Is it a separate phenomenon, in the big picture, from the rich …",
+          "engagement": 1
+        },
+        "hn-41629765": {
+          "id": "hn-41629765",
+          "source": "Hacker News",
+          "author": "danjl",
+          "url": "https://news.ycombinator.com/item?id=41629765",
+          "excerpt": "We've had the capability to feed the entire planet for decades now, and yet, a large portion is underfed. Even if Sam's wildest dreams come true, this sounds like another \"divide the world into haves and have-nots\". One way to justify this unethical view is to consider that his a…",
+          "engagement": 0
+        },
+        "hn-41628888": {
+          "id": "hn-41628888",
+          "source": "Hacker News",
+          "author": "tptacek",
+          "url": "https://news.ycombinator.com/item?id=41628888",
+          "excerpt": "I like ChatGPT 4o just fine, but the whole lamplighter bit is a bit Whig-history, right? The lamplighters were better off in the long run. We might not be. You can't just blow the problems off.",
+          "engagement": 1
+        },
+        "bsky-3l4ukxfe6gs2p": {
+          "id": "bsky-3l4ukxfe6gs2p",
+          "source": "Bluesky",
+          "author": "bantowblog (@bantowblog.bsky.social)",
+          "url": "https://bsky.app/profile/bantowblog.bsky.social/post/3l4ukxfe6gs2p",
+          "excerpt": "サム・アルトマンのステートメントを読んでなお、僕はレクターやタウンクライアー、ランプライターやソーダジャークの仕事をしたいと思うんだよね。 ia.samaltman.com",
+          "engagement": 17
+        },
+        "bsky-3l4ulbg26sz2x": {
+          "id": "bsky-3l4ulbg26sz2x",
+          "source": "Bluesky",
+          "author": "bantowblog (@bantowblog.bsky.social)",
+          "url": "https://bsky.app/profile/bantowblog.bsky.social/post/3l4ulbg26sz2x",
+          "excerpt": "レクターという仕事はキューバの葉巻工場が発祥だ。ひたすら単調な作業に従事する労働者に、たとえばデュマ・ペールの『モンテ・クリスト伯』を朗読して聞かせる。葉巻の銘柄にモンテ・クリストというのがあるのはそのせいだ。",
+          "engagement": 9
+        },
+        "hn-41629400": {
+          "id": "hn-41629400",
+          "source": "Hacker News",
+          "author": "Workaccount2",
+          "url": "https://news.ycombinator.com/item?id=41629400",
+          "excerpt": "I don't know if I am the only one who always trips up on reading this common theme in AI progress - that AI will be the pinnacle of education - but it really strikes me as meaningless. What is the point of education if the bots can do all the work. If the worlds best accounting t…",
+          "engagement": 4
+        },
+        "hn-41634606": {
+          "id": "hn-41634606",
+          "source": "Hacker News",
+          "author": "unraveller",
+          "url": "https://news.ycombinator.com/item?id=41634606",
+          "excerpt": "That's a good argument against a full accounting education but not against education itself, it's okay to drop legacy things like calligraphy class from curriculum. We are never going to automate ALL the work humanity does, that's as meaningless as both parties outsourcing their …",
+          "engagement": 0
+        },
+        "bsky-3l4u7fuqsyj2d": {
+          "id": "bsky-3l4u7fuqsyj2d",
+          "source": "Bluesky",
+          "author": "Rob Shearer (@r.v.cx)",
+          "url": "https://bsky.app/profile/r.v.cx/post/3l4u7fuqsyj2d",
+          "excerpt": "Even if he were right, it’s a huge leap to assume a future where there is as little satisfaction from intellectual labor as there is in physical labor would be “bright”.",
+          "engagement": 0
+        },
+        "hn-41639595": {
+          "id": "hn-41639595",
+          "source": "Hacker News",
+          "author": "zero-sharp",
+          "url": "https://news.ycombinator.com/item?id=41639595",
+          "excerpt": "We've been quick to adopt the technology without identifying or considering its future costs. If a chatbot can generate code that works with minor tweaking, does that warrant laying off one or many programmers? If an AI tutor can provide most of the information a student needs, d…",
+          "engagement": 0
+        },
+        "hn-41629557": {
+          "id": "hn-41629557",
+          "source": "Hacker News",
+          "author": "peppermill",
+          "url": "https://news.ycombinator.com/item?id=41629557",
+          "excerpt": "It's amazing how he can imagine wars being fought over AI but not wars being fought over resources needed to \"build enough infrastructure.\"",
+          "engagement": 3
+        },
+        "bsky-3l4tqpnolsi2f": {
+          "id": "bsky-3l4tqpnolsi2f",
+          "source": "Bluesky",
+          "author": "Elf M. Sternberg (@elfsternberg.bsky.social)",
+          "url": "https://bsky.app/profile/elfsternberg.bsky.social/post/3l4tqpnolsi2f",
+          "excerpt": "I have been on this Earth now for five decades and, to quote Ultron, \"You're unbelievably naive.\" All this power takes power. Electricity, land, water, labor. Those who have it will use it to take more. ia.samaltman.com",
+          "engagement": 4
+        },
+        "hn-41629215": {
+          "id": "hn-41629215",
+          "source": "Hacker News",
+          "author": "mcpar-land",
+          "url": "https://news.ycombinator.com/item?id=41629215",
+          "excerpt": "> Although it will happen incrementally, astounding triumphs – fixing the climate This is so rich coming from a tech field that's on track to match the energy consumption of a small country. (And no, AI is not going to offset this by 'finding innovative solutions to climate chang…",
+          "engagement": 0
+        },
+        "hn-41647817": {
+          "id": "hn-41647817",
+          "source": "Hacker News",
+          "author": "xjm",
+          "url": "https://news.ycombinator.com/item?id=41647817",
+          "excerpt": "> fixing the climate I would be happy to be convinced that climate is an intelligence problem. One could argue it could be solved with \"abundant energy\" but if this abundant energy comes from some new intelligence then we are probably several decades away from having it running c…",
+          "engagement": 0
+        },
+        "bsky-3ldsj64llqc2o": {
+          "id": "bsky-3ldsj64llqc2o",
+          "source": "Bluesky",
+          "author": "MI (Middling Intelligence) (@paulmwatson.com)",
+          "url": "https://bsky.app/profile/paulmwatson.com/post/3ldsj64llqc2o",
+          "excerpt": "Altman and co have said we need to push through so the super intelligence can solve that problem. Not kidding, not exaggerating. It's like saying more bombs will solve war. ia.samaltman.com",
+          "engagement": 1
+        },
+        "bsky-3l7j7ta52qz2w": {
+          "id": "bsky-3l7j7ta52qz2w",
+          "source": "Bluesky",
+          "author": "R. Saravanan (@sarava.net)",
+          "url": "https://bsky.app/profile/sarava.net/post/3l7j7ta52qz2w",
+          "excerpt": "AI-enthusiast: Building more poking machines needed to power AI will enable us to build a better shield (among other things) \"a defining characteristic of the Intelligence Age will be ... astounding triumphs – fixing the climate, ... and the discovery of all of physics. ia.samalt…",
+          "engagement": 1
+        },
+        "hn-41629691": {
+          "id": "hn-41629691",
+          "source": "Hacker News",
+          "author": "teekert",
+          "url": "https://news.ycombinator.com/item?id=41629691",
+          "excerpt": "“If we don’t build enough infrastructure, AI will be a very limited resource that wars get fought over and that becomes mostly a tool for rich people.” … This, and nothing about the democratizing effect of “open source AI” (Yes we still need to define what that is!). I don’t want…",
+          "engagement": 0
+        },
+        "hn-41630969": {
+          "id": "hn-41630969",
+          "source": "Hacker News",
+          "author": "ilrwbwrkhv",
+          "url": "https://news.ycombinator.com/item?id=41630969",
+          "excerpt": "Also that is why we should have some of these foundational models broken down and run at the per person level as a local large language model instead of paying some corporation to get access to it. We didn't have fire as a service back in the day and that is why humanity flourish…",
+          "engagement": 1
+        },
+        "hn-41628287": {
+          "id": "hn-41628287",
+          "source": "Hacker News",
+          "author": "hnthrow562",
+          "url": "https://news.ycombinator.com/item?id=41628287",
+          "excerpt": "This is painting a picture of a utopia. I'm not sure about that. The entire AI trend - long term is based on the idea that AI will profoundly change the world. This has sparked a global race for developing better AI systems and the more dangerous winner takes all outcome. It is t…",
+          "engagement": 0
+        },
+        "hn-41632327": {
+          "id": "hn-41632327",
+          "source": "Hacker News",
+          "author": "kylehotchkiss",
+          "url": "https://news.ycombinator.com/item?id=41632327",
+          "excerpt": "This was very thoughtful. I agree with you, the benefits to the majority of the world from this tech is minimal. Universal childhood education is a fever dream. The amount money being poured into AI could probably increase actual human knowledge and critical thinking substantiall…",
+          "engagement": 0
+        },
+        "bsky-3l4xwociltw2i": {
+          "id": "bsky-3l4xwociltw2i",
+          "source": "Bluesky",
+          "author": "Swiderman (@swiderman.bsky.social)",
+          "url": "https://bsky.app/profile/swiderman.bsky.social/post/3l4xwociltw2i",
+          "excerpt": "Upshot of AI hype is outsourcing on a grand scale. But end of that rainbow is a world without human work. If @sama's new prosperity is shared, people will be OK; if not, we won't be far from the anguished inequality we have now, even if the floor is raised ia.samaltman.com",
+          "engagement": 1
+        },
+        "hn-41629611": {
+          "id": "hn-41629611",
+          "source": "Hacker News",
+          "author": "23david",
+          "url": "https://news.ycombinator.com/item?id=41629611",
+          "excerpt": "The Age of Inhumanity... AI mimicry of human patterns devalues our very humanity. Without wise leadership, which we clearly lack, this upcoming Age will be profoundly unstable.",
+          "engagement": 0
+        },
+        "hn-41630299": {
+          "id": "hn-41630299",
+          "source": "Hacker News",
+          "author": "d_burfoot",
+          "url": "https://news.ycombinator.com/item?id=41630299",
+          "excerpt": "OAI's achievements are amazing. But here's a bit of a skeptical take: cheap human-style intelligence won't have a huge impact because such intelligence isn't really a bottleneck today. It's a cliche that the brightest minds of the age are dedicated to selling more ads or shufflin…",
+          "engagement": 4
+        },
+        "hn-41631143": {
+          "id": "hn-41631143",
+          "source": "Hacker News",
+          "author": "spencerchubb",
+          "url": "https://news.ycombinator.com/item?id=41631143",
+          "excerpt": "To raise $1e7, you have to be able to convince VCs that you can make at least $1e9. They want 100x returns from their winners, and don't care about anything else in their portfolio. If instead you only need $1e3 to build it, it doesn't have to make as much money. I could just fun…",
+          "engagement": 1
+        },
+        "hn-41628512": {
+          "id": "hn-41628512",
+          "source": "Hacker News",
+          "author": "carapace",
+          "url": "https://news.ycombinator.com/item?id=41628512",
+          "excerpt": "\"What is good?\" or in other words \"What are people for?\" is a question that cannot be answered by intelligence no matter how great, because the complexity of the question is a function of the intelligence of the asking entity and it's always greater than the intelligence of the a…",
+          "engagement": 2
+        }
+      },
+      "date": "2026-11-03T17:47:17.888Z"
+    },
+    {
+      "summary": "The submission argues that deep learning works and improves predictably with scale, that it will give everyone personal AI experts and tutors, and that compute infrastructure must be built so the benefits are widely shared. Its central technical claim is simple: more compute and data, better results.",
+      "strengths": "- **The core claim matches daily experience.** Anyone using these models daily believes the author is not lying; o1, prompted well, can architect a codebase better than a decade of experience [hn-41628553], and it untangled a junior engineer's always-true conditional with a truth table [hn-41631244]. \"The abilities of the future are already here.\"\n- **Tutoring is already real.** Far from a distant promise, uploading books into a Claude project already yields a decent tutor on most subjects [hn-41629418]; even AI curmudgeons concede it is effective at taking a beginner to a decent understanding [hn-41628913], and builders report it as a large productivity multiplier on hard side projects [hn-41628824] [hn-41629192].\n- **Scaling has a track record.** Over five years, deep learning plus data plus compute toppled a pile of 50-year problems, from protein folding to the century-old cocktail party problem [hn-41628689]. The learning claim rests on practical success across many distributions with one architecture, not on a naive reading of the UAT [hn-41634656], and good-enough parameters, not optimal ones, are what matters [hn-41633210].\n- **The infrastructure argument is the right one.** The piece is a manifesto for building chips and power, and it resonates: ASI should not be affordable only to the ultra-rich [hn-41628484] [hn-41628307]. It strikes a calm, cautious tone rather than foom-or-doom [hn-41628489] [bsky-3l4trroya7y2i], and its techno-optimism is welcome [hn-41628263] [bsky-3lajv56drii52].",
+      "weaknesses": "- Quality depends heavily on prompting; the same model can look incompetent when prompted badly [hn-41628553], which the essay does not discuss.\n- The concrete near-term wins (live translation, tutoring) are presented as future promises when the bottlenecks are already engineering details [hn-41629665] [hn-41629418].\n- Risks receive less attention than the optimism, even from readers who share it; the age is important but its challenges are complex and extremely risky [bsky-3l4tzvkhxb72b].",
+      "questions": "1. Which of today's capabilities (code reasoning, tutoring) do you consider the strongest evidence for the scaling claim [hn-41631244] [hn-41629418]?\n2. How will the infrastructure plan keep advanced AI affordable for people outside the ultra-wealthy [hn-41628484]?\n3. How should users close the gap between well-prompted and badly-prompted model performance [hn-41628553]?",
+      "soundness": 3,
+      "presentation": 3,
+      "contribution": 3,
+      "rating": 6,
+      "confidence": 3,
+      "hype_index": 5,
+      "flag_for_ethics_review": false,
+      "reviewer": 3,
+      "cluster": {
+        "label": "Deep learning does work",
+        "summary": "A smaller group of practitioners and users finds the core claim credible because they already see it: o1 untangling code, Claude as a decent tutor, deep learning toppling decades-old problems. They defend the technical framing against nitpicks and read the infrastructure argument as a reasonable plan to keep AI from becoming a tool only for the rich.",
+        "stance": "positive",
+        "size": 17,
+        "total": 106,
+        "representative": [
+          {
+            "id": "hn-41628553",
+            "source": "Hacker News",
+            "author": "codingwagie",
+            "url": "https://news.ycombinator.com/item?id=41628553",
+            "excerpt": "“This may turn out to be the most consequential fact about all of history so far. It is possible that we will have superintelligence in a few thousand days (!); it may take longer, but I’m confident we’ll get there.” I am a believer that people like sam are not lying. Anyone usin…",
+            "engagement": 2
+          },
+          {
+            "id": "hn-41628824",
+            "source": "Hacker News",
+            "author": "brotchie",
+            "url": "https://news.ycombinator.com/item?id=41628824",
+            "excerpt": "For somebody who likes building things and has many side projects Claude and ChatGPT have been huge productivity multipliers. For example, I’m designing and 3D printing custom LED diffuser channels from TPU filament. My first attempt was terrible, because I didn’t have an intuiti…",
+            "engagement": 5
+          },
+          {
+            "id": "hn-41629418",
+            "source": "Hacker News",
+            "author": "falcor84",
+            "url": "https://news.ycombinator.com/item?id=41629418",
+            "excerpt": "> Our children will have virtual tutors who can provide personalized instruction in any subject, in any language, and at whatever pace they need. This is one of those few cases where I'm actually more bullish than Altman. I don't need to wait for my kids to have it, but rather I …",
+            "engagement": 4
+          },
+          {
+            "id": "hn-41628689",
+            "source": "Hacker News",
+            "author": "sdenton4",
+            "url": "https://news.ycombinator.com/item?id=41628689",
+            "excerpt": "The question is: For a given problem in machine intelligence, what's the expected time-horizon for a 'good' solution? Over the last, say, five years, a pile of 50+ year problems have been toppled by the deep learning + data + compute combo. This includes language modeling (divorc…",
+            "engagement": 0
+          },
+          {
+            "id": "hn-41628484",
+            "source": "Hacker News",
+            "author": "tikkun",
+            "url": "https://news.ycombinator.com/item?id=41628484",
+            "excerpt": "> If we want to put AI into the hands of as many people as possible, we need to drive down the cost of compute and make it abundant (which requires lots of energy and chips). If we don’t build enough infrastructure, AI will be a very limited resource that wars get fought over and…",
+            "engagement": 3
+          },
+          {
+            "id": "hn-41631244",
+            "source": "Hacker News",
+            "author": "drooby",
+            "url": "https://news.ycombinator.com/item?id=41631244",
+            "excerpt": "This morning I was reviewing some code that a JR engineer submitted. It had this wild logical conditional with twists and turns, negations, and weird property naming.. o1-preview perfectly evaluated the conditional and determined that, hilariously, it would always evaluate to tru…",
+            "engagement": 1
+          }
+        ]
+      },
+      "citations": {
+        "hn-41628553": {
+          "id": "hn-41628553",
+          "source": "Hacker News",
+          "author": "codingwagie",
+          "url": "https://news.ycombinator.com/item?id=41628553",
+          "excerpt": "“This may turn out to be the most consequential fact about all of history so far. It is possible that we will have superintelligence in a few thousand days (!); it may take longer, but I’m confident we’ll get there.” I am a believer that people like sam are not lying. Anyone usin…",
+          "engagement": 2
+        },
+        "hn-41631244": {
+          "id": "hn-41631244",
+          "source": "Hacker News",
+          "author": "drooby",
+          "url": "https://news.ycombinator.com/item?id=41631244",
+          "excerpt": "This morning I was reviewing some code that a JR engineer submitted. It had this wild logical conditional with twists and turns, negations, and weird property naming.. o1-preview perfectly evaluated the conditional and determined that, hilariously, it would always evaluate to tru…",
+          "engagement": 1
+        },
+        "hn-41629418": {
+          "id": "hn-41629418",
+          "source": "Hacker News",
+          "author": "falcor84",
+          "url": "https://news.ycombinator.com/item?id=41629418",
+          "excerpt": "> Our children will have virtual tutors who can provide personalized instruction in any subject, in any language, and at whatever pace they need. This is one of those few cases where I'm actually more bullish than Altman. I don't need to wait for my kids to have it, but rather I …",
+          "engagement": 4
+        },
+        "hn-41628913": {
+          "id": "hn-41628913",
+          "source": "Hacker News",
+          "author": "Bjorkbat",
+          "url": "https://news.ycombinator.com/item?id=41628913",
+          "excerpt": "As much of a curmudgeon as I am on AI I do sincerely believe that one area that it's effective at is going from absolute beginner to decent understanding on something completely new and foreign. Recently I've been somewhat curious about Skia, the graphics library that Google uses…",
+          "engagement": 2
+        },
+        "hn-41628824": {
+          "id": "hn-41628824",
+          "source": "Hacker News",
+          "author": "brotchie",
+          "url": "https://news.ycombinator.com/item?id=41628824",
+          "excerpt": "For somebody who likes building things and has many side projects Claude and ChatGPT have been huge productivity multipliers. For example, I’m designing and 3D printing custom LED diffuser channels from TPU filament. My first attempt was terrible, because I didn’t have an intuiti…",
+          "engagement": 5
+        },
+        "hn-41629192": {
+          "id": "hn-41629192",
+          "source": "Hacker News",
+          "author": "swagasaurus-rex",
+          "url": "https://news.ycombinator.com/item?id=41629192",
+          "excerpt": "While I agree these LLMs are getting pretty good, I think google shares fault for making it so hard to find information on the internet. You have to scroll past 4 sponsored links to get to their algorithm results, which themselves have been gamed by SEO and content farms. As far …",
+          "engagement": 3
+        },
+        "hn-41628689": {
+          "id": "hn-41628689",
+          "source": "Hacker News",
+          "author": "sdenton4",
+          "url": "https://news.ycombinator.com/item?id=41628689",
+          "excerpt": "The question is: For a given problem in machine intelligence, what's the expected time-horizon for a 'good' solution? Over the last, say, five years, a pile of 50+ year problems have been toppled by the deep learning + data + compute combo. This includes language modeling (divorc…",
+          "engagement": 0
+        },
+        "hn-41634656": {
+          "id": "hn-41634656",
+          "source": "Hacker News",
+          "author": "jmmcd",
+          "url": "https://news.ycombinator.com/item?id=41634656",
+          "excerpt": "Yes, he's handwaving in this general area, but no, he's not really relying on the UAT. If you talked to most NN people 2 decades ago and asked about this, they might well answer in terms of the UAT. But nowadays, most people, including here Altman, would answer in terms of practi…",
+          "engagement": 1
+        },
+        "hn-41633210": {
+          "id": "hn-41633210",
+          "source": "Hacker News",
+          "author": "ComplexSystems",
+          "url": "https://news.ycombinator.com/item?id=41633210",
+          "excerpt": "\"Just because we can parameterize an arbitrarily flexible class of distributions doesn't mean we have an algorithm to learn the optimal set of parameters.\" This is equally mangled, if not more, than what Altman is saying. We don't need to learn \"the optimal\" set of parameters. We…",
+          "engagement": 0
+        },
+        "hn-41628484": {
+          "id": "hn-41628484",
+          "source": "Hacker News",
+          "author": "tikkun",
+          "url": "https://news.ycombinator.com/item?id=41628484",
+          "excerpt": "> If we want to put AI into the hands of as many people as possible, we need to drive down the cost of compute and make it abundant (which requires lots of energy and chips). If we don’t build enough infrastructure, AI will be a very limited resource that wars get fought over and…",
+          "engagement": 3
+        },
+        "hn-41628307": {
+          "id": "hn-41628307",
+          "source": "Hacker News",
+          "author": "tikkun",
+          "url": "https://news.ycombinator.com/item?id=41628307",
+          "excerpt": "The future will be abundant, because deep learning works. To achieve that, we need to be calm, but cautious. And, we need to fund infra (chips and power) so that AGI isn't limited to the ultra-wealthy. My take: * Foom/doom isn't helpful. But, calm cautiousness is. If you're actin…",
+          "engagement": 1
+        },
+        "hn-41628489": {
+          "id": "hn-41628489",
+          "source": "Hacker News",
+          "author": "tikkun",
+          "url": "https://news.ycombinator.com/item?id=41628489",
+          "excerpt": "> We need to act wisely but with conviction. Reminds me of these quotes from Sam on this podcast episode (https://www.youtube.com/watch?v=KfuVSg-VJxE) * \"Prudence without fear\" (Sam referencing another quote) * \"if you create the descendants of humanity from a place of, deep fear…",
+          "engagement": 2
+        },
+        "bsky-3l4trroya7y2i": {
+          "id": "bsky-3l4trroya7y2i",
+          "source": "Bluesky",
+          "author": "Eduardo Tornos (@etornosinza.bsky.social)",
+          "url": "https://bsky.app/profile/etornosinza.bsky.social/post/3l4trroya7y2i",
+          "excerpt": "Visión del futuro de la IA de Sam Altman (🤔¿Cosas mías o está más contenido y razonable?) ia.samaltman.com",
+          "engagement": 0
+        },
+        "hn-41628263": {
+          "id": "hn-41628263",
+          "source": "Hacker News",
+          "author": "ljlolel",
+          "url": "https://news.ycombinator.com/item?id=41628263",
+          "excerpt": "“Many of the jobs we do today would have looked like trifling wastes of time to people a few hundred years ago, but nobody is looking back at the past, wishing they were a lamplighter. If a lamplighter could see the world today, he would think the prosperity all around him was un…",
+          "engagement": 2
+        },
+        "bsky-3lajv56drii52": {
+          "id": "bsky-3lajv56drii52",
+          "source": "Bluesky",
+          "author": "Давидголиаф Арафат Цукербергер (@nivelep.mastodon.social.ap.brid.gy)",
+          "url": "https://bsky.app/profile/nivelep.mastodon.social.ap.brid.gy/post/3lajv56drii52",
+          "excerpt": "Bring it on! “eventually we can each have a personal AI team, full of virtual experts in different areas, working together to create almost anything we can imagine.” https://ia.samaltman.com/",
+          "engagement": 0
+        },
+        "hn-41629665": {
+          "id": "hn-41629665",
+          "source": "Hacker News",
+          "author": "lordnacho",
+          "url": "https://news.ycombinator.com/item?id=41629665",
+          "excerpt": "One thing I was thinking about was live translation. We gotta be near the stage where I can take earbuds with me to Spain and hear what the locals are saying in English? There's already apps that are pretty good at \"talk to it and it hears the words, prints them, and prints the t…",
+          "engagement": 2
+        },
+        "bsky-3l4tzvkhxb72b": {
+          "id": "bsky-3l4tzvkhxb72b",
+          "source": "Bluesky",
+          "author": "Elzo Brito  (@elzobrito.com)",
+          "url": "https://bsky.app/profile/elzobrito.com/post/3l4tzvkhxb72b",
+          "excerpt": "O alvorecer da Era da Inteligência é um desenvolvimento importante com desafios muito complexos e extremamente arriscados ia.samaltman.com",
+          "engagement": 3
+        }
+      },
+      "date": "2026-11-03T18:47:17.888Z"
+    }
+  ],
+  "metaReview": {
+    "metareview": "**Summary.** The submission announces the Intelligence Age. Its technical content is one sentence (deep learning works and gets predictably better with scale), its forecast is superintelligence in \"a few thousand days\", and its policy recommendation is to build a great deal of energy and chip infrastructure so that AI does not become a tool of the rich. The rest is a description of personal AI teams, tutors and shared abundance, with the lamplighter enlisted as a witness for the defense.\n\n**The reviews.** Reviewer 1 reads the essay as a fundraising document and backs that reading with specifics: no evidence is offered, the scaling claim is stated as certainty, the learning-theory sentence conflates representation with learnability, and the infrastructure section maps neatly onto the author's company's capital needs. Reviewer 2 engages with the vision on its own terms and finds the economics missing: prosperity is asserted while distribution is ignored, the lamplighter analogy is Whig history, more compute is offered as the cure for concentration of compute, and the climate promise is made by the industry adding to the problem. Reviewer 3 defends the core technical claim from experience (code reasoning, tutoring, a run of toppled long-standing problems) and reasonably points out that the UAT nitpick misreads what practitioners mean by 'it learns'.\n\n**Assessment.** Reviewer 3 wins the narrow technical point: deep learning does work, and \"this does not literally follow from the UAT\" is not a refutation of empirical progress. But that point was never in dispute, and it is not what the submission asks us to accept. The paper's actual claims are that scaling will continue to the point of superintelligence on a stated timeline, and that the result will be broadly shared prosperity. On the first, the submission offers confidence in place of evidence, which Reviewer 1 documents thoroughly. On the second, Reviewer 2's argument that the proposed remedy (more infrastructure, owned by the people proposing it) does not address the mechanism of concentration is the most substantive critique in the record and goes unanswered, including by Reviewer 3.\n\nAs a vision statement this is competently written and occasionally moving. As a submission, its claims outrun its evidence by roughly a few thousand days.",
+    "additional_comments_on_reviewer_discussion": "Most decisive: Reviewer 2's point that the essay's own remedy for AI becoming a tool of the rich is to concentrate more capital in AI infrastructure, and Reviewer 1's documentation that the scaling-to-superintelligence claim is asserted without support. Discounted: Reviewer 1's ad hominem material and claims that the essay was AI-written, which are funny but not arguments, and Reviewer 1's UAT critique, which Reviewer 3 adequately rebuts. Reviewer 3's first-hand reports of capability are credible but support a weaker claim than the one submitted.",
+    "decision": "Reject",
+    "decision_comment": "The committee agrees that deep learning works; the submission's other claims will be reconsidered in a few thousand days. The authors are encouraged to include evidence, and a distribution plan, in the resubmission.",
+    "date": "2026-11-03T19:47:17.888Z",
+    "areaChairId": "sGKj"
+  }
+}

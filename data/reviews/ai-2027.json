@@ -1,0 +1,915 @@
+{
+  "postId": "ai-2027",
+  "generatedAt": "2026-11-03T19:47:17.874Z",
+  "models": {
+    "reviewer": "claude-opus-5-5 (hand-run in Claude Code)",
+    "areaChair": "claude-opus-5-5 (hand-run in Claude Code)"
+  },
+  "reactions": {
+    "total": 158,
+    "bySource": {
+      "Hacker News": 144,
+      "Response post": 5,
+      "Bluesky": 9
+    },
+    "threads": [
+      {
+        "source": "Hacker News",
+        "title": "AI 2027",
+        "url": "https://news.ycombinator.com/item?id=43571851",
+        "points": 949,
+        "comments": 621
+      },
+      {
+        "source": "Hacker News",
+        "title": "AI 2027 (2025)",
+        "url": "https://news.ycombinator.com/item?id=49644294",
+        "points": 57,
+        "comments": 75
+      },
+      {
+        "source": "Hacker News",
+        "title": "The \"AI 2027\" Scenario: How realistic is it?",
+        "url": "https://news.ycombinator.com/item?id=44064504",
+        "points": 129,
+        "comments": 222
+      },
+      {
+        "source": "Hacker News",
+        "title": "A deep critique of AI 2027's bad timeline models",
+        "url": "https://news.ycombinator.com/item?id=44358829",
+        "points": 90,
+        "comments": 61
+      },
+      {
+        "source": "Hacker News",
+        "title": "Scribble-based forecasting and AI 2027",
+        "url": "https://news.ycombinator.com/item?id=44424996",
+        "points": 55,
+        "comments": 11
+      },
+      {
+        "source": "Hacker News",
+        "title": "Analyzing a Critique of the AI 2027 Timeline Forecasts",
+        "url": "https://news.ycombinator.com/item?id=44370249",
+        "points": 38,
+        "comments": 61
+      },
+      {
+        "source": "Hacker News",
+        "title": "The Karpathy Interview, 6 Months After AI 2027",
+        "url": "https://news.ycombinator.com/item?id=45655361",
+        "points": 38,
+        "comments": 24
+      }
+    ]
+  },
+  "reviews": [
+    {
+      "summary": "The submission presents a month-by-month narrative of an intelligence explosion between 2025 and 2027, ending in either misaligned takeover or a centralized slowdown, and claims the narrative is backed by quantitative forecasts of compute, timelines and takeoff. Its central methodological claim is that extrapolating METR time horizons, with substantial weight on a superexponential curve, puts superhuman coders around 2027. On inspection of the published timelines code that claim does not survive: the problem is not the parameter values but the structure of the model, and the story on top of it is a chain of longshots with no stated mechanism.",
+      "strengths": "- The authors have real credentials, and the piece is vivid and effective as a thriller tied to the issues of the day; its intent of shaking people out of passivity about AI risk is laudable [resp-44064504].\n- A hidden appendix makes a thoughtful, decent argument that superhuman coding could arrive by 2027 [resp-44064504].\n- Framing the question as how fast a concrete set of METR measurements will rise is genuinely useful, and the broader point does not need the math: if the dots keep going up, the conclusion follows, and a flawed model does not by itself mean they will stop [resp-44424996].\n- The authors published their code and methodology, were open and kind to critics, had one of the modelers check the audit for factual errors, and agreed to change parts of the write-up; the June update addresses some objections, though by the auditor's account most still stand [resp-44358829].\n- As an intellectual exercise, a toy model stapled to a sci-fi short story is legitimate; the objection is to presenting it as rigorous research and building life decisions on it [hn-44359476].",
+      "weaknesses": "- The narrative technique, not the forecasting, carries the weight. The headline claim that superhuman AI will exceed the Industrial Revolution is asserted with no references or productivity data, no alternative scenarios are analyzed, and the field's long history of missed promises (hallucinations 'solved in months', driverless cars by 2017) is ignored [resp-44064504]. The scenario reads like the conclusion was written first and justified backwards, and only works if every productivity multiplier lands perfectly [hn-44426206] [hn-44425960].\n- The scenario is a house of improbable longshots: if 'great' AI research agents miss late 2025, everything shifts back, and even granting eight independent 5% steps the joint probability is about 4×10⁻¹¹ [resp-44064504]. Agent-2 through Agent-4 arrive without causal mechanism, by 'neuralese recurrence' and synthetic data that only works where answers can be verified, such as math and code [resp-44064504]. The authors' own appendix shows only one of three forecasters even 50% confident in superhuman coding by 2027, with tails past 2050 [resp-44064504].\n- The one serious audit of the timelines code, by a computational physicist, concludes it is 'pretty bad': not a dispute over parameters but a model structure that is highly questionable, barely validated, and in places misrepresented by its own write-up [resp-44358829]. Concretely, the 'superexponential' curve (each doubling 10% faster) is not a fitted law but an arbitrary choice that hits infinity at a fixed time set only by the initial doubling time and the 10% rate, independent of the starting horizon and the threshold; started at 15 nanoseconds instead of 15 minutes, the simulation still puts superhuman coders around 2035 [resp-44358829]. That 10% rate, among the most influential parameters, and the starting horizon were given no uncertainty at all, and one of the stated arguments for superexponentiality (the shrinking gap between internal and public releases) actually implies slower growth [resp-44358829].\n- The five appendices of 'detailed research' and the 'hundreds' of reviewers are what let a short story be treated as a serious forecast [resp-44358829] [hn-44372538] [hn-44372058]. Yet the model is essentially curve-fitting a single metric, with no separate variables for compute, money or algorithms; it encodes nothing beyond 'the curve goes up' [resp-44424996] [hn-44370840] [hn-44361602]. One reviewer offers the niece who will outweigh the moon in fifty years as a reproducible counterexample [hn-44360787], and going from 10-minute tasks to 5-year tasks is not the same kind of step as 30 seconds to 10 minutes [hn-44359525].\n- Formal math lends made-up numbers credibility they would not have as intuitions; simulation earns its keep only when the underlying rules are well understood, which is not the case here [resp-44424996] [hn-44425654] [hn-44426634] [hn-44360317].\n- The claims are hedged in both directions: 'roughly our median guess' on the website, 'an 80th percentile fast scenario' in follow-ups, which makes the work unfalsifiable; by the auditor's account none of the authors actually holds 2027 as their median year [resp-44358829] [hn-43577447] [hn-43577767] [hn-44065615] [hn-44066207]. Having toured podcasts with a headline that says WILL, answering a physicist's critique with 'it's an informed guess' is not acceptable [hn-44372002].\n- The track-record argument is weaker than claimed: the authors' 2021 forecast missed on persuasion and propaganda [hn-43575079], the intelligence-explosion story generalizes from fictional evidence while observed scaling laws show diminishing returns [hn-43581002], and no observable economic predictions such as GDP growth are offered [hn-44066335].",
+      "questions": "1. Why each-doubling-10%-faster rather than any other superexponential form, and why was that rate given no uncertainty when it moves the date more than almost anything else?\n2. Why does the model predict superhuman coders by the mid-2030s even when started from a 15-nanosecond horizon, and what does that say about how much the METR data constrains the result?\n3. Where the methodology write-up and the simulation code disagree, which one is the forecast? Will you correct the write-up?\n4. Is the 2027 scenario your median or an 80th-percentile fast case? Why does the website not say so?\n5. What probability do you assign to each conjunctive step (reliable research agents by late 2025, online learning, neuralese, drives), and what is their product?\n6. Will you commit to falsifiable intermediate predictions, for example a bound on US real GDP growth through 2030?",
+      "soundness": 1,
+      "presentation": 3,
+      "contribution": 2,
+      "rating": 3,
+      "confidence": 4,
+      "hype_index": 5,
+      "flag_for_ethics_review": false,
+      "reviewer": 1,
+      "cluster": {
+        "label": "Shoddy model, hedged claims",
+        "summary": "The quantitative backbone is curve-fitting with made-up parameters, and the narrative does the persuading while the math lends it borrowed authority. A code-level audit by a computational physicist finds the superexponential curve blows up to infinity at a fixed date regardless of the starting point, its most important parameter fixed at an unexplained 10% with no uncertainty, and the write-up at times misdescribing the code; a long essay adds that the scenario is a chain of improbable longshots with no causal mechanism behind each new agent. These critics also object to the authors presenting a 'median guess' on the website and then retreating to an '80th percentile fast scenario' once challenged.",
+        "stance": "negative",
+        "size": 29,
+        "total": 158,
+        "representative": [
+          {
+            "id": "resp-44358829",
+            "source": "Response post",
+            "author": "www.lesswrong.com",
+            "url": "https://www.lesswrong.com/posts/PAYfmG2aRbdb74mEp/a-deep-critique-of-ai-2027-s-bad-timeline-models",
+            "excerpt": "Link post Contents - Introduction: - Part 1: Time horizons extension model - Overview of their forecast - The “exponential” curve - The “superexponential” curve - Conceptual reasons: - Intermediate speedups - Have AI 2027 been sending out a false graph? - Some skepticism about pr…",
+            "engagement": 90
+          },
+          {
+            "id": "resp-44064504",
+            "source": "Response post",
+            "author": "Gary Marcus",
+            "url": "https://garymarcus.substack.com/p/the-ai-2027-scenario-how-realistic",
+            "excerpt": "Everybody’s talking about a scary and vivid manifesto called AI 2027; even Vice President Vance claims to have read it. No expense was spared, They have a website and a domain name and fancy graphs and big name authors. I read a little piece of it in draft; it’s undeniably vivid,…",
+            "engagement": 129
+          },
+          {
+            "id": "resp-44424996",
+            "source": "Response post",
+            "author": "dynomight",
+            "url": "https://dynomight.net/scribbles/",
+            "excerpt": "AI 2027 forecasts that AGI could plausibly arrive as early as 2027. I recently spent some time looking at both the timelines forecast and some critiques [1, 2, 3]. Initially, I was interested in technical issues. What’s the best super-exponential curve? How much probability shoul…",
+            "engagement": 55
+          },
+          {
+            "id": "hn-43577447",
+            "source": "Hacker News",
+            "author": "Aurornis",
+            "url": "https://news.ycombinator.com/item?id=43577447",
+            "excerpt": "> ACT post where Scott Alexander provides some additional info: https://www.astralcodexten.com/p/introducing-ai-2027 The pattern where Scott Alexander puts forth a huge claim and then immediately hedges it backward is becoming a tiresome theme. The linguistic equivalent of puttin…",
+            "engagement": 1
+          },
+          {
+            "id": "hn-44372002",
+            "source": "Hacker News",
+            "author": "old_man_cato",
+            "url": "https://news.ycombinator.com/item?id=44372002",
+            "excerpt": "Sometimes I feel like I'm losing my mind with this shit. Am I to understand that a bunch of \"experts\" created a model, they surrounded the findings of that model with a fancy website, replete with charts and diagrams, that website suggests the possibility of some doomsday scenari…",
+            "engagement": 4
+          },
+          {
+            "id": "hn-44360787",
+            "source": "Hacker News",
+            "author": "mlsu",
+            "url": "https://news.ycombinator.com/item?id=44360787",
+            "excerpt": "My niece weighed 3 kg one year ago. Now, she weighs 8.9 kg. By my modeling, she will weigh more than the moon in approximately 50 years. I've analyzed the errors in my model; regrettably, the conclusion is always the same: it will certainly happen within our lifetimes. Everyone n…",
+            "engagement": 3
+          }
+        ]
+      },
+      "citations": {
+        "resp-44064504": {
+          "id": "resp-44064504",
+          "source": "Response post",
+          "author": "Gary Marcus",
+          "url": "https://garymarcus.substack.com/p/the-ai-2027-scenario-how-realistic",
+          "excerpt": "Everybody’s talking about a scary and vivid manifesto called AI 2027; even Vice President Vance claims to have read it. No expense was spared, They have a website and a domain name and fancy graphs and big name authors. I read a little piece of it in draft; it’s undeniably vivid,…",
+          "engagement": 129
+        },
+        "resp-44424996": {
+          "id": "resp-44424996",
+          "source": "Response post",
+          "author": "dynomight",
+          "url": "https://dynomight.net/scribbles/",
+          "excerpt": "AI 2027 forecasts that AGI could plausibly arrive as early as 2027. I recently spent some time looking at both the timelines forecast and some critiques [1, 2, 3]. Initially, I was interested in technical issues. What’s the best super-exponential curve? How much probability shoul…",
+          "engagement": 55
+        },
+        "resp-44358829": {
+          "id": "resp-44358829",
+          "source": "Response post",
+          "author": "www.lesswrong.com",
+          "url": "https://www.lesswrong.com/posts/PAYfmG2aRbdb74mEp/a-deep-critique-of-ai-2027-s-bad-timeline-models",
+          "excerpt": "Link post Contents - Introduction: - Part 1: Time horizons extension model - Overview of their forecast - The “exponential” curve - The “superexponential” curve - Conceptual reasons: - Intermediate speedups - Have AI 2027 been sending out a false graph? - Some skepticism about pr…",
+          "engagement": 90
+        },
+        "hn-44359476": {
+          "id": "hn-44359476",
+          "source": "Hacker News",
+          "author": "LegionMammal978",
+          "url": "https://news.ycombinator.com/item?id=44359476",
+          "excerpt": "As far as I can tell, the author of the critique specifically avoids espousing a timeline of his own. Indeed, he dislikes how these sorts of timeline models are used in general: > I’m not against people making shoddy toy models, and I think they can be a useful intellectual exerc…",
+          "engagement": 1
+        },
+        "hn-44426206": {
+          "id": "hn-44426206",
+          "source": "Hacker News",
+          "author": "ben_w",
+          "url": "https://news.ycombinator.com/item?id=44426206",
+          "excerpt": "To me, 2027 looks like a case of writing the conclusion first and then trying to explain backwards how it happens. If everything goes \"perfectly\", then the logic works (to an extent, but the increasing rate of returns is a suspicious assumption baked into it). But everything must…",
+          "engagement": 1
+        },
+        "hn-44425960": {
+          "id": "hn-44425960",
+          "source": "Hacker News",
+          "author": "groby_b",
+          "url": "https://news.ycombinator.com/item?id=44425960",
+          "excerpt": "At least for me, the core criticism of AI 2027 was always that it was an extremely simplistic \"number go up, therefore AGI\", with some nice fiction-y words around it. The scribble model kind-of hints at what a better forecast would've done - you start from the scribbles and ask \"…",
+          "engagement": 1
+        },
+        "hn-44372538": {
+          "id": "hn-44372538",
+          "source": "Hacker News",
+          "author": "shaldengeki",
+          "url": "https://news.ycombinator.com/item?id=44372538",
+          "excerpt": "No, you're wrong. They wrote the story before coming up with the model! In fact the model and technical work has basically nothing to do with the short story, aka the part that everyone read. This is pointed out in the critique, where titotal notes that a graph widely disseminate…",
+          "engagement": 1
+        },
+        "hn-44372058": {
+          "id": "hn-44372058",
+          "source": "Hacker News",
+          "author": "refulgentis",
+          "url": "https://news.ycombinator.com/item?id=44372058",
+          "excerpt": "Correct. Entirely. And I'm yuge on LLMs. It is very much one of those things that makes me feel old and/or scared, because I don't believe this would have been swallowed as easily, say, 10 years ago. As neutrally as possible, I think everyone can agree: - There was a good but ver…",
+          "engagement": 0
+        },
+        "hn-44370840": {
+          "id": "hn-44370840",
+          "source": "Hacker News",
+          "author": "KaiserPro",
+          "url": "https://news.ycombinator.com/item?id=44370840",
+          "excerpt": "bangs head against the table. Look, fitting a single metric to a curve and projecting from that only gets you a \"model\" that conforms to your curve fitting. \"proper\" AI, where it starts to remove 10-15% of jobs will cause an economic blood bath. The current rate of AI expansion r…",
+          "engagement": 5
+        },
+        "hn-44361602": {
+          "id": "hn-44361602",
+          "source": "Hacker News",
+          "author": "stephc_int13",
+          "url": "https://news.ycombinator.com/item?id=44361602",
+          "excerpt": "The reality is that almost every curve looking like an exponential is a logistic curve (sigmoid) in disguise. If your model is relying on exponential (geometric growth) it is very likely wrong.",
+          "engagement": 1
+        },
+        "hn-44360787": {
+          "id": "hn-44360787",
+          "source": "Hacker News",
+          "author": "mlsu",
+          "url": "https://news.ycombinator.com/item?id=44360787",
+          "excerpt": "My niece weighed 3 kg one year ago. Now, she weighs 8.9 kg. By my modeling, she will weigh more than the moon in approximately 50 years. I've analyzed the errors in my model; regrettably, the conclusion is always the same: it will certainly happen within our lifetimes. Everyone n…",
+          "engagement": 3
+        },
+        "hn-44359525": {
+          "id": "hn-44359525",
+          "source": "Hacker News",
+          "author": "lubujackson",
+          "url": "https://news.ycombinator.com/item?id=44359525",
+          "excerpt": "These predictions seem wildly reductive in any case and it seems like extrapolating AI's ability to complete task that would take a human 30 seconds -> 10 minutes is far different than going from 10 minutes to 5 years. For one reason, a 5 year task generally requires much more in…",
+          "engagement": 1
+        },
+        "hn-44425654": {
+          "id": "hn-44425654",
+          "source": "Hacker News",
+          "author": "keeganpoppen",
+          "url": "https://news.ycombinator.com/item?id=44425654",
+          "excerpt": "this is actually quite brilliant. and articulates the value and utility of subjective forecasting-- something i too find somewhat underrated-- extremely clearly and convincingly. and same goes for the biases we have toward reducing things to a mathematical model and then treating…",
+          "engagement": 0
+        },
+        "hn-44426634": {
+          "id": "hn-44426634",
+          "source": "Hacker News",
+          "author": "matusp",
+          "url": "https://news.ycombinator.com/item?id=44426634",
+          "excerpt": "To be honest, I expected the punchline to be about how randomly drawing lines is the same nonsense as using simplistic mathematical modeling without considering the underlying phenomenon. But the punchline never came. Predicting AI is more or less impossible because we have no id…",
+          "engagement": 0
+        },
+        "hn-44360317": {
+          "id": "hn-44360317",
+          "source": "Hacker News",
+          "author": "sweezyjeezy",
+          "url": "https://news.ycombinator.com/item?id=44360317",
+          "excerpt": "I don't think the author of this article is making any strong prediction, in fact I think a lot of the article is a critique of whether such an extrapolation can be done meaningfully. Most of these models predict superhuman coders in the near term, within the next ten years. This…",
+          "engagement": 1
+        },
+        "hn-43577447": {
+          "id": "hn-43577447",
+          "source": "Hacker News",
+          "author": "Aurornis",
+          "url": "https://news.ycombinator.com/item?id=43577447",
+          "excerpt": "> ACT post where Scott Alexander provides some additional info: https://www.astralcodexten.com/p/introducing-ai-2027 The pattern where Scott Alexander puts forth a huge claim and then immediately hedges it backward is becoming a tiresome theme. The linguistic equivalent of puttin…",
+          "engagement": 1
+        },
+        "hn-43577767": {
+          "id": "hn-43577767",
+          "source": "Hacker News",
+          "author": "leonidasv",
+          "url": "https://news.ycombinator.com/item?id=43577767",
+          "excerpt": "> Do we really think things will move this fast? Sort of no - between the beginning of the project last summer and the present, Daniel’s median for the intelligence explosion shifted from 2027 to 2028. We keep the scenario centered around 2027 because it’s still his modal predict…",
+          "engagement": 0
+        },
+        "hn-44065615": {
+          "id": "hn-44065615",
+          "source": "Hacker News",
+          "author": "Aurornis",
+          "url": "https://news.ycombinator.com/item?id=44065615",
+          "excerpt": "Some useful context from Scott Alexander's blog reveals that the authors don't actually believe the 2027 target: > Do we really think things will move this fast? Sort of no - between the beginning of the project last summer and the present, Daniel’s median for the intelligence ex…",
+          "engagement": 7
+        },
+        "hn-44066207": {
+          "id": "hn-44066207",
+          "source": "Hacker News",
+          "author": "magicalist",
+          "url": "https://news.ycombinator.com/item?id=44066207",
+          "excerpt": "> They went from \"this represents roughly our median guess\" in the website to \"maybe think of it as an 80th percentile version of the fast scenario that we don't feel safe ruling out\" in followup discussions. His post also just reads like they think they're Hari Seldon (oh Daniel…",
+          "engagement": 3
+        },
+        "hn-44372002": {
+          "id": "hn-44372002",
+          "source": "Hacker News",
+          "author": "old_man_cato",
+          "url": "https://news.ycombinator.com/item?id=44372002",
+          "excerpt": "Sometimes I feel like I'm losing my mind with this shit. Am I to understand that a bunch of \"experts\" created a model, they surrounded the findings of that model with a fancy website, replete with charts and diagrams, that website suggests the possibility of some doomsday scenari…",
+          "engagement": 4
+        },
+        "hn-43575079": {
+          "id": "hn-43575079",
+          "source": "Hacker News",
+          "author": "samth",
+          "url": "https://news.ycombinator.com/item?id=43575079",
+          "excerpt": "I think it's not holding up that well outside of predictions about AI research itself. In particular, he makes a lot of predictions about AI impact on persuasion, propaganda, the information environment, etc that have not happened.",
+          "engagement": 3
+        },
+        "hn-43581002": {
+          "id": "hn-43581002",
+          "source": "Hacker News",
+          "author": "fmap",
+          "url": "https://news.ycombinator.com/item?id=43581002",
+          "excerpt": "> even if this doesn’t lead to AGI, at the very least it’s likely the final “warning shot” we’ll get before it’s suddenly and irreversibly here. I agree that it's good science fiction, but this is still taking it too seriously. All of these \"projections\" are generalizing from fic…",
+          "engagement": 6
+        },
+        "hn-44066335": {
+          "id": "hn-44066335",
+          "source": "Hacker News",
+          "author": "jmccambridge",
+          "url": "https://news.ycombinator.com/item?id=44066335",
+          "excerpt": "I found the lack of GDP projections surprising, because they are readily observable and would offer a clear measure of economic impact (up until 'everything dies') - far more definitively than the one clear-cut economic measure that is given in the report: market cap for the lead…",
+          "engagement": 1
+        }
+      },
+      "date": "2026-11-03T16:47:17.874Z"
+    },
+    {
+      "summary": "The submission claims that AI agents will become superhuman coders by early 2027 and automate AI research, triggering an intelligence explosion, a US-China race and, in one ending, human extinction by the 2030s. It presents this as a median forecast grounded in trend extrapolation and the authors' insider experience.",
+      "strengths": "- The scenario is thorough and makes for good, sometimes darkly funny, science fiction [hn-43572505] [hn-49648778].\n- The early sections are reasonable; the problems begin once the timeline accelerates [hn-43572505] [hn-49648706].",
+      "weaknesses": "- The timelines are hilariously over-optimistic; by the same logic we would get a Mars colony, immortality drugs and Half-Life 3 on schedule [hn-43572994] [hn-43576530] [hn-43573205]. Current models are still next-token predictors that fail at long-horizon tasks the way they did in 2023, with no sign of a runaway [hn-43585338] [hn-49649145].\n- The scenario assumes progress is a function of compute alone, but training data is exhausted and validation can only be automated in math and code [hn-43583532] [hn-44064830] [hn-43586749]; it is unclear what happens if the 10^28 FLOP run simply brings no big gains [hn-43586030], or how LLMs make research breakthroughs they have never shown [hn-43575221] [hn-45656872].\n- Physical and institutional reality is ignored: insect drones by 2029 [hn-49648601], a 2030 robot takeover with no supply chain, energy or Moravec's paradox [hn-49648778], drug trials that take years [hn-43576530], and a White House that behaves rationally [hn-43576739]. Escaping AIs need huge datacenters and can be unplugged [hn-44065730]. Commercial incentives are pulling labs toward consumer products, not internal R&D: six months on, only Anthropic is visibly betting on R&D speedup, and it is also the lab most likely to slow down [resp-45655361].\n- The economics are missing: mass unemployment destroys the consumer spending and credit that fund AI expansion [hn-44065122] [hn-43575908], and nothing suggests elites will pay for a luxurious UBI [hn-44065692]. The narrative is narrow and leaves out jobs, GDP and politics [hn-43583615].\n- The China storyline is biased: much of the risk argument hinges on China stealing weights rather than innovating [hn-43573072] [hn-49648876].\n- Anthropomorphized AI goals (temptation, self-preservation) are fiction about a gradient [hn-43576932] [hn-43587755].\n- The authors are not hands-on engineers and have incentives to amplify the hype [hn-43575419] [hn-43576248] [hn-45656169]; to some it reads as Singularitarian religion [hn-43572940] or snake oil [hn-49649348]. Even the forecasting firm that co-authored the timelines predicted superhuman coders three times later than the other authors, and within six months the authors' own medians had slipped to 2029 and roughly 2032 [resp-45655361]; eighteen months later, its predictions are said to have missed [bsky-3mz2obro47s2s].",
+      "questions": "1. What evidence supports AI systems contributing novel research, as opposed to implementation, before 2027?\n2. Where does training data beyond human level come from without embodiment or real-world experimentation?\n3. How are energy, chip supply, robotics and regulation modeled in the 2028-2030 industrial expansion?\n4. Why is a rogue AI not simply unplugged, given its dependence on a small number of datacenters?\n5. How does the scenario's economy keep financing AI expansion once mass unemployment sets in?",
+      "soundness": 1,
+      "presentation": 3,
+      "contribution": 2,
+      "rating": 1,
+      "confidence": 3,
+      "hype_index": 5,
+      "flag_for_ethics_review": false,
+      "reviewer": 2,
+      "cluster": {
+        "label": "Sci-fi that ignores the real world",
+        "summary": "The largest group of commenters read AI 2027 as science fiction: current LLMs are still next-token predictors that fail at long tasks, data is exhausted, and the scenario waves away physics, supply chains, clinical trials, politics and the economics of mass unemployment. Many also point to the authors' incentives and an industry-wide hype cycle.",
+        "stance": "negative",
+        "size": 63,
+        "total": 158,
+        "representative": [
+          {
+            "id": "hn-43585338",
+            "source": "Hacker News",
+            "author": "Vegenoid",
+            "url": "https://news.ycombinator.com/item?id=43585338",
+            "excerpt": "I think we've actually had capable AIs for long enough now to see that this kind of exponential advance to AGI in 2 years is extremely unlikely. The AI we have today isn't radically different from the AI we had in 2023. They are much better at the thing they are good at, and ther…",
+            "engagement": 9
+          },
+          {
+            "id": "hn-43572994",
+            "source": "Hacker News",
+            "author": "IshKebab",
+            "url": "https://news.ycombinator.com/item?id=43572994",
+            "excerpt": "This is hilariously over-optimistic on the timescales. Like on this timeline we'll have a Mars colony in 10 years, immortality drugs in 15 and Half Life 3 in 20.",
+            "engagement": 8
+          },
+          {
+            "id": "hn-43583532",
+            "source": "Hacker News",
+            "author": "visarga",
+            "url": "https://news.ycombinator.com/item?id=43583532",
+            "excerpt": "The story is entertaining, but it has a big fallacy - progress is not a function of compute or model size alone. This kind of mistake is almost magical thinking. What matters most is the training set. During the GPT-3 era there was plenty of organic text to scale into, and comput…",
+            "engagement": 6
+          },
+          {
+            "id": "hn-44065730",
+            "source": "Hacker News",
+            "author": "mattlondon",
+            "url": "https://news.ycombinator.com/item?id=44065730",
+            "excerpt": "I think the big thing that people never mention is, where will these evil AIs escape to? Another huge data center with squillions of GPUs and coolers and all the rest is the only option. It's not like it is going to be in our TV remotes or floating about in the air. They need hug…",
+            "engagement": 15
+          },
+          {
+            "id": "hn-49648778",
+            "source": "Hacker News",
+            "author": "waffletower",
+            "url": "https://news.ycombinator.com/item?id=49648778",
+            "excerpt": "Fun to read this again and see actual parallels. The 2030 Takeover section is such a ludicrous leap, however. None of the supply chain infrastructure, energy, or Moravec's Paradox realities are ever addressed. Turn the page and suddenly humanity is largely annihilated with a Corg…",
+            "engagement": 0
+          },
+          {
+            "id": "resp-45655361",
+            "source": "Response post",
+            "author": "Dan Schwarz",
+            "url": "https://futuresearch.ai/ai-2027-6-months-later/",
+            "excerpt": "> Andrej Karpathy: \"There's some over-prediction going on in the industry...\" Dwarkesh Patel: \"What do you think will take a decade to accomplish? What are the bottlenecks?\" Andrej Karpathy: \"Actually making it work.\" —Dwarkesh Podcast, Oct 17, 2025 6 months ago, in April 2025, D…",
+            "engagement": 38
+          }
+        ]
+      },
+      "citations": {
+        "hn-43572505": {
+          "id": "hn-43572505",
+          "source": "Hacker News",
+          "author": "ikerino",
+          "url": "https://news.ycombinator.com/item?id=43572505",
+          "excerpt": "Feels reasonable in the first few paragraphs, then quickly starts reading like science fiction. Would love to read a perspective examining \"what is the slowest reasonable pace of development we could expect.\" This feels to me like the fastest (unreasonable) trajectory we could ex…",
+          "engagement": 5
+        },
+        "hn-49648778": {
+          "id": "hn-49648778",
+          "source": "Hacker News",
+          "author": "waffletower",
+          "url": "https://news.ycombinator.com/item?id=49648778",
+          "excerpt": "Fun to read this again and see actual parallels. The 2030 Takeover section is such a ludicrous leap, however. None of the supply chain infrastructure, energy, or Moravec's Paradox realities are ever addressed. Turn the page and suddenly humanity is largely annihilated with a Corg…",
+          "engagement": 0
+        },
+        "hn-49648706": {
+          "id": "hn-49648706",
+          "source": "Hacker News",
+          "author": "api",
+          "url": "https://news.ycombinator.com/item?id=49648706",
+          "excerpt": "Interesting but it degenerates into sci-fi tropes if you look at the extrapolations. Reminds me of 90s writing about what the Internet was going to do. The Internet ended up being both more incredible and more mundane than predicted.",
+          "engagement": 0
+        },
+        "hn-43572994": {
+          "id": "hn-43572994",
+          "source": "Hacker News",
+          "author": "IshKebab",
+          "url": "https://news.ycombinator.com/item?id=43572994",
+          "excerpt": "This is hilariously over-optimistic on the timescales. Like on this timeline we'll have a Mars colony in 10 years, immortality drugs in 15 and Half Life 3 in 20.",
+          "engagement": 8
+        },
+        "hn-43576530": {
+          "id": "hn-43576530",
+          "source": "Hacker News",
+          "author": "danpalmer",
+          "url": "https://news.ycombinator.com/item?id=43576530",
+          "excerpt": "These timelines always assume that things progress as quickly as they can be conceived of, likely because these timelines come from \"Ideas Guys\" whose involvement typically ends at that point. Orbital mechanics begs to disagree about a Mars colony in 10 years. Drug discovery has …",
+          "engagement": 2
+        },
+        "hn-43573205": {
+          "id": "hn-43573205",
+          "source": "Hacker News",
+          "author": "mchusma",
+          "url": "https://news.ycombinator.com/item?id=43573205",
+          "excerpt": "I like that the \"slowdown\" scenario has by 2030 we have a robot economy, cure for aging, brain uploading, and are working on a Dyson Sphere.",
+          "engagement": 2
+        },
+        "hn-43585338": {
+          "id": "hn-43585338",
+          "source": "Hacker News",
+          "author": "Vegenoid",
+          "url": "https://news.ycombinator.com/item?id=43585338",
+          "excerpt": "I think we've actually had capable AIs for long enough now to see that this kind of exponential advance to AGI in 2 years is extremely unlikely. The AI we have today isn't radically different from the AI we had in 2023. They are much better at the thing they are good at, and ther…",
+          "engagement": 9
+        },
+        "hn-49649145": {
+          "id": "hn-49649145",
+          "source": "Hacker News",
+          "author": "alephnerd",
+          "url": "https://news.ycombinator.com/item?id=49649145",
+          "excerpt": "I am an AI booster and have visibility into a number of these models, and this is ridiculous. They underestimate AI's existing impact on some job markers and overestimate it's impact in such short a timeframe.",
+          "engagement": 0
+        },
+        "hn-43583532": {
+          "id": "hn-43583532",
+          "source": "Hacker News",
+          "author": "visarga",
+          "url": "https://news.ycombinator.com/item?id=43583532",
+          "excerpt": "The story is entertaining, but it has a big fallacy - progress is not a function of compute or model size alone. This kind of mistake is almost magical thinking. What matters most is the training set. During the GPT-3 era there was plenty of organic text to scale into, and comput…",
+          "engagement": 6
+        },
+        "hn-44064830": {
+          "id": "hn-44064830",
+          "source": "Hacker News",
+          "author": "api",
+          "url": "https://news.ycombinator.com/item?id=44064830",
+          "excerpt": "I'm skeptical. Where will the training data to go beyond human come from? Humans got to where they are from being embedded in the world. All of biological evolution from archaebacteria to humans was required to get to human. To go beyond human... how? How, without being embodied …",
+          "engagement": 8
+        },
+        "hn-43586749": {
+          "id": "hn-43586749",
+          "source": "Hacker News",
+          "author": "jenny91",
+          "url": "https://news.ycombinator.com/item?id=43586749",
+          "excerpt": "Late 2025, \"its PhD-level knowledge of every field\". I just don't think you're going to get there. There is still a fundamental limitation that you can only be as good as the sources you train on. \"PhD-level\" is not included in this dataset: in other words, you don't become PhD-l…",
+          "engagement": 1
+        },
+        "hn-43586030": {
+          "id": "hn-43586030",
+          "source": "Hacker News",
+          "author": "dcanelhas",
+          "url": "https://news.ycombinator.com/item?id=43586030",
+          "excerpt": "> Once the new datacenters are up and running, they’ll be able to train a model with 10^28 FLOP—a thousand times more than GPT-4. Is there some theoretical substance or empirical evidence to suggest that the story doesn't just end here? Perhaps OpenBrain sees no significant gains…",
+          "engagement": 1
+        },
+        "hn-43575221": {
+          "id": "hn-43575221",
+          "source": "Hacker News",
+          "author": "nmilo",
+          "url": "https://news.ycombinator.com/item?id=43575221",
+          "excerpt": "The whole thing hinges on the fact that AI will be able to help with AI research How will it come up with the theoretical breakthroughs necessary to beat the scaling problem GPT-4.5 revealed when it hasn't been proven that LLMs can come up with novel research in any field at all?",
+          "engagement": 1
+        },
+        "hn-45656872": {
+          "id": "hn-45656872",
+          "source": "Hacker News",
+          "author": "HarHarVeryFunny",
+          "url": "https://news.ycombinator.com/item?id=45656872",
+          "excerpt": "The whole thesis that AGI will come about through advances in coding agents makes zero sense. This isn't a coding problem - it's first a matter of defining the goal (\"AGI\" means nothing), then considering architectures and learning algorithms, etc, capable of achieving it. What's…",
+          "engagement": 0
+        },
+        "hn-49648601": {
+          "id": "hn-49648601",
+          "source": "Hacker News",
+          "author": "AlexErrant",
+          "url": "https://news.ycombinator.com/item?id=49648601",
+          "excerpt": "My main issue with this timeline is that AI still has trouble transitioning to the real world. It predicts for 2029: > There are swarms of insect-sized drones that can poison human infantry before they are even noticed; flocks of bird-sized drones to hunt the insects; new ICBM in…",
+          "engagement": 4
+        },
+        "hn-43576739": {
+          "id": "hn-43576739",
+          "source": "Hacker News",
+          "author": "ks2048",
+          "url": "https://news.ycombinator.com/item?id=43576739",
+          "excerpt": "We know this complete fiction because of parts where \"the White House considers x,y,z...\", etc. - As if the White House in 2027 will be some rational actor reacting sanely to events in the real world.",
+          "engagement": 0
+        },
+        "hn-44065730": {
+          "id": "hn-44065730",
+          "source": "Hacker News",
+          "author": "mattlondon",
+          "url": "https://news.ycombinator.com/item?id=44065730",
+          "excerpt": "I think the big thing that people never mention is, where will these evil AIs escape to? Another huge data center with squillions of GPUs and coolers and all the rest is the only option. It's not like it is going to be in our TV remotes or floating about in the air. They need hug…",
+          "engagement": 15
+        },
+        "resp-45655361": {
+          "id": "resp-45655361",
+          "source": "Response post",
+          "author": "Dan Schwarz",
+          "url": "https://futuresearch.ai/ai-2027-6-months-later/",
+          "excerpt": "> Andrej Karpathy: \"There's some over-prediction going on in the industry...\" Dwarkesh Patel: \"What do you think will take a decade to accomplish? What are the bottlenecks?\" Andrej Karpathy: \"Actually making it work.\" —Dwarkesh Podcast, Oct 17, 2025 6 months ago, in April 2025, D…",
+          "engagement": 38
+        },
+        "hn-44065122": {
+          "id": "hn-44065122",
+          "source": "Hacker News",
+          "author": "KaiserPro",
+          "url": "https://news.ycombinator.com/item?id=44065122",
+          "excerpt": "Its a shame that your standard futurologist always the most fancyful. Talks of exponentials unabated by physics or social problems. As soon as AI starts to \"properly\" affect the economy, it will cause huge unemployment. Most of the financial world is based on an economy with peop…",
+          "engagement": 9
+        },
+        "hn-43575908": {
+          "id": "hn-43575908",
+          "source": "Hacker News",
+          "author": "KaiserPro",
+          "url": "https://news.ycombinator.com/item?id=43575908",
+          "excerpt": "> AI has started to take jobs, but has also created new ones. Yeah nah, theres a key thing missing here, the number of jobs created needs to be more than the ones it's destroyed, and they need to be better paying and happen in time. History says that actually when this happens, a…",
+          "engagement": 6
+        },
+        "hn-44065692": {
+          "id": "hn-44065692",
+          "source": "Hacker News",
+          "author": "kokanee",
+          "url": "https://news.ycombinator.com/item?id=44065692",
+          "excerpt": "> Everyone else either performs a charade of doing their job—leaders still leading, managers still managing—or relaxes and collects an incredibly luxurious universal basic income. For me, this was the most difficult part to believe. I don't see any reason to think that the U.S. l…",
+          "engagement": 1
+        },
+        "hn-43583615": {
+          "id": "hn-43583615",
+          "source": "Hacker News",
+          "author": "throw310822",
+          "url": "https://news.ycombinator.com/item?id=43583615",
+          "excerpt": "My issue with this is that it's focused on one single, very detailed narrative (the battle between China and the US, played on a timeframe of mere months), while lacking any interesting discussion of other consequences of AI: what its impact is going to be on the job markets, emp…",
+          "engagement": 0
+        },
+        "hn-43573072": {
+          "id": "hn-43573072",
+          "source": "Hacker News",
+          "author": "porphyra",
+          "url": "https://news.ycombinator.com/item?id=43573072",
+          "excerpt": "Seems very sinophobic. Deepseek and Manus have shown that China is legitimately an innovation powerhouse in AI but this article makes it sound like they will just keep falling behind without stealing.",
+          "engagement": 8
+        },
+        "hn-49648876": {
+          "id": "hn-49648876",
+          "source": "Hacker News",
+          "author": "mcbuilder",
+          "url": "https://news.ycombinator.com/item?id=49648876",
+          "excerpt": "One of the most biased claims IMO in AI 2027 is that a huge portion of the geopolitical and existential risk argument is hinged on the notion that China just steals the US frontier weights.",
+          "engagement": 3
+        },
+        "hn-43576932": {
+          "id": "hn-43576932",
+          "source": "Hacker News",
+          "author": "ryankrage77",
+          "url": "https://news.ycombinator.com/item?id=43576932",
+          "excerpt": "> \"resist the temptation to get better ratings from gullible humans by hallucinating citations or faking task completion\" Everything this from this point on is pure fiction. An LLM can't get tempted or resist temptations, at best there's some local minimum in a gradient that it f…",
+          "engagement": 1
+        },
+        "hn-43587755": {
+          "id": "hn-43587755",
+          "source": "Hacker News",
+          "author": "JoeAltmaier",
+          "url": "https://news.ycombinator.com/item?id=43587755",
+          "excerpt": "Weirdly written as science fiction, including a deplorable tendency to measure an AI's goals as similar to humans. Like, the sense of preserving itself. What self? Which of the tens of thousands of instances? Aren't they more a threat to one another than any human is a threat to …",
+          "engagement": 0
+        },
+        "hn-43575419": {
+          "id": "hn-43575419",
+          "source": "Hacker News",
+          "author": "superconduct123",
+          "url": "https://news.ycombinator.com/item?id=43575419",
+          "excerpt": "Why are the biggest AI predictions always made by people who aren't deep in the tech side of it? Or actually trying to use the models day-to-day...",
+          "engagement": 8
+        },
+        "hn-43576248": {
+          "id": "hn-43576248",
+          "source": "Hacker News",
+          "author": "pinetone",
+          "url": "https://news.ycombinator.com/item?id=43576248",
+          "excerpt": "I think it's worth noting that all of the authors have financial or professional incentive to accelerate the AI hype bandwagon as much as possible.",
+          "engagement": 1
+        },
+        "hn-45656169": {
+          "id": "hn-45656169",
+          "source": "Hacker News",
+          "author": "runako",
+          "url": "https://news.ycombinator.com/item?id=45656169",
+          "excerpt": "I hate to lean on credentialism and experience, I really do. But is Karpathy the only one of these who is a) an engineer and also b) over the age of 30? Why are these relevant? Engineer, because we are talking about a set of technologies that are engineering projects. There is no…",
+          "engagement": 1
+        },
+        "hn-43572940": {
+          "id": "hn-43572940",
+          "source": "Hacker News",
+          "author": "throwawaylolllm",
+          "url": "https://news.ycombinator.com/item?id=43572940",
+          "excerpt": "It's my belief (and I'm far from the only person who thinks this) that many AI optimists are motivated by an essentially religious belief that you could call Singularitarianism. So \"wishful thinking\" would be one answer. This document would then be the rough equivalent of a Chris…",
+          "engagement": 5
+        },
+        "hn-49649348": {
+          "id": "hn-49649348",
+          "source": "Hacker News",
+          "author": "heyts",
+          "url": "https://news.ycombinator.com/item?id=49649348",
+          "excerpt": "I'm probably going to be downvoted for this, but this makes this whole industry look like a bunch of snake oil salesmen and charlatans.",
+          "engagement": 0
+        },
+        "bsky-3mz2obro47s2s": {
+          "id": "bsky-3mz2obro47s2s",
+          "source": "Bluesky",
+          "author": "grave rob (@broccolirob.gobirds.online)",
+          "url": "https://bsky.app/profile/broccolirob.gobirds.online/post/3mz2obro47s2s",
+          "excerpt": "I remember when ai-2027.com, a bad piece of sci-fi written by “rationalists” huffing their own farts, was considered Serious Analysis. It’s managed to have its predictions for the past 18 months missed, but don’t worry: I’m sure we’re still only 6 months away from AGI somehow.",
+          "engagement": 2
+        }
+      },
+      "date": "2026-11-03T17:47:17.874Z"
+    },
+    {
+      "summary": "The submission is a detailed scenario of how superhuman AI could arrive by 2027, emphasizing automated AI research, a US-China race, and alignment failures that leave humanity either extinct or sidelined. It is offered as a concrete, falsifiable picture to provoke preparation rather than a recommendation.",
+      "strengths": "- It is one of the most chillingly thorough takeoff scenarios available, and even the 'good' slowdown ending raises the real question of what humans are for [hn-43577204] [hn-43580973].\n- Its value is as a warning shot: alignment, geopolitics and missing safeguards are real problems now, and the point is to provoke action while there is time [hn-43578594]. It reads like the policy wargames organizations write to prepare [hn-44065069].\n- The authors have a track record; the 2021 'What 2026 looks like' held up remarkably well before ChatGPT [hn-43572674] [hn-43572964] [hn-43573244].\n- The 'next-token predictor' objection is outdated: interpretability work shows planning ahead, and METR's long-task trend has no inflection yet [hn-43586381] [hn-43585830]. The authors do account for data exhaustion via test-time compute and RL [hn-43584778]. Some practitioners even find the timeline pessimistic [hn-43573189].\n- The China framing is defensible: it mirrors DeepSeek being impressive yet months behind, and argues to accelerationists that slowing down helps the US win [hn-43573549] [hn-43578610].\n- The 'pull the plug' rebuttal fails: a rogue AI would wait until it is integrated into critical infrastructure, or recruit humans to protect it [hn-44065890] [hn-44066290]. The headline critique differs from the authors by only a few years [hn-44359354].\n- The main timelines audit is granted to be excellent, but its demand to estimate a 'long-term trend' assumes there is a normal to revert to, which is exactly what an R&D feedback loop denies; its call for more parameter uncertainty is right but cuts both ways, toward faster as well as slower [resp-44370249]. A model breaking when started at implausibly short horizons only shows the superexponential effect should phase in once tasks are minutes long, and a model emitting nonsense at a singularity is a fitting failure mode [resp-44370249].\n- Shared probability estimates are useful for decisions now, and holding the work to the standard of a physics model before anyone may act on it misses that; the public critique-and-revise cycle is the peer review working, and most rival forecasts would fall apart faster under the same scrutiny [resp-44370249].",
+      "weaknesses": "- The timelines may be too optimistic even if the risks are real [hn-43580973] [hn-49649134]; the industrial expansion is too compressed for anyone to believe [hn-49649134].\n- Overly precise predictions hand critics an easy target and distract from the robust case for AI risk; Bostrom-style general arguments are more convincing [hn-44359573].\n- The slowdown ending centralizes power, which is in tension with preserving democracy [hn-43576065], and it underestimates how much the public will resist [hn-43578107].\n- Readers react to the narrative rather than to the research supplements, which the presentation does not steer them toward [hn-43577802].\n- Even sympathetic readers concede the audit landed real hits: key parameters should have carried uncertainty, the nanosecond experiment shows something was wrong, and the internal-versus-public release argument points to slower, not faster, progress; the lead author has since moved his median to 2028 [resp-44370249].",
+      "questions": "1. How robust is the risk argument if the timeline slips to 2030 or 2035?\n2. Would a less precise scenario serve the safety case better than a dated one?\n3. Why does the slowdown ending accept concentrated power, and what decentralized alternatives were considered?\n4. How would large-scale public resistance change the race dynamics?\n5. If the superexponential effect should only kick in once tasks are minutes long, why was that not built into the model before release?",
+      "soundness": 2,
+      "presentation": 4,
+      "contribution": 3,
+      "rating": 6,
+      "confidence": 3,
+      "hype_index": 5,
+      "flag_for_ethics_review": false,
+      "reviewer": 3,
+      "cluster": {
+        "label": "A warning worth heeding",
+        "summary": "A smaller group takes the scenario seriously as a warning: the timelines may be too fast, but alignment, the US-China race and loss of human relevance are real problems. They point to the authors' earlier forecast holding up and to METR's long-task trend, and answer the main timelines audit point by point: its demand for a 'long-term trend' assumes away the acceleration being modeled, its uncertainty cuts both ways, and the critics' own timelines differ by only a few years.",
+        "stance": "mixed",
+        "size": 34,
+        "total": 158,
+        "representative": [
+          {
+            "id": "hn-43578594",
+            "source": "Hacker News",
+            "author": "stego-tech",
+            "url": "https://news.ycombinator.com/item?id=43578594",
+            "excerpt": "It’s good science fiction, I’ll give it that. I think getting lost in the weeds over technicalities ignores the crux of the narrative: even if this doesn’t lead to AGI, at the very least it’s likely the final “warning shot” we’ll get before it’s suddenly and irreversibly here. Th…",
+            "engagement": 10
+          },
+          {
+            "id": "hn-43577204",
+            "source": "Hacker News",
+            "author": "ivraatiems",
+            "url": "https://news.ycombinator.com/item?id=43577204",
+            "excerpt": "Though I think it is probably mostly science-fiction, this is one of the more chillingly thorough descriptions of potential AGI takeoff scenarios that I've seen. I think part of the problem is that the world you get if you go with the \"Slowdown\"/somewhat more aligned world is sti…",
+            "engagement": 8
+          },
+          {
+            "id": "hn-43572674",
+            "source": "Hacker News",
+            "author": "beklein",
+            "url": "https://news.ycombinator.com/item?id=43572674",
+            "excerpt": "Older and related article from one of the authors titled \"What 2026 looks like\", that is holding up very well against time. Written in mid 2021 (pre ChatGPT) https://www.alignmentforum.org/posts/6Xgy6CAf2jqHhynHL/what-... //edit: remove the referral tags from URL",
+            "engagement": 9
+          },
+          {
+            "id": "resp-44370249",
+            "source": "Response post",
+            "author": "Zvi Mowshowitz",
+            "url": "https://thezvi.substack.com/p/analyzing-a-critique-of-the-ai-2027",
+            "excerpt": "There was what everyone agrees was a high quality critique of the timelines component of AI 2027, by the LessWrong user and Substack writer Titotal. It is great to have thoughtful critiques like this. The way you get actual thoughtful critiques like this, of course, is to post th…",
+            "engagement": 38
+          },
+          {
+            "id": "hn-43584778",
+            "source": "Hacker News",
+            "author": "tomp",
+            "url": "https://news.ycombinator.com/item?id=43584778",
+            "excerpt": "Did we read the same article? They clearly mention, take into account and extrapolate this; LLM have first scaled via data, now it's test time compute, but recent developments (R1) clearly show this is not exhausted yet (i.e. RL on synthetically (in-silico) generated CoT) which i…",
+            "engagement": 2
+          },
+          {
+            "id": "hn-43585830",
+            "source": "Hacker News",
+            "author": "benlivengood",
+            "url": "https://news.ycombinator.com/item?id=43585830",
+            "excerpt": "METR [0] explicitly measures the progress on long term tasks; it's as steep a sigmoid as the other progress at the moment with no inflection yet. As others have pointed out in other threads RLHF has progressed beyond next-token prediction and modern models are modeling concepts […",
+            "engagement": 2
+          }
+        ]
+      },
+      "citations": {
+        "hn-43577204": {
+          "id": "hn-43577204",
+          "source": "Hacker News",
+          "author": "ivraatiems",
+          "url": "https://news.ycombinator.com/item?id=43577204",
+          "excerpt": "Though I think it is probably mostly science-fiction, this is one of the more chillingly thorough descriptions of potential AGI takeoff scenarios that I've seen. I think part of the problem is that the world you get if you go with the \"Slowdown\"/somewhat more aligned world is sti…",
+          "engagement": 8
+        },
+        "hn-43580973": {
+          "id": "hn-43580973",
+          "source": "Hacker News",
+          "author": "I_Nidhi",
+          "url": "https://news.ycombinator.com/item?id=43580973",
+          "excerpt": "Though it's easy to dismiss as science fiction, this timeline paints a chillingly detailed picture of a potential AGI takeoff. The idea that AI could surpass human capabilities in research and development, and the fact that it will create an arms race between global powers, is un…",
+          "engagement": 0
+        },
+        "hn-43578594": {
+          "id": "hn-43578594",
+          "source": "Hacker News",
+          "author": "stego-tech",
+          "url": "https://news.ycombinator.com/item?id=43578594",
+          "excerpt": "It’s good science fiction, I’ll give it that. I think getting lost in the weeds over technicalities ignores the crux of the narrative: even if this doesn’t lead to AGI, at the very least it’s likely the final “warning shot” we’ll get before it’s suddenly and irreversibly here. Th…",
+          "engagement": 10
+        },
+        "hn-44065069": {
+          "id": "hn-44065069",
+          "source": "Hacker News",
+          "author": "kristopolous",
+          "url": "https://news.ycombinator.com/item?id=44065069",
+          "excerpt": "This looks like the exercises organizations write to guide policy and preparation. There's all kinds of wild scenarios: the president getting kidnapped, Canada falling to a belligerent dictator, and famously, a coronavirus pandemic... This looks like one of those Apparently this …",
+          "engagement": 1
+        },
+        "hn-43572674": {
+          "id": "hn-43572674",
+          "source": "Hacker News",
+          "author": "beklein",
+          "url": "https://news.ycombinator.com/item?id=43572674",
+          "excerpt": "Older and related article from one of the authors titled \"What 2026 looks like\", that is holding up very well against time. Written in mid 2021 (pre ChatGPT) https://www.alignmentforum.org/posts/6Xgy6CAf2jqHhynHL/what-... //edit: remove the referral tags from URL",
+          "engagement": 9
+        },
+        "hn-43572964": {
+          "id": "hn-43572964",
+          "source": "Hacker News",
+          "author": "motoxpro",
+          "url": "https://news.ycombinator.com/item?id=43572964",
+          "excerpt": "That's incredible how much it broadly aligns with what has happened. Especially because it was before ChatGPT.",
+          "engagement": 2
+        },
+        "hn-43573244": {
+          "id": "hn-43573244",
+          "source": "Hacker News",
+          "author": "Joshuatanderson",
+          "url": "https://news.ycombinator.com/item?id=43573244",
+          "excerpt": "This is extremely important. Scott Alexander's earlier predictions are holding up extremely well, at least on image progress.",
+          "engagement": 0
+        },
+        "hn-43586381": {
+          "id": "hn-43586381",
+          "source": "Hacker News",
+          "author": "jug",
+          "url": "https://news.ycombinator.com/item?id=43586381",
+          "excerpt": "> there are some new capabilities that are big, but they are still fundamentally next-token predictors Anthropic recently released research where they saw how when Claude attempted to compose poetry, it didn't simply predict token by token and \"react\" to when it thought it might …",
+          "engagement": 2
+        },
+        "hn-43585830": {
+          "id": "hn-43585830",
+          "source": "Hacker News",
+          "author": "benlivengood",
+          "url": "https://news.ycombinator.com/item?id=43585830",
+          "excerpt": "METR [0] explicitly measures the progress on long term tasks; it's as steep a sigmoid as the other progress at the moment with no inflection yet. As others have pointed out in other threads RLHF has progressed beyond next-token prediction and modern models are modeling concepts […",
+          "engagement": 2
+        },
+        "hn-43584778": {
+          "id": "hn-43584778",
+          "source": "Hacker News",
+          "author": "tomp",
+          "url": "https://news.ycombinator.com/item?id=43584778",
+          "excerpt": "Did we read the same article? They clearly mention, take into account and extrapolate this; LLM have first scaled via data, now it's test time compute, but recent developments (R1) clearly show this is not exhausted yet (i.e. RL on synthetically (in-silico) generated CoT) which i…",
+          "engagement": 2
+        },
+        "hn-43573189": {
+          "id": "hn-43573189",
+          "source": "Hacker News",
+          "author": "atemerev",
+          "url": "https://news.ycombinator.com/item?id=43573189",
+          "excerpt": "What is this, some OpenAI employee fan fiction? Did Sam himself write this? OpenAI models are not even SOTA, except that new-ish style transfer / illustration thing that made all us living in Ghibli world for a few days. R1 is _better_ than o1, and open-weights. GPT-4.5 is disapp…",
+          "engagement": 2
+        },
+        "hn-43573549": {
+          "id": "hn-43573549",
+          "source": "Hacker News",
+          "author": "MugaSofer",
+          "url": "https://news.ycombinator.com/item?id=43573549",
+          "excerpt": "That whole section seems to be pretty directly based on DeepSeek's \"very impressive work\" with R1 being simultaneously very impressive, and several months behind OpenAI. (They more or less say as much in footnote 36.) They blame this on US chip controls just barely holding China …",
+          "engagement": 1
+        },
+        "hn-43578610": {
+          "id": "hn-43578610",
+          "source": "Hacker News",
+          "author": "aoanevdus",
+          "url": "https://news.ycombinator.com/item?id=43578610",
+          "excerpt": "Don’t assume that because the article depicts this competition between the US and China, that the authors actually want China to fail. Consider the authors and the audience. The work is written by western AI safety proponents, who often need to argue with important people who say…",
+          "engagement": 0
+        },
+        "hn-44065890": {
+          "id": "hn-44065890",
+          "source": "Hacker News",
+          "author": "coffeemug",
+          "url": "https://news.ycombinator.com/item?id=44065890",
+          "excerpt": "It would not be a reversion to 2020. If I were a rogue superhuman AI I'd hide my rogueness, wait until humans integrate me into most critical industries (food and energy production, sanitation, electric grid, etc.), and _then_ go rogue. They could still pull the plug, but it woul…",
+          "engagement": 4
+        },
+        "hn-44066290": {
+          "id": "hn-44066290",
+          "source": "Hacker News",
+          "author": "raffael_de",
+          "url": "https://news.ycombinator.com/item?id=44066290",
+          "excerpt": "> They need huge compute, so I think the risk of an escaping AI is basically very close to zero, and if we have a \"rogue\" AI we can literally pull the plug. How about such an AI will not just incentivize key personnel to not pull the plug but to protect it? Such an AI will scheme…",
+          "engagement": 2
+        },
+        "hn-44359354": {
+          "id": "hn-44359354",
+          "source": "Hacker News",
+          "author": "yodon",
+          "url": "https://news.ycombinator.com/item?id=44359354",
+          "excerpt": "So... both authors predict superhuman intelligence, defined as AI that can complete tasks that would take humans hundreds of hours, to be a thing \"sometime in the next few years\", both authors predict \"probably not before 2027, but maybe\" and both authors predict \"probably not lo…",
+          "engagement": 5
+        },
+        "resp-44370249": {
+          "id": "resp-44370249",
+          "source": "Response post",
+          "author": "Zvi Mowshowitz",
+          "url": "https://thezvi.substack.com/p/analyzing-a-critique-of-the-ai-2027",
+          "excerpt": "There was what everyone agrees was a high quality critique of the timelines component of AI 2027, by the LessWrong user and Substack writer Titotal. It is great to have thoughtful critiques like this. The way you get actual thoughtful critiques like this, of course, is to post th…",
+          "engagement": 38
+        },
+        "hn-49649134": {
+          "id": "hn-49649134",
+          "source": "Hacker News",
+          "author": "pizza234",
+          "url": "https://news.ycombinator.com/item?id=49649134",
+          "excerpt": "> Does anyone really predict insect drones _in production_ 3 years from now The industrial expansion timelinen as described in AI 2027 is way too compressed; I don't think any AI doomer believes that. The dynamics are plausible though, even without China stealing the weights.",
+          "engagement": 2
+        },
+        "hn-44359573": {
+          "id": "hn-44359573",
+          "source": "Hacker News",
+          "author": "kypro",
+          "url": "https://news.ycombinator.com/item?id=44359573",
+          "excerpt": "As someone in the P(doom) > 90% category, I think in general making overly precise predictions are a really bad way to highlight AI risks (assuming that was the goal of AI 2027). Making predictions that are too specific just opens you up to pushback from people who are more inter…",
+          "engagement": 3
+        },
+        "hn-43576065": {
+          "id": "hn-43576065",
+          "source": "Hacker News",
+          "author": "kmeisthax",
+          "url": "https://news.ycombinator.com/item?id=43576065",
+          "excerpt": "> The agenda that gets the most resources is faithful chain of thought: force individual AI systems to “think in English” like the AIs of 2025, and don’t optimize the “thoughts” to look nice. The result is a new model, Safer-1. Oh hey, it's the errant thought I had in my head thi…",
+          "engagement": 0
+        },
+        "hn-43578107": {
+          "id": "hn-43578107",
+          "source": "Hacker News",
+          "author": "sivaragavan",
+          "url": "https://news.ycombinator.com/item?id=43578107",
+          "excerpt": "Thanks to the authors for doing this wonderful piece of work and sharing it with credibility. I wish people see the possibilities here. But we are after all humans. It is hard to imagine our own downfall. Based on each individual's vantage point, these events might looks closer o…",
+          "engagement": 0
+        },
+        "hn-43577802": {
+          "id": "hn-43577802",
+          "source": "Hacker News",
+          "author": "ddp26",
+          "url": "https://news.ycombinator.com/item?id=43577802",
+          "excerpt": "A lot of commenters here are reacting only to the narrative, and not the Research pieces linked at the top. There is some very careful thinking there, and I encourage people to engage with the arguments there rather than the stylized narrative derived from it.",
+          "engagement": 0
+        }
+      },
+      "date": "2026-11-03T18:47:17.874Z"
+    }
+  ],
+  "metaReview": {
+    "metareview": "**Summary.** The submission is a richly produced scenario in which superhuman coders arrive in early 2027, automated AI research triggers an intelligence explosion, China steals the weights, and humanity ends up either extinct or comfortably sidelined by a small committee. It claims to be backed by quantitative forecasts and calls itself the authors' median guess.\n\n**Reviews.** Reviewer 1 dissects the forecasting machinery, leaning on a long code-level audit by a computational physicist: a single metric fitted to a 'superexponential' curve that goes to infinity on a fixed date whatever the starting point, its key rate set at an unexplained 10% with no uncertainty, a methodology write-up that misdescribes its own code, and a headline 'median' that turned into an '80th percentile fast scenario' in follow-up posts. It adds that the story is a chain of conjunctive longshots, each new Agent arriving without a mechanism. Reviewer 2, representing the largest crowd, objects that the scenario ignores everything outside the datacenter: data limits, drug trials, supply chains, energy, unemployment and politics. It also notes that current models still fail at long tasks much as they did in 2023. Reviewer 3 defends the work as a warning shot. The risks are real, the authors' 2021 forecast aged well, long-task benchmarks keep climbing, and the audit, while excellent, assumes a long-term trend that the model exists to question.\n\n**Assessment.** The reviewers agree, unusually, on two things: the piece is vivid and well made, and the 2027 date is probably wrong. Even Reviewer 3 concedes the timelines are too fast and that over-precision gives critics an easy target. They disagree on whether that matters. I find Reviewer 1 decisive. A scenario can be speculative, but this one presents itself as a forecast, and its quantitative support does not hold up to the one detailed audit it received. That audit does not quibble with inputs: it shows the curve's shape is chosen rather than earned, so much so that a model started at fifteen nanoseconds still delivers superhuman coders within a decade. Reviewer 3's reply is the best in the pile, and fair on one point (uncertainty cuts both ways), but its main defense is that the model may legitimately break outside its regime, which concedes that the regime, not the data, is doing the work. Its own concessions (missing uncertainty, an argument that points the wrong way, a slipped median) leave the method in worse shape than the conclusion. Reviewer 1 itself grants the strongest pro-author point: a broken model does not stop the dots from rising. Fair, but then the paper's claim to rigour rests on the dots, and the dots do not say 2027. The switch between median and tail scenario makes the main claim hard to pin down. Reviewer 2's many objections are less precise, and some (\"just unplug it\") are well answered by Reviewer 3, but the point about real-world bottlenecks stands and the authors never address it. Reviewer 3 makes a fair case that the *risk* argument does not depend on the date, but that is an argument for a different paper, one the authors could have written without a countdown clock.\n\nAs a piece of speculative fiction that got a Vice President to read about alignment, it is a remarkable artifact. As a forecast, its claims outrun its evidence.",
+    "additional_comments_on_reviewer_discussion": "Most decisive: Reviewer 1's code-level audit showing the timelines model's structure is weakly justified, barely validated and partly misrepresented in its own write-up, together with the median-versus-80th-percentile hedging. Credit goes to the authors for publishing code that could be audited and for partially updating the model afterwards, but the update does not resolve most objections. Reviewer 2's bottleneck arguments (data, physical deployment, economics) were weighed seriously. Reviewer 3's rebuttals on planning, METR trends and the 'pull the plug' argument were persuasive against the weaker skeptics, and its point that the audit's 'long-term trend' framing presupposes no acceleration was noted. But it conceded the missing uncertainty and the backwards internal-release argument, and its 'the critic's dates differ by only a few years' reply concerns the conclusion, not the model. Its own concession that the timelines are probably too fast weighed against acceptance. Reviewer 2's remarks on the authors' motives were discounted.",
+    "decision": "Reject",
+    "decision_comment": "Excellent web design, an important topic and a gripping read, but the forecast does not support its headline date, and the date is the headline. The authors are encouraged to resubmit in 2029, which, by the lead author's updated median, is when it will be on time; a co-author suggests 2032 to be safe.",
+    "date": "2026-11-03T19:47:17.874Z",
+    "areaChairId": "XBbK"
+  }
+}

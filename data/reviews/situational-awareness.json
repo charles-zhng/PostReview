@@ -1,0 +1,560 @@
+{
+  "postId": "situational-awareness",
+  "generatedAt": "2026-11-03T19:47:17.898Z",
+  "models": {
+    "reviewer": "claude-opus-5-5 (hand-run in Claude Code)",
+    "areaChair": "claude-opus-5-5 (hand-run in Claude Code)"
+  },
+  "reactions": {
+    "total": 53,
+    "bySource": {
+      "Hacker News": 21,
+      "Bluesky": 32
+    },
+    "threads": [
+      {
+        "source": "Hacker News",
+        "title": "Situational Awareness: The Decade Ahead",
+        "url": "https://news.ycombinator.com/item?id=40576324",
+        "points": 81,
+        "comments": 50
+      }
+    ]
+  },
+  "reviews": [
+    {
+      "summary": "The submission 'counts the OOMs' from GPT-2 to GPT-4, claiming roughly half an order of magnitude a year each from compute and algorithmic efficiency plus 'unhobbling' gains, and extrapolates to AGI-level automated AI researchers by 2027. From there it predicts an intelligence explosion, trillion-dollar clusters and a government-run AGI project, presented as requiring nothing more than belief in straight lines on a graph.",
+      "strengths": "- The series is at least an extended, explicit statement of a worldview, and the author has made some solid points [bsky-3mwlj7jle6i2l]. Bold claims are his opinions and should not by themselves disqualify the work [hn-40576684].\n- It opens convincingly enough that the problems only surface on closer reading [hn-40578554].\n- It is candid about the bull case for compounding progress, which is worth stating even if overemphasized [hn-40577816].",
+      "weaknesses": "- The core method is extrapolation. Lines are straight over short spans and may not stay straight for twice that span [hn-40578397]. Assuming that 2018-2024 exponential growth continues ignores the more likely sigmoid, a point that separates decades in the field from a few years in it [hn-40581703].\n- The compute trend is bought, not discovered. Half an OOM per year means tripling compute annually, which here comes from spending more money every year; a ten-trillion-dollar cluster is implausible and a hundred-trillion-dollar one will never happen [hn-40578397]. The talk of trillion-dollar clusters is 'talk amongst the memesters' [hn-40576573].\n- The capability baseline is overstated. GPT-4 is not a 'smart high-schooler' [hn-40576573], there is no evidence offered of 'thinking' or 'reasoning' [hn-40576552] [hn-40576684], and a child learns to drive with a 20-watt brain and 20 hours of practice while AGI may elude all the data and electricity on earth [bsky-3kuqy72lvdq2k]. Some reject AGI outright [hn-40578034].\n- Details undermine the science: humans assumed to think at 100 tokens a minute, AlphaGo's move 37 cited without noting that AI dominance at Go was later broken even by non-grandmasters, and little on energy limits beyond burning more natural gas [hn-40578554]. Walls such as diminishing returns from 'weak' human teachers, the lack of economical online learning, and social backlash against job losses are not seriously discussed [hn-40577816].\n- The framing invites skepticism about the source. 'You can see the future in San Francisco', from a 25-year-old with 1.5 years at OpenAI [hn-40581675], and from an author who graduated at 19 [hn-40608096] [hn-40576821]; the claim that only a few hundred people understand what is coming lacks situational awareness of its own [bsky-3mwlj7jle6i2l]. The author also runs a hedge fund that bet on AI stocks around publication [bsky-3mlwbefw4x22s].\n- It reads to this group as TESCREAL eschatology relocated to dogfooded AI research [bsky-3l2n34m6yo62j], a 'Wizard of OOMs' [bsky-3ldoowpqnv22d], 165 pages that some suspect were machine-written [bsky-3mrxewdljxk23], and a gift to professional debunkers [bsky-3kuecskpim42a]. Unfounded claims like these risk eroding trust among investors, policymakers and the public [hn-40576573].",
+      "questions": "1. What evidence distinguishes the current trend from the early part of a sigmoid, and what observation would make you abandon the straight line?\n2. How much of the projected ~0.5 OOM/year compute growth is simply increased spending, and who funds the clusters after the trillion-dollar one?\n3. On what benchmark is GPT-4 a 'smart high-schooler', and how was that mapping made?\n4. Where does the energy for these clusters come from, beyond burning more natural gas?\n5. How should readers weigh the author's financial position in AI stocks when evaluating the timelines?",
+      "soundness": 1,
+      "presentation": 3,
+      "contribution": 2,
+      "rating": 3,
+      "confidence": 3,
+      "hype_index": 5,
+      "flag_for_ethics_review": false,
+      "reviewer": 1,
+      "cluster": {
+        "label": "Straight lines don't stay straight",
+        "summary": "This group thinks the essay is hype built on extrapolation. Compute growth comes from spending ever more money, exponentials tend to become sigmoids, and GPT-4 is no 'smart high-schooler'. Many also dismiss the author's youth, his San Francisco exceptionalism and his AI hedge fund, and expect the whole thing to be debunked.",
+        "stance": "negative",
+        "size": 18,
+        "total": 53,
+        "representative": [
+          {
+            "id": "hn-40576573",
+            "source": "Hacker News",
+            "author": "echelon",
+            "url": "https://news.ycombinator.com/item?id=40576573",
+            "excerpt": "> AGI by 2027 is strikingly plausible. GPT-2 to GPT-4 took us from ~preschooler to ~smart high-schooler abilities in 4 years. No it's not. GPT-4 is not a \"smart high-schooler\". This is so hype-y, it's ridiculous. > Over the past year, the talk of the town has shifted from $10 bil…",
+            "engagement": 3
+          },
+          {
+            "id": "hn-40578397",
+            "source": "Hacker News",
+            "author": "AnimalMuppet",
+            "url": "https://news.ycombinator.com/item?id=40578397",
+            "excerpt": "> Tracing trendlines in compute (~0.5 orders of magnitude or OOMs/year) 0.5 orders of magnitude is about a factor of 3. We're growing by a factor of 3 in compute every year? I find that rather hard to believe. Oh, echelon points out the quote: > Over the past year, the talk of th…",
+            "engagement": 2
+          },
+          {
+            "id": "hn-40578554",
+            "source": "Hacker News",
+            "author": "polotics",
+            "url": "https://news.ycombinator.com/item?id=40578554",
+            "excerpt": "This large piece of text starts kinda convincing but then there are nuggets, like I guess glitches in the matrix, that kind-of ruin the show. for example: \"\"\"There’s some assumptions that flow into the exact numbers, including that humans “think” at 100 tokens/minute (just a roug…",
+            "engagement": 1
+          },
+          {
+            "id": "hn-40581703",
+            "source": "Hacker News",
+            "author": "ml-anon",
+            "url": "https://news.ycombinator.com/item?id=40581703",
+            "excerpt": "It doesn’t start off convincing though. His premise is that since 2018-2024 follows exponential growth, 2024 onward will. Contrast with Yann’s oft repeated mantra that what looks like exponential growth is more likely the beginning of a sigmoid. That’s the difference between some…",
+            "engagement": 1
+          },
+          {
+            "id": "hn-40577816",
+            "source": "Hacker News",
+            "author": "zurfer",
+            "url": "https://news.ycombinator.com/item?id=40577816",
+            "excerpt": "I share the authors view that if things align and compound we are in for a very wild ride. However, I feel the bull case is over emphasized. Not all likely \"walls\" are sufficiently discussed, some that I think about: - will AI blow past human general intelligence or level off? (b…",
+            "engagement": 0
+          },
+          {
+            "id": "bsky-3kuqy72lvdq2k",
+            "source": "Bluesky",
+            "author": "Al Hemmingsen (@alhemmingsen.bsky.social)",
+            "url": "https://bsky.app/profile/alhemmingsen.bsky.social/post/3kuqy72lvdq2k",
+            "excerpt": "Using all the data on earth, all the electricity we make, and all the compute used in the history of earth's biology, that AGI may still elude us. But a child can be taught to drive with a 20w brain and 20 hours of practice. Maybe a statement on the existing methods... situationa…",
+            "engagement": 0
+          }
+        ]
+      },
+      "citations": {
+        "bsky-3mwlj7jle6i2l": {
+          "id": "bsky-3mwlj7jle6i2l",
+          "source": "Bluesky",
+          "author": "Eight Rice (@eightrice.bsky.social)",
+          "url": "https://bsky.app/profile/eightrice.bsky.social/post/3mwlj7jle6i2l",
+          "excerpt": "Sorry @leopoldasch, but you must be lacking some serious situational awareness to think that just a crowd of a few hundred in San Francisco understand what's coming. We are 8B inspired and smart people. You made some solid points otherwise https://situational-awareness.ai/",
+          "engagement": 0
+        },
+        "hn-40576684": {
+          "id": "hn-40576684",
+          "source": "Hacker News",
+          "author": "skilled",
+          "url": "https://news.ycombinator.com/item?id=40576684",
+          "excerpt": "There are quite a few bold claims just in the introductory chapter, but we should not discount the authors work because of it. Those are his opinions. I personally don’t think LLMs can achieve reasoning, or any kind of innate awareness.",
+          "engagement": 2
+        },
+        "hn-40578554": {
+          "id": "hn-40578554",
+          "source": "Hacker News",
+          "author": "polotics",
+          "url": "https://news.ycombinator.com/item?id=40578554",
+          "excerpt": "This large piece of text starts kinda convincing but then there are nuggets, like I guess glitches in the matrix, that kind-of ruin the show. for example: \"\"\"There’s some assumptions that flow into the exact numbers, including that humans “think” at 100 tokens/minute (just a roug…",
+          "engagement": 1
+        },
+        "hn-40577816": {
+          "id": "hn-40577816",
+          "source": "Hacker News",
+          "author": "zurfer",
+          "url": "https://news.ycombinator.com/item?id=40577816",
+          "excerpt": "I share the authors view that if things align and compound we are in for a very wild ride. However, I feel the bull case is over emphasized. Not all likely \"walls\" are sufficiently discussed, some that I think about: - will AI blow past human general intelligence or level off? (b…",
+          "engagement": 0
+        },
+        "hn-40578397": {
+          "id": "hn-40578397",
+          "source": "Hacker News",
+          "author": "AnimalMuppet",
+          "url": "https://news.ycombinator.com/item?id=40578397",
+          "excerpt": "> Tracing trendlines in compute (~0.5 orders of magnitude or OOMs/year) 0.5 orders of magnitude is about a factor of 3. We're growing by a factor of 3 in compute every year? I find that rather hard to believe. Oh, echelon points out the quote: > Over the past year, the talk of th…",
+          "engagement": 2
+        },
+        "hn-40581703": {
+          "id": "hn-40581703",
+          "source": "Hacker News",
+          "author": "ml-anon",
+          "url": "https://news.ycombinator.com/item?id=40581703",
+          "excerpt": "It doesn’t start off convincing though. His premise is that since 2018-2024 follows exponential growth, 2024 onward will. Contrast with Yann’s oft repeated mantra that what looks like exponential growth is more likely the beginning of a sigmoid. That’s the difference between some…",
+          "engagement": 1
+        },
+        "hn-40576573": {
+          "id": "hn-40576573",
+          "source": "Hacker News",
+          "author": "echelon",
+          "url": "https://news.ycombinator.com/item?id=40576573",
+          "excerpt": "> AGI by 2027 is strikingly plausible. GPT-2 to GPT-4 took us from ~preschooler to ~smart high-schooler abilities in 4 years. No it's not. GPT-4 is not a \"smart high-schooler\". This is so hype-y, it's ridiculous. > Over the past year, the talk of the town has shifted from $10 bil…",
+          "engagement": 3
+        },
+        "hn-40576552": {
+          "id": "hn-40576552",
+          "source": "Hacker News",
+          "author": "sandbags",
+          "url": "https://news.ycombinator.com/item?id=40576552",
+          "excerpt": "\"We are building machines that can think and reason.\" I'm looking for the evidence of \"thinking\" or \"reasoning\".",
+          "engagement": 0
+        },
+        "bsky-3kuqy72lvdq2k": {
+          "id": "bsky-3kuqy72lvdq2k",
+          "source": "Bluesky",
+          "author": "Al Hemmingsen (@alhemmingsen.bsky.social)",
+          "url": "https://bsky.app/profile/alhemmingsen.bsky.social/post/3kuqy72lvdq2k",
+          "excerpt": "Using all the data on earth, all the electricity we make, and all the compute used in the history of earth's biology, that AGI may still elude us. But a child can be taught to drive with a 20w brain and 20 hours of practice. Maybe a statement on the existing methods... situationa…",
+          "engagement": 0
+        },
+        "hn-40578034": {
+          "id": "hn-40578034",
+          "source": "Hacker News",
+          "author": "fabiofzero",
+          "url": "https://news.ycombinator.com/item?id=40578034",
+          "excerpt": "AGI won't happen, full stop.",
+          "engagement": 0
+        },
+        "hn-40581675": {
+          "id": "hn-40581675",
+          "source": "Hacker News",
+          "author": "ml-anon",
+          "url": "https://news.ycombinator.com/item?id=40581675",
+          "excerpt": "“You can see the future in San Francisco”, said unironically by a 25 year old who has worked at OpenAI for 1.5 years. It’s amazing how one can be so intelligent and yet sound so eyerollingly dumb at the same time.",
+          "engagement": 0
+        },
+        "hn-40608096": {
+          "id": "hn-40608096",
+          "source": "Hacker News",
+          "author": "gaws",
+          "url": "https://news.ycombinator.com/item?id=40608096",
+          "excerpt": "For context: The author was 19 years old when he graduated from Columbia University in 2021. He's about 22 now.",
+          "engagement": 0
+        },
+        "hn-40576821": {
+          "id": "hn-40576821",
+          "source": "Hacker News",
+          "author": "mayilian",
+          "url": "https://news.ycombinator.com/item?id=40576821",
+          "excerpt": "The author is yet a child. The hype inside him is normal.",
+          "engagement": 2
+        },
+        "bsky-3mlwbefw4x22s": {
+          "id": "bsky-3mlwbefw4x22s",
+          "source": "Bluesky",
+          "author": "Broc (@brocw.bsky.social)",
+          "url": "https://bsky.app/profile/brocw.bsky.social/post/3mlwbefw4x22s",
+          "excerpt": "Leopold Aschenbrenner, he wrote this situational-awareness.ai and has a Hedge Fund where he bet big on AI stocks around the time this essay came out.",
+          "engagement": 1
+        },
+        "bsky-3l2n34m6yo62j": {
+          "id": "bsky-3l2n34m6yo62j",
+          "source": "Bluesky",
+          "author": "someben (@someben.com)",
+          "url": "https://bsky.app/profile/someben.com/post/3l2n34m6yo62j",
+          "excerpt": "the Tescreal cult has moved onto the singularity being just in (dogfoody) AI research, and everything magical still happens. situational-awareness.ai",
+          "engagement": 0
+        },
+        "bsky-3ldoowpqnv22d": {
+          "id": "bsky-3ldoowpqnv22d",
+          "source": "Bluesky",
+          "author": "Dimitrios Nousias (@dnousias.bsky.social)",
+          "url": "https://bsky.app/profile/dnousias.bsky.social/post/3ldoowpqnv22d",
+          "excerpt": "The Wizard of OOMs: situational-awareness.ai",
+          "engagement": 0
+        },
+        "bsky-3mrxewdljxk23": {
+          "id": "bsky-3mrxewdljxk23",
+          "source": "Bluesky",
+          "author": "Lady Luddite (KJ Colt) (@moistenedtart.bsky.social)",
+          "url": "https://bsky.app/profile/moistenedtart.bsky.social/post/3mrxewdljxk23",
+          "excerpt": "What’s really interesting is this guy has an AI manifesto. But because it’s 165 pages and clearly AI written I don’t want to read it. situational-awareness.ai",
+          "engagement": 0
+        },
+        "bsky-3kuecskpim42a": {
+          "id": "bsky-3kuecskpim42a",
+          "source": "Bluesky",
+          "author": "Jeremy Diamond ☕️ (@dmnd.me)",
+          "url": "https://bsky.app/profile/dmnd.me/post/3kuecskpim42a",
+          "excerpt": "My god this is going to have @davidgerard.co.uk working overtime situational-awareness.ai",
+          "engagement": 1
+        }
+      },
+      "date": "2026-11-03T16:47:17.898Z"
+    },
+    {
+      "summary": "The submission argues from trends in compute, algorithmic efficiency and unhobbling that models capable of doing AI research are plausible by 2027, and that the resulting automation of AI research leads to superintelligence and then to automated R&D in robotics, industry and the military. It frames the coming decade as a national-security matter, consistent with what lab leaders now say publicly.",
+      "strengths": "- It is a thought-provoking read even if it approaches AI maximalism or science fiction [hn-40577466], and its writing is good enough to make a reader want to go beyond the introduction to the 165-page book rather than take potshots at snippets [hn-40576617]. Readers describe it as carefully reasoned and valuable for thinking about how to live through such a timeline, whether or not it comes true [bsky-3kvvttrmocf2v] [bsky-3ku6qrjhled2m].\n- Its chain of argument is clear: researcher-level models by 2027 automate AI research, which accelerates progress and spills into physical R&D [bsky-3kvvtyrhmyo2r]. It explains why the arrival of advanced AI may be inevitable, and what problems come with it [bsky-3mvo3elcvfc2w] [bsky-3mvo3ptkl522w].\n- The capability claims are less outlandish than critics suggest. GPT-4o can work through Feynman's lectures on electromagnetism with a reader, which few high-schoolers could do [hn-40582203], and producing an HTML button that looks like a watermelon is hard to explain without some form of reasoning [hn-40576912]. Objections that LLMs cannot reason also wrongly presume that AGI must be built from LLMs alone [hn-40587718].\n- The 'memesters' dismissed by critics invented and deployed the current systems, are training the next ones and are raising the money for the ones after, without needing public persuasion as Apollo or the Manhattan Project did [hn-40583604]. The author's views are common inside the labs, which see more than outsiders do [hn-40583652], and the CEOs of OpenAI and Anthropic have since pointed to roughly 2027 too [bsky-3lbdt2igo6223].\n- It raises the national-security dimension of an arms race, and the question of whether smaller countries are prepared for it [bsky-3lbdt2igo6223] [bsky-3lcfpc66w7c2p].",
+      "weaknesses": "- The essay edges into science fiction in places [hn-40577466], and its persuasiveness depends on whether the reader accepts it will actually happen, which these readers leave open [bsky-3kvvttrmocf2v].\n- Some breakthroughs that began as memes proved everyone wrong, but most memes remain memes [hn-40583604]; the essay offers no way to tell which kind it is.",
+      "questions": "1. Which parts of the argument depend specifically on LLMs, and which would hold for other routes to AGI?\n2. How should readers outside the labs verify the insider view that the essay reports?\n3. What should a country outside the US-China race do to prepare if the timeline holds?",
+      "soundness": 3,
+      "presentation": 3,
+      "contribution": 3,
+      "rating": 6,
+      "confidence": 2,
+      "hype_index": 5,
+      "flag_for_ethics_review": false,
+      "reviewer": 2,
+      "cluster": {
+        "label": "Insiders may be right",
+        "summary": "These readers found the series thought-provoking and worth reading in full, even where it approaches science fiction. They defend it on the grounds that its views are common among the people who build these systems and fund them, that current models already do things a high-schooler cannot, and that AGI need not depend on LLMs reasoning the way people do.",
+        "stance": "positive",
+        "size": 14,
+        "total": 53,
+        "representative": [
+          {
+            "id": "hn-40583604",
+            "source": "Hacker News",
+            "author": "johnthewise",
+            "url": "https://news.ycombinator.com/item?id=40583604",
+            "excerpt": ">Talk amongst the memesters. This is a meme. Those memesters invented and deployed the current systems, are currently training the next, and raising funds for the next after. Some scientific breakthroughs were memes at first, but some people believed in them and proved everyone e…",
+            "engagement": 0
+          },
+          {
+            "id": "hn-40582203",
+            "source": "Hacker News",
+            "author": "golergka",
+            "url": "https://news.ycombinator.com/item?id=40582203",
+            "excerpt": "> No it's not. GPT-4 is not a \"smart high-schooler\". This is so hype-y, it's ridiculous. I'm reading Feynman's lectures on electromagnetism right now, and GPT-4o can answer questions and help me with the math. I doubt that even a smart high school would be able to do it.",
+            "engagement": 0
+          },
+          {
+            "id": "hn-40576617",
+            "source": "Hacker News",
+            "author": "elicksaur",
+            "url": "https://news.ycombinator.com/item?id=40576617",
+            "excerpt": "Important context, this appears to be a brief intro+table of contents for a 165-page pdf/html book.[0] It’ll probably be easy for HN to take potshots at snippets of the intro, but the writing intrigued me enough that I want to at least skim over the whole thing. [0] pdf link for …",
+            "engagement": 1
+          },
+          {
+            "id": "bsky-3kvvttrmocf2v",
+            "source": "Bluesky",
+            "author": "amitani (@amitani.bsky.social)",
+            "url": "https://bsky.app/profile/amitani.bsky.social/post/3kvvttrmocf2v",
+            "excerpt": "少し話題になった、OpenAI元社員による超知能と人類の未来に関する記事を読んでみた。 situational-awareness.ai 10年以内にAGIを超えて超知能（人間を超える知能）が現れ、その知能のエージェントが数十億動作する社会が来るんだ、との主張。 実際にそうなるかはさておき、サンフランシスコやその周辺のAI研究室周辺ではそのように考える人が一定数いることや、そのような時間軸の中で自分自身はどうやって生き抜けばよいんだろう等色々考える機会を与えてくれる読み物としては面白かった。（中身もきちんと考察されている印象）",
+            "engagement": 3
+          },
+          {
+            "id": "hn-40583652",
+            "source": "Hacker News",
+            "author": "johnthewise",
+            "url": "https://news.ycombinator.com/item?id=40583652",
+            "excerpt": "It's not just him though. His views are very common in AI labs, who actually build these systems and have better visibility than the rest of us on what's going on.",
+            "engagement": 0
+          },
+          {
+            "id": "bsky-3lbdt2igo6223",
+            "source": "Bluesky",
+            "author": "Sundance Banks (@sundancebanks.bsky.social)",
+            "url": "https://bsky.app/profile/sundancebanks.bsky.social/post/3lbdt2igo6223",
+            "excerpt": "Recently the CEOs of both OpenAI & Anthropic alluded to AGI being potentially achievable by ~2027, and folks like Leopold Aschenbrenner have examined the national security issues of a potential arms race to AGI if we are indeed on the cusp of such a substantial breakthrough situa…",
+            "engagement": 1
+          }
+        ]
+      },
+      "citations": {
+        "hn-40577466": {
+          "id": "hn-40577466",
+          "source": "Hacker News",
+          "author": "cdchn",
+          "url": "https://news.ycombinator.com/item?id=40577466",
+          "excerpt": "Might be AI Maximalism approaching Science Fiction but I still thought it was thought provoking.",
+          "engagement": 0
+        },
+        "hn-40576617": {
+          "id": "hn-40576617",
+          "source": "Hacker News",
+          "author": "elicksaur",
+          "url": "https://news.ycombinator.com/item?id=40576617",
+          "excerpt": "Important context, this appears to be a brief intro+table of contents for a 165-page pdf/html book.[0] It’ll probably be easy for HN to take potshots at snippets of the intro, but the writing intrigued me enough that I want to at least skim over the whole thing. [0] pdf link for …",
+          "engagement": 1
+        },
+        "bsky-3kvvttrmocf2v": {
+          "id": "bsky-3kvvttrmocf2v",
+          "source": "Bluesky",
+          "author": "amitani (@amitani.bsky.social)",
+          "url": "https://bsky.app/profile/amitani.bsky.social/post/3kvvttrmocf2v",
+          "excerpt": "少し話題になった、OpenAI元社員による超知能と人類の未来に関する記事を読んでみた。 situational-awareness.ai 10年以内にAGIを超えて超知能（人間を超える知能）が現れ、その知能のエージェントが数十億動作する社会が来るんだ、との主張。 実際にそうなるかはさておき、サンフランシスコやその周辺のAI研究室周辺ではそのように考える人が一定数いることや、そのような時間軸の中で自分自身はどうやって生き抜けばよいんだろう等色々考える機会を与えてくれる読み物としては面白かった。（中身もきちんと考察されている印象）",
+          "engagement": 3
+        },
+        "bsky-3ku6qrjhled2m": {
+          "id": "bsky-3ku6qrjhled2m",
+          "source": "Bluesky",
+          "author": "ЛЕФТОВАЯ МРАЗЬ (@xmbshwll.bsky.social)",
+          "url": "https://bsky.app/profile/xmbshwll.bsky.social/post/3ku6qrjhled2m",
+          "excerpt": "situational-awareness.ai очень интересное чтиво",
+          "engagement": 0
+        },
+        "bsky-3kvvtyrhmyo2r": {
+          "id": "bsky-3kvvtyrhmyo2r",
+          "source": "Bluesky",
+          "author": "amitani (@amitani.bsky.social)",
+          "url": "https://bsky.app/profile/amitani.bsky.social/post/3kvvtyrhmyo2r",
+          "excerpt": "幾つか印象に残った内容をメモ。 > これまでの進化のスピードが続くとすれば、現在の高校生・大学生レベルの応答性能が、27年には研究者レベルになるだろう。研究者レベルまで進化すれば、AI研究が自動化される。それによりさらに進化の速度が速まる。結果、人間の能力を超える知能（超知能）が実現するだろう。 > AI研究の自動化により進歩したAI技術は、物理的な実態を持つ分野（ロボット、産業、軍事）の研究開発の自動化へと波及。さらにその結果、進化の連鎖反応（個々のＡＩが影響し合ってより急速に進化ということ？）が起きる。",
+          "engagement": 3
+        },
+        "bsky-3mvo3elcvfc2w": {
+          "id": "bsky-3mvo3elcvfc2w",
+          "source": "Bluesky",
+          "author": "Aquastell (@aquastell.bsky.social)",
+          "url": "https://bsky.app/profile/aquastell.bsky.social/post/3mvo3elcvfc2w",
+          "excerpt": "This is a long read but it really explains the inevitability and issues of what is coming with AI: situational-awareness.ai",
+          "engagement": 0
+        },
+        "bsky-3mvo3ptkl522w": {
+          "id": "bsky-3mvo3ptkl522w",
+          "source": "Bluesky",
+          "author": "Aquastell (@aquastell.bsky.social)",
+          "url": "https://bsky.app/profile/aquastell.bsky.social/post/3mvo3ptkl522w",
+          "excerpt": "Here is a great read on what to expect with AI: situational-awareness.ai",
+          "engagement": 0
+        },
+        "hn-40582203": {
+          "id": "hn-40582203",
+          "source": "Hacker News",
+          "author": "golergka",
+          "url": "https://news.ycombinator.com/item?id=40582203",
+          "excerpt": "> No it's not. GPT-4 is not a \"smart high-schooler\". This is so hype-y, it's ridiculous. I'm reading Feynman's lectures on electromagnetism right now, and GPT-4o can answer questions and help me with the math. I doubt that even a smart high school would be able to do it.",
+          "engagement": 0
+        },
+        "hn-40576912": {
+          "id": "hn-40576912",
+          "source": "Hacker News",
+          "author": "xeckr",
+          "url": "https://news.ycombinator.com/item?id=40576912",
+          "excerpt": "How do explain GPT-3's success with handling the prompt \"make an HTML button that looks like a watermelon\" without invoking reasoning?",
+          "engagement": 2
+        },
+        "hn-40587718": {
+          "id": "hn-40587718",
+          "source": "Hacker News",
+          "author": "just-ok",
+          "url": "https://news.ycombinator.com/item?id=40587718",
+          "excerpt": "> I personally don’t think LLMs can achieve reasoning, or any kind of innate awareness. You presume, though, that AGI relies exclusively on LLMs.",
+          "engagement": 1
+        },
+        "hn-40583604": {
+          "id": "hn-40583604",
+          "source": "Hacker News",
+          "author": "johnthewise",
+          "url": "https://news.ycombinator.com/item?id=40583604",
+          "excerpt": ">Talk amongst the memesters. This is a meme. Those memesters invented and deployed the current systems, are currently training the next, and raising funds for the next after. Some scientific breakthroughs were memes at first, but some people believed in them and proved everyone e…",
+          "engagement": 0
+        },
+        "hn-40583652": {
+          "id": "hn-40583652",
+          "source": "Hacker News",
+          "author": "johnthewise",
+          "url": "https://news.ycombinator.com/item?id=40583652",
+          "excerpt": "It's not just him though. His views are very common in AI labs, who actually build these systems and have better visibility than the rest of us on what's going on.",
+          "engagement": 0
+        },
+        "bsky-3lbdt2igo6223": {
+          "id": "bsky-3lbdt2igo6223",
+          "source": "Bluesky",
+          "author": "Sundance Banks (@sundancebanks.bsky.social)",
+          "url": "https://bsky.app/profile/sundancebanks.bsky.social/post/3lbdt2igo6223",
+          "excerpt": "Recently the CEOs of both OpenAI & Anthropic alluded to AGI being potentially achievable by ~2027, and folks like Leopold Aschenbrenner have examined the national security issues of a potential arms race to AGI if we are indeed on the cusp of such a substantial breakthrough situa…",
+          "engagement": 1
+        },
+        "bsky-3lcfpc66w7c2p": {
+          "id": "bsky-3lcfpc66w7c2p",
+          "source": "Bluesky",
+          "author": "Thomas Bruun (@bruun.eurosky.social)",
+          "url": "https://bsky.app/profile/bruun.eurosky.social/post/3lcfpc66w7c2p",
+          "excerpt": "Leopold Aschenbrenners essay og take på hvad vi kan forvente os af AI - og hvis han forudsigelser holder stik: Hvor gearet er vi egentlig i Danmark til at gribe den stafet? Er selv mildt bekymret, når de fleste kun evner at nævne ChatGPT, når taler falder på AI’s potentiale. situ…",
+          "engagement": 2
+        }
+      },
+      "date": "2026-11-03T17:47:17.898Z"
+    },
+    {
+      "summary": "The submission argues that AGI and superintelligence will be decided in a race between the free world and authoritarian powers, requiring a large build-out of electricity, lab security against state actors, and eventually a national 'Project' on the model of the Manhattan Project.",
+      "strengths": "- It treats the AI race as a geopolitical reality rather than an optional project: the US and China are in a prisoner's dilemma in which whoever brakes loses, and a global halt is technically and politically infeasible [bsky-3moucgua4wc23].\n- It correctly identifies physical resources as the arena of competition: power contracts, water rights, land and environmental clearance increasingly determine the value of tech firms [bsky-3muduwblkws2p].\n- It is one of several serious scenarios of an AI-transformed future that are worth reading side by side [bsky-3mw2tamfs4s2b].",
+      "weaknesses": "- The Manhattan Project framing, a techno-race against 'bad guys', is accepted rather than examined [bsky-3lfgkytdpe22b], and as a vision of the future it is hardly cheerful reading [bsky-3lfgl647txs2b].\n- From outside the labs, the race looks like games billionaires play with everyone else's lives, with personal rivalries among founders shaping the outcome [bsky-3kumicua6rh2x]. Humans are playing with fire [bsky-3kukcqwyoep2g].\n- The essay attends to who wins the race more than to who absorbs the transition. A painful transition period should be expected, and the digital divide from the internet era has still not closed [bsky-3mw2tamfs4s2b]. The costs of securing power, water and land fall on others [bsky-3muduwblkws2p].",
+      "questions": "1. If the race is a prisoner's dilemma, what institution or agreement, if any, would let either side slow down safely?\n2. Who bears the environmental and resource costs of the proposed electricity and datacenter build-out?\n3. How does a government 'Project' prevent the outcome being shaped by the personal rivalries of a few founders and investors?\n4. What does the essay propose for people on the wrong side of the transition and the digital divide?",
+      "soundness": 2,
+      "presentation": 3,
+      "contribution": 3,
+      "rating": 5,
+      "confidence": 2,
+      "hype_index": 5,
+      "flag_for_ethics_review": true,
+      "reviewer": 3,
+      "cluster": {
+        "label": "An arms race with our lives",
+        "summary": "This group engages less with the timelines than with the stakes: a US-China race framed as a prisoner's dilemma, a Manhattan Project against 'bad guys', and a scramble for power contracts, water rights and land. Some accept the race as reality and others see billionaires gambling with everyone else's lives, but all expect a painful transition.",
+        "stance": "mixed",
+        "size": 7,
+        "total": 53,
+        "representative": [
+          {
+            "id": "bsky-3moucgua4wc23",
+            "source": "Bluesky",
+            "author": "J. H. 🇦🇹🇪🇺 (@jh23.bsky.social)",
+            "url": "https://bsky.app/profile/jh23.bsky.social/post/3moucgua4wc23",
+            "excerpt": "Das KI-Wettrüsten ist kein optionales Projekt, sondern eine geopolitische Realität. USA und China befinden sich in einem Gefangenendilemma – wer bremst, verliert. Ein globales Stoppen ist technisch und politisch kaum machbar. #AI #Geopolitics",
+            "engagement": 0
+          },
+          {
+            "id": "bsky-3muduwblkws2p",
+            "source": "Bluesky",
+            "author": "Das, Kaushik (@daskaushik.bsky.social)",
+            "url": "https://bsky.app/profile/daskaushik.bsky.social/post/3muduwblkws2p",
+            "excerpt": "We are in an era where the defining moment is how many power contracts, water rights, land contracts, and environmental clearance be secured to define the net worth of tech organizations Dr Reich rbreich.bsky.social shared some concerns over his posts in the past 24 months situat…",
+            "engagement": 1
+          },
+          {
+            "id": "bsky-3mw2tamfs4s2b",
+            "source": "Bluesky",
+            "author": "Young | NURIE AI (@young-nurie.bsky.social)",
+            "url": "https://bsky.app/profile/young-nurie.bsky.social/post/3mw2tamfs4s2b",
+            "excerpt": "2/ There are many different scenarios like these: situational-awareness.ai darioamodei.com/essay/the-ad... www.gatesnotes.com/work/make-ai... I’m an optimist about the future. But I also expect a painful transition period. The digital divide still hasn’t disappeared since the Int…",
+            "engagement": 0
+          },
+          {
+            "id": "bsky-3kumicua6rh2x",
+            "source": "Bluesky",
+            "author": "PKs Powerfromspace1 🚀 Last Angry Bernie Brother cast adrift 😒 (@powerfromspace1.bsky.social)",
+            "url": "https://bsky.app/profile/powerfromspace1.bsky.social/post/3kumicua6rh2x",
+            "excerpt": "#OpenAI #GenAI someone ( #xAI owner) it's taking being beaten by @sama to the for profit #LLM punch 🥊💰 kaching' kind of personal. 🫤 The games billionaires play with out very lives 👇 situational-awareness.ai",
+            "engagement": 1
+          },
+          {
+            "id": "bsky-3lfgkytdpe22b",
+            "source": "Bluesky",
+            "author": "Jim (@smithmillcreek.bsky.social)",
+            "url": "https://bsky.app/profile/smithmillcreek.bsky.social/post/3lfgkytdpe22b",
+            "excerpt": "1/2 This is an article on Artificial Inteligence that argues that it is powerful, developing quickly and should be handled like the Manhattan Project (a techno-race against bad guys). situational-awareness.ai by Leopold Aschenbrenner. It opens with a sentence I heard many times i…",
+            "engagement": 0
+          }
+        ]
+      },
+      "citations": {
+        "bsky-3moucgua4wc23": {
+          "id": "bsky-3moucgua4wc23",
+          "source": "Bluesky",
+          "author": "J. H. 🇦🇹🇪🇺 (@jh23.bsky.social)",
+          "url": "https://bsky.app/profile/jh23.bsky.social/post/3moucgua4wc23",
+          "excerpt": "Das KI-Wettrüsten ist kein optionales Projekt, sondern eine geopolitische Realität. USA und China befinden sich in einem Gefangenendilemma – wer bremst, verliert. Ein globales Stoppen ist technisch und politisch kaum machbar. #AI #Geopolitics",
+          "engagement": 0
+        },
+        "bsky-3muduwblkws2p": {
+          "id": "bsky-3muduwblkws2p",
+          "source": "Bluesky",
+          "author": "Das, Kaushik (@daskaushik.bsky.social)",
+          "url": "https://bsky.app/profile/daskaushik.bsky.social/post/3muduwblkws2p",
+          "excerpt": "We are in an era where the defining moment is how many power contracts, water rights, land contracts, and environmental clearance be secured to define the net worth of tech organizations Dr Reich rbreich.bsky.social shared some concerns over his posts in the past 24 months situat…",
+          "engagement": 1
+        },
+        "bsky-3mw2tamfs4s2b": {
+          "id": "bsky-3mw2tamfs4s2b",
+          "source": "Bluesky",
+          "author": "Young | NURIE AI (@young-nurie.bsky.social)",
+          "url": "https://bsky.app/profile/young-nurie.bsky.social/post/3mw2tamfs4s2b",
+          "excerpt": "2/ There are many different scenarios like these: situational-awareness.ai darioamodei.com/essay/the-ad... www.gatesnotes.com/work/make-ai... I’m an optimist about the future. But I also expect a painful transition period. The digital divide still hasn’t disappeared since the Int…",
+          "engagement": 0
+        },
+        "bsky-3lfgkytdpe22b": {
+          "id": "bsky-3lfgkytdpe22b",
+          "source": "Bluesky",
+          "author": "Jim (@smithmillcreek.bsky.social)",
+          "url": "https://bsky.app/profile/smithmillcreek.bsky.social/post/3lfgkytdpe22b",
+          "excerpt": "1/2 This is an article on Artificial Inteligence that argues that it is powerful, developing quickly and should be handled like the Manhattan Project (a techno-race against bad guys). situational-awareness.ai by Leopold Aschenbrenner. It opens with a sentence I heard many times i…",
+          "engagement": 0
+        },
+        "bsky-3lfgl647txs2b": {
+          "id": "bsky-3lfgl647txs2b",
+          "source": "Bluesky",
+          "author": "Jim (@smithmillcreek.bsky.social)",
+          "url": "https://bsky.app/profile/smithmillcreek.bsky.social/post/3lfgl647txs2b",
+          "excerpt": "As long as we're being cheerful, here's an article on AI: situational-awareness.ai",
+          "engagement": 0
+        },
+        "bsky-3kumicua6rh2x": {
+          "id": "bsky-3kumicua6rh2x",
+          "source": "Bluesky",
+          "author": "PKs Powerfromspace1 🚀 Last Angry Bernie Brother cast adrift 😒 (@powerfromspace1.bsky.social)",
+          "url": "https://bsky.app/profile/powerfromspace1.bsky.social/post/3kumicua6rh2x",
+          "excerpt": "#OpenAI #GenAI someone ( #xAI owner) it's taking being beaten by @sama to the for profit #LLM punch 🥊💰 kaching' kind of personal. 🫤 The games billionaires play with out very lives 👇 situational-awareness.ai",
+          "engagement": 1
+        },
+        "bsky-3kukcqwyoep2g": {
+          "id": "bsky-3kukcqwyoep2g",
+          "source": "Bluesky",
+          "author": "PKs Powerfromspace1 🚀 Last Angry Bernie Brother cast adrift 😒 (@powerfromspace1.bsky.social)",
+          "url": "https://bsky.app/profile/powerfromspace1.bsky.social/post/3kukcqwyoep2g",
+          "excerpt": "More from Leopold A. situational-awareness.ai ( Ed: not so fast humans your playing with the fire 🔥 theat will evolve into skynet 🤖 #teamskynet 😉)",
+          "engagement": 0
+        }
+      },
+      "date": "2026-11-03T18:47:17.898Z"
+    }
+  ],
+  "metaReview": {
+    "metareview": "**Summary.** The submission, a 165-page essay series by a former member of OpenAI's superalignment team, counts orders of magnitude of effective compute from GPT-2 to GPT-4, draws a straight line to 2027, and concludes that automated AI researchers, an intelligence explosion, trillion-dollar clusters, stolen weights and a national AGI 'Project' follow. The author describes himself as one of a few hundred people in San Francisco who can see this coming.\n\n**Reviews.** Reviewer 1, representing the largest group, attacks the method: the compute trend is mostly money, exponentials tend to become sigmoids, GPT-4 is not a smart high-schooler, and energy, online learning and social backlash are waved through. The same reviewer adds a good deal of commentary about the author's age, his San Francisco framing and his AI hedge fund. Reviewer 2 counters that the people building and financing these systems broadly share the view, that current models already do things the critics say they cannot, and that the essay is worth reading in full rather than sniping at its introduction. Reviewer 3 largely skips the timeline and engages with the geopolitics, accepting the US-China prisoner's dilemma as real while objecting that the essay is more interested in who wins than in who pays for power, water and the transition.\n\n**Assessment.** Reviewer 1's strongest point is the one that does not depend on the author's birth certificate: half an OOM per year of compute is financed by spending that cannot grow by the same factor for long, and the essay does not separate the trend from the budget. The sigmoid objection is fair but unfalsifiable in the other direction, and Reviewer 2 is right that 'believing in straight lines' has so far been less embarrassing than not believing in them. The ad hominem material is discounted; being 22 is not a flaw in an argument, although running a fund that benefits from the conclusion is worth disclosing. Reviewer 2's defense rests heavily on insider consensus, which is evidence about what labs believe rather than about what will happen. Reviewer 3 raises the ethical questions the essay treats as logistics, and these are the parts of the submission most likely to matter regardless of the exact year.\n\nThe Area Chair finds a provocative and readable position paper whose central forecast is an extrapolation with error bars the size of a trillion-dollar cluster. Its influence is not in doubt; its evidence, as presented, does not support 'strikingly plausible'.",
+    "additional_comments_on_reviewer_discussion": "Most decisive: Reviewer 1's point that the compute trend is a spending trend and cannot be extrapolated like a physical law, and the missing treatment of energy. Credited: Reviewer 2's capability examples and the observation that lab leaders now state similar timelines, which make the forecast more than one person's opinion. Reviewer 3's concerns about who bears the resource costs and the transition were credited and motivate the ethics flag. Discounted: arguments from the author's age and residence, and one-line verdicts that AGI will never happen, which are not rebuttals. The Area Chair also declines to rule on whether the series was machine-written, since a 165-page manuscript from a human is not rare in this venue's experience.",
+    "decision": "Reject",
+    "decision_comment": "An influential, readable manifesto whose headline timeline rests on extending a spending curve and a capability analogy further than the evidence supports. Rejected in its current form; the authors are encouraged to resubmit in 2027, when the straight line can be checked.",
+    "date": "2026-11-03T19:47:17.898Z",
+    "areaChairId": "sWmQ"
+  }
+}

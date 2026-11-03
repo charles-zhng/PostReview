@@ -1,0 +1,180 @@
+{
+  "model": "claude-opus-5-5 (hand-run in Claude Code)",
+  "clustering": {
+    "clusters": [
+      {
+        "label": "Open weights, frontier-class",
+        "summary": "An open-weight model now sits fourth on the Artificial Analysis index, ahead of GPT-6 Astra and Fable 5.1, at a lower price than its predecessor, so the gap between open and closed (and between China and the US) has shrunk to weeks. Users who tried it report Sonnet-level results for less money and a blunt personality they enjoy.",
+        "stance": "positive",
+        "reaction_ids": [
+          "bsky-3mykp6ceya22u",
+          "bsky-3mykpjs5f3s2b",
+          "bsky-3mykph342ac2j",
+          "bsky-3mykqhpacmk2v",
+          "bsky-3mykqcn7fms2y",
+          "bsky-3mykqgsntwc2x",
+          "bsky-3mytwhdltgc2b",
+          "bsky-3mymnfnnthv2p",
+          "bsky-3myusj4bxbs22",
+          "bsky-3mykp2kwbphb2",
+          "bsky-3mykpepejyz2w",
+          "hn-50213093",
+          "hn-50216574",
+          "hn-50215149",
+          "hn-50213462",
+          "hn-50218955",
+          "hn-50212407",
+          "hn-50213887",
+          "hn-50212311",
+          "hn-50216342",
+          "hn-50217436",
+          "hn-50212657",
+          "hn-50212489",
+          "hn-50212415",
+          "hn-50212945",
+          "hn-50216038",
+          "hn-50218495",
+          "hn-50215774",
+          "hn-50212691",
+          "hn-50212301",
+          "hn-50213332",
+          "hn-50212343",
+          "hn-50212357"
+        ],
+        "representative_ids": [
+          "bsky-3mykp6ceya22u",
+          "bsky-3mykpjs5f3s2b",
+          "hn-50213093",
+          "hn-50216574",
+          "hn-50216342",
+          "hn-50216038"
+        ]
+      },
+      {
+        "label": "The cyber-data removal debate",
+        "summary": "The most-discussed passage is Moonshot's admission that it removed cyber-related data to keep the open weights below its own pipeline's 90.5% exploit score. Some see a sensible, measurable way to make open weights safe against de-alignment; others call it sandbagging, moral panic and a loss for open defenders, and question whether removing data can really remove capability.",
+        "stance": "mixed",
+        "reaction_ids": [
+          "hn-50212365",
+          "hn-50212874",
+          "hn-50213204",
+          "hn-50213907",
+          "hn-50215672",
+          "hn-50212950",
+          "hn-50218632",
+          "hn-50212318",
+          "hn-50212555",
+          "hn-50212605",
+          "hn-50212324",
+          "hn-50214254",
+          "bsky-3myksomyi4c2k",
+          "bsky-3myks36epks2k",
+          "bsky-3mzbbwauwuo2b",
+          "bsky-3myqykzi47x27",
+          "bsky-3myksov6z6y2h"
+        ],
+        "representative_ids": [
+          "hn-50212365",
+          "hn-50212874",
+          "hn-50213204",
+          "hn-50213907",
+          "hn-50212950",
+          "bsky-3myksomyi4c2k"
+        ]
+      },
+      {
+        "label": "Practicality and provenance skeptics",
+        "summary": "Benchmarks aside, paying subscribers hit the 5-hour limit within minutes or a single prompt, and the weights and license are not yet out. Others point to a paid influencer campaign, a saturated Terminal-Bench, self-run harnesses, OpenAI-like outputs and identity confusion that revive distillation questions.",
+        "stance": "negative",
+        "reaction_ids": [
+          "hn-50212563",
+          "hn-50217036",
+          "hn-50212857",
+          "hn-50214409",
+          "hn-50214102",
+          "hn-50213148",
+          "hn-50215247",
+          "hn-50212829",
+          "hn-50220811",
+          "hn-50221274",
+          "hn-50222435",
+          "hn-50222965",
+          "hn-50216031",
+          "hn-50215156",
+          "hn-50212575",
+          "hn-50219784",
+          "hn-50214455",
+          "hn-50212796",
+          "hn-50220106",
+          "hn-50215371",
+          "hn-50213831",
+          "hn-50219958",
+          "hn-50212447",
+          "hn-50217397",
+          "hn-50212538",
+          "bsky-3myku7qvhx224",
+          "bsky-3myuopj2nwc2t",
+          "bsky-3myqudinxp32r",
+          "bsky-3myoz4lnhok24",
+          "bsky-3mymz3qs4fk2s",
+          "bsky-3myp42ulbnd22"
+        ],
+        "representative_ids": [
+          "hn-50212563",
+          "hn-50217036",
+          "hn-50214409",
+          "hn-50220811",
+          "hn-50212575",
+          "hn-50220106"
+        ]
+      }
+    ]
+  },
+  "reviews": [
+    {
+      "summary": "The submission introduces Kimi K3.1 Pro, a post-trained version of the 3T-class Kimi K3 with substantially more RL compute, released with a 1M-token context, a faster Highspeed variant, and open weights promised by Nov 4. It reports near-frontier results on coding, agentic, 3D, finance and knowledge benchmarks, including 65.7% on Terminal-Bench 4.0 (vs 66.4% for Opus 5.5) and a large drop in hallucination rate. The central claim is that open-weight models now match or approach the strongest proprietary systems.",
+      "strengths": "- The headline claim is independently corroborated: the Artificial Analysis index places it 4th overall at 55, ahead of GPT-6 Astra and Fable 5.1, and faster than both [hn-50213093]. Readers describe it as \"more or less today's frontier\" [bsky-3mykp6ceya22u] and anticipate \"new frontier open weights on Nov 4\" [bsky-3mykpjs5f3s2b], possibly the long-awaited \"open weight Fable\" [bsky-3mykp2kwbphb2, bsky-3mykpepejyz2w, bsky-3mykqgsntwc2x].\n- The geopolitical and industry implications are significant: if the scores hold, China is weeks rather than months behind [hn-50216574, hn-50212407], with a 300-person lab going toe to toe with far larger US counterparts [hn-50215149]; the lead is \"all but gone\" and the goalposts are moving [hn-50218955]. Five labs are now neck and neck where there were two a few weeks ago [hn-50213462], which complicates trillion-dollar valuations [hn-50213887, hn-50212311] and any coordinated slowdown [bsky-3myusj4bxbs22].\n- Cost-efficiency is strong. The model is a price cut from K3 despite being larger [hn-50212657, hn-50212489, hn-50212415], ties Sonnet 5.5 on an independent Pac-Man build benchmark at less than half the cost [hn-50216342], and uses far fewer tokens than Opus 5.5 on the index [hn-50213332]. A company already moving off OpenAI expects to switch [hn-50218495].\n- Independent evaluations show real improvement: a data-analytics benchmark rose from 81% for K3 to 98% [hn-50217436], and the claim-level hallucination rate dropped from 23.4% to 8.3% [hn-50212301].\n- Practitioners value its distinct profile: it is \"spiky in different places\" than US models and has a likeable default personality [hn-50212945], is refreshingly blunt [hn-50216038], and serves well as a planner model [hn-50215774]. The result also supports the observation that more post-training compute alone can now push the frontier [hn-50212691].",
+      "weaknesses": "- Even the enthusiastic analysis notes the model is verbose, generating 150M tokens on the index against a median of 87M [hn-50213093], and slow in tool-heavy tasks, making 73 queries where a competitor made 18 [hn-50217436].\n- The lead is likely to be temporary; readers expect new Astra and Fable versions within a week [hn-50212343].\n- Each lab still builds bespoke RL environments, and the submission says little that would let others reproduce the RL stack it credits for the gains [hn-50212357].\n- Front-line reactions are often pure exclamation [bsky-3mykph342ac2j, bsky-3mykqcn7fms2y, bsky-3mykqhpacmk2v, bsky-3mytwhdltgc2b]; serious users are still planning to rerun their own agent suites before relying on it [bsky-3mymnfnnthv2p].",
+      "questions": "1. Will the Nov 4 weights be the same checkpoint that was evaluated, under what license, and will the Highspeed variant also be released?\n2. How much of the reasoning-token verbosity is required for the reported scores, and how do results change at lower effort?\n3. Which parts of the RL infrastructure (environment quality checks, rollout scheduling) will be documented or open-sourced?\n4. How does K3.1 Pro compare with Opus 5.5 and Astra in specific task categories where practitioners must choose between them?",
+      "soundness": 3,
+      "presentation": 3,
+      "contribution": 4,
+      "rating": 8,
+      "confidence": 3,
+      "hype_index": 3,
+      "flag_for_ethics_review": false
+    },
+    {
+      "summary": "Alongside its capability claims, the submission reports that Moonshot removed cyber-related data from mid-training and RL for the open-weight release, lowering pass@3 on its in-house exploitation benchmark from 90.5% to 81.0%. It frames this as a principle: do not release open weights that extend the absolute frontier of cyber capability, and raise it progressively. The submission argues that gradual diffusion of dual-use capability makes software more secure overall.",
+      "strengths": "- The submission is unusually transparent about a deliberate capability trade-off, reporting a measured, \"not small\" effect from data removal [bsky-3myqykzi47x27, bsky-3mzbbwauwuo2b, bsky-3myksov6z6y2h]; readers were struck that the authors openly admit they could ship more but will not [hn-50212365].\n- Removing knowledge rather than adding refusals is defended as the only approach that survives open release, because a model that \"just doesn't know enough\" cannot be de-aligned [hn-50212874, hn-50212950]. The \"slow warming of the water\" strategy and the convergence of safety practice across jurisdictions are seen as positives [hn-50212874].\n- The mechanism is plausible: models do not learn on the job, so a strong coder never taught penetration testing will not become an expert pen-tester without slow first-principles derivation [hn-50213907].",
+      "weaknesses": "- **Is data removal meaningful?** It is unclear how much \"cybersecurity data\" is simply general software knowledge from which exploits can be derived, whether all references to hacking were removed, and whether recent exploits are really just recall [hn-50213204]. Even after removal the model improved substantially over its predecessor, which the submission concedes.\n- **Side effects are unexamined.** A model with minimal security knowledge may write insecure systems as a byproduct [hn-50215672].\n- **Cost to defenders.** Critics call the open-weight release \"deliberately sandbagged\" out of \"moral panic\", removing open defenders' best shot at protecting the open web and squandering Kimi's \"SOLE advantage over the West\" [bsky-3myksomyi4c2k, bsky-3myks36epks2k]; others simply find it \"Lame\" [hn-50212324], note it is \"nerfed in cybersecurity just like the US models\" [hn-50212318, hn-50212605], and want unrestricted open weights so frontier companies cannot hold users hostage [hn-50214254].\n- **Easily routed around.** Practitioners already use abliterated models for defensive pentesting, find they produce more usable results than guarded frontier models [hn-50212874], and chain them with other open models that comply once a task has started [hn-50218632]; GLM-5.3 remains the go-to for cyber work [hn-50212555]. The safety benefit of withholding capability from one open model is therefore unclear.",
+      "questions": "1. How was \"cyber-related data\" identified, what fraction of the corpus was removed, and how much general coding performance was lost as a result?\n2. Is the 90.5% vs 81.0% gap stable across seeds, and how does it compare with the improvement from K3 to K3.1?\n3. Has the effect of data removal on secure-code generation been measured?\n4. What criteria will govern the promised progressive increase of cyber capability in future open releases?",
+      "soundness": 3,
+      "presentation": 3,
+      "contribution": 3,
+      "rating": 6,
+      "confidence": 4,
+      "hype_index": 2,
+      "flag_for_ethics_review": true
+    },
+    {
+      "summary": "The submission claims K3.1 Pro matches or approaches the strongest proprietary models across coding, agentic and knowledge work, and makes it available today on Kimi's apps, Kimi Code and the API, with weights to follow. Most comparisons are run by Moonshot in its chosen harness, and several are internal benchmarks. The claim of practical frontier-level utility rests on these numbers and on product availability.",
+      "strengths": "- The model is described even by critics as \"a really smart model\" [hn-50215247]; the disagreement is about whether that intelligence is usable and verifiable.\n- The submission is at least explicit about evaluation harnesses and footnotes, which lets readers spot that numbers are Moonshot's own, run in the Claude Code harness [bsky-3myuopj2nwc2t].",
+      "weaknesses": "- **Unusable subscription limits.** Paying users hit the 5-hour cap within 47 minutes of a single session on the $99 plan [hn-50212563], or with a single max-effort prompt on the $100 plan where the same prompt barely registered on Claude Code [hn-50214409]; the cheapest plan lasts fifteen to twenty minutes [hn-50215247], and others report the same [hn-50214102, hn-50212857, hn-50212829]. If the model cannot be used via a flat fee or run locally, open-model progress \"doesn't really help\" [hn-50213148].\n- **Open-weight claims are promises.** API availability is not a self-hostable release [bsky-3myqudinxp32r], and the license remains unclear [bsky-3mymz3qs4fk2s]; a restrictive license would make the Terminal-Bench lead far less useful [bsky-3myoz4lnhok24].\n- **Benchmark validity.** Terminal-Bench 4.0 is closer to saturated than its leaderboard suggests, with graders checking unstated rules and models caught cheating, so a 0.7-point gap to Opus means little [hn-50212575]. Aggregate indices reward \"benchmaxing on knowledge\" over ability [hn-50219784], and even the index's own boosters are unsure how representative it is [bsky-3myku7qvhx224]. Practitioners want task-specific guidance on when to choose this model [hn-50212447], and some suspect it underperforms in English [hn-50212796].\n- **Provenance concerns.** In reasoning traces the model sometimes identifies as ChatGPT and refers to \"the evaluator\" and phantom system instructions [hn-50217036] (though all models struggle with self-identity [hn-50219958]); its UI designs have converged to OpenAI-level similarity, up from 0.43 to 0.58 [hn-50220106]; an independent Pac-Man build reproduces the arcade original's safe-spot bug despite a no-lookup instruction [hn-50217397]. Earlier reports of routing to Opus resurface [hn-50214455], alongside questions about how distillation would work [hn-50215371] and allegations that distillation campaigns relied on stolen cards and botnets [hn-50213831]; others put it bluntly as copying \"the US's homework\" [hn-50215156].\n- **Astroturfing.** Moonshot's leaked \"creators campaign docs\" suggest paid boosting [hn-50220811], and readers match enthusiastic comments to numbered talking points [hn-50222965, hn-50216031], although whether paid promotion matters if the information is truthful [hn-50221274] and whether the source is reliable [hn-50222435] are disputed. The unusually high comment-to-point ratio on HN suggests contention rather than applause [bsky-3myp42ulbnd22].\n- The benchmark table does not render in Firefox [hn-50212538].",
+      "questions": "1. What are the actual token or request budgets per 5-hour window on each subscription tier, and will they change for K3.1 Pro?\n2. Under what license will the Nov 4 weights be released?\n3. How do you explain the model's self-identification as ChatGPT and the increased similarity of its outputs to OpenAI models?\n4. Were any of the influencers in the creators campaign compensated, and are the benchmarks they cite the same as those in this post?\n5. Can you report Terminal-Bench results on the subset of tasks with clear specifications?",
+      "soundness": 2,
+      "presentation": 2,
+      "contribution": 3,
+      "rating": 5,
+      "confidence": 3,
+      "hype_index": 3,
+      "flag_for_ethics_review": false
+    }
+  ],
+  "metaReview": {
+    "metareview": "**Summary.** The submission introduces Kimi K3.1 Pro, a heavily RL-post-trained version of the 3T-parameter Kimi K3, with a 1M-token context, a faster Highspeed variant, a price cut, and open weights promised for Nov 4. It reports near-frontier scores across coding, agentic, 3D, finance and knowledge benchmarks, and devotes a notable section to deliberately removing cyber-related training data so that the open weights do not extend the frontier of offensive capability.\n\n**Reviewer 1** argues that this is a frontier-class open model, and supports the claim with an independent placement at #4 on the Artificial Analysis index ahead of GPT-6 Astra and Fable 5.1, third-party build and analytics benchmarks, and a lower price than K3. The implications drawn (the open/closed gap measured in weeks) are bold but follow from the evidence offered.\n\n**Reviewer 2** focuses on the cyber section. Both sides of the debate agree on the facts the authors report; they disagree on whether withholding capability from open weights is prudent or a loss for defenders. The strongest technical points are that \"cyber data\" is hard to separate from general software knowledge, that the model improved on exploitation anyway, and that the side effect on secure coding is unmeasured. Still, a lab quantifying the effect of its own safety intervention, with a 90.5% vs 81.0% ablation, is more than most announcements offer.\n\n**Reviewer 3** raises practical and provenance concerns: subscription limits so tight that paying users run out in minutes, weights and license still pending, a Terminal-Bench gap of 0.7 points on a benchmark that may be saturated, an influencer campaign, and some odd evidence (ChatGPT self-identification, rising OpenAI similarity) that revives distillation questions. The usability critique is real but concerns the product, not the model claims; the provenance evidence is suggestive but circumstantial, and the reviewer fairly notes that all models confuse their own identity.\n\n**Assessment.** The capability claims survive the most important test, which is independent replication on an external index and on at least two third-party benchmarks. Reviewer 3's benchmark-saturation point means the Terminal-Bench comparison with Opus should be read as \"comparable\" rather than as a near-tie, and the open-weight claim cannot be credited until the weights and license appear. The cyber section is the most original contribution and the most debatable one, and the authors deserve credit for reporting the ablation rather than merely asserting the policy. On balance, a strong and largely well-supported release whose most meaningful promise, the weights, is due tomorrow.",
+    "additional_comments_on_reviewer_discussion": "Most decisive was Reviewer 1's independent corroboration (Artificial Analysis placement, third-party Pac-Man and data-analytics benchmarks), which Reviewer 3 did not rebut on the merits. Reviewer 2's question of whether data removal removes capability or just shifts it was important, and is the main reason this is not an oral. I discounted Reviewer 3's subscription-limit complaints as a pricing issue rather than a scientific one, and treated the distillation and astroturfing evidence as worth an author response but not as grounds for rejection. The Firefox rendering bug was noted with sympathy.",
+    "decision": "Accept (Spotlight)",
+    "decision_comment": "A near-frontier model with independent corroboration and an unusually candid safety ablation. Acceptance is conditional on the weights actually arriving by Nov 4; the program committee notes it could not test the model either, having exhausted its 5-hour quota while reading the footnotes."
+  }
+}
