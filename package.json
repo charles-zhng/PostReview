@@ -14,8 +14,7 @@
     "add": "tsx scripts/add.ts",
     "data": "tsx scripts/export-data.ts",
     "predev": "npm run data",
-    "prebuild": "npm run data",
-    "deploy": "npm run build && wrangler deploy"
+    "prebuild": "npm run data"
   },
   "dependencies": {
     "@ai-sdk/anthropic": "^4.0.96",
@@ -40,7 +39,6 @@
     "eslint": "^9",
     "eslint-config-next": "15.5.28",
     "tsx": "^4.23.15",
-    "typescript": "^5",
-    "wrangler": "^4.157.0"
+    "typescript": "^5"
   }
 }
