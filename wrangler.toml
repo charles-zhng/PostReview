@@ -1,3 +1,9 @@
-# Cloudflare Pages project (used by `npm run deploy`; the Git integration reads build settings from the dashboard).
+# Cloudflare Worker serving the static export in out/ (no server code).
 name = "postreview"
-pages_build_output_dir = "out"
+compatibility_date = "2026-10-01"
+
+[assets]
+directory = "./out"
+# /forum serves out/forum.html; unknown paths get out/404.html.
+html_handling = "auto-trailing-slash"
+not_found_handling = "404-page"

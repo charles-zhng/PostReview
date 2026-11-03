@@ -15,7 +15,7 @@
     "data": "tsx scripts/export-data.ts",
     "predev": "npm run data",
     "prebuild": "npm run data",
-    "deploy": "npm run build && wrangler pages deploy out --project-name postreview"
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
     "@ai-sdk/anthropic": "^4.0.96",
